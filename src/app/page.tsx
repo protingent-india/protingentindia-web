@@ -1,10 +1,11 @@
-import { Header } from "@/components";
+import { ServiceFTEBanner } from "@/components";
 
 // --------------------------------------------------------------
 
 export default function Home() {
 	return (
 		<div className="bg-white w-full flexl flex-col items-center">
+			<ServiceFTEBanner />
 		</div>
 	);
 }
