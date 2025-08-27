@@ -24,7 +24,7 @@ const FTEIntroSection = () => {
                         Full-Time Equivalent (FTE) Services are designed to help businesses build dedicated teams, reduce overheads, and stay focused on business growth. It enables organizations to gain a consistent, cost-effective, and project-aligned talent pool to meet deadlines.
                     </p>
                 </div>
-                <div className="w-full" >
+                <div className="w-full flex justify-center" >
                     <div
                         className="w-full max-w-[560px] min-h-[584px] overflow-hidden bg-center bg-no-repeat"
                         style={{
@@ -32,6 +32,19 @@ const FTEIntroSection = () => {
                             backgroundImage: `url(${fteIntroSectionImg?.src})`
                         }}
                     >
+                    </div>
+                    <div className="w-3/4 pl-8 flex flex-col justify-center gap-8 text-primary" >
+                        <p
+                            className="text-4xl  font-extrabold"
+                        >
+                            Dedicated Full-Time Equivalent (FTE) Experts for Growth
+                        </p>
+                        <p className="text-justify text-xl" >
+                            Full-Time Equivalent (FTE) Services provide businesses structural and skilled talent pool exclusively for your projects without the need to hire in-house.
+                        </p>
+                        <p className="text-justify text-xl" >
+                            FTE is a flexible workforce model that enables organizations to scale operations, manage hiring costs effectively, and maintain complete control over deliverables. Protingent’s FTE Services has pre-vetted tech-engineers aligned with your project goals, timelines, and workflows. It’s ideal for long-term initiatives, compliance-heavy operations, or companies aiming to expand without inflating internal headcount. Maximize productivity while minimizing hiring risks with consistent accountability and measurable ROI.
+                        </p>
                     </div>
                 </div>
             </div>
