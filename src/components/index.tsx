@@ -5,3 +5,8 @@ export { default as Icon } from './icon';
 export { default as ServiceFTEBanner } from './serviceFTE/banner';
 export { default as FTEIntroSection } from './serviceFTE/fteIntroSection';
 export { default as Divider } from './divider';
+export { default as WorkForceProductivity } from './serviceFTE/workForceProductivity';
+export { default as ProductivityCard } from './serviceFTE/productivityCard';
+export { default as ServiceOffering } from './serviceFTE/serviceOffering';
+export { default as ServiceOfferingCard } from './serviceFTE/serviceOffering/serviceOfferingCard';
+export { default as CommonHeading } from './serviceFTE/commonHeading';

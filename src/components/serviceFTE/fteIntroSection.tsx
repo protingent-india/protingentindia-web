@@ -6,7 +6,7 @@ import fteIntroSectionImg from "../../../public/img/serviceFTE/fteIntroSection.p
 
 const FTEIntroSection = () => {
     return (
-        <div className="w-full flex justify-center py-20" >
+        <div className="w-full flex justify-center" >
             <div className="w-full max-w-[1253px] flex flex-col items-center gap-20" >
                 <div className="flex flex-col items-center gap-8 px-20" >
                     <p className="text-5xl leading-[60px] text-primary font-extrabold text-center" >
