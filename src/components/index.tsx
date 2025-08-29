@@ -16,3 +16,4 @@ export { default as BgWithListComponent } from './ReusableComponents/BgWithListC
 export { default as ListComponent } from './ReusableComponents/BgWithListComponent/listComponent';
 export { default as IndustriesSection } from './serviceFTE/industriesSection';
 export { default as IndustryCard } from './serviceFTE/industriesSection/industryCard';
+export { default as ContactUs } from './ReusableComponents/contactUs'

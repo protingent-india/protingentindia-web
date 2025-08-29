@@ -1,5 +1,6 @@
 import {
     BgWithListComponent,
+    ContactUs,
     FTEIntroSection,
     IndustriesSection,
     ServiceFTEBanner,
@@ -37,6 +38,7 @@ export default function Home() {
                 desc=" Our Full-Time Equivalent (FTE) services are designed to seamlessly integrate with businesses across industries empowering them with domain-specific skills, faster turnaround, and scalable operations."
                 cardData={serviceFTEIndustryData}
             />
+            <ContactUs />
         </div>
     );
 }
