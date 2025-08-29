@@ -126,3 +126,36 @@ export const serviceFTEIndustryData = [
         img: "/img/serviceFTE/cloudComputing.png"
     },
 ]
+
+export const serviceFTEPartnersData = [
+    {
+        title: "Domain-Ready Talent Pool",
+        desc: "Access pre-vetted experts with specialized skills across industries.",
+        img: "/img/servicePartner1.jpg"
+    },
+    {
+        title: "Agile Onboarding Process",
+        desc: "Scale your workforce quickly without the usual hiring delays.",
+        img: "/img/servicePartner2.jpg"
+    },
+    {
+        title: "Flexible Engagement Models",
+        desc: "Choose from hourly, monthly, or project-based FTE structures.",
+        img: "/img/servicePartner3.jpg"
+    },
+    {
+        title: "Continuous Performance Monitoring",
+        desc: "Get regular updates, KPIs, and transparent team evaluations.",
+        img: "/img/servicePartner4.jpg"
+    },
+    {
+        title: "US-Based & Global Delivery",
+        desc: "Leverage both local expertise and cost-effective global talent.",
+        img: "/img/servicePartner5.jpg"
+    },
+    {
+        title: "Client-Centric Support",
+        desc: "Dedicated account managers ensure 24/7 responsiveness and alignment.",
+        img: "/img/servicePartner6.jpg"
+    },
+]
