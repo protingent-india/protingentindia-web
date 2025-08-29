@@ -14,3 +14,5 @@ export { default as ThreeCardSlider } from './ReusableComponents/threeCardSlider
 export { default as SliderCard } from './ReusableComponents/threeCardSlider/sliderCard';
 export { default as BgWithListComponent } from './ReusableComponents/BgWithListComponent';
 export { default as ListComponent } from './ReusableComponents/BgWithListComponent/listComponent';
+export { default as IndustriesSection } from './serviceFTE/industriesSection';
+export { default as IndustryCard } from './serviceFTE/industriesSection/industryCard';

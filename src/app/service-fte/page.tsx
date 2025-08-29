@@ -1,12 +1,13 @@
 import {
     BgWithListComponent,
     FTEIntroSection,
+    IndustriesSection,
     ServiceFTEBanner,
     ServiceOffering,
     ThreeCardSlider,
     WorkForceProductivity
 } from "@/components";
-import { businessBenefitsData, ServicesProcessData } from "@/utils/constants";
+import { businessBenefitsData, serviceFTEIndustryData, ServicesProcessData } from "@/utils/constants";
 import businessBenefits from "../../../public/img/bgListImgs/businessBenefits.png";
 import businessBenefits2 from "../../../public/img/bgListImgs/businessBenefits2.png";
 
@@ -14,7 +15,7 @@ import businessBenefits2 from "../../../public/img/bgListImgs/businessBenefits2.
 
 export default function Home() {
     return (
-        <div className="bg-white w-full flex flex-col items-center gap-20 pb-20">
+        <div className="bg-white w-full flex flex-col items-center gap-32 pb-20">
             <ServiceFTEBanner />
             <FTEIntroSection />
             <WorkForceProductivity />
@@ -30,6 +31,11 @@ export default function Home() {
                 bg={businessBenefits?.src}
                 bgList={businessBenefits2?.src}
                 listData={businessBenefitsData}
+            />
+            <IndustriesSection
+                title="Serving Diverse Industries with Tailored FTE Expertise"
+                desc=" Our Full-Time Equivalent (FTE) services are designed to seamlessly integrate with businesses across industries empowering them with domain-specific skills, faster turnaround, and scalable operations."
+                cardData={serviceFTEIndustryData}
             />
         </div>
     );

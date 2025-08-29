@@ -107,3 +107,22 @@ export const businessBenefitsData = [
         desc: "Skilled FTE professionals accelerate workflows and shorten delivery timelines."
     },
 ]
+
+export const serviceFTEIndustryData = [
+    {
+        title: "Aerospace / Space",
+        img: "/img/serviceFTE/aeroSpace.png"
+    },
+    {
+        title: "Cloud Computing",
+        img: "/img/serviceFTE/cloudComputing.png"
+    },
+    {
+        title: "Aerospace / Space",
+        img: "/img/serviceFTE/aeroSpace.png"
+    },
+    {
+        title: "Cloud Computing",
+        img: "/img/serviceFTE/cloudComputing.png"
+    },
+]
