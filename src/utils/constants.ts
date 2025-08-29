@@ -1,5 +1,3 @@
-import { title } from "process"
-
 export const MenuList: string[] = [
     "home",
     "about",
@@ -30,5 +28,82 @@ export const ProductivityCardData = [
         img: "/img/serviceFTE/productivityCard4.png",
         title: "Resource Gaps and Burnout",
         desc: "In-house teams often face burnout due to unbalanced workloads, while businesses struggle to maintain continuity across long-term or high-volume projects."
+    },
+]
+
+export const ServiceOfferingData = [
+    {
+        img: "/img/serviceFTE/serviceOffering1.png",
+        title: "Hybrid Resource Flexibility",
+        desc: "Blend in-house direction with outsourced expertise through custom-built resource models that scale seamlessly with your project demands."
+    },
+    {
+        img: "/img/serviceFTE/serviceOffering2.png",
+        title: "Seamless Project Oversight",
+        desc: "Get dedicated project managers and regular updates that ensure milestone tracking, accountability, and zero communication gaps."
+    },
+    {
+        img: "/img/serviceFTE/serviceOffering3.png",
+        title: "Quick Access to Niche Talent",
+        desc: "Deploy specialized professionals on-demand — without recruitment delays or onboarding hurdles — to fast-track delivery."
+    },
+    {
+        img: "/img/serviceFTE/serviceOffering4.png",
+        title: "Quality & Compliance Assurance",
+        desc: "Engage FTEs trained in regulatory, data security, and industry protocols, ensuring every outcome is compliant and audit-ready."
+    },
+]
+
+export const ServicesProcessData = [
+    {
+        title: "Requirement Discovery",
+        desc: "Understand your project needs, timelines, and resourcing expectations."
+    },
+    {
+        title: "Talent Mapping",
+        desc: "Match expert professionals to roles with domain-specific alignment."
+    },
+    {
+        title: "Resource Onboarding",
+        desc: "Fast-track orientation to ensure zero downtime from day one."
+    },
+    {
+        title: "Requirement Discovery",
+        desc: "Understand your project needs, timelines, and resourcing expectations."
+    },
+    {
+        title: "Talent Mapping",
+        desc: "Match expert professionals to roles with domain-specific alignment."
+    },
+    {
+        title: "Resource Onboarding",
+        desc: "Fast-track orientation to ensure zero downtime from day one."
+    },
+    {
+        title: "Requirement Discovery",
+        desc: "Understand your project needs, timelines, and resourcing expectations."
+    },
+    {
+        title: "Talent Mapping",
+        desc: "Match expert professionals to roles with domain-specific alignment."
+    },
+    {
+        title: "Resource Onboarding",
+        desc: "Fast-track orientation to ensure zero downtime from day one."
+    },
+]
+
+export const businessBenefitsData = [
+    {
+        title: "Controlled Operational Costs",
+        desc: "Pay only for full-time resource commitment without infrastructure or retention costs."
+    },
+    {
+        title: "Enhanced Project Flexibility",
+        desc: "Scale teams up or down swiftly based on evolving project demands."
+    },
+    {
+        title: "Faster Time-to-Market",
+        desc: "Skilled FTE professionals accelerate workflows and shorten delivery timelines."
     },
 ]

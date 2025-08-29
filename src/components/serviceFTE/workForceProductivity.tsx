@@ -6,7 +6,7 @@ import { ProductivityCardData } from '@/utils/constants';
 
 const WorkForceProductivity = () => {
     return (
-        <div className='w-full flex flex-col gap-11' >
+        <div className='w-full flex flex-col gap-16' >
             <CommonHeading
                 title="Struggling to Optimize Your Workforce Productivity?"
                 desc="Many businesses overspend, under-deliver, or lose project efficiency. Protingent India bridges this gap with scalable, cost-effective, and accountable FTE solutions that give you a competitive edge without the overhead."

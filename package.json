@@ -10,7 +10,8 @@
   "dependencies": {
     "next": "15.5.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "swiper": "^11.2.10"
   },
   "devDependencies": {
     "@iconify/react": "^6.0.0",

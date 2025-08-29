@@ -4,7 +4,7 @@ import { HeaderMenuList, Logo } from "@/components";
 
 const Header = () => {
     return (
-        <div className="w-full flex justify-center py-7" >
+        <div className="w-full flex justify-center py-7 sticky top-0 z-[1000] bg-white" >
             <div className="w-full max-w-[1400px] flex justify-between" >
                 <Logo />
                 <HeaderMenuList />

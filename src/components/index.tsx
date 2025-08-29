@@ -10,3 +10,7 @@ export { default as ProductivityCard } from './serviceFTE/productivityCard';
 export { default as ServiceOffering } from './serviceFTE/serviceOffering';
 export { default as ServiceOfferingCard } from './serviceFTE/serviceOffering/serviceOfferingCard';
 export { default as CommonHeading } from './serviceFTE/commonHeading';
+export { default as ThreeCardSlider } from './ReusableComponents/threeCardSlider';
+export { default as SliderCard } from './ReusableComponents/threeCardSlider/sliderCard';
+export { default as BgWithListComponent } from './ReusableComponents/BgWithListComponent';
+export { default as ListComponent } from './ReusableComponents/BgWithListComponent/listComponent';
