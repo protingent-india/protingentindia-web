@@ -23,6 +23,10 @@ export const Header = dynamic(() => import('@/components/header'), {
 	ssr: true
 });
 
+export const Footer = dynamic(() => import('@/components/footer'), {
+	ssr: true
+});
+
 export const ScrollToTop = dynamic(() => import('@/components/scrollToTop'), {
 	ssr: true
 });
@@ -36,12 +40,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body
-				className={`${lato.className} antialiased`}
-			>
-				<Header />
+			<body className={`${lato.className} antialiased`}>
 				<ScrollToTop>
+					<Header />
 					{children}
+					<Footer />
 				</ScrollToTop>
 			</body>
 		</html>
