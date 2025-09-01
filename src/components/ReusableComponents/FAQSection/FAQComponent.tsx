@@ -20,10 +20,15 @@ const FAQComponent = ({
             className='h-fit w-full flex flex-col bg-bg-powder-blue px-4 py-8 rounded-[10px] cursor-pointer text-primary font-semibold '
         >
             <div className='flex justify-between' >
-                <p className='text-xl' >{question}</p>
-                <Icon icon={open ? 'fe:arrow-up' : 'fe:arrow-down'} />
+                <p className='text-xl' >
+                    {question}
+                </p>
+                <Icon
+                    icon={'fe:arrow-down'}
+                    className={`${open ? 'rotate-180' : 'rotate-0'} transition-all duration-700 ease-in-out `}
+                />
             </div>
-            <div className={`pl-4 transition-all duration-700 ease-in-out overflow-hidden 
+            <div className={`pl-4 transition-all duration-500 ease-in-out overflow-hidden 
                 ${open ? "max-h-[1000px]" : "max-h-0"}
             `}>
                 <p className='font-light text-justify mt-4'>
