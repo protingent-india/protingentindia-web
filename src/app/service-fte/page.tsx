@@ -1,6 +1,7 @@
 import {
     BgWithListComponent,
     ContactUs,
+    FAQSection,
     FTEIntroSection,
     IndustriesSection,
     ServiceFTEBanner,
@@ -9,9 +10,15 @@ import {
     ThreeCardSlider,
     WorkForceProductivity
 } from "@/components";
-import { businessBenefitsData, serviceFTEIndustryData, serviceFTEPartnersData, ServicesProcessData } from "@/utils/constants";
+import {
+    businessBenefitsData,
+    serviceFTEIndustryData,
+    serviceFTEPartnersData,
+    ServicesProcessData
+} from "@/utils/constants";
 import businessBenefits from "../../../public/img/bgListImgs/businessBenefits.png";
 import businessBenefits2 from "../../../public/img/bgListImgs/businessBenefits2.png";
+import { serviceFTEFAQ } from '@/utils/constants';
 
 // --------------------------------------------------------------
 
@@ -45,6 +52,11 @@ export default function Home() {
                 cardList={serviceFTEPartnersData}
             />
             <ContactUs />
+            <FAQSection
+                title="Frequently Asked Questions"
+                desc="Protingent India brings a proven combination of healthcare knowledge, technology capabilities, and agile delivery models that ensure your organization can meet today's challenges while preparing for tomorrow."
+                FAQList={serviceFTEFAQ}
+            />
         </div>
     );
 }

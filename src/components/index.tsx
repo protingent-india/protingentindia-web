@@ -20,3 +20,5 @@ export { default as ContactUs } from './ReusableComponents/contactUs';
 export { default as ServicePartners } from './ReusableComponents/servicePartners';
 export { default as ServicePartnersCard } from './ReusableComponents/servicePartners/servicePartnersCard';
 export { default as ScrollToTop } from './scrollToTop';
+export { default as FAQSection } from './ReusableComponents/FAQSection';
+export { default as FAQComponent } from './ReusableComponents/FAQSection/FAQComponent';

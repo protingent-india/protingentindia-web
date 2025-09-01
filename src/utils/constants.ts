@@ -159,3 +159,38 @@ export const serviceFTEPartnersData = [
         img: "/img/servicePartner6.jpg"
     },
 ]
+
+export const serviceFTEFAQ = [
+    {
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+    },
+    {
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+    },
+    {
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+    },
+    {
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+    },
+    {
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+    },
+    {
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+    },
+    {
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+    },
+    {
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+    },
+]
