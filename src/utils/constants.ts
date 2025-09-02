@@ -1,11 +1,46 @@
-export const MenuList: string[] = [
-    "home",
-    "about",
-    "services",
-    "industries",
-    "careers",
-    "insights",
-    "contact",
+export const MenuList: Record<string, any>[] = [
+    {
+        name: "home",
+        children: [],
+        link: "/"
+    },
+    {
+        name: "about",
+        children: [],
+        link: "/about"
+    },
+    {
+        name: "services",
+        children: [
+            {
+                name: "service RPO",
+                link: "/service-rpo"
+            }, {
+                name: "service FTE",
+                link: "/service-fte"
+            }
+        ]
+    },
+    {
+        name: "industries",
+        children: [],
+        link: "/industries"
+    },
+    {
+        name: "careers",
+        children: [],
+        link: "/careers"
+    },
+    {
+        name: "insights",
+        children: [],
+        link: "/insights"
+    },
+    {
+        name: "contact",
+        children: [],
+        link: "/contact"
+    }
 ]
 
 export const ProductivityCardData = [
