@@ -23,3 +23,4 @@ export { default as ScrollToTop } from './scrollToTop';
 export { default as FAQSection } from './ReusableComponents/FAQSection';
 export { default as FAQComponent } from './ReusableComponents/FAQSection/FAQComponent';
 export { default as Footer } from './footer';
+export { default as HeroSection } from './home/heroSection';
