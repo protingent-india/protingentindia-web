@@ -29,3 +29,7 @@ body {
   color: var(--foreground);
   font-family: initial;
 }
+
+html {
+  scroll-behavior: smooth;
+}

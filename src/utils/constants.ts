@@ -229,3 +229,38 @@ export const serviceFTEFAQ = [
         a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
     },
 ]
+
+export const comprehensiveData = [
+    {
+        img: "/img/RPOServiceSlide.png",
+        title: "RPO Service"
+    },
+    {
+        img: "/img/biDataVisualizationSlide.png",
+        title: "IT Consulting"
+    },
+    {
+        img: "/img/FTEHiringSlide.png",
+        title: "FTE Hiring"
+    },
+    {
+        img: "/img/contractStaffingSlide.png",
+        title: "Contract Staffing"
+    },
+    {
+        img: "/img/directSourcingSlide.png",
+        title: "Direct Sourcing"
+    },
+    {
+        img: "/img/HROutsourcingSlide.png",
+        title: "HR Outsourcing"
+    },
+    {
+        img: "/img/marketingSolutionSlide.png",
+        title: "Marketing Solutions"
+    },
+    {
+        img: "/img/biDataVisualizationSlide.png",
+        title: "BI DATA Visualization"
+    }
+]
