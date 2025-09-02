@@ -29,7 +29,7 @@ const ComprehensiveSection = () => {
                     Our expertise extends to leading project teams, ensuring reliability, monitoring progress, tracking KPIs, and managing budgets. Additionally, our commitment to personnel management encompasses staff recruitment, performance assessment, training, and mentoring. We take pride in managing regulatory compliance in India for our parent company and offer vital back-office support services.
                 </p>
             </div>
-            <div className="w-full bg-white flex items-center justify-start" >
+            <div className="w-full bg-white flex items-center justify-start max-w-full overflow-hidden" >
                 <div className="flex justify-start items-center w-fit gap-2" >
                     {comprehensiveData?.map((el: any, index: number): any => (
                         open === index ?
