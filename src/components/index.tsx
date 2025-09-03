@@ -28,3 +28,5 @@ export { default as HomeIntro } from './home/homeIntro';
 export { default as ComprehensiveSection } from './home/comprehensive';
 export { default as IndustriesSlider } from './home/industriesSlider';
 export { default as EllipsisText } from './ReusableComponents/ellipsisText';
+export { default as TalkToExpert } from './home/talkToExperts';
+export { default as ExpertCard } from './home/talkToExperts/expertCard';

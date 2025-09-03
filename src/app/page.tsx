@@ -2,7 +2,8 @@ import {
 	ComprehensiveSection,
 	HeroSection,
 	HomeIntro,
-	IndustriesSlider
+	IndustriesSlider,
+	TalkToExpert
 } from "@/components";
 
 // ---------------------------------------------------------------------
@@ -14,6 +15,7 @@ export default function Home() {
 			<HomeIntro />
 			<ComprehensiveSection />
 			<IndustriesSlider />
+			<TalkToExpert />
 		</div>
 	);
 }

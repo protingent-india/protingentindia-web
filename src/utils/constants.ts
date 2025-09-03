@@ -297,3 +297,21 @@ export const industriesSliderData = [
         img: "/img/healthCareInd.png"
     },
 ]
+
+export const talkToExpertData = [
+    {
+        title: "Need Expert Advice?",
+        desc: "Are you looking for expert advice? Connect with us, and we will help you with your technical needs.",
+        img: "/img/expert1.png"
+    },
+    {
+        title: "Want A Dedicated Team?",
+        desc: "Are you looking for expert advice? Connect with us, and we will help you with your technical needs.",
+        img: "/img/expert2.png"
+    },
+    {
+        title: "Need Expert Advice?",
+        desc: "Are you looking for expert advice? Connect with us, and we will help you with your technical needs.",
+        img: "/img/expert1.png"
+    },
+]
