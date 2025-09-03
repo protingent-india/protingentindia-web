@@ -1,9 +1,9 @@
 "use client"
 import Image from 'next/image';
 import { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Icon, EllipsisText } from '@/components';
 import { industriesSliderData } from '@/utils/constants';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 // --------------------------------------------------------------------
@@ -13,10 +13,6 @@ const IndustriesSlider = () => {
     const [selectedIndustrie, setSelectedIndustrie] = useState<any>({ index: 0, data: industriesSliderData[0] });
 
     const handleSlidingCards = (btn: string) => {
-        // const slideCard: any = document.getElementsByClassName("slide-card")[0]?.clientWidth + 60;
-        // const wrapper: any = document.getElementById("slider-wrapper");
-        // console.log("slideCard", slideCard)
-
         if (btn === "prev") {
             swiperRef.current?.slidePrev()
         } else {
@@ -62,7 +58,7 @@ const IndustriesSlider = () => {
                     </p>
                 </div>
                 <div className='flex w-full max-w-[1300px]' >
-                    <div className='w-full flex flex-col gap-8' >
+                    <div className='w-full flex flex-col gap-[100px]' >
                         <div className='flex gap-8 items-center justify-between' >
                             <div className='text-primary w-2/4 flex flex-col gap-8' >
                                 <p className='text-[80px] font-extrabold' >
