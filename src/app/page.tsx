@@ -1,4 +1,5 @@
 import {
+	BlogSection,
 	ComprehensiveSection,
 	HeroSection,
 	HomeIntro,
@@ -16,6 +17,7 @@ export default function Home() {
 			<ComprehensiveSection />
 			<IndustriesSlider />
 			<TalkToExpert />
+			<BlogSection />
 		</div>
 	);
 }

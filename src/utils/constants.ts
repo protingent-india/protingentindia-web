@@ -315,3 +315,21 @@ export const talkToExpertData = [
         img: "/img/expert1.png"
     },
 ]
+
+export const blogData = [
+    {
+        title: "Protingent India: Innovation and Growth—A Succes Story in Staffing Solutions.",
+        subTitle: "EXECUTIVE PERSPECTIVES",
+        img: "/img/blogBg1.png"
+    },
+    {
+        title: "The Evolution of Offshore Recruiting: A Comprehensive Guide to Protingent RPO",
+        subTitle: "RPO SOLUTION",
+        img: ""
+    },
+    {
+        title: "Explore specialized talent to drive mission",
+        subTitle: "CRITICAL PROJECT",
+        img: "/img/blogBg2.jpg"
+    },
+]

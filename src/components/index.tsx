@@ -30,3 +30,4 @@ export { default as IndustriesSlider } from './home/industriesSlider';
 export { default as EllipsisText } from './ReusableComponents/ellipsisText';
 export { default as TalkToExpert } from './home/talkToExperts';
 export { default as ExpertCard } from './home/talkToExperts/expertCard';
+export { default as BlogSection } from './ReusableComponents/blogs';
