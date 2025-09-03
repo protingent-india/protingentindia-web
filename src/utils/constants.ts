@@ -13,11 +13,11 @@ export const MenuList: Record<string, any>[] = [
         name: "services",
         children: [
             {
-                name: "service RPO",
-                link: "/service-rpo"
+                name: "RPO service",
+                link: "/rpo-service"
             }, {
-                name: "service FTE",
-                link: "/service-fte"
+                name: "FTE service",
+                link: "/fte-service"
             }
         ]
     },
@@ -263,4 +263,37 @@ export const comprehensiveData = [
         img: "/img/biDataVisualizationSlide.png",
         title: "BI DATA Visualization"
     }
+]
+
+export const industriesSliderData = [
+    {
+        title: "Healthcare",
+        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        img: "/img/healthCareInd.png"
+    },
+    {
+        title: "Engineering",
+        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        img: "/img/healthCareInd.png"
+    },
+    {
+        title: "Consumer Goods",
+        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        img: "/img/healthCareInd.png"
+    },
+    {
+        title: "Healthcare",
+        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        img: "/img/healthCareInd.png"
+    },
+    {
+        title: "Engineering",
+        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        img: "/img/healthCareInd.png"
+    },
+    {
+        title: "Consumer Goods",
+        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        img: "/img/healthCareInd.png"
+    },
 ]

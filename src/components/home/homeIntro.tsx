@@ -6,7 +6,7 @@ import fteIntroSectionImg from "../../../public/img/serviceFTE/fteIntroSection.p
 
 const HomeIntro = () => {
     return (
-        <div className="w-full flex justify-center" >
+        <div id="intro section" className="w-full flex justify-center" >
             <div className="w-full max-w-[1253px] flex flex-col items-center gap-20" >
                 <div className={`text-primary flex flex-col items-center gap-4 w-full`} >
                     <span className='!text-secondry text-5xl font-extrabold' > PROTINGENT INDIA</span>

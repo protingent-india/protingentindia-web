@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
-import dynamic from "next/dynamic";
+import dynamicComponent from "next/dynamic";
 import "./globals.css";
 
 // -------------------------------------------------------------------------
@@ -19,17 +19,21 @@ export const metadata: Metadata = {
 
 // -------------------------------------------------------------------------
 
-export const Header = dynamic(() => import('@/components/header'), {
+export const Header = dynamicComponent(() => import('@/components/header'), {
 	ssr: true
 });
 
-export const Footer = dynamic(() => import('@/components/footer'), {
+export const Footer = dynamicComponent(() => import('@/components/footer'), {
 	ssr: true
 });
 
-export const ScrollToTop = dynamic(() => import('@/components/scrollToTop'), {
+export const ScrollToTop = dynamicComponent(() => import('@/components/scrollToTop'), {
 	ssr: true
 });
+
+// -------------------------------------------------------------------------
+
+export const dynamic = 'force-dynamic'
 
 // -------------------------------------------------------------------------
 

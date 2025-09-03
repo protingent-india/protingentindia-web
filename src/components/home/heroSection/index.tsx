@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 
 const HeroSection = () => {
     return (
-        <div className='relative min-h-[1600px] ease-in duration-300 snap-y snap-mandatory' >
+        <div id="hero section" className='relative min-h-[1600px] ease-in duration-300 snap-y snap-mandatory' >
             <div className='sticky top-[100px] left-0 snap-start' >
                 <video
                     autoPlay

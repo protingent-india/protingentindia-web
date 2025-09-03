@@ -10,7 +10,7 @@ const Footer = () => {
             <div style={{ background: "url(/img/footerBg.png)" }} className="w-full min-h-[776px] opacity-[50%] !bg-cover !bg-center !bg-no-repeat absolute top-0 left-0 z-[0]">
             </div>
             <div className="relative z-10 w-full flex flex-col justify-center items-center " >
-                <div className="w-full max-w-[1708px] flex justify-evenly [&>div>p]:text-[26px] py-28 border-b border-white" >
+                <div className="w-full max-w-[1400px] flex justify-between [&>div>p]:text-[26px] py-28 border-b border-white" >
                     <div className="flex flex-col gap-8 max-w-[445px] !border-0" >
                         <p className="!text-4xl " >
                             <span className="font-extrabold" >PRO</span>TINGENT INDIA LLP

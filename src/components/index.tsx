@@ -26,3 +26,5 @@ export { default as Footer } from './footer';
 export { default as HeroSection } from './home/heroSection';
 export { default as HomeIntro } from './home/homeIntro';
 export { default as ComprehensiveSection } from './home/comprehensive';
+export { default as IndustriesSlider } from './home/industriesSlider';
+export { default as EllipsisText } from './ReusableComponents/ellipsisText';

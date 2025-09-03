@@ -30,7 +30,7 @@ const HeaderMenuList = () => {
                     >
                         {menu?.name || ""}
                     </p>
-                    {menu?.name === "services" && <div className='flex flex-col gap-2 absolute bg-white p-4 w-fit rounded-2xl'>
+                    {menu?.name === "services" && <div className='flex flex-col gap-2 absolute bg-white p-4 w-fit rounded-2xl shadow-2xl'>
                         {menu?.children?.length > 0 && open && menu?.children?.map((child: Record<string, any>, index: number) => (
                             <span
                                 key={index}

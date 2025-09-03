@@ -14,7 +14,7 @@ const ServiceOfferingCard = ({
             style={{
                 background: `url(${img})`,
             }}
-            className='w-[90%] max-w-[568px] min-h-[568px] bg-center bg-no-repeat rounded-[5px] overflow-hidden'
+            className='w-[90%] max-w-[568px] min-h-[568px] bg-center bg-no-repeat rounded-[5px] overflow-hidden hover:scale-3d'
         >
             <div
                 style={{
