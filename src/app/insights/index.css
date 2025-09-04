@@ -1,0 +1,4 @@
+.infinite-scroll-component__outerdiv {
+    width: fit-content !important;
+    max-width: 100%;
+}
