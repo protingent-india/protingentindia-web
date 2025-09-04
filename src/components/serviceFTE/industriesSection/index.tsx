@@ -33,7 +33,7 @@ const IndustriesSection = ({
                     </p>
                 </div>
                 <Divider className='bg-gradient-to-r from-secondry to-primary rotate-90 w-[320px]' />
-                <div className='w-[37%] flex justify-center px-8' >
+                <div className='w-[37%] flex justify-center px-8 !overflow-hidden' >
                     <Swiper
                         slidesPerView={2}
                         spaceBetween={50}

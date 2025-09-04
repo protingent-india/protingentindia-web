@@ -1,6 +1,6 @@
 import {
     BgWithListComponent,
-    ContactUs,
+    ContactUsComponent,
     FAQSection,
     FTEIntroSection,
     IndustriesSection,
@@ -51,7 +51,7 @@ export default function Home() {
                 desc="Finding the right FTE provider can be the difference between stagnation and scalable success. Protingent go beyond basic staffing, bring you dedicated professionals, agile processes, and industry-leading value tailored to your business goals."
                 cardList={serviceFTEPartnersData}
             />
-            <ContactUs />
+            <ContactUsComponent />
             <FAQSection
                 title="Frequently Asked Questions"
                 desc="Protingent India brings a proven combination of healthcare knowledge, technology capabilities, and agile delivery models that ensure your organization can meet today's challenges while preparing for tomorrow."

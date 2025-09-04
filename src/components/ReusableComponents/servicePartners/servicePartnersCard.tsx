@@ -27,10 +27,10 @@ const ServicePartnersCard = ({
             <div className="absolute bottom-[-25%] rounded-full border-[3px] border-secondry overflow-hidden h-[210px] w-[210px] flex justify-center items-center" >
                 <Image
                     src={img || "/img/servicePartner1.jpg"}
-                    height={210}
+                    height={0}
                     width={210}
                     alt=""
-                    className="h-[210px] w-[210px]"
+                    className="!h-auto !w-auto object-cover"
                 />
             </div>
         </div>

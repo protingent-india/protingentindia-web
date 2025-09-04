@@ -12,7 +12,8 @@ const HeaderMenuList = () => {
     const handleNavigation = (menu: any) => {
         if (menu?.name === "services") {
             setOpen(!open);
-        } else {
+            return
+        } if (menu?.name !== "careers" && menu?.name !== "industries") {
             router.push(menu?.link)
         }
     }
@@ -26,7 +27,7 @@ const HeaderMenuList = () => {
                     onClick={() => handleNavigation(menu)}
                 >
                     <p
-                        className='cursor-pointer text-2xl'
+                        className={`${(menu?.name !== "careers" && menu?.name !== "industries") && "cursor-pointer"} text-2xl`}
                     >
                         {menu?.name || ""}
                     </p>

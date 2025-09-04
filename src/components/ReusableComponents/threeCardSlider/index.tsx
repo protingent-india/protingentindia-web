@@ -36,7 +36,7 @@ const ThreeCardSlider = ({
                 desc={desc}
             />
             <div className='w-full flex justify-center' >
-                <div className='flex justify-center w-4/5' >
+                <div className='flex justify-center w-4/5 !overflow-hidden' >
                     {activeCard && <Swiper
                         onSlideChange={(swiper: SwiperType) => setActiveIndex(swiper.activeIndex + 1)}
                         slidesPerView={3}
@@ -45,7 +45,7 @@ const ThreeCardSlider = ({
                             clickable: true
                         }}
                         modules={[Pagination]}
-                        className="mySwiper"
+                        className="mySwiper "
                     >
                         {cardData?.length > 0 && cardData?.map((item, index) => (
                             <SwiperSlide>

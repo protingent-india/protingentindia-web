@@ -13,9 +13,6 @@ export const MenuList: Record<string, any>[] = [
         name: "services",
         children: [
             {
-                name: "RPO service",
-                link: "/rpo-service"
-            }, {
                 name: "FTE service",
                 link: "/fte-service"
             }
@@ -191,7 +188,7 @@ export const serviceFTEPartnersData = [
     {
         title: "Client-Centric Support",
         desc: "Dedicated account managers ensure 24/7 responsiveness and alignment.",
-        img: "/img/servicePartner6.jpg"
+        img: "/img/servicePartner6.png"
     },
 ]
 

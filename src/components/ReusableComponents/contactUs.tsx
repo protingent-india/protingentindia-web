@@ -4,7 +4,7 @@ import { Icon } from '@/components';
 
 // --------------------------------------------------------
 
-const ContactUs = () => {
+const ContactUsComponent = () => {
     return (
         <div className='w-full flex' >
             <div className='w-2/4 bg-bg-powder-blue flex justify-center items-center text-primary'>
@@ -71,4 +71,4 @@ const ContactUs = () => {
     )
 }
 
-export default ContactUs;
+export default ContactUsComponent;

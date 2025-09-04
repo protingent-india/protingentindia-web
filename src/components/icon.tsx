@@ -1,16 +1,31 @@
-"use client";
-import { Icon as IconifyIcon } from '@iconify/react';
+'use client'
+import { Icon as Ic } from '@iconify/react';
 
-// ----------------------------------------------------------
+// ------------------------------------------------------
 
-const Icon = ({ icon, width = 24, height = 24, className }: { icon: string, width?: number, height?: number, className?: string }) => {
+const Icon = ({
+    icon,
+    className,
+    height,
+    width,
+    rotate,
+    color,
+    iconClass,
+    // ...props
+}: {
+    icon?: any,
+    className?: any,
+    height?: any,
+    width?: any,
+    rotate?: any,
+    color?: any,
+    iconClass?: any,
+    // ...props
+}) => {
     return (
-        <IconifyIcon
-            icon={icon}
-            width={width}
-            height={height}
-            className={className}
-        />
+        <div className={`${className} overflow-hidden w-fit`} >
+            <Ic icon={icon} className={`h-auto ${iconClass}`} height={height} width={width} rotate={rotate} color={color} />
+        </div>
     )
 }
 

@@ -1,6 +1,7 @@
 "use client"
 import { Icon } from "@/components";
 import Image from "next/image";
+import Link from "next/link";
 
 // -----------------------------------------------------------------
 
@@ -10,7 +11,7 @@ const Footer = () => {
             <div style={{ background: "url(/img/footerBg.png)" }} className="w-full min-h-[776px] opacity-[50%] !bg-cover !bg-center !bg-no-repeat absolute top-0 left-0 z-[0]">
             </div>
             <div className="relative z-10 w-full flex flex-col justify-center items-center " >
-                <div className="w-full max-w-[1400px] flex justify-between [&>div>p]:text-[26px] py-28 border-b border-white" >
+                <div className="w-full max-w-[1450px] flex justify-between [&>div>p]:text-[26px] py-28 border-b border-white" >
                     <div className="flex flex-col gap-8 max-w-[445px] !border-0" >
                         <p className="!text-4xl " >
                             <span className="font-extrabold" >PRO</span>TINGENT INDIA LLP
@@ -35,9 +36,11 @@ const Footer = () => {
                                 alt=""
                                 className="min-w-[40px] h-[40px]"
                             />
-                            <p className="text-2xl" >
-                                connect@protingentindia.com
-                            </p>
+                            <Link href="mailto:connect@protingentindia.com">
+                                <p className="text-2xl" >
+                                    connect@protingentindia.com
+                                </p>
+                            </Link>
                         </div>
                         <div className="flex gap-4 items-center" >
                             <Image
@@ -48,12 +51,16 @@ const Footer = () => {
                                 className="min-w-[40px] h-[40px]"
                             />
                             <div>
-                                <p className="text-2xl" >
-                                    +91 141 299 0687
-                                </p>
-                                <p className="text-2xl" >
-                                    +91 91191 02197
-                                </p>
+                                <Link href={'tel:+911412990687'}>
+                                    <p className="text-2xl" >
+                                        +91 141 299 0687
+                                    </p>
+                                </Link>
+                                <Link href={'tel:+919119102197'}>
+                                    <p className="text-2xl" >
+                                        +91 91191 02197
+                                    </p>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -121,25 +128,33 @@ const Footer = () => {
                             Company
                         </p>
                         <div className="text-xl border-l pl-6 pt-12 pb-36 border-white flex flex-col gap-2 ">
-                            <p>
-                                Home
-                            </p>
-                            <p>
-                                About Us
-                            </p>
+                            <Link href={"/"} >
+                                <p>
+                                    Home
+                                </p>
+                            </Link>
+                            <Link href={"/about"} >
+                                <p>
+                                    About Us
+                                </p>
+                            </Link>
                             <p>
                                 Careers
                             </p>
-                            <p>
-                                insights
-                            </p>
-                            <p>
-                                Contact Us
-                            </p>
+                            <Link href={"/insights"} >
+                                <p>
+                                    insights
+                                </p>
+                            </Link>
+                            <Link href={"/contact"} >
+                                <p>
+                                    Contact Us
+                                </p>
+                            </Link>
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between w-full max-w-[1708px] p-14" >
+                <div className="flex justify-between w-full max-w-[1450px] py-14" >
                     <div className="flex gap-11" >
                         <Icon
                             icon="ri:facebook-fill"
@@ -153,12 +168,14 @@ const Footer = () => {
                             width={36}
                             className="text-white"
                         />
-                        <Icon
-                            icon="ri:linkedin-fill"
-                            height={36}
-                            width={36}
-                            className="text-white"
-                        />
+                        <Link href="https://www.linkedin.com/company/protingent-india-llp/" target="new">
+                            <Icon
+                                icon="ri:linkedin-fill"
+                                height={36}
+                                width={36}
+                                className="text-white"
+                            />
+                        </Link>
                         <Icon
                             icon="ri:twitter-fill"
                             height={36}
@@ -178,12 +195,16 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="flex gap-6" >
-                        <p>
-                            Privacy Policy & Cookies
-                        </p>
-                        <p>
-                            Terms & Conditions
-                        </p>
+                        <Link href={"/privacy-policy"} >
+                            <p>
+                                Privacy Policy & Cookies
+                            </p>
+                        </Link>
+                        <Link href={"/terms-condition"} >
+                            <p>
+                                Terms & Conditions
+                            </p>
+                        </Link>
                     </div>
                 </div>
             </div>

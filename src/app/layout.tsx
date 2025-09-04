@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import dynamicComponent from "next/dynamic";
+import StoreProvider from "./StoreProvider";
 import "./globals.css";
 
 // -------------------------------------------------------------------------
@@ -33,10 +34,6 @@ export const ScrollToTop = dynamicComponent(() => import('@/components/scrollToT
 
 // -------------------------------------------------------------------------
 
-export const dynamic = 'force-dynamic'
-
-// -------------------------------------------------------------------------
-
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -46,9 +43,11 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${lato.className} antialiased`}>
 				<ScrollToTop>
-					<Header />
-					{children}
-					<Footer />
+					<StoreProvider>
+						<Header />
+						{children}
+						<Footer />
+					</StoreProvider>
 				</ScrollToTop>
 			</body>
 		</html>

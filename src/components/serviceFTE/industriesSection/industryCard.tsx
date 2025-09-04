@@ -14,9 +14,10 @@ const IndustryCard = ({
         <div className='flex flex-col gap-2 justify-between items-center min-h-[255px]' >
             <Image
                 src={img || ""}
-                height={200}
-                width={200}
+                height={230}
+                width={230}
                 alt=''
+                className='!h-[230px] !w-[230px]'
             />
             <p className='text-[28px] text-primary' >{title}</p>
         </div>

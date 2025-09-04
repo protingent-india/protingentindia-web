@@ -1,23 +1,17 @@
 'use client';
 import { useEffect } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
-// --------------------------------------------------------------------------
+type Props = { children: React.ReactNode };
 
-type Props = { children: React.ReactNode; smooth?: boolean };
-
-// --------------------------------------------------------------------------
-
-export default function ScrollToTop({ children, smooth = true }: Props) {
+export default function ScrollToTop({ children }: Props) {
     const pathname = usePathname();
-    const searchParams = useSearchParams();
 
     useEffect(() => {
-        // run on first mount + every route/search change
         if (typeof window !== 'undefined') {
-            window.scrollTo({ top: 0, left: 0, behavior: smooth ? 'smooth' : 'auto' });
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         }
-    }, [pathname, searchParams, smooth]);
+    }, [pathname]);
 
     return <>{children}</>;
 }

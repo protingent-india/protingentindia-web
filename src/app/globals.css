@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  font-size: 16px;
 }
 
 @theme inline {
@@ -15,6 +16,11 @@
   --color-bg-parrot-green: #C2D92C;
   --color-bg-powder-blue: #D0EEF0;
   --color-bg-teal-blue: #34969D;
+  --color-primary-green-color: #CBDC13;
+  --color-primary-blue-color: #053A65;
+  --color-primary-bg-color: #4C899B;
+  --color-secondary-bg-color: #245C7C;
+  --breakpoint-3xl: 1800px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,4 +50,14 @@ html {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+
+.rm-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.rm-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none
 }
