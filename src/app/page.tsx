@@ -19,7 +19,7 @@ export default function Home() {
 			{/* <ComprehensiveSection /> */}
 			<IndustriesSlider />
 			<TalkToExpert />
-			{/* <BlogSection /> */}
+			<BlogSection />
 		</div>
 	);
 }

@@ -52,22 +52,22 @@ const BlogSection = () => {
     }
 
     return (
-        <div className='w-full flex justify-center' >
-            <div className='w-full max-w-[1430px] flex flex-col gap-11 justify-center items-center' >
-                <div className='w-full flex items-center justify-start gap-3' >
-                    <p className='text-[48px] font-semibold text-primary' >
+        <div className='w-full flex justify-center p-4 sm:p-8' >
+            <div className='w-full xl:w-[90%] lap:!max-w-[1250px] max-w-[1430px] 3xl:!max-w-[1430px] flex flex-col gap-11 justify-center items-center' >
+                <div className='w-full flex flex-col lap:!flex-row items-start lap:!items-center justify-start lap:!gap-4' >
+                    <p className='text-3xl sm:text-4xl lap:!text-5xl 3xl:text-[48px] font-semibold text-primary' >
                         Our Latest Insights
                     </p>
-                    <div className='flex items-center mt-3' >
-                        <span className='w-[200px] h-[2px] bg-primary' ></span>
+                    <div className='flex items-center mt-3 w-[90%] lap:w-fit' >
+                        <span className='w-full lg:w-[200px] h-[2px] bg-primary' ></span>
                         <span className='w-[10px] h-[10px] bg-primary rounded-full' />
                     </div>
                 </div>
-                <div className='w-full grid grid-cols-2 grid-rows-2 gap-[30px] ' >
+                <div className='w-full flex flex-col lg:flex-row lg:flex-wrap items-center gap-8 xl:grid grid-cols-2 grid-rows-2 lg:gap-4 lap!:gap-' >
                     <Link href={`/insights/${blogData[0]?.slug}` || "/"} className='row-span-2' >
                         <div
                             style={{ background: `url(${blogData[0]?.featuredImage?.node?.mediaItemUrl})` }}
-                            className="w-[700px] h-[700px] row-span-2 rounded-[30px] !bg-center !bg-cover text-white p-8 relative"
+                            className="w-full md:w-[500px] lg:w-[450px] lap:!w-full lap:!h-[550px] 3xl:!h-[700px] row-span-2 rounded-[30px] !bg-center !bg-cover text-white p-8 pt-16 relative"
                         >
                             <div className='absolute z-0 bottom-0 left-0 w-full h-full bg-gradient-to-t from-primary to-black/20 rounded-[30px]' />
                             <div className='flex flex-col z-10 relative h-full items-start justify-end gap-4' >
@@ -76,12 +76,12 @@ const BlogSection = () => {
                                 </p>
                                 <TruncateText
                                     text={blogData[0]?.title || ""}
-                                    className='text-[48px] leading-[55px]'
+                                    className='text-2xl sm:text-[48px] lg:text-3xl lap:!text-4xl 3xl:!text-[48px] xl:leading-[55px]'
                                     limit={90}
                                     readMore={false}
                                 />
                                 <div className='flex justify-end w-full' >
-                                    <div className='flex items-end cursor-pointer gap-2 bg-bg-parrot-green text-primary px-4 py-2 rounded-full' >
+                                    <div className='flex items-center cursor-pointer gap-2 bg-bg-parrot-green text-primary px-4 py-2 rounded-full' >
                                         <p className='text-xl' >
                                             Explore
                                         </p>
@@ -95,7 +95,7 @@ const BlogSection = () => {
                     </Link>
                     <Link href={`/insights/${blogData[1]?.slug}` || "/"} >
                         <div
-                            className="rounded-[30px] bg-bg-powder-blue relative text-primary p-8"
+                            className="rounded-[30px] md:w-[500px] lg:w-[450px] xl:w-auto bg-bg-powder-blue relative text-primary p-8"
                         >
                             <div className='flex flex-col z-10 relative h-full items-start justify-end gap-4' >
                                 <p className='text-xl uppercase font-semibold' >
@@ -103,12 +103,12 @@ const BlogSection = () => {
                                 </p>
                                 <TruncateText
                                     text={blogData[1]?.title || ""}
-                                    className='text-[48px] leading-[55px]'
+                                    className='text-2xl sm:text-[48px] lg:text-3xl xl:text-3xl  3xl:!text-[48px] 3xl:leading-[55px]'
                                     limit={80}
                                     readMore={false}
                                 />
                                 <div className='flex justify-end w-full' >
-                                    <div className='flex items-end cursor-pointer gap-2 bg-bg-parrot-green text-primary px-4 py-2 rounded-full' >
+                                    <div className='flex items-center cursor-pointer gap-2 bg-bg-parrot-green text-primary px-4 py-2 rounded-full' >
                                         <p className='text-xl' >
                                             Explore
                                         </p>
@@ -123,7 +123,7 @@ const BlogSection = () => {
                     <Link href={`/insights/${blogData[2]?.slug}` || "/"} >
                         <div
                             style={{ background: `url(${blogData[2]?.featuredImage?.node?.mediaItemUrl})` }}
-                            className="rounded-[30px] !bg-cover !bg-center relative text-white p-8 min-h-[335px]"
+                            className="rounded-[30px] md:w-[500px] lg:w-[450px] xl:w-auto !bg-cover !bg-center relative text-white p-8"
                         >
                             <div className='absolute z-0 bottom-0 left-0 w-full h-full bg-gradient-to-t from-primary to-black/20 rounded-[30px]' />
                             <div className='flex flex-col z-10 relative h-full items-start justify-between gap-14' >
@@ -133,13 +133,13 @@ const BlogSection = () => {
                                     </p>
                                     <TruncateText
                                         text={blogData[2]?.title || ""}
-                                        className='text-[48px] leading-[55px]'
+                                        className='text-2xl sm:text-[48px] lg:text-3xl xl:text-3xl 3xl:!text-[48px] 3xl:leading-[55px]'
                                         limit={90}
                                         readMore={false}
                                     />
                                 </div>
                                 <div className='flex justify-end w-full' >
-                                    <div className='flex items-end cursor-pointer gap-2 bg-bg-parrot-green text-primary px-4 py-2 rounded-full' >
+                                    <div className='flex items-center cursor-pointer gap-2 bg-bg-parrot-green text-primary px-4 py-2 rounded-full' >
                                         <p className='text-xl' >
                                             Explore
                                         </p>

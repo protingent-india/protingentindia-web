@@ -15,7 +15,7 @@ const HomeIntro = () => {
                     </p>
                     <Divider />
                 </div>
-                <div className="w-full flex flex-col lg:flex-row justify-center items-start gap-8 lg:gap-2" >
+                <div className="w-full flex flex-col lg:flex-row justify-center items-center lg:items-start gap-8 lg:gap-2" >
                     <div
                         className="w-full max-w-[560px] min-h-[300px] sm:min-h-[450px] lg:min-h-[400px] xl:min-h-[584px] overflow-hidden !bg-center !bg-no-repeat !bg-cover"
                         style={{
