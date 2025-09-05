@@ -27,7 +27,7 @@ const Header = () => {
     return (
         <div id="header" className="w-full flex justify-center py-7 sticky top-0 z-[1000] bg-white p-4 sm:px-8 capitalize">
             <div className="w-full lap:max-w-[1250px] 2xl:max-w-[1350px] flex justify-between" >
-                <Logo className="w-[200px] lg:w-[230px] xl:w-[330px]" />
+                <Logo className="w-[250px] xl:w-[330px]" />
                 <HeaderMenuList />
                 <div className="flex lg:hidden relative" >
                     <div

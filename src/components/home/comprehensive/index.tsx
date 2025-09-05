@@ -8,7 +8,7 @@ import { comprehensiveData } from "@/utils/constants";
 // -----------------------------------------------------------------------
 
 const ComprehensiveSection = () => {
-    const [open, setOpen] = useState(1);
+    const [open, setOpen] = useState(10);
 
     return (
         <div
@@ -30,11 +30,11 @@ const ComprehensiveSection = () => {
                 </p>
             </div>
             <div className="w-full bg-white flex items-center justify-start max-w-full overflow-hidden" >
-                <div className="flex justify-start items-center w-fit gap-2" >
+                <div className="flex flex-col justify-start items-center w-fit gap-2" >
                     {comprehensiveData?.map((el: any, index: number): any => (
                         open === index ?
                             <div
-                                className={`w-[896px] h-[720px] flex`}
+                                className={`w-[896px] h-[720px] flex rotate-90`}
                                 key={index}
                             >
                                 <div className={`w-[896px] overflow-hidden flex items-end`} >
@@ -87,7 +87,7 @@ const ComprehensiveSection = () => {
 
                             </div> :
                             <div
-                                className="w-[136px] h-[720px] cursor-pointer flex items-end justify-center bg-no-repeat bg-cover pb-8 relative"
+                                className="w-[136px] h-[720px] cursor-pointer flex items-end justify-center bg-no-repeat bg-cover pb-8 relative rotate-90"
                                 key={index}
                                 onClick={() => setOpen(index)}
                                 style={{ background: `url(${el?.img || ''})` }}

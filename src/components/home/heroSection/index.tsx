@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 
 const HeroSection = () => {
     return (
-        <div id="hero section" className='relative h-[340px] sm:min-h-[660px] lg:min-h-[856px] xl:min-h-[1090px] lap:!min-h-[1230px] 3xl:!min-h-[1600px] ease-in duration-300 snap-y snap-mandatory' >
+        <div id="hero section" className='relative h-[340px] sm:min-h-[660px] lg:min-h-[856px] xl:min-h-[1090px] lap:!min-h-[1330px] 3xl:!min-h-[1600px] ease-in duration-300 snap-y snap-mandatory' >
             <div className='sticky top-[100px] left-0 snap-start' >
                 <video
                     autoPlay
