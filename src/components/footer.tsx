@@ -11,7 +11,7 @@ const Footer = () => {
             <div style={{ background: "url(/img/footerBg.png)" }} className="w-full h-full min-h-[776px] opacity-[50%] !bg-size-[auto_100%] !bg-center !bg-no-repeat absolute top-0 left-0 z-[0]">
             </div>
             <div className="relative z-10 w-full flex flex-col justify-center items-center px-4" >
-                <div className="w-full lap:max-w-[1250px] 2xl:max-w-[1450px] flex flex-col gap-10 lg:flex-row justify-between [&>div>p]:text-[26px] py-16 lg:py-28 border-b border-white" >
+                <div className="w-full lap:max-w-[1250px] 2xl:max-w-[1430px] flex flex-col gap-10 lg:flex-row justify-between [&>div>p]:text-[26px] py-16 lg:py-28 border-b border-white" >
                     <div className="flex flex-col gap-12 w-full lg:max-w-[345px] xl:max-w-[445px] !border-0" >
                         <p className="!text-3xl xl!text-4xl " >
                             <span className="font-extrabold" >PRO</span>TINGENT INDIA LLP
@@ -154,7 +154,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col lg:flex-row gap-10 lg:gap-8 xl:gap-10 justify-between w-full lap:max-w-[1250px] 2xl:max-w-[1450px] py-8 lg:py-14" >
+                <div className="flex flex-col lg:flex-row gap-10 lg:gap-8 xl:gap-10 justify-between w-full lap:max-w-[1250px] 2xl:max-w-[1430px] py-8 lg:py-14" >
                     <div className="flex justify-between lg:gap-4 xl:gap-11 " >
                         <Icon
                             icon="ri:facebook-fill"

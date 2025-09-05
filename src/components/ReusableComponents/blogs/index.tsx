@@ -53,7 +53,7 @@ const BlogSection = () => {
 
     return (
         <div className='w-full flex justify-center' >
-            <div className='w-full max-w-[1450px] flex flex-col gap-11 justify-center items-center' >
+            <div className='w-full max-w-[1430px] flex flex-col gap-11 justify-center items-center' >
                 <div className='w-full flex items-center justify-start gap-3' >
                     <p className='text-[48px] font-semibold text-primary' >
                         Our Latest Insights
