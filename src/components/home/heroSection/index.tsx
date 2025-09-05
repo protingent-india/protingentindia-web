@@ -24,14 +24,14 @@ const HeroSection = () => {
                     <source src="/HomeHero.mp4" type="video/mp4" />
                 </video>
             </div>
-            <div className='absolute top-0 left-0 bg-transparent w-full h-fit snap-start' >
+            {/* <div className='absolute top-0 left-0 bg-transparent w-full h-fit snap-start' >
                 <p className={`bg-white w-full min-h-[316px] py-20 text-[128px] text-center font-black uppercase text-black mix-blend-screen ${montserrat.className}`} >
                     PROTINGENT INDIA
                 </p>
                 <p className='text-[40px] text-primary bg-white absolute bottom-12 left-72 font-medium' >
                     360° Solution For Your Business.
                 </p>
-            </div>
+            </div> */}
         </div >
     )
 }

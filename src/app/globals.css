@@ -20,6 +20,7 @@
   --color-primary-blue-color: #053A65;
   --color-primary-bg-color: #4C899B;
   --color-secondary-bg-color: #245C7C;
+  --breakpoint-lap: 1440px;
   --breakpoint-3xl: 1800px;
 }
 

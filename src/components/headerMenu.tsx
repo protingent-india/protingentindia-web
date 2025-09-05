@@ -19,7 +19,7 @@ const HeaderMenuList = () => {
     }
 
     return (
-        <div className='flex gap-6 items-center text-primary  capitalize font-medium'>
+        <div className='hidden lg:flex gap-6 items-center text-primary  capitalize font-medium'>
             {MenuList.map((menu, index) => (
                 <div
                     key={index}
@@ -27,7 +27,7 @@ const HeaderMenuList = () => {
                     onClick={() => handleNavigation(menu)}
                 >
                     <p
-                        className={`${(menu?.name !== "careers" && menu?.name !== "industries") && "cursor-pointer"} text-2xl`}
+                        className={`${(menu?.name !== "careers" && menu?.name !== "industries") && "cursor-pointer"} text-lg xl:text-2xl`}
                     >
                         {menu?.name || ""}
                     </p>
