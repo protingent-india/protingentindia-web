@@ -1,5 +1,6 @@
 import {
     BgWithListComponent,
+    BlogSection,
     ContactUsComponent,
     FAQSection,
     FTEIntroSection,
@@ -57,6 +58,7 @@ export default function Home() {
                 desc="Protingent India brings a proven combination of healthcare knowledge, technology capabilities, and agile delivery models that ensure your organization can meet today's challenges while preparing for tomorrow."
                 FAQList={serviceFTEFAQ}
             />
+            <BlogSection />
         </div>
     );
 }
