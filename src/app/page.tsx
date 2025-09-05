@@ -16,7 +16,7 @@ export default function Home() {
 				<HeroSection />
 				<HomeIntro />
 			</div>
-			{/* <ComprehensiveSection /> */}
+			<ComprehensiveSection />
 			<IndustriesSlider />
 			<TalkToExpert />
 			<BlogSection />
