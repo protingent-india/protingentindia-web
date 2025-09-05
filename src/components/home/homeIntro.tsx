@@ -8,7 +8,7 @@ const HomeIntro = () => {
     return (
         <div id="intro section" className="w-full flex justify-center p-4 lg:pt-24" >
             <div className="w-full lg:w-[80%] max-w-[1253px] flex flex-col items-center gap-14 lg:gap-20" >
-                <div className={`text-primary flex flex-col items-center gap-2 lg:gap-4 w-full text-[30px] xl:text-4xl 3xl:text-5xl`} >
+                <div className={`text-primary flex flex-col items-center gap-2 lg:gap-4 w-full text-[30px] xl:text-4xl 3xl:!text-5xl`} >
                     <span className='!text-secondry font-extrabold' > PROTINGENT INDIA</span>
                     <p className='font-extrabold text-primary text-center' >
                         STAFFING EXCELLENCE, GLOBALLY UNITED
