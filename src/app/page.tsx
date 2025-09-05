@@ -18,7 +18,7 @@ export default function Home() {
 			</div>
 			{/* <ComprehensiveSection /> */}
 			<IndustriesSlider />
-			{/* <TalkToExpert /> */}
+			<TalkToExpert />
 			{/* <BlogSection /> */}
 		</div>
 	);

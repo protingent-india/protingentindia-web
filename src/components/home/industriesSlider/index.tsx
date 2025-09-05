@@ -136,7 +136,7 @@ const IndustriesSlider = () => {
             </div>
             <div
                 id='slider-pagination'
-                className='h-full w-fit flex lap:!hidden justify-end gap-2 items-end mb-10'
+                className='h-full w-fit flex xl:!hidden justify-end gap-2 items-end mb-10'
             >
                 <div
                     className='border border-bg-parrot-green w-[63px] h-[63px] flex justify-center items-center rounded-full cursor-pointer'
