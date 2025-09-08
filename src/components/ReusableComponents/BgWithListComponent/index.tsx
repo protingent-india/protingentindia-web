@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { ListComponent } from "@/components";
+import { useBreakpoint } from "@/hook";
 
 // ---------------------------------------------------------------
 
@@ -11,44 +12,40 @@ const BgWithListComponent = ({
     desc,
     listData
 }: {
-    bg: string,
+    bg: any,
     bgList: string,
     title: string,
     desc: string,
     listData: Record<string, any>[]
 }) => {
+    const { lg } = useBreakpoint();
+
     return (
         <div
             style={{ backgroundImage: `url(${bgList})` }}
-            className="w-full flex justify-center items-center bg-no-repeat bg-center bg-cover"
+            className="w-full flex flex-col md:flex-row 3xl:!gap-16 justify-center items-center bg-no-repeat bg-center bg-cover"
         >
             <div
-                className="w-2/4 bg-contain bg-no-repeat overflow-hidden relative flex justify-center items-center"
+                className="w-full lg:min-h-[490px] 3xl:!min-h-[814px] sm:w-2/4 lg:w-3/4 lap:!w-2/4 overflow-hidden relative flex justify-center items-center !bg-center !bg-no-repeat !bg-cover"
                 style={{
-                    clipPath: "polygon(80% 0%, 0% 0%, 0% 100%, 80% 100%, 100% 50%)"
+                    clipPath: lg ? "polygon(80% 0%, 0% 0%, 0% 100%, 80% 100%, 100% 50%)" : "",
+                    background: `url(${bg})`
                 }}
             >
-                <Image
-                    src={bg}
-                    height={0}
-                    width={2086}
-                    alt=""
-                    className="!w-full"
-                />
                 <div
-                    className="absolute text-white h-full w-full flex justify-center items-center bg-primary/50"
+                    className="py-8 px-4 text-white h-full w-full lg:min-h-[490px] 3xl:!min-h-[814px] flex justify-center items-center bg-primary/50"
                 >
-                    <div className="w-[65%] flex flex-col items-center justify-center gap-8" >
-                        <p className="text-5xl font-extrabold text-center leading-14" >
+                    <div className="w-full lg:!w-[75%] 3xl:!w-[65%] flex flex-col items-center justify-center gap-8" >
+                        <p className=" text-xl lg:text-2xl lap:!text-3xl 3xl:!text-5xl font-extrabold text-center 3xl:!leading-14" >
                             {title}
                         </p>
-                        <p className="text-2xl text-justify" >
+                        <p className="text-base lg:text-xl lap:!text-2xl 3xl:!text-2xl text-justify" >
                             {desc}
                         </p>
                     </div>
                 </div>
             </div>
-            <div className="w-2/4 flex justify-center" >
+            <div className="w-full sm:w-2/4 flex justify-center p-4 lap:!py-12" >
                 <div className="w-[80%] flex flex-col gap-10 items-center justify-between">
                     {listData?.map((el, index) => (
                         <ListComponent

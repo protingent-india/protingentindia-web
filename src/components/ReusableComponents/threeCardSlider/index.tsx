@@ -10,7 +10,6 @@ import {
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './index.css';
-import { useBreakpoint } from '@/hook';
 
 // --------------------------------------------------------------
 
@@ -25,7 +24,6 @@ const ThreeCardSlider = ({
 }) => {
     const [activeCard, setActiveIndex] = useState(1);
     const [visibleCards, setVisibleCards] = useState([1, 2, 3]);
-    const { lg, lap } = useBreakpoint();
 
     useEffect(() => {
         setVisibleCards([activeCard - 1, activeCard, activeCard + 1])
@@ -47,11 +45,11 @@ const ThreeCardSlider = ({
                         modules={[Pagination]}
                         className="mySwiper"
                         breakpoints={{
-                            768: { // tablet
+                            768: {
                                 spaceBetween: 0,
                                 slidesPerView: 1,
                             },
-                            1024: { // desktop
+                            1024: {
                                 spaceBetween: 0,
                                 slidesPerView: 1,
                             },
