@@ -12,7 +12,7 @@ const BannerSection = () => {
         <div className='w-full flex flex-col gap-8 lg:gap-0 pt-9 lg:pt-0 lg:flex-row justify-between items-center bg-bg-powder-blue' >
             <div className='w-full xl:w-2/4 flex justify-end p-4 lg:px-8' >
                 <div className='w-full lap:!w-[80%] 3xl:!w-[74%] flex flex-col gap-8 lg:gap-4 ' >
-                    <p className='text-4xl text-left lg:text-4xl 3xl:!text-[50px] text-primary font-bold lap:!leading-[56px]' >
+                    <p className='text-4xl text-left lg:text-4xl 3xl:!text-[50px] text-primary font-bold 3xl:!leading-[56px]' >
                         Full-Time Equivalent Services for <span className='text-secondry' > Strategic Success</span>
                     </p>
                     <p className='text-base md:text-xl 3xl:!text-2xl font-normal text-primary' >
