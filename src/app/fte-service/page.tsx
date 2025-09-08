@@ -27,7 +27,7 @@ export default function Home() {
     return (
         <div className="bg-white w-full flex flex-col items-center gap-32 pb-20">
             <ServiceFTEBanner />
-            <FTEIntroSection />
+            {/* <FTEIntroSection />
             <WorkForceProductivity />
             <ServiceOffering />
             <ThreeCardSlider
@@ -57,7 +57,7 @@ export default function Home() {
                 title="Frequently Asked Questions"
                 desc="Protingent India brings a proven combination of healthcare knowledge, technology capabilities, and agile delivery models that ensure your organization can meet today's challenges while preparing for tomorrow."
                 FAQList={serviceFTEFAQ}
-            />
+            /> */}
             <BlogSection />
         </div>
     );
