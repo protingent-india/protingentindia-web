@@ -30,22 +30,38 @@ const ThreeCardSlider = ({
     }, [activeCard])
 
     return (
-        <div className='w-full flex flex-col gap-28' >
+        <div className='w-full flex flex-col gap-28 p-4' >
             <CommonHeading
                 title={title}
                 desc={desc}
             />
             <div className='w-full flex justify-center' >
-                <div className='flex justify-center w-4/5 !overflow-hidden' >
+                <div className='flex justify-center w-full md:w-3/5 lg:w-[90%] lap:!w-[87%] 3xl:!w-[77%] !overflow-hidden' >
                     {activeCard && <Swiper
                         onSlideChange={(swiper: SwiperType) => setActiveIndex(swiper.activeIndex + 1)}
-                        slidesPerView={3}
-                        spaceBetween={125}
                         pagination={{
                             clickable: true
                         }}
                         modules={[Pagination]}
-                        className="mySwiper "
+                        className="mySwiper"
+                        breakpoints={{
+                            768: {
+                                spaceBetween: 0,
+                                slidesPerView: 1,
+                            },
+                            1024: {
+                                spaceBetween: 0,
+                                slidesPerView: 1,
+                            },
+                            1440: {
+                                spaceBetween: 80,
+                                slidesPerView: 3,
+                            },
+                            1920: {
+                                spaceBetween: 80,
+                                slidesPerView: 3,
+                            }
+                        }}
                     >
                         {cardData?.length > 0 && cardData?.map((item, index) => (
                             <SwiperSlide>

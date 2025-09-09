@@ -1,5 +1,6 @@
 import {
     BgWithListComponent,
+    BlogSection,
     ContactUsComponent,
     FAQSection,
     FTEIntroSection,
@@ -24,7 +25,7 @@ import { serviceFTEFAQ } from '@/utils/constants';
 
 export default function Home() {
     return (
-        <div className="bg-white w-full flex flex-col items-center gap-32 pb-20">
+        <div className="bg-white w-full flex flex-col items-center gap-16 pb-20">
             <ServiceFTEBanner />
             <FTEIntroSection />
             <WorkForceProductivity />
@@ -57,6 +58,7 @@ export default function Home() {
                 desc="Protingent India brings a proven combination of healthcare knowledge, technology capabilities, and agile delivery models that ensure your organization can meet today's challenges while preparing for tomorrow."
                 FAQList={serviceFTEFAQ}
             />
+            <BlogSection />
         </div>
     );
 }

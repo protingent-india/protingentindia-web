@@ -18,30 +18,38 @@ const IndustriesSection = ({
     desc: string
 }) => {
     return (
-        <div className='w-full flex flex-col items-center justify-center pb-32' >
-            <div className='w-4/5 flex items-center justify-center ' >
-                <div className='w-2/5 flex flex-col gap-8 py-8' >
+        <div className='w-full flex flex-col items-center justify-center pb-32 p-4' >
+            <div className='w-full lap:!w-4/5 flex flex-col lg:flex-row items-center justify-center ' >
+                <div className='w-full lg:w-2/4 flex flex-col gap-8 py-8' >
                     <p
-                        className='text-4xl leading-[50px] text-primary font-bold text-center'
+                        className='text-2xl 3xl:!text-4xl leading-[50px] text-primary font-bold text-center'
                     >
                         {title}
                     </p>
                     <p
-                        className='text-[22px] text-justify'
+                        className='text-base 3xl:text-[22px] text-justify'
                     >
                         {desc}
                     </p>
                 </div>
-                <Divider className='bg-gradient-to-r from-secondry to-primary rotate-90 w-[320px]' />
-                <div className='w-[37%] flex justify-center px-8 !overflow-hidden' >
+                <Divider className='bg-gradient-to-r from-secondry to-primary rotate-90 w-[320px] hidden lg:block' />
+                <div className='w-full md:w-2/4 lg:w-[90%] lap:!w-3/5 3xl:!w-2/5 flex justify-center px-8 !overflow-hidden' >
                     <Swiper
-                        slidesPerView={2}
-                        spaceBetween={50}
                         pagination={{
                             clickable: true
                         }}
                         modules={[Pagination]}
                         className="mySwiper px-8 "
+                        breakpoints={{
+                            375: {
+                                spaceBetween: 50,
+                                slidesPerView: 1,
+                            },
+                            768: {
+                                spaceBetween: 50,
+                                slidesPerView: 2,
+                            }
+                        }}
                     >
                         {cardData && cardData?.length > 0 && cardData?.map((item, index) => (
                             <SwiperSlide>
@@ -54,7 +62,7 @@ const IndustriesSection = ({
                     </Swiper>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

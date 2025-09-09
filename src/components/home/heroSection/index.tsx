@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 
 const HeroSection = () => {
     return (
-        <div id="hero section" className='relative min-h-[1600px] ease-in duration-300 snap-y snap-mandatory' >
+        <div id="hero section" className='relative h-[340px] sm:min-h-[660px] lg:min-h-[856px] xl:min-h-[1090px] lap:!min-h-[1330px] 3xl:!min-h-[1600px] ease-in duration-300 snap-y snap-mandatory' >
             <div className='sticky top-[100px] left-0 snap-start' >
                 <video
                     autoPlay
@@ -24,11 +24,25 @@ const HeroSection = () => {
                     <source src="/HomeHero.mp4" type="video/mp4" />
                 </video>
             </div>
-            <div className='absolute top-0 left-0 bg-transparent w-full h-fit snap-start' >
-                <p className={`bg-white w-full min-h-[316px] py-20 text-[128px] text-center font-black uppercase text-black mix-blend-screen ${montserrat.className}`} >
+            <div className='absolute top-0 left-0 bg-transparent w-full h-fit snap-start flex flex-col items-center gap-' >
+                <p className={`
+                    bg-white 
+                    w-full min-h-[130px] lg:min-h-[180px]  lap:!min-h-[316px] 
+                    py-4 xl:py-20 
+                    text-4xl sm:text-[55px] lg:text-[80px] xl:text-[100px] lap:!text-[120px] 3xl:!text-[128px] 
+                    text-center font-black uppercase 
+                    mix-blend-screen 
+                    ${montserrat.className}`}
+                >
                     PROTINGENT INDIA
                 </p>
-                <p className='text-[40px] text-primary bg-white absolute bottom-12 left-72 font-medium' >
+                <p className='
+                    text-base lg:text-2xl xl:text-4xl lap:!text-[40px]
+                    text-primary 
+                    bg-white
+                    absolute bottom-1 sm:bottom-8 sm:left-8 md:left-24 lg:bottom-12 xl:left-28 lap:!left-24 3xl:!left-72 
+                    font-medium'
+                >
                     360° Solution For Your Business.
                 </p>
             </div>

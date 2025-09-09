@@ -23,7 +23,7 @@ const ListComponent = ({
                     alt=''
                 />
             </div>
-            <div className='text-2xl'>
+            <div className='text-base lap:!text-xl 3xl:text-2xl'>
                 <p className='text-bg-parrot-green font-extrabold'>
                     {title}
                 </p>

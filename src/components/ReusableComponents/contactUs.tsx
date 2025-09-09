@@ -6,13 +6,13 @@ import { Icon } from '@/components';
 
 const ContactUsComponent = () => {
     return (
-        <div className='w-full flex' >
-            <div className='w-2/4 bg-bg-powder-blue flex justify-center items-center text-primary'>
-                <div className='w-[59%] flex flex-col justify-center items-center gap-8' >
-                    <p className='text-6xl font-light leading-[70px]' >
+        <div className='w-full flex flex-col lg:flex-row ' >
+            <div className='w-full lg:w-2/4 lap:!w-2/4 bg-bg-powder-blue flex justify-center items-center text-primary p-4 md:p-16 lg:p-4 '>
+                <div className='w-[90%] lg:w-full lap:!w-[59%] flex flex-col justify-center items-center gap-8' >
+                    <p className='text-3xl 3xl:!text-6xl font-light 3xl:!leading-[70px]' >
                         Grow Smarter. Hire Faster. Deliver Better.
                     </p>
-                    <p className='text-[28px] text-justify font-light' >
+                    <p className='text-xl lg:text-lg 3xl:!text-[28px] text-justify font-light' >
                         Power your projects with Protingent's agile FTE talent solutions—designed to meet deadlines, cut costs, and fuel business momentum.
                     </p>
 
@@ -59,7 +59,7 @@ const ContactUsComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-2/4'>
+            <div className='w-full lg:w-3/4 lap:!w-2/4'>
                 <Image
                     src={"/img/contactUsBg.png"}
                     width={1000}
