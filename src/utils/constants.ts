@@ -21,9 +21,21 @@ export const MenuList: Record<string, any>[] = [
                 link: "/rpo-service"
             },
             {
-                name: "Contract staffing",
+                name: "Contract Staffing",
                 link: "/contract-staffing"
             },
+            {
+                name: "Marketing Solutions",
+                link: "/marketing-solutions"
+            },
+            {
+                name: "Direct Sourcing",
+                link: "/direct-sourcing"
+            },
+            {
+                name: "HR Outsourcing",
+                link: "/hr-outsourcing"
+            }
         ]
     },
     {

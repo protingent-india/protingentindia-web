@@ -1,4 +1,5 @@
 "use client"
+import { useBreakpoint } from '@/hook';
 import { skillCards } from '@/staticData';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -13,9 +14,12 @@ const PremiumInteractiveSlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isAutoPlay, setIsAutoPlay] = useState(true);
     const [progress, setProgress] = useState(0);
+    const { md, lg } = useBreakpoint();
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
-    const slidesToShow = typeof window !== 'undefined' && window.innerWidth < 768 ? 1 : 3;
+    const slidesToShow = lg ? 3 : md ? 2 : 1
     const maxSlide = skillCards.length - slidesToShow;
+
+    // console.log("maxSlide", slidesToShow)
 
     const nextSlide = () => {
         setCurrentSlide(prev => (prev >= maxSlide ? 0 : prev + 1));
@@ -50,8 +54,10 @@ const PremiumInteractiveSlider = () => {
         };
     }, [isAutoPlay, currentSlide]);
 
+    console.log("currentSlide * (100 / slidesToShow", currentSlide, slidesToShow)
+
     return (
-        <section className="relative py-20 overflow-hidden" style={{ background: 'linear-gradient(170deg, #F8FAFB 0%, white 50%, #F8FAFB 100%)' }}>
+        <section id='PremiumInteractiveSlider' className="relative py-20 overflow-hidden w-full" style={{ background: 'linear-gradient(170deg, #F8FAFB 0%, white 50%, #F8FAFB 100%)' }}>
             {/* Geometric pattern overlay */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute inset-0" style={{
@@ -114,9 +120,9 @@ const PremiumInteractiveSlider = () => {
                     </button>
 
                     {/* Cards Container */}
-                    <div className="overflow-hidden mx-16">
+                    <div className="sm:mx-16">
                         <div
-                            className="flex transition-transform duration-500 ease-out"
+                            className="w-fit flex transition-transform duration-500 ease-out"
                             style={{
                                 transform: `translateX(-${currentSlide * (100 / slidesToShow)}%)`
                             }}
@@ -126,7 +132,7 @@ const PremiumInteractiveSlider = () => {
                                 return (
                                     <div
                                         key={index}
-                                        className="flex-shrink-0 px-4"
+                                        className="min-w-[375px] lg:flex-shrink-0 px-4"
                                         style={{ width: `${100 / slidesToShow}%` }}
                                     >
                                         <div

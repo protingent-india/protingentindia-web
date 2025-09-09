@@ -27,24 +27,24 @@ const IndustriesSection = () => {
                         return (
                             <div
                                 key={index}
-                                className="group relative overflow-hidden rounded-3xl transition-all duration-500 cursor-pointer bg-white shadow-lg hover:shadow-xl hover:-translate-y-2"
+                                className="group flex flex-col justify-between relative overflow-hidden rounded-3xl transition-all duration-500 cursor-pointer bg-white shadow-lg hover:shadow-xl hover:-translate-y-2"
                             >
                                 {/* Modern Gradient Header */}
                                 <div
-                                    className="h-24 relative overflow-hidden"
+                                    className="h-fit flex justify-start items-start relative overflow-hidden"
                                     style={{
                                         background: `linear-gradient(135deg, ${industry.accentColor}, ${industry.accentColor}CC)`
                                     }}
                                 >
                                     {/* Geometric Pattern */}
-                                    <div className="absolute inset-0 opacity-20">
+                                    <div className="hidden absolute inset-0 opacity-20">
                                         <div className="absolute top-2 right-4 w-16 h-16 border-2 border-white/30 rounded-full"></div>
                                         <div className="absolute bottom-2 left-4 w-8 h-8 bg-white/20 rotate-45"></div>
                                         <div className="absolute top-1/2 left-1/2 w-4 h-16 bg-white/10 rotate-12"></div>
                                     </div>
 
                                     {/* Icon */}
-                                    <div className="absolute bottom-0 left-8 transform translate-y-1/2">
+                                    <div className="p-8 pt-12">
                                         <div
                                             className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl transition-all duration-300 group-hover:scale-110 shadow-lg border-4 border-white"
                                             style={{ backgroundColor: industry.accentColor }}
@@ -63,7 +63,7 @@ const IndustriesSection = () => {
                                     </p>
 
                                     {/* Modern hover effect */}
-                                    <div className="flex items-center gap-2 text-sm font-semibold transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:gap-3" style={{ color: industry.accentColor }}>
+                                    <div className="hidden items-center gap-2 text-sm font-semibold transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:gap-3" style={{ color: industry.accentColor }}>
                                         <span>Explore Solutions</span>
                                         <FaArrowRight className="text-xs" />
                                     </div>

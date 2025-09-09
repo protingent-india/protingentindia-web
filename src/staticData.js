@@ -28,9 +28,27 @@ import {
     FaTools,
     FaShoppingCart,
     FaSignal,
-    FaArrowRight,
+    FaCalendarAlt,
+    FaChartBar,
+    FaDesktop,
+    FaMousePointer,
+    FaEye,
+    FaBullseye,
+    FaShare,
+    FaUserFriends,
+    FaThumbsUp,
+    FaUtensils,
+    FaHome,
+    FaCode,
+    FaGraduationCap,
+    FaStar,
     FaCheckCircle,
-    FaDesktop
+    FaMoneyBillWave,
+    FaTachometerAlt,
+    FaCloud,
+    FaUserShield,
+    FaUserCheck,
+    FaHeart
 } from 'react-icons/fa';
 
 // -----------------------------------------------------------------------------------------
@@ -444,30 +462,37 @@ export const ModernServiceSliderData = [
 
 export const rpoProcessData = [
     {
+        icon: FaSearch,
         title: "Discovery & Requirement Mapping",
         desc: "Recruiters analyze dedicated workforce needs, hiring gaps, and company culture to design a recruitment strategy tailored to the requirements."
     },
     {
+        icon: FaCogs,
         title: "Custom RPO Strategy",
         desc: "Tailored RPO model based on business needs - full-cycle or modular, caters to timelines, cost, and hiring scale."
     },
     {
+        icon: FaUsersCog,
         title: "Talent Sourcing & Employer Branding",
         desc: "Talent sourcing with AI platforms, niche job boards, referrals, while enhancing brand presence to attract top talent from the market."
     },
     {
+        icon: FaClipboardCheck,
         title: "Screening & Assessment",
         desc: "We conduct screening, behavioural evaluations, and technical assessments to deliver a suitable and skilled profile."
     },
     {
+        icon: FaCalendarAlt,
         title: "Interview Coordination & Candidate Experience",
         desc: "We manage interviews, feedback, and candidate engagement for smooth and timely processes for companies and applicants."
     },
     {
+        icon: FaFileContract,
         title: "Offer Management & Onboarding",
         desc: "From offer negotiations to pre-joining touchpoints, we handle it all to reduce drop-offs and ensure successful onboarding."
     },
     {
+        icon: FaChartBar,
         title: "Performance Monitoring & Reporting",
         desc: "Real-time dashboards, weekly reports, and KPI tracking keep you informed and in control."
     }
@@ -838,3 +863,732 @@ export const contractStaffingFAQ = [
         a: "Unlike traditional agencies that only supply manpower, Protingent integrates AI-driven sourcing, compliance management, and industry expertise. This ensures not just faster placements but also sustainable workforce solutions that deliver measurable business impact."
     }
 ];
+
+export const challenges = [
+    {
+        title: "Unclear ROI",
+        description: "Marketing spend increases, but the revenue is still uncertain.",
+        image: "https://images.unsplash.com/photo-1705846973668-0e9ed382ea8f",
+        icon: FaChartLine
+    },
+    {
+        title: "Scattered Efforts",
+        description: "Multiple vendors, disconnected tools, no unified strategy.",
+        image: "https://images.unsplash.com/photo-1646394828039-0802101e1053",
+        icon: FaCogs
+    },
+    {
+        title: "Low Conversion Rates",
+        description: "Traffic comes in, but leads don't turn into paying customers.",
+        image: "https://images.pexels.com/photos/33820159/pexels-photo-33820159.jpeg",
+        icon: FaMousePointer
+    },
+    {
+        title: "Scaling Struggles",
+        description: "Campaigns that work at a small scale fail when the business grows.",
+        image: "https://images.unsplash.com/photo-1652359282381-63624506739c",
+        icon: FaRocket
+    },
+    {
+        title: "Lack of Real-Time Insights",
+        description: "Decisions rely on guesswork instead of data-driven clarity.",
+        image: "https://images.unsplash.com/photo-1664526937033-fe2c11f1be25",
+        icon: FaEye
+    }
+];
+
+export const MarketingSolutions = [
+    {
+        title: "Strategy & Consulting",
+        description: "We study your market, understand your customers, and craft clear roadmaps that help you grow with focus and confidence.",
+        image: "https://images.unsplash.com/photo-1646394828039-0802101e1053",
+        icon: FaBullseye,
+        features: ["Market Analysis", "Customer Research", "Growth Roadmap"]
+    },
+    {
+        title: "Performance Marketing",
+        description: "From SEO to PPC, we design campaigns that attract the right audience and turn clicks into measurable business growth.",
+        image: "https://images.unsplash.com/photo-1664526937033-fe2c11f1be25",
+        icon: FaRocket,
+        features: ["SEO Optimization", "PPC Campaigns", "Conversion Tracking"]
+    },
+    {
+        title: "Content & Social",
+        description: "We create stories, visuals, and conversations that connect with your audience, build trust, and keep your brand top of mind.",
+        image: "https://images.unsplash.com/photo-1705846973668-0e9ed382ea8f",
+        icon: FaShare,
+        features: ["Content Strategy", "Social Media", "Brand Storytelling"]
+    },
+    {
+        title: "Automation & Analytics",
+        description: "Our dashboards, email workflows, and CRM tools give you clarity so every decision is guided by data, not guesswork.",
+        image: "https://images.pexels.com/photos/7948065/pexels-photo-7948065.jpeg",
+        icon: FaRobot,
+        features: ["Marketing Automation", "Analytics Dashboard", "CRM Integration"]
+    },
+    {
+        title: "Scalable Teams",
+        description: "Need more professionals on the team? Our on-demand marketing experts plug right into your team, ensuring campaigns never stall or lose momentum.",
+        image: "https://images.unsplash.com/photo-1652359282381-63624506739c",
+        icon: FaUserFriends,
+        features: ["Expert Teams", "On-Demand Scaling", "Seamless Integration"]
+    }
+];
+
+export const Marketingresults = [
+    {
+        icon: FaChartLine,
+        title: "Clarity on ROI",
+        description: "Every rupee spent is tracked, so you see exactly how marketing drives revenue.",
+        metric: "300%",
+        metricLabel: "Average ROI Increase"
+    },
+    {
+        icon: FaRocket,
+        title: "Faster Growth",
+        description: "Data-driven campaigns help you scale faster without burning money on guesswork.",
+        metric: "60%",
+        metricLabel: "Faster Time-to-Market"
+    },
+    {
+        icon: FaAward,
+        title: "Stronger Brand Presence",
+        description: "Content and social engagement that make your brand memorable and trusted.",
+        metric: "200%",
+        metricLabel: "Brand Engagement Up"
+    },
+    {
+        icon: FaThumbsUp,
+        title: "Smarter Decisions",
+        description: "Real-time analytics dashboards keep you in control of your strategy.",
+        metric: "95%",
+        metricLabel: "Data-Driven Decisions"
+    },
+    {
+        icon: FaGlobe,
+        title: "Flexibility to Scale",
+        description: "On-demand teams and services that grow with your business needs.",
+        metric: "24/7",
+        metricLabel: "Team Availability"
+    }
+];
+
+export const TeamSectionData = [
+    {
+        icon: FaCogs,
+        title: "End-to-End Execution",
+        desc: "From research and planning to campaign launch and optimization, everything happens under one roof."
+    },
+    {
+        icon: FaChartBar,
+        title: "Data at the Core",
+        desc: "Our BI and analytics expertise ensures your marketing isn't guesswork—it's guided by insights."
+    },
+    {
+        icon: FaAward,
+        title: "Industry Experience",
+        desc: "From startups to large enterprises, across healthcare, F&B, IT, and more, we've scaled brands in multiple industries."
+    },
+    {
+        icon: FaUsers,
+        title: "Scalable Teams",
+        desc: "Staff augmentation gives you access to experts exactly when you need them, without overhead."
+    },
+    {
+        icon: FaHandshake,
+        title: "Long-Term Focus",
+        desc: "We prioritize sustainable growth, not just short-term spikes in traffic or clicks."
+    }
+]
+
+export const marketingIndustries = [
+    {
+        icon: FaHeartbeat,
+        title: "Healthcare & Life Sciences",
+        description: "Building patient trust and brand credibility while staying compliant.",
+        image: "https://images.unsplash.com/photo-1626123080782-10b336a160b4",
+        accentColor: "#34969E"
+    },
+    {
+        icon: FaUtensils,
+        title: "Food & Beverage",
+        description: "Driving visibility and loyalty in a fast-moving consumer market.",
+        image: "https://images.unsplash.com/photo-1646394828039-0802101e1053",
+        accentColor: "#C2D92C"
+    },
+    {
+        icon: FaLaptopCode,
+        title: "Information Technology & SaaS",
+        description: "Turning complex solutions into simple, compelling stories.",
+        image: "https://images.unsplash.com/photo-1705846973668-0e9ed382ea8f",
+        accentColor: "#34969E"
+    },
+    {
+        icon: FaHome,
+        title: "Real Estate",
+        description: "Generating qualified leads and trust in high-investment decisions.",
+        image: "https://images.unsplash.com/photo-1664526937033-fe2c11f1be25",
+        accentColor: "#C2D92C"
+    },
+    {
+        icon: FaShoppingCart,
+        title: "E-Commerce & Retail",
+        description: "Converting traffic into repeat customers through performance-driven campaigns.",
+        image: "https://images.unsplash.com/photo-1652359282381-63624506739c",
+        accentColor: "#34969E"
+    },
+    {
+        icon: FaGraduationCap,
+        title: "Education & E-Learning",
+        description: "Designing digital journeys that attract learners and strengthen reputation.",
+        image: "https://images.unsplash.com/photo-1623410439361-22ac19216577",
+        accentColor: "#C2D92C"
+    },
+    {
+        icon: FaTools,
+        title: "Engineering",
+        description: "Positioning technical innovations in ways that resonate with decision-makers.",
+        image: "https://images.pexels.com/photos/33820159/pexels-photo-33820159.jpeg",
+        accentColor: "#34969E"
+    },
+    {
+        icon: FaChartBar,
+        title: "BI & Analytics",
+        description: "Showcasing the value of data-driven intelligence to drive adoption and business impact.",
+        image: "https://images.pexels.com/photos/7948065/pexels-photo-7948065.jpeg",
+        accentColor: "#C2D92C"
+    },
+    {
+        icon: FaCode,
+        title: "Developer Ecosystem",
+        description: "Helping developer-focused brands engage communities, build trust, and grow adoption.",
+        image: "https://images.unsplash.com/photo-1626123080782-10b336a160b4",
+        accentColor: "#34969E"
+    }
+];
+
+export const marketingFAQs = [
+    {
+        q: "How can a marketing agency help my business grow revenue?",
+        a: "A marketing agency drives business growth by combining digital strategy, SEO, paid advertising, and content marketing to attract qualified leads. Protingent India focuses on measurable results boosting visibility, improving conversions, and building customer loyalty. With data-driven campaigns and performance tracking, we ensure every marketing dollar works harder, turning engagement into consistent revenue growth."
+    },
+    {
+        q: "What makes Protingent India different from other digital marketing agencies?",
+        a: "Protingent India offers end-to-end solutions; such as strategy, performance marketing, content, and BI analytics. We blend creativity with data-driven insights to design campaigns that scale. Our flexible staff augmentation services model ensures you get the right team when you need it. We don't just deliver clicks; we build conversion-focused strategies that help businesses grow faster and smarter across industries."
+    },
+    {
+        q: "Do you provide end-to-end marketing solutions or just campaign execution?",
+        a: "We see marketing more than just executing a campaign. We include all elements of marketing from market research to digital strategy, SEO, paid advertising, social media, and marketing automation. Protingent India is a complete marketing solution. Our ecosystem ensures that every aspect of your marketing - content, analytics, and performance marketing is integrated to drive growth. Clients come to us because we provide a complete solution that helps them to scale revenue, optimize ROI, and create sustained visibility for their brand."
+    },
+    {
+        q: "How long does it take to see measurable results from digital marketing?",
+        a: "The outcomes of digital marketing strategies rely on your business goals and strategy. Results from SEO usually take 3–6 months whereas paid ads and performance campaigns can yield measurable ROI in weeks. Protingent India has clients that want to balance the short-term wins of lead generation with the long-term growth of organic visibility. We've integrated strategic analytics and performance tracking so that you will be able to measure progress, optimize campaigns, and scale revenue faster."
+    },
+    {
+        q: "Can you customize marketing strategies for startups, SMBs, and large enterprises?",
+        a: "There is no one-size-fits-all approach for any business. Startups need lean and rapid-growth strategies, SMBs need scalable and adaptable solutions, and enterprise businesses are looking for advanced marketing automation and analytics. Protingent India creates tailored strategies to be successful at every stage, for example from brand awareness, to getting qualified leads, and then optimizing your set-it-and-forget-it enterprise-level campaigns. Our flexible solutions are built to fit the current size of your business; while also preparing you for scalability and future growth."
+    },
+    {
+        q: "Do you also offer staff augmentation or flexible team support for marketing projects?",
+        a: "Protingent India offers staff augmentation - tapping into full cadres of marketing talent when needed. Whether you need SEO specialists, PPC managers, content strategists or BI analysts, we offer staffing models that fit technical, engagement or performance-based projects as well as long-term growth. This also helps reduce costs for businesses as they can access specialist talent while eliminating unnecessary, permanent payroll overhead. Clients appreciate flexibility if we need to scale a team to meet a workload they may need to do that without making more permanent hires."
+    },
+    {
+        q: "What industries do you specialize in serving with your marketing solutions?",
+        a: "We serve multiple industries including healthcare, IT & SaaS, e-commerce, education, real estate, and food & beverage. Beyond industries, we also specialize in business intelligence analytics, engineering, and developer ecosystems. Each industry has its own set of challenges whether compliance, lead generation, or community engagement. Protingent India creates customized marketing strategies for your industry to ensure your campaigns reach the appropriate audience, draw qualified leads, and drive sustainable growth."
+    }
+];
+
+export const DirectSourcingData = [
+    { icon: FaClock, label: "Faster Hiring", value: "60%" },
+    { icon: FaDollarSign, label: "Cost Reduction", value: "40%" },
+    { icon: FaUsers, label: "Pre-vetted Talent", value: "5000+" },
+    { icon: FaAward, label: "Success Rate", value: "95%" }
+]
+
+export const DirectSourcingchallenges = [
+    {
+        title: "Faster hiring cycles",
+        description: "accessing pre-qualified candidates on demand",
+        image: "https://images.unsplash.com/photo-1646394828039-0802101e1053",
+        icon: FaClock,
+        accentColor: "#C2D92C"
+    },
+    {
+        title: "Lower recruitment costs",
+        description: "cutting agency fees and markups",
+        image: "https://images.unsplash.com/photo-1656625497592-af6140a73eaa",
+        icon: FaDollarSign,
+        accentColor: "#34969E"
+    },
+    {
+        title: "Workforce scalability",
+        description: "match project needs without overhiring",
+        image: "https://images.unsplash.com/photo-1652359282381-63624506739c",
+        icon: FaExpand,
+        accentColor: "#C2D92C"
+    },
+    {
+        title: "Quality alignment",
+        description: "talent that understands your culture and technology environment",
+        image: "https://images.unsplash.com/photo-1548098751-d645421e0d7a",
+        icon: FaCheckCircle,
+        accentColor: "#34969E"
+    }
+];
+
+export const DirectSourcingprocesses = [
+    {
+        title: "Employer Branding First",
+        description: "We showcase your company as a destination for IT and engineering professionals, helping you attract talent who already believe in your brand.",
+        image: "https://images.unsplash.com/photo-1646394828039-0802101e1053",
+        icon: FaBullseye
+    },
+    {
+        title: "Building a Private Talent Pool",
+        description: "Using a mix of past applicants, referrals, and curated outreach, we create a talent community that's always engaged and ready.",
+        image: "https://images.unsplash.com/photo-1664526937033-fe2c11f1be25",
+        icon: FaUsers
+    },
+    {
+        title: "Curation & Qualification",
+        description: "Candidates are vetted for technical skills, cultural fit, and availability—ensuring your workforce sourcing model is sharp and reliable.",
+        image: "https://images.unsplash.com/photo-1652359282381-63624506739c",
+        icon: FaSearch
+    },
+    {
+        title: "On-Demand Deployment",
+        description: "When projects ramp up, you tap into your flexible workforce solution and bring in the right professionals without the delays of traditional recruitment.",
+        image: "https://images.pexels.com/photos/33809956/pexels-photo-33809956.jpeg",
+        icon: FaRocket
+    }
+];
+
+export const HowItWorksSectionData = [
+    {
+        title: "Workforce Discovery",
+        description: "We assess your staffing needs, project timelines, and technical requirements.",
+        icon: FaSearch,
+        color: "#C2D92C",
+        image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643",
+        size: "large" // Spans 2 grid columns
+    },
+    {
+        title: "Talent Pool Curation",
+        description: "Our team builds or taps into a private community of vetted professionals tailored to your business.",
+        icon: FaUsers,
+        color: "#34969E",
+        image: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg",
+        size: "large" // Spans 2 grid columns
+    },
+    {
+        title: "Candidate Engagement",
+        description: "We connect directly with qualified talent, streamlining outreach and avoiding third-party markups.",
+        icon: FaHandshake,
+        color: "#C2D92C",
+        image: "https://images.unsplash.com/photo-1659355894515-2548f35525f1",
+        size: "small"
+    },
+    {
+        title: "Selection & Matchmaking",
+        description: "Using AI-driven insights and recruiter expertise, we present only the best-fit candidates.",
+        icon: FaBullseye,
+        color: "#34969E",
+        image: "https://images.unsplash.com/photo-1659355894740-d7caa8e9c653",
+        size: "small"
+    },
+    {
+        title: "Onboarding & Support",
+        description: "Protingent ensures smooth integration, compliance, and ongoing workforce management.",
+        icon: FaRocket,
+        color: "#C2D92C",
+        image: "https://images.pexels.com/photos/33827315/pexels-photo-33827315.jpeg",
+        size: "small"
+    }
+];
+
+export const DirectSourcingbenefits = [
+    {
+        title: "Lower Recruitment Costs",
+        description: "Reduce agency markups and only pay for the talent you actually deploy, leading to long-term cost savings.",
+        image: "https://images.unsplash.com/photo-1646394828039-0802101e1053",
+        icon: FaMoneyBillWave,
+        gradient: "from-[#C2D92C] to-[#34969E]"
+    },
+    {
+        title: "Faster Access to Talent",
+        description: "Cut hiring cycles by engaging with a ready-to-work talent community instead of waiting on vendor pipelines.",
+        image: "https://images.unsplash.com/photo-1656625497592-af6140a73eaa",
+        icon: FaTachometerAlt,
+        gradient: "from-[#34969E] to-[#113F64]"
+    },
+    {
+        title: "Workforce Scalability",
+        description: "Scale up or down seamlessly with an on-demand contingent workforce that adjusts to project needs.",
+        image: "https://images.unsplash.com/photo-1652359282381-63624506739c",
+        icon: FaExpand,
+        gradient: "from-[#C2D92C] to-[#34969E]"
+    },
+    {
+        title: "Better Talent Quality",
+        description: "Hire professionals who understand your culture and technology environment, improving retention and project outcomes.",
+        image: "https://images.unsplash.com/photo-1548098751-d645421e0d7a",
+        icon: FaAward,
+        gradient: "from-[#34969E] to-[#113F64]"
+    },
+    {
+        title: "More Control, Less Risk",
+        description: "Gain visibility into your workforce sourcing strategy, ensuring compliance, transparency, and predictable results.",
+        image: "https://images.unsplash.com/photo-1664526937033-fe2c11f1be25",
+        icon: FaShieldAlt,
+        gradient: "from-[#C2D92C] to-[#34969E]"
+    }
+];
+
+export const DirectSourcingindustries = [
+    {
+        title: "Information Technology & Software Development",
+        description: "From cloud engineers to cybersecurity experts, we provide IT staffing solutions that match today's fast-changing tech landscape.",
+        image: "https://images.unsplash.com/photo-1650398121402-f0c5d619d846",
+        icon: FaLaptopCode,
+        color: "#34969E",
+        size: "large"
+    },
+    {
+        title: "Business Intelligence & Data Analytics",
+        description: "Access BI and analytics professionals who can turn raw data into real business intelligence, helping you drive smarter decisions.",
+        image: "https://images.pexels.com/photos/3183172/pexels-photo-3183172.jpeg",
+        icon: FaChartBar,
+        color: "#C2D92C",
+        size: "large"
+    },
+    {
+        title: "Engineering & Product Development",
+        description: "Mechanical, electrical, and embedded engineers—our engineering workforce solutions help companies bring products to life faster.",
+        image: "https://images.pexels.com/photos/33773644/pexels-photo-33773644.jpeg",
+        icon: FaCogs,
+        color: "#34969E",
+        size: "small"
+    },
+    {
+        title: "Managed IT & Infrastructure",
+        description: "Support your operations with infrastructure specialists and IT consultants who keep systems secure, scalable, and efficient.",
+        image: "https://images.unsplash.com/photo-1659355894515-2548f35525f1",
+        icon: FaCloud,
+        color: "#C2D92C",
+        size: "small"
+    },
+    {
+        title: "Emerging Tech & Niche Roles",
+        description: "Whether it's AI, IoT, or automation, we source experts who can plug into your most critical innovation projects.",
+        image: "https://images.pexels.com/photos/33827315/pexels-photo-33827315.jpeg",
+        icon: FaRobot,
+        color: "#34969E",
+        size: "small"
+    }
+];
+
+export const DirectSourcingreasons = [
+    {
+        title: "Deep Tech Expertise",
+        description: "Two decades of focus in IT, engineering, and BI means we understand the skills you actually need.",
+        icon: FaGraduationCap,
+        color: "#C2D92C"
+    },
+    {
+        title: "Private Talent Communities",
+        description: "Exclusive networks of vetted professionals who are ready to step in when you need them.",
+        icon: FaUserFriends,
+        color: "#34969E"
+    },
+    {
+        title: "Transparent Pricing",
+        description: "No hidden markups or vendor surprises—just a clear, predictable cost structure.",
+        icon: FaEye,
+        color: "#C2D92C"
+    },
+    {
+        title: "Scalable Workforce Models",
+        description: "Support for project spikes, long-term programs, or managed IT initiatives.",
+        icon: FaExpand,
+        color: "#34969E"
+    },
+    {
+        title: "High-Quality Matches",
+        description: "Candidates aligned not just by skills but by culture and business fit.",
+        icon: FaStar,
+        color: "#C2D92C"
+    }
+];
+
+export const FinalCTASectionData = [
+    { icon: FaBuilding, label: "Enterprise Clients", value: "500+" },
+    { icon: FaUsers, label: "Talent Network", value: "50,000+" },
+    { icon: FaClock, label: "Avg. Time to Hire", value: "7 Days" },
+    { icon: FaDollarSign, label: "Cost Savings", value: "40%" }
+]
+
+export const DirectSourcingFAQData = [
+    {
+        q: "How much can direct sourcing actually save our company?",
+        a: "Direct sourcing can cut contingent hiring spend meaningfully by removing agency markups and making rates more predictable. Savings vary by program size and execution quality, but many firms report double-digit reductions in contingent spend when direct sourcing is done right. Think of it as immediate procurement savings plus ongoing lower replacement costs."
+    },
+    {
+        q: "How quickly will we see results after launching a direct sourcing program?",
+        a: "Expect early wins in 60–120 days if you already have employer brand assets and some candidate data. That timeline covers initial talent-pool curation, first outreach campaigns, and a handful of quick placements. Bigger program value (reliable pipelines, cost savings, DEI gains) generally materializes over 6–12 months."
+    },
+    {
+        q: "How does direct sourcing work with our existing MSP, VMS, or ATS?",
+        a: "Direct sourcing should complement—not replace—your tech stack. A good program integrates with MSP/VMS/ATS for candidate records, rate cards, and compliance workflows while using branded outreach to build exclusive talent pools. The goal: seamless data flow, single source of truth, and faster fill rates."
+    },
+    {
+        q: "What about the legal risk that worker classification and compliance?",
+        a: "Misclassification risk is real and varies by country/state. A mature direct sourcing program embeds compliance checks, classification rules, and payroll/EOR options to keep you safe. Don't let cost optimism trump governance learning the rules and designing the program around them prevents costly mistakes."
+    },
+    {
+        q: "How do you keep a talent pool active so we actually get hires when we need them?",
+        a: "Talent pools fail if left to sit. You need segmented engagement (role-based messaging), re-engagement campaigns, upskilling touchpoints, and simple application paths under your brand. Regular curation—refreshing skills, availability, and interest—turns a passive list into a plug-and-play workforce."
+    }
+];
+
+export const stats = [
+    {
+        value: 40,
+        suffix: "%",
+        title: "Cost Savings",
+        description: "Cut HR overheads with streamlined payroll and admin operations.",
+        image: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+        icon: FaDollarSign
+    },
+    {
+        value: 60,
+        suffix: "%",
+        title: "Faster Hiring",
+        description: "Accelerated talent acquisition through optimized HR processes.",
+        image: "https://images.unsplash.com/photo-1676275773827-f6554c1ef62a",
+        icon: FaClock
+    },
+    {
+        value: 100,
+        suffix: "%",
+        title: "Compliance Assurance",
+        description: "Stay fully aligned with labor laws and regulations always.",
+        image: "https://images.unsplash.com/photo-1718220268527-4477fd170775",
+        icon: FaShieldAlt
+    },
+    {
+        value: 70,
+        suffix: "%",
+        title: "Productivity Boost",
+        description: "Free leadership focus by reducing the administrative workload significantly.",
+        image: "https://images.pexels.com/photos/4344860/pexels-photo-4344860.jpeg",
+        icon: FaRocket
+    }
+];
+
+export const HRsolutions = [
+    {
+        title: "Payroll Management",
+        description: "Timely and accurate payroll with automated systems, free of errors and fully compliant with required legislation.",
+        image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643",
+        icon: FaMoneyBillWave,
+        color: "#C2D92C",
+        size: "large" // Featured large card
+    },
+    {
+        title: "Compliance Management",
+        description: "End-to-end management of compliance, taxation, and employee documentation related to labor law to eliminate legal risk.",
+        image: "https://images.unsplash.com/photo-1676275773814-ad0819d45436",
+        icon: FaShieldAlt,
+        color: "#34969E",
+        size: "medium"
+    },
+    {
+        title: "Recruitment Process Outsourcing (RPO)",
+        description: "End-to-end hiring process support, including talent sourcing, screening, and onboarding, all defined by the business requirements.",
+        image: "https://images.unsplash.com/photo-1676275774895-7fbba85dce94",
+        icon: FaUsers,
+        color: "#C2D92C",
+        size: "medium"
+    },
+    {
+        title: "Employee Lifecycle Management",
+        description: "Management of employee files, documentation, and HR workflows from onboarding to exits.",
+        image: "https://images.pexels.com/photos/4344860/pexels-photo-4344860.jpeg",
+        icon: FaUserCheck,
+        color: "#34969E",
+        size: "small"
+    },
+    {
+        title: "Benefits Administration",
+        description: "Management of employee insurance, reimbursements, and leave management to minimize administrative overhead.",
+        image: "https://images.unsplash.com/photo-1718220268527-4477fd170775",
+        icon: FaHeart,
+        color: "#C2D92C",
+        size: "small"
+    },
+    {
+        title: "Performance & Engagement Support",
+        description: "Ongoing HR support for performance tracking, employee satisfaction, and attrition reduction.",
+        image: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+        icon: FaChartLine,
+        color: "#34969E",
+        size: "small"
+    }
+];
+
+export const HRprocesses = [
+    {
+        title: "Discovery & Assessment",
+        description: "Analyze organizational HR needs, compliance requirements, and current gaps.",
+        image: "https://images.unsplash.com/photo-1676275773827-f6554c1ef62a",
+        icon: FaSearch
+    },
+    {
+        title: "Tailored HR Strategy",
+        description: "Design customized outsourcing solutions aligned with business goals.",
+        image: "https://images.unsplash.com/photo-1676275773814-ad0819d45436",
+        icon: FaBullseye
+    },
+    {
+        title: "AI-Driven Execution",
+        description: "Leverage automation for payroll, compliance, and recruitment efficiency.",
+        image: "https://images.unsplash.com/photo-1676275774895-7fbba85dce94",
+        icon: FaRobot
+    },
+    {
+        title: "Transparent Reporting",
+        description: "Provide real-time insights and dashboards for complete visibility.",
+        image: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+        icon: FaChartBar
+    },
+    {
+        title: "Continuous Optimization",
+        description: "Regular reviews to enhance efficiency, compliance, and employee satisfaction.",
+        image: "https://images.unsplash.com/photo-1718220268527-4477fd170775",
+        icon: FaLightbulb
+    }
+];
+
+export const HRbenefits = [
+    {
+        title: "Operational Agility",
+        description: "Adapt quickly to growth, restructuring, or market shifts without HR delays.",
+        image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643",
+        icon: FaRocket,
+        color: "#C2D92C",
+        size: "large"
+    },
+    {
+        title: "Reduced Administrative Burden",
+        description: "Free leadership and teams from time-consuming payroll and compliance tasks.",
+        image: "https://images.unsplash.com/photo-1676275774289-6cc2e0a0203d",
+        icon: FaCogs,
+        color: "#34969E",
+        size: "large"
+    },
+    {
+        title: "Improved Talent Retention",
+        description: "Structured HR support ensures satisfied, engaged, and motivated employees.",
+        image: "https://images.pexels.com/photos/4344860/pexels-photo-4344860.jpeg",
+        icon: FaUserShield,
+        color: "#C2D92C",
+        size: "medium"
+    },
+    {
+        title: "Scalable HR Framework",
+        description: "Outsourced processes designed to expand seamlessly as your business grows.",
+        image: "https://images.unsplash.com/photo-1718220268527-4477fd170775",
+        icon: FaExpand,
+        color: "#34969E",
+        size: "medium"
+    },
+    {
+        title: "Strategic Growth Focus",
+        description: "Shift leadership bandwidth from administration to core innovation and business strategy.",
+        image: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+        icon: FaBullseye,
+        color: "#C2D92C",
+        size: "medium"
+    }
+];
+
+export const HRfeatures = [
+    {
+        title: "Compliance-First Approach",
+        description: "Stay stress-free as we ensure 100% legal and statutory adherence.",
+        icon: FaShieldAlt,
+        color: "#C2D92C"
+    },
+    {
+        title: "AI-Driven Automation",
+        description: "Faster payroll and reporting for improved decision-making and workforce agility.",
+        icon: FaRobot,
+        color: "#34969E"
+    },
+    {
+        title: "Scalable HR Models",
+        description: "Adapt HR functions as your business grows—without disruptions.",
+        icon: FaExpand,
+        color: "#C2D92C"
+    },
+    {
+        title: "Proven Reliability",
+        description: "Our SLA-backed delivery minimizes risks and guarantees consistent HR operations.",
+        icon: FaAward,
+        color: "#34969E"
+    },
+    {
+        title: "Employee-Centric Processes",
+        description: "Better engagement and retention through structured, professional HR support.",
+        icon: FaHeart,
+        color: "#C2D92C"
+    },
+    {
+        title: "Strategic Partnership",
+        description: "Free leadership bandwidth to focus on innovation, while we manage HR.",
+        icon: FaHandshake,
+        color: "#34969E"
+    }
+];
+
+export const HRfaqs = [
+    {
+        q: "What exactly is HR Outsourcing, and how does it work?",
+        a: "HR outsourcing is the outsourcing of HR functions, such as payroll, compliance, recruitment, and employee management, to an outsourced HR partner. At Protingent, we manage those functions, using not just HR process expertise but also AI and automation capabilities, compliance expertise, and reporting, so your team can move forward and grow the business away from administrative activities and work. You remain in control via reporting and insights, while we do the rest."
+    },
+    {
+        q: "How does HR outsourcing reduce costs for businesses?",
+        a: "When companies outsource HR, they avoid the costs of full-time HR personnel, the costs of training, the expense of a payroll system, compliance specialists, etc. At Protingent, we provide a 30-40% cost savings because of our more efficient payroll process and automated processes, as well as being able to handle all compliance without errors. Instead of investing your money in extensive infrastructure for HR, you are simply paying for what you need at that moment, when you need it, which allows for HR that is cost-effective and scalable."
+    },
+    {
+        q: "Is HR outsourcing safe in terms of compliance and confidentiality?",
+        a: "We are committed to compliance and confidentiality as an integral part of our services. Protingent is committed to adherence to a rigorous standard for data protection, encryption, and role-based access controls. Our HR outsourcing solutions come with the assurance of 100% accuracy in compliance with labor laws, tax compliance, and documentation for employees. Clients receive full transparency on compliance reports, and can be confident that there are no legal and regulatory risks."
+    },
+    {
+        q: "Can Protingent manage payroll for large organizations with complex structures?",
+        a: "Our payroll management system has been designed to manage all scenarios. Whether a startup or an enterprise with multiple locations and employee categories, we can automate time and processes accurately without error. As part of your payroll, if you need to make taxes, reimbursements, or statutory deductions, you can be assured that Protingent will complete everything accurately, and compliantly while still giving you real-time access to payroll reports. Our model will also grow with you."
+    },
+    {
+        q: "How does outsourcing HR improve employee engagement and retention?",
+        a: "When HR processes are mishandled or delayed, the experience of the employee often diminishes. Protingent provides the employee experience through timely payroll, transparent dialogue, informed policies, and prompt contact regarding HR issues. Protingent operates to properly administer benefits, reporting when required, manage leaves, and prevent employee issues from becoming worse. That experience helps develop trust and confidence with your employee, resulting in lower turnover and improved morale. A structured HR framework ultimately promotes engagement and retains employees for the long term."
+    },
+    {
+        q: "Will I lose control over HR functions if I outsource them?",
+        a: "With Protingent Outsourcing, you share responsibility, not lose control. You set the expectations, objectives, and level of engagement, while we execute impeccably. You will still have clear visibility into every aspect of HR via reporting, dashboards, and continued updates. You won't be involved in the minute details of operations, but you maintain clarity and results that ensure HR is considered an enabler, not a hassle for your business."
+    },
+    {
+        q: "Which industries benefit most from HR outsourcing?",
+        a: "Almost every industry can find value, but especially those that have compliance-heavy or high-volume HR needs. By size, organizations in the IT sector, healthcare, manufacturing, retail, BFSI, and startups are the most benefited sectors from outsourcing. Protingent designed an additional HR outsourced solutions that specifically match the sector demands; processing payroll for many, service and compliance for the healthcare sector, and rapid ramp-ups for IT firms' hiring. Flexibility is one of our offering strengths."
+    },
+    {
+        q: "Why should I choose Protingent over other HR outsourcing firms?",
+        a: "In contrast to conventional HR outsourcing companies, Protingent offers a compliance-centric process, AI-driven automation, and the opportunity to scale. We don't just provide a Google Doc; We provide HR ecosystems that reduce cost, eliminate risk, and enhance efficiency. SLA-backed delivery; Employee-centric solutions; Proven results; no need to consider a vendor when working with us. Ours is an HR Model that expands your business. When you partner with Protingent, you're partnering for sustainable growth."
+    }
+];
+
+export const HRFinalCTASection = [
+    { icon: FaShieldAlt, label: "100% Compliant", value: "Guaranteed" },
+    { icon: FaDollarSign, label: "Cost Savings", value: "40%" },
+    { icon: FaClock, label: "Faster Processing", value: "60%" },
+    { icon: FaUsers, label: "Happy Clients", value: "500+" }
+]

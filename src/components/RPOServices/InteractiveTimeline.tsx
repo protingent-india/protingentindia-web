@@ -1,15 +1,6 @@
 "use client"
-import { rpoProcessData } from "@/staticData";
 import { useEffect, useRef, useState } from "react";
-import {
-    FaUsersCog,
-    FaCogs,
-    FaSearch,
-    FaClipboardCheck,
-    FaCalendarAlt,
-    FaFileContract,
-    FaChartBar,
-} from 'react-icons/fa';
+import { rpoProcessData } from "@/staticData";
 
 // --------------------------------------------------------------
 
@@ -18,16 +9,6 @@ const InteractiveTimeline = () => {
     const [activeStep, setActiveStep] = useState<number | null>(null);
     const [visibleSteps, setVisibleSteps] = useState<boolean[]>(new Array(rpoProcessData.length).fill(false));
     const timelineRef = useRef<HTMLDivElement>(null);
-
-    const timelineIcons = [
-        FaSearch,           // Discovery & Requirement Mapping
-        FaCogs,             // Custom RPO Strategy  
-        FaUsersCog,         // Talent Sourcing & Employer Branding
-        FaClipboardCheck,   // Screening & Assessment
-        FaCalendarAlt,      // Interview Coordination & Candidate Experience
-        FaFileContract,     // Offer Management & Onboarding
-        FaChartBar          // Performance Monitoring & Reporting
-    ];
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -46,7 +27,7 @@ const InteractiveTimeline = () => {
             { threshold: 0.5 }
         );
 
-        const stepElements = timelineRef.current?.querySelectorAll('.list-item-rpo');
+        const stepElements = timelineRef.current?.querySelectorAll('.makeitfade');
         stepElements?.forEach((el) => observer.observe(el));
 
         return () => observer.disconnect();
@@ -65,22 +46,22 @@ const InteractiveTimeline = () => {
                 </div>
 
                 <div ref={timelineRef} className="relative">
-                    {/* Timeline line */}
-                    <div className="space-y-12 md:space-y-16 relative">
-                        <div className="absolute z-0 left-4 md:left-1/2 top-0 bottom-0 w-1 bg-gray-200 transform md:-translate-x-1/2"></div>
-                        <div
-                            className="timeline-progress z-0 absolute left-4 md:left-1/2 top-0 w-1 transform md:-translate-x-1/2"
-                            style={{
-                                height: `${(visibleSteps.filter(Boolean).length / rpoProcessData.length) * 100}%`
-                            }}
-                        />
+                    <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-gray-200 transform md:-translate-x-1/2" />
+                    <div
+                        className="timeline-progress absolute left-4 md:left-1/2 top-0 w-1 transform md:-translate-x-1/2 "
+                        style={{
+                            height: `${(visibleSteps.filter(Boolean).length / rpoProcessData.length) * 100}%`,
+                            background: 'linear-gradient(135deg, #34969D, #CBDC13)'
+                        }}
+                    />
+                    <div className="space-y-12 md:space-y-16">
                         {rpoProcessData.map((step, index) => {
-                            const IconComponent = timelineIcons[index];
+                            const IconComponent = step?.icon;
                             return (
                                 <div
                                     key={index}
                                     data-index={index}
-                                    className={`list-item-rpo duration-75 z-[100] relative ${visibleSteps[index] ? 'animate-in' : ''}`}
+                                    className={`makeitfade relative ${visibleSteps[index] ? 'animate-in' : ''} ${index % 2 === 0 ? "tra" : ""}`}
                                     style={{ animationDelay: `${index * 0.2}s` }}
                                 >
                                     <div className={`flex flex-col md:flex-row items-start md:items-center gap-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'

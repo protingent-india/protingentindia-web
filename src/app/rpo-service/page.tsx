@@ -20,13 +20,11 @@ export default function RPOService() {
             <RPOEngagementModelsSection />
 
             <div className="py-16 md:py-24 w-full flex justify-center bg-gray-50">
-                <div className="w-full max-w-[1450px]">
-                    <IndustriesSection
-                        title="Industries Where We Serve"
-                        desc="We provide tailored RPO solutions across diverse industries, helping businesses hire top talent faster, reduce costs, and scale efficiently. Our expertise adapts to your hiring needs, whether you're in tech, healthcare, manufacturing, or beyond."
-                        cardData={rpoIndustriesData}
-                    />
-                </div>
+                <IndustriesSection
+                    title="Industries Where We Serve"
+                    desc="We provide tailored RPO solutions across diverse industries, helping businesses hire top talent faster, reduce costs, and scale efficiently. Our expertise adapts to your hiring needs, whether you're in tech, healthcare, manufacturing, or beyond."
+                    cardData={rpoIndustriesData}
+                />
             </div>
 
             {/* Updated Trusted Partner Section */}
