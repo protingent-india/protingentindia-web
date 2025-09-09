@@ -1,4 +1,37 @@
 import { carousel1, carousel2, carousel3, carousel4, newsflashCardImg, excellence, collaboration, integrity, empowerment, innovation, accountability, harryImg, leenaImg, sachinImg, discordImg, Sourcing, ReachOut, Screening, interviewBriefings, SchedulingInterviews, Presentation, Engineering, Logistics, Healthcare, SupplyChain, Technology, Retail, Finance } from '@/assest';
+import {
+    FaUsersCog,
+    FaChartLine,
+    FaLightbulb,
+    FaUserTie,
+    FaProjectDiagram,
+    FaClock,
+    FaGlobe,
+    FaIndustry,
+    FaUsers,
+    FaDollarSign,
+    FaShieldAlt,
+    FaRocket,
+    FaSearch,
+    FaRobot,
+    FaClipboardCheck,
+    FaHandshake,
+    FaExpand,
+    FaBrain,
+    FaBuilding,
+    FaCogs,
+    FaFileContract,
+    FaAward,
+    FaLaptopCode,
+    FaHeartbeat,
+    FaUniversity,
+    FaTools,
+    FaShoppingCart,
+    FaSignal,
+    FaArrowRight,
+    FaCheckCircle,
+    FaDesktop
+} from 'react-icons/fa';
 
 // -----------------------------------------------------------------------------------------
 
@@ -351,3 +384,457 @@ export const RPOCardContent = [
         desc: "Regular performance reviews and strategy adjustments meet the evolving needs and market dynamics. This proactive approach ensures that recruitment processes are always effective and aligned with the client's objectives."
     },
 ]
+
+export const ModernServiceSliderData = [
+    {
+        id: 1,
+        number: "01",
+        title: "Full-Cycle RPO",
+        description: "End-to-end recruitment management, from sourcing and screening to final offer and onboarding, is fully handled by our dedicated hiring specialists. Experience complete recruitment transformation with measurable ROI.",
+        image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
+        features: ["360° Recruitment", "Dedicated Specialists", "Complete Onboarding"],
+        link: "#full-cycle"
+    },
+    {
+        id: 2,
+        number: "02",
+        title: "Project-Based RPO",
+        description: "Flexible RPO engagement for high-volume or urgent hiring needs, ideal for new project launches, seasonal spikes, or expansions. Scale your team rapidly without compromising quality.",
+        image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
+        features: ["Rapid Scaling", "Flexible Engagement", "Quality Assurance"],
+        link: "#project-based"
+    },
+    {
+        id: 3,
+        number: "03",
+        title: "Onsite/Offsite Recruiters",
+        description: "Deploy skilled recruiters at your office or remotely, fully aligned with your internal processes, brand, and hiring targets. Seamless integration with your existing team.",
+        image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
+        features: ["Skilled Recruiters", "Brand Alignment", "Seamless Integration"],
+        link: "#recruiters"
+    },
+    {
+        id: 4,
+        number: "04",
+        title: "Talent Sourcing & Screening",
+        description: "Access a rich talent pipeline with targeted sourcing, resume screening, and candidate shortlisting done with speed and precision. Quality candidates, delivered faster.",
+        image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
+        features: ["Rich Talent Pipeline", "Precision Screening", "Speed & Quality"],
+        link: "#sourcing"
+    },
+    {
+        id: 5,
+        number: "05",
+        title: "Employer Branding Support",
+        description: "Position your company as an employer of choice with branding strategies that attract high-quality candidates and reduce dropouts. Build your talent magnet.",
+        image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
+        features: ["Employer Branding", "Candidate Attraction", "Dropout Reduction"],
+        link: "#branding"
+    },
+    {
+        id: 6,
+        number: "06",
+        title: "Analytics & Hiring Insights",
+        description: "Use real-time dashboards and data-driven insights to optimize hiring workflows, track performance, and improve recruitment ROI. Make informed decisions.",
+        image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
+        features: ["Real-time Analytics", "Performance Tracking", "ROI Optimization"],
+        link: "#analytics"
+    }
+];
+
+export const rpoProcessData = [
+    {
+        title: "Discovery & Requirement Mapping",
+        desc: "Recruiters analyze dedicated workforce needs, hiring gaps, and company culture to design a recruitment strategy tailored to the requirements."
+    },
+    {
+        title: "Custom RPO Strategy",
+        desc: "Tailored RPO model based on business needs - full-cycle or modular, caters to timelines, cost, and hiring scale."
+    },
+    {
+        title: "Talent Sourcing & Employer Branding",
+        desc: "Talent sourcing with AI platforms, niche job boards, referrals, while enhancing brand presence to attract top talent from the market."
+    },
+    {
+        title: "Screening & Assessment",
+        desc: "We conduct screening, behavioural evaluations, and technical assessments to deliver a suitable and skilled profile."
+    },
+    {
+        title: "Interview Coordination & Candidate Experience",
+        desc: "We manage interviews, feedback, and candidate engagement for smooth and timely processes for companies and applicants."
+    },
+    {
+        title: "Offer Management & Onboarding",
+        desc: "From offer negotiations to pre-joining touchpoints, we handle it all to reduce drop-offs and ensure successful onboarding."
+    },
+    {
+        title: "Performance Monitoring & Reporting",
+        desc: "Real-time dashboards, weekly reports, and KPI tracking keep you informed and in control."
+    }
+]
+
+export const skillCards = [
+    {
+        icon: FaChartLine,
+        title: "Faster Time-to-Hire",
+        description: "Streamline hiring with pre-vetted candidates to fill positions quickly with top-tier skills and domain expertise.",
+        highlights: ["60% Faster Hiring", "Pre-Vetted Talent", "Quality Assurance"],
+        ctaText: "Accelerate Hiring",
+        accentColor: "#34969D",
+        bgColor: "#012D50"
+    },
+    {
+        icon: FaUsersCog,
+        title: "Access to Quality Talent",
+        description: "Leveraging organizations with skilled applicants and niche sourcing expertise to attract result-oriented professionals.",
+        highlights: ["Global Talent Pool", "Niche Expertise", "Quality Screening"],
+        ctaText: "Find Top Talent",
+        accentColor: "#CBDC13",
+        bgColor: "#012D50"
+    },
+    {
+        icon: FaDollarSign,
+        title: "Cost Efficiency",
+        description: "Optimized workflows, reduced dependency on agencies, and minimized vacancy gaps for cost-efficient hiring.",
+        highlights: ["40% Cost Reduction", "Streamlined Process", "ROI Focused"],
+        ctaText: "Reduce Costs",
+        accentColor: "#34969D",
+        bgColor: "#012D50"
+    },
+    {
+        icon: FaRocket,
+        title: "Scalable Recruitment Support",
+        description: "Maximizing capable hirings based on dedicated project needs and current market standards.",
+        highlights: ["Flexible Scaling", "Project Based", "Market Aligned"],
+        ctaText: "Scale Teams",
+        accentColor: "#CBDC13",
+        bgColor: "#012D50"
+    },
+    {
+        icon: FaLightbulb,
+        title: "Improved Employer Branding",
+        description: "Build a strong brand image that attracts the right kind of talent consistently and improves retention.",
+        highlights: ["Brand Enhancement", "Talent Magnet", "Higher Retention"],
+        ctaText: "Build Brand",
+        accentColor: "#34969D",
+        bgColor: "#012D50"
+    },
+    {
+        icon: FaHandshake,
+        title: "Enhanced Candidate Experience",
+        description: "Deliver professional, timely, and engaging recruitment journeys reducing drop-offs and improving acceptance rates.",
+        highlights: ["Professional Journey", "Higher Acceptance", "Better Experience"],
+        ctaText: "Improve Experience",
+        accentColor: "#CBDC13",
+        bgColor: "#012D50"
+    }
+];
+
+export const rpoIndustriesData = [
+    {
+        title: "Aerospace / Space",
+        img: "/img/serviceFTE/aeroSpace.png"
+    },
+    {
+        title: "Cloud Computing",
+        img: "/img/serviceFTE/cloudComputing.png"
+    },
+    {
+        title: "Consumer Goods",
+        img: "/img/serviceFTE/aeroSpace.png"
+    },
+    {
+        title: "Data Analytics",
+        img: "/img/serviceFTE/cloudComputing.png"
+    },
+    {
+        title: "Gaming",
+        img: "/img/serviceFTE/aeroSpace.png"
+    },
+    {
+        title: "Medical Device",
+        img: "/img/serviceFTE/cloudComputing.png"
+    },
+    {
+        title: "Networking",
+        img: "/img/serviceFTE/aeroSpace.png"
+    },
+    {
+        title: "Software/SaaS",
+        img: "/img/serviceFTE/cloudComputing.png"
+    }
+]
+
+export const serviceRPOFAQ = [
+    {
+        q: "How to know when a business needs an RPO Partner?",
+        a: "If your team is spending too much time hiring, struggling with quality candidates, or scaling fast, an RPO partner like Protingent can unlock your bandwidth and results."
+    },
+    {
+        q: "Can we book RPO Services for a few months or specific roles?",
+        a: "That's exactly where our scalable RPO model fits in. Whether it's short-term hiring sprints or niche technical roles, we plug in and deliver with zero long-term commitment."
+    },
+    {
+        q: "Will outsourcing recruitment affect employer branding?",
+        a: "Not with Protingent. We act as an extension of your brand, ensuring every candidate interaction reflects your values, voice, and workplace culture."
+    },
+    {
+        q: "What kind of hiring outcomes can we expect in the first 30–60 days?",
+        a: "Speed. Precision. Pipeline. Most clients start seeing top-tier candidate submissions within the first 7–10 days, and are successfully onboarding by Day 30."
+    },
+    {
+        q: "How secure is our candidate and company data with you?",
+        a: "Your trust is our priority. We follow industry-grade compliance and data protection protocols to ensure full confidentiality across every interaction."
+    },
+    {
+        q: "How does a business need to be involved during the RPO process?",
+        a: "Minimal, unless you want to be hands-on. We handle everything from sourcing to screening. You just make the final calls and build your dream team."
+    },
+    {
+        q: "What industries or geographies does Protingent specialize in?",
+        a: "We're experts in IT, engineering, manufacturing, and high-tech roles. From India to the U.S., we've successfully delivered across global and local markets."
+    },
+    {
+        q: "What's the first step to getting started with Protingent RPO?",
+        a: "Just book a free consultation. We'll assess your current hiring challenges and suggest the right RPO model to match your growth goals."
+    }
+]
+
+export const ContractStaffingSolutionsData = [
+    {
+        icon: FaUserTie,
+        title: "Contract-to-Hire Staffing",
+        description: "Hire skilled pre-vetted candidates on a contract basis with the option to convert them to full-time when needed, while ensuring corporate culture understanding and operational efficiency.",
+        accentColor: "#34969D",
+        image: "https://images.unsplash.com/photo-1681505526188-b05e68c77582?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        icon: FaProjectDiagram,
+        title: "Project-Based Staffing",
+        description: "Quick deployment of a niche-specific team of experts for dedicated projects, ensuring agility, efficiency, and end-to-end performance.",
+        accentColor: "#CBDC13",
+        image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        icon: FaClock,
+        title: "Short-Term & Long-Term Contracts",
+        description: "We have a talent pool available for a flexible duration, whether it's short-term or long-term. Clients can extend their working contracts from weeks to months based on business demands.",
+        accentColor: "#34969D",
+        image: "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        icon: FaGlobe,
+        title: "Remote & Hybrid Staffing",
+        description: "Our database includes talented candidates who fulfill contract agreements on remote and hybrid requirements across the globe. We ensure that there are no geographical limitations for remote and hybrid staffing models.",
+        accentColor: "#CBDC13",
+        image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        icon: FaIndustry,
+        title: "Specialized Industry Staffing",
+        description: "The AI-enabled CRM software has a huge tech-expert details of domain-specific tech programmers like IT, Healthcare, Finance, Manufacturing, and Retail to address unique workforce challenges with precision.",
+        accentColor: "#34969D",
+        image: "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        icon: FaCogs,
+        title: "Workforce Replacement & Continuity",
+        description: "Ensure uninterrupted operations with swift workforce replacement services, minimizing risks of downtime and maintaining consistent productivity across projects and functions.",
+        accentColor: "#CBDC13",
+        image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+];
+
+export const processSteps = [
+    {
+        icon: FaSearch,
+        title: "Workforce Requirement Analysis",
+        description: "We assess your project or business needs, defining skill sets, timelines, and compliance requirements for precise hiring.",
+        accentColor: "#34969D"
+    },
+    {
+        icon: FaRobot,
+        title: "AI-Powered Talent Sourcing",
+        description: "Our smart recruitment engine identifies and pre-vets candidates from extensive databases, ensuring speed and accuracy in talent matching.",
+        accentColor: "#CBDC13"
+    },
+    {
+        icon: FaClipboardCheck,
+        title: "Rigorous Screening & Compliance",
+        description: "Every candidate undergoes multi-level checks, credential verifications, and compliance evaluations to ensure reliability and legal alignment.",
+        accentColor: "#34969D"
+    },
+    {
+        icon: FaHandshake,
+        title: "Seamless Onboarding & Deployment",
+        description: "We manage contracts, payroll, and induction processes, enabling professionals to integrate quickly into your workflows with minimal downtime.",
+        accentColor: "#CBDC13"
+    },
+    {
+        icon: FaDesktop,
+        title: "Continuous Performance Monitoring",
+        description: "Through regular feedback loops and data-driven insights, we ensure workforce productivity, offering replacements or scaling support as required.",
+        accentColor: "#34969D"
+    },
+    {
+        icon: FaExpand,
+        title: "Scalability & Future-Readiness",
+        description: "Our models ensure organizations can scale up or down instantly, staying agile for changing demands and future growth.",
+        accentColor: "#CBDC13"
+    }
+];
+
+export const impactData = [
+    {
+        icon: FaRocket,
+        number: 45,
+        suffix: "%",
+        title: "Faster Workforce Deployment",
+        description: "Reduce hiring cycles with pre-vetted talent pools and AI-driven sourcing",
+        accentColor: "#34969D"
+    },
+    {
+        icon: FaDollarSign,
+        number: 35,
+        suffix: "%",
+        title: "Lower Hiring & Payroll Costs",
+        description: "Cut overheads by paying only for skills and duration needed",
+        accentColor: "#CBDC13"
+    },
+    {
+        icon: FaShieldAlt,
+        number: 100,
+        suffix: "%",
+        title: "Compliance Coverage",
+        description: "All staffing contracts and payroll are managed under strict legal and regulatory frameworks",
+        accentColor: "#34969D"
+    },
+    {
+        icon: FaChartLine,
+        number: 60,
+        suffix: "%",
+        title: "Faster Access to Niche Expertise",
+        description: "Quickly onboard specialists for critical projects without lengthy recruitment delays",
+        accentColor: "#CBDC13"
+    }
+];
+
+export const advantages = [
+    {
+        icon: FaBrain,
+        title: "AI-Powered Talent Matching",
+        description: "Intelligent sourcing means faster and more accurate identification of the right professionals",
+        accentColor: "#34969D"
+    },
+    {
+        icon: FaBuilding,
+        title: "Industry-Focused Expertise",
+        description: "From IT to Healthcare to BFSI, we connect pre-vetted professionals with experience in the respective sectors",
+        accentColor: "#CBDC13"
+    },
+    {
+        icon: FaCogs,
+        title: "Flexible Engagement Models",
+        description: "Add to your workforce with short-term, long-term, remote or project-specific placement types",
+        accentColor: "#34969D"
+    },
+    {
+        icon: FaFileContract,
+        title: "Compliance-First Policy",
+        description: "Each hire is managed under a serious lens of labor laws and payroll regulations reducing risk for your organization",
+        accentColor: "#CBDC13"
+    },
+    {
+        icon: FaAward,
+        title: "SLA-Commitment",
+        description: "Guaranteed speed, quality and service with defined performance level agreements",
+        accentColor: "#34969D"
+    },
+    {
+        icon: FaGlobe,
+        title: "Proven Global Partnerships",
+        description: "Trusted by organizations for predictable services and long-term collaboration",
+        accentColor: "#CBDC13"
+    }
+];
+
+export const industries = [
+    {
+        icon: FaLaptopCode,
+        title: "Information Technology (IT)",
+        description: "Engage software developers, cloud experts, and IT experts to quickly onboard for projects with domain knowledge and full flexibility and availability.",
+        accentColor: "#34969D",
+        image: "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        icon: FaHeartbeat,
+        title: "Healthcare",
+        description: "Fill urgent clinical roles, allied health staff, and administrative positions while managing compliance and patient care continuity.",
+        accentColor: "#CBDC13",
+        image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        icon: FaUniversity,
+        title: "Banking, Financial Services & Insurance (BFSI)",
+        description: "Bring compliance based finance professionals, risk analysts and support staff on board for your evolving BFSI workforce needs.",
+        accentColor: "#34969D",
+        image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        icon: FaTools,
+        title: "Manufacturing",
+        description: "Onboard qualified engineers, technicians, and floor staff to meet production cycles, seasonal dips, and quality maintenance and operation.",
+        accentColor: "#CBDC13",
+        image: "https://images.pexels.com/photos/33802168/pexels-photo-33802168.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        icon: FaShoppingCart,
+        title: "Retail & E-commerce",
+        description: "Expand functions in your supply chain, sales, and customer service support using agile workforce smart workforce models to meet peak seasonal business demands.",
+        accentColor: "#34969D",
+        image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        icon: FaSignal,
+        title: "Telecommunications",
+        description: "Easily onboard field engineers, support staff, and project specialists to meet demands of company networks, new and ongoing services and network expansion.",
+        accentColor: "#CBDC13",
+        image: "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    }
+];
+
+// Contract Staffing FAQ Data
+export const contractStaffingFAQ = [
+    {
+        q: "How quickly can Protingent deploy contract staff for urgent needs?",
+        a: "We maintain pre-vetted talent pools across industries so we can deploy talent quickly within days. Our AI-driven sourcing matches the right skills very quickly, enabling businesses to continue operations or meet project deadlines without interruption."
+    },
+    {
+        q: "What types of roles can be filled through contract staffing?",
+        a: "Protingent has access to any profession needed - IT developers, healthcare providers, finance professionals, customer support and field technicians and many more. Short term, project-based, or specialized skill set, we provide talent for your field."
+    },
+    {
+        q: "How does Protingent ensure compliance with labor laws and payroll regulations?",
+        a: "All engagements are governed by rigorous compliance frameworks including payroll, taxation, and legal documentation. Our compliance-first approach limits risk on behalf of clients, meaning that contract staff are hired, paid, and managed legally in each engagement."
+    },
+    {
+        q: "Can we scale staffing support up or down easily?",
+        a: "Yes. Our contract staffing models provide a flexible option where you can quickly add people on when activity peaks or reduce the number of heads when a project is done--- without the burdens of permanent hiring, and, if projects terminate, without the concerns of layoffs."
+    },
+    {
+        q: "How does contract-to-hire staffing work with Protingent?",
+        a: "We provide organizations the opportunity to bring on professionals and engage them on a contract, or temporary basis, while at the same time assessing them. If they are the proper fit culturally and technically, you can move them to permanent employee status and reduce hiring risk."
+    },
+    {
+        q: "Do you provide staffing solutions for remote or hybrid work models?",
+        a: "We have virtual, onsite, and hybrid staffing solutions. Our global sourcing capabilities provide businesses access to knowledgeable talent pools away from geographic constraints while improving productivity and compliance."
+    },
+    {
+        q: "How do you ensure the quality of candidates provided?",
+        a: "Candidates undergo a rigorous multi-step vetting process, including technical assessments, background checks, and compliance reviews. We only recommend professionals who meet both your skill requirements and organizational standards."
+    },
+    {
+        q: "What makes Protingent different from traditional staffing agencies?",
+        a: "Unlike traditional agencies that only supply manpower, Protingent integrates AI-driven sourcing, compliance management, and industry expertise. This ensures not just faster placements but also sustainable workforce solutions that deliver measurable business impact."
+    }
+];
