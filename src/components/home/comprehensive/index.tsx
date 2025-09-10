@@ -13,15 +13,15 @@ const ComprehensiveSection = () => {
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const scrollNext = () => {
-        if (scrollRef.current) {
-            const childWidth = scrollRef.current.firstElementChild?.clientWidth || 350;
+        if (scrollRef.current && scrollRef.current.firstElementChild?.clientWidth) {
+            const childWidth = (scrollRef.current.firstElementChild?.clientWidth) || 350;
             scrollRef.current.scrollBy({ left: childWidth, behavior: "smooth" });
         }
     };
 
     const scrollPrev = () => {
-        if (scrollRef.current) {
-            const childWidth = scrollRef.current.firstElementChild?.clientWidth || 350;
+        if (scrollRef.current && scrollRef.current.firstElementChild?.clientWidth) {
+            const childWidth = (scrollRef.current.firstElementChild?.clientWidth) || 350;
             scrollRef.current.scrollBy({ left: -childWidth, behavior: "smooth" });
         }
     };
@@ -36,7 +36,7 @@ const ComprehensiveSection = () => {
             // Use a delay to ensure DOM is mounted
             requestAnimationFrame(() => {
                 scrollRef.current?.scrollTo({
-                    left: childWidth * openPopup.data,
+                    left: childWidth * openPopup.data + (32 * (openPopup.data - 1)),
                     behavior: "smooth",
                 });
             });
@@ -205,7 +205,7 @@ const ComprehensiveSection = () => {
                                         <div className="w-full h-full flex justify-center items-center" >
                                             <div className="text-primary p-4 w-full flex flex-col gap-8 justify-between" >
                                                 <div className="flex flex-col justify-between gap-4" >
-                                                    <p className="text-[28px] font-bold" >
+                                                    <p className="text-[28px] font-bold text-center" >
                                                         {el?.title}
                                                     </p>
                                                     <p className="text-lg font-semibold" >
