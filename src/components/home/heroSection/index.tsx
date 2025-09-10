@@ -43,7 +43,7 @@ const HeroSection = () => {
                     absolute bottom-1 sm:bottom-8 sm:left-8 md:left-24 lg:bottom-12 xl:left-28 lap:!left-24 3xl:!left-72 
                     font-medium'
                 >
-                    360° Solution For Your Business.
+                    Empowering Businesses, Connecting the World
                 </p>
             </div>
         </div >

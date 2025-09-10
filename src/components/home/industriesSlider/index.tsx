@@ -61,35 +61,45 @@ const IndustriesSlider = () => {
                 </div>
                 <div className='flex w-full xl:max-w-[1150px] max-w-[1300px] 3xl:!max-w-[1300px]' >
                     <div className='w-full flex flex-col gap-[40px] lg:gap-[100px]' >
-                        <div className='flex flex-col-reverse lg:flex-row gap-8 items-center justify-between' >
-                            <div className='text-primary w-full lg:w-2/4 flex flex-col gap-8' >
-                                <p className='text-4xl lg:text-5xl lap:!text-6xl 3xl:text-[80px] font-extrabold' >
-                                    {selectedIndustrie?.data?.title || ""}
-                                </p>
-                                <p className='text-xl 3xl:text-2xl text-justify' >
-                                    {selectedIndustrie?.data?.desc || ""}
-                                </p>
-                                <div>
-                                    <div className='px-5 py-2 text-xl  flex gap-2 items-end bg-bg-parrot-green w-fit rounded-full cursor-pointer' >
-                                        <p>
-                                            Read More
-                                        </p>
-                                        <Icon
-                                            icon='ph:arrow-right-fill'
-                                        />
+                        <Swiper
+                            slidesPerView={lap ? 4 : lg ? 3 : 2}
+                            spaceBetween={desk ? 60 : lap ? 40 : lg ? 35 : xs ? 20 : 60}
+                            loop={true}
+                            onBeforeInit={(swiper) => {
+                                swiperRef.current = swiper; // store swiper instance
+                            }}
+                            className="mySwiper !h-auto"
+                        >
+                            <div className='flex flex-col-reverse lg:flex-row gap-8 items-center justify-between' >
+                                <div className='text-primary w-full lg:w-2/4 flex flex-col gap-8' >
+                                    <p className='text-4xl lg:text-5xl lap:!text-6xl 3xl:text-[80px] font-extrabold' >
+                                        {selectedIndustrie?.data?.title || ""}
+                                    </p>
+                                    <p className='text-xl 3xl:text-2xl text-justify' >
+                                        {selectedIndustrie?.data?.desc || ""}
+                                    </p>
+                                    <div>
+                                        <div className='px-5 py-2 text-xl  flex gap-2 items-end bg-bg-parrot-green w-fit rounded-full cursor-pointer' >
+                                            <p>
+                                                Read More
+                                            </p>
+                                            <Icon
+                                                icon='ph:arrow-right-fill'
+                                            />
+                                        </div>
                                     </div>
                                 </div>
+                                <div>
+                                    <Image
+                                        src={"/img/healthCareInd.png"}
+                                        alt=''
+                                        height={0}
+                                        width={576}
+                                        className='!w-full max-w-[576px] rounded-tl-[10px] rounded-br-[10px] rounded-[100px]'
+                                    />
+                                </div>
                             </div>
-                            <div>
-                                <Image
-                                    src={"/img/healthCareInd.png"}
-                                    alt=''
-                                    height={0}
-                                    width={576}
-                                    className='!w-full max-w-[576px] rounded-tl-[10px] rounded-br-[10px] rounded-[100px]'
-                                />
-                            </div>
-                        </div>
+                        </Swiper>
                         <div className='w-full overflow-hidden' >
                             <div className='w-full overflow-x-scroll no-scrollbar' >
                                 <div
