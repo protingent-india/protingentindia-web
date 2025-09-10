@@ -247,6 +247,41 @@ export const serviceFTEFAQ = [
     },
 ]
 
+export const comprehensiveDataMobile = [
+    {
+        img: "/img/comprehensive1.jpg",
+        title: "RPO Service"
+    },
+    {
+        img: "/img/comprehensive2.jpg",
+        title: "IT Consulting"
+    },
+    {
+        img: "/img/comprehensive3.jpg",
+        title: "FTE Hiring"
+    },
+    {
+        img: "/img/comprehensive4.jpg",
+        title: "Contract Staffing"
+    },
+    {
+        img: "/img/comprehensive5.jpg",
+        title: "Direct Sourcing"
+    },
+    {
+        img: "/img/comprehensive6.jpg",
+        title: "HR Outsourcing"
+    },
+    {
+        img: "/img/comprehensive7.jpg",
+        title: "Marketing Solutions"
+    },
+    {
+        img: "/img/comprehensive2.jpg",
+        title: "BI DATA Visualization"
+    }
+]
+
 export const comprehensiveData = [
     {
         img: "/img/RPOServiceSlide.png",
