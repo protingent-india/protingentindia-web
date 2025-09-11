@@ -19,8 +19,6 @@ const PremiumInteractiveSlider = () => {
     const slidesToShow = lg ? 3 : md ? 2 : 1
     const maxSlide = skillCards.length - slidesToShow;
 
-    // console.log("maxSlide", slidesToShow)
-
     const nextSlide = () => {
         setCurrentSlide(prev => (prev >= maxSlide ? 0 : prev + 1));
         setProgress(0);
@@ -53,8 +51,6 @@ const PremiumInteractiveSlider = () => {
             if (intervalRef.current) clearInterval(intervalRef.current);
         };
     }, [isAutoPlay, currentSlide]);
-
-    console.log("currentSlide * (100 / slidesToShow", currentSlide, slidesToShow)
 
     return (
         <section id='PremiumInteractiveSlider' className="relative py-20 overflow-hidden w-full" style={{ background: 'linear-gradient(170deg, #F8FAFB 0%, white 50%, #F8FAFB 100%)' }}>
