@@ -42,13 +42,13 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${lato.className} antialiased`}>
-				<ScrollToTop>
-					<StoreProvider>
-						<Header />
-						{children}
-						<Footer />
-					</StoreProvider>
-				</ScrollToTop>
+				{/* <ScrollToTop> */}
+				<StoreProvider>
+					<Header />
+					{children}
+					<Footer />
+				</StoreProvider>
+				{/* </ScrollToTop> */}
 			</body>
 		</html>
 	);

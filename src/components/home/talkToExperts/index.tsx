@@ -9,7 +9,7 @@ const TalkToExpert = () => {
     return (
         <div className='w-full flex flex-col xl:flex-row overflow-hidden' >
             <div
-                className='w-full xl:w-[43%] h-[400px] xl:h-auto py-44 !bg-cover !bg-no-repeat !bg-center'
+                className='w-full xl:w-[43%] h-[400px] xl:h-auto lg:py-44 !bg-cover !bg-no-repeat !bg-center'
                 style={{ background: "url(/img/talkToExperBg.png)" }}
             >
                 <div className='py-16 w-full h-full flex flex-col font-extrabold text-white text-center justify-center items-center gap-2 [&>p]:leading-[75px]' >

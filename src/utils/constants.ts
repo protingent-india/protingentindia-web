@@ -319,33 +319,47 @@ export const comprehensiveData = [
 
 export const industriesSliderData = [
     {
-        title: "Healthcare",
-        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        title: "Construction",
+        desc: "Digitally enabled project staffing, IT consulting, and data-driven insights ensure faster project execution, cost control, safety compliance, and smarter workforce allocation.",
+        img: "/img/healthCareInd.png"
+    },
+    {
+        title: "Manufacturing",
+        desc: "Automation, predictive analytics, and skilled workforce integration streamline production cycles, reduce downtime, and improve quality control for next-gen manufacturing efficiency.",
+        img: "/img/healthCareInd.png"
+    },
+    {
+        title: "Energy",
+        desc: "Smart workforce solutions and digital transformation accelerate sustainable energy operations, improve asset management, and ensure compliance for evolving energy ecosystems.",
+        img: "/img/healthCareInd.png"
+    },
+    {
+        title: "Finance",
+        desc: "Secure staffing, analytics, and IT consulting enable digital banking, regulatory compliance, fraud prevention, and customer-centric innovations for resilient financial services.",
         img: "/img/healthCareInd.png"
     },
     {
         title: "Engineering",
-        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        desc: "Specialized talent and advanced IT consulting drive innovation, ensure precision, and improve project delivery timelines for engineering firms across sectors."
+    },
+    {
+        title: "Technology",
+        desc: "Agile staffing and digital consulting support product innovation, cloud adoption, and rapid scalability in the fast-paced technology ecosystem.",
         img: "/img/healthCareInd.png"
     },
     {
-        title: "Consumer Goods",
-        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        title: "Telecommunication",
+        desc: "End-to-end workforce solutions and IT expertise strengthen infrastructure deployment, accelerate 5G rollouts, and ensure seamless customer connectivity.",
         img: "/img/healthCareInd.png"
     },
     {
         title: "Healthcare",
-        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        desc: "AI-powered staffing and IT services optimize care delivery, improve workforce efficiency, reduce operational costs, and enhance patient outcomes.",
         img: "/img/healthCareInd.png"
     },
     {
-        title: "Engineering",
-        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
-        img: "/img/healthCareInd.png"
-    },
-    {
-        title: "Consumer Goods",
-        desc: "Protingent delivers expert pre-vetted healthcare staffing solutions and result-oriented IT services for measurable outcomes. We focus on tangible improvements that strengthen care delivery, optimize costs, and improve workforce efficiency.",
+        title: "Aerospace",
+        desc: "Specialized talent, compliance-driven processes, and advanced analytics power innovation, safety, and operational excellence in aerospace engineering and manufacturing.",
         img: "/img/healthCareInd.png"
     },
 ]
