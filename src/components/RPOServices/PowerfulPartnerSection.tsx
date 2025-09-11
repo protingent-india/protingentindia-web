@@ -28,10 +28,7 @@ const PowerfulPartnerSection = () => {
 
                     {/* Subheading */}
                     <p className="text-xl text-white/90 max-w-4xl mx-auto mt-8 leading-relaxed">
-                        We work for excellence with the top-tier talent pool. Our pre-vetted and new
-                        candidates are highly skilled to evolve and expand your organization with precision.
-                        Our recruiters blend agility, domain expertise, and a tech-enabled approach to
-                        build talent pipelines that work efficiently.
+                        We work for excellence with the top-tier talent pool. Our pre-vetted and new candidates are highly skilled to evolve and expand your organization with precision. Our recruiters blend agility, domain expertise, and a tech-enabled approach to build talent pipelines that work efficiently.
                     </p>
                 </div>
 
@@ -47,8 +44,7 @@ const PowerfulPartnerSection = () => {
                             Deep Industry Experience
                         </h3>
                         <p className="text-white/80 leading-relaxed">
-                            With over 25 years of engineering and tech hiring experience,
-                            we know niche talent better than anyone else.
+                            With over 25 years of engineering and tech hiring experience, we know niche talent better than anyone else.
                         </p>
                     </div>
 
@@ -61,8 +57,7 @@ const PowerfulPartnerSection = () => {
                             Speed + Precision
                         </h3>
                         <p className="text-white/80 leading-relaxed">
-                            We shorten time-to-hire without sacrificing quality by refining
-                            our sourcing frameworks and enabling our expert recruiters.
+                            We shorten time-to-hire without sacrificing quality by refining our sourcing frameworks and enabling our expert recruiters.
                         </p>
                     </div>
 
@@ -75,8 +70,7 @@ const PowerfulPartnerSection = () => {
                             Flexible, Scalable Engagement
                         </h3>
                         <p className="text-white/80 leading-relaxed">
-                            Start small or big - our modular RPO models adapt and grow
-                            with your business needs.
+                            Start small or big - our modular RPO models adapt and grow with your business needs.
                         </p>
                     </div>
 
@@ -103,8 +97,7 @@ const PowerfulPartnerSection = () => {
                             Candidate-First Approach
                         </h3>
                         <p className="text-white/80 leading-relaxed">
-                            We treat every talent touchpoint with intent, creating better
-                            brand experiences and higher acceptance rates.
+                            We treat every talent touchpoint with intent, creating better brand experiences and higher acceptance rates.
                         </p>
                     </div>
                 </div>

@@ -53,10 +53,10 @@ const ModernServiceSlider = () => {
             <div className="max-w-[1450px] mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
-                        Our Core RPO Services
+                        Our Core RPO Services Offering
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Comprehensive recruitment solutions tailored to your business needs
+                        We outsource the talent you need on time with our pre-vetted candidates. Reliable hiring experts offering tailored RPO services align with your business goals:
                     </p>
                 </div>
 

@@ -250,70 +250,96 @@ export const serviceFTEFAQ = [
 export const comprehensiveDataMobile = [
     {
         img: "/img/comprehensive1.jpg",
-        title: "RPO Service"
+        title: "RPO Service",
+        desc: "AI-driven sourcing and automated screening tools shorten hiring cycles. With predictive analytics and advanced candidate matching, businesses gain access to the best-fit talent pools while reducing dependency on traditional recruitment overhead."
     },
     {
         img: "/img/comprehensive2.jpg",
-        title: "IT Consulting"
+        title: "FTE Hiring",
+        desc: "Cloud-enabled hiring workflows ensure scalability and compliance. By using structured talent databases and automation, we help enterprises build stable teams with lower attrition risks and faster onboarding."
     },
     {
         img: "/img/comprehensive3.jpg",
-        title: "FTE Hiring"
+        title: "Contract Staffing",
+        desc: "On-demand staffing powered by digital talent pools and automated onboarding. Our tech-enabled processes help you deploy skilled professionals in record time while ensuring compliance and cost predictability."
     },
     {
         img: "/img/comprehensive4.jpg",
-        title: "Contract Staffing"
+        title: "Direct Sourcing",
+        desc: "Branded talent pipelines supported by AI-powered search and CRM tools. This ensures higher candidate engagement, reduced agency spend, and faster access to niche skill sets."
     },
     {
         img: "/img/comprehensive5.jpg",
-        title: "Direct Sourcing"
+        title: "HR Outsourcing",
+        desc: "Digital HR platforms streamline payroll, benefits, and compliance reporting. Automated workflows reduce manual errors, while dashboards offer real-time visibility into workforce performance."
     },
     {
         img: "/img/comprehensive6.jpg",
-        title: "HR Outsourcing"
+        title: "Marketing Solutions",
+        desc: "Data-backed marketing powered by automation platforms, SEO intelligence, and performance analytics. Businesses get visibility into campaign ROI, customer acquisition costs, and engagement metrics."
     },
     {
         img: "/img/comprehensive7.jpg",
-        title: "Marketing Solutions"
+        title: "BI & Data Visualization",
+        desc: "Interactive dashboards and real-time analytics powered by modern BI tools. We simplify complex data into actionable insights, enabling leaders to make faster, evidence-based decisions."
+    },
+    {
+        img: "/img/comprehensive1.jpg",
+        title: "IT Consulting & Development",
+        desc: "automated"
     },
     {
         img: "/img/comprehensive2.jpg",
-        title: "BI DATA Visualization"
+        title: "Managed IT Services",
+        desc: "Ensure business continuity with 24/7 infrastructure monitoring, automated patch management, and proactive threat detection. Our managed IT services provide real-time visibility, stronger cybersecurity, and reduced downtime, so enterprises can focus on innovation instead of maintenance."
     }
 ]
 
 export const comprehensiveData = [
     {
         img: "/img/RPOServiceSlide.png",
-        title: "RPO Service"
+        title: "RPO Service",
+        desc: "AI-driven sourcing and automated screening tools shorten hiring cycles. With predictive analytics and advanced candidate matching, businesses gain access to the best-fit talent pools while reducing dependency on traditional recruitment overhead."
     },
     {
         img: "/img/biDataVisualizationSlide.png",
-        title: "IT Consulting"
+        title: "FTE Hiring",
+        desc: "Cloud-enabled hiring workflows ensure scalability and compliance. By using structured talent databases and automation, we help enterprises build stable teams with lower attrition risks and faster onboarding."
     },
     {
         img: "/img/FTEHiringSlide.png",
-        title: "FTE Hiring"
+        title: "Contract Staffing",
+        desc: "On-demand staffing powered by digital talent pools and automated onboarding. Our tech-enabled processes help you deploy skilled professionals in record time while ensuring compliance and cost predictability."
     },
     {
         img: "/img/contractStaffingSlide.png",
-        title: "Contract Staffing"
+        title: "Direct Sourcing",
+        desc: "Branded talent pipelines supported by AI-powered search and CRM tools. This ensures higher candidate engagement, reduced agency spend, and faster access to niche skill sets."
     },
     {
         img: "/img/directSourcingSlide.png",
-        title: "Direct Sourcing"
+        title: "HR Outsourcing",
+        desc: "Digital HR platforms streamline payroll, benefits, and compliance reporting. Automated workflows reduce manual errors, while dashboards offer real-time visibility into workforce performance."
     },
     {
         img: "/img/HROutsourcingSlide.png",
-        title: "HR Outsourcing"
+        title: "Marketing Solutions",
+        desc: "Data-backed marketing powered by automation platforms, SEO intelligence, and performance analytics. Businesses get visibility into campaign ROI, customer acquisition costs, and engagement metrics."
     },
     {
         img: "/img/marketingSolutionSlide.png",
-        title: "Marketing Solutions"
+        title: "BI & Data Visualization",
+        desc: "Interactive dashboards and real-time analytics powered by modern BI tools. We simplify complex data into actionable insights, enabling leaders to make faster, evidence-based decisions."
     },
     {
         img: "/img/biDataVisualizationSlide.png",
-        title: "BI DATA Visualization"
+        title: "IT Consulting & Development",
+        desc: "automated"
+    },
+    {
+        img: "/img/directSourcingSlide.png",
+        title: "Managed IT Services",
+        desc: "Ensure business continuity with 24/7 infrastructure monitoring, automated patch management, and proactive threat detection. Our managed IT services provide real-time visibility, stronger cybersecurity, and reduced downtime, so enterprises can focus on innovation instead of maintenance."
     }
 ]
 

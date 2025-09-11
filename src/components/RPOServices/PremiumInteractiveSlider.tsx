@@ -70,8 +70,7 @@ const PremiumInteractiveSlider = () => {
                         <span className="block" style={{ color: '#34969D' }}>Business Expansions</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        Right recruitment means matching the right talent with the team to work efficiently and deliver actionable results.
-                        RPO is taking forward more from reactive hiring to strategic talent-pool acquisition to build success.
+                        Right recruitment means matching the right talent with the team to work efficiently and deliver actionable results. RPO is taking forward more from reactive hiring to strategic talent-pool acquisition to build success.
                     </p>
 
                     {/* Progress bar */}

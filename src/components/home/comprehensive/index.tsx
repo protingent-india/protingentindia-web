@@ -132,10 +132,31 @@ const ComprehensiveSection = () => {
                     ))}
                 </div>
             </div>
-            <div className="w-full min-h-[650px] flex justify-center lap:!hidden">
+            <div className="w-full min-h-[650px] flex flex-col justify-center lap:!hidden">
+                {
+                    comprehensiveDataMobile?.length % 2 !== 0 && <div
+                        className="w-full overflow-hidden relative"
+                        onClick={() => handlePopup(1)}
+                    >
+                        <Image
+                            src={comprehensiveDataMobile[0]?.img}
+                            height={0}
+                            width={400}
+                            className="!w-full"
+                            alt=""
+                        />
+                        <div className="absolute text-white font-bold top-0 left-0 bottom-0 right-0 opacity-[0.2] bg-black" />
+                        <div className="z-10 absolute text-white font-bold flex justify-center items-center w-full h-full top-0 left-0 bottom-0 right-0" >
+                            {comprehensiveDataMobile[0]?.title || ""}
+                        </div>
+                    </div>
+                }
                 <div className="w-full grid grid-cols-2 [&>div]:w-full " >
-                    {comprehensiveDataMobile?.map((card, index: any) => (
-                        <div
+                    {comprehensiveDataMobile?.map((card, index: any) => {
+                        if (comprehensiveDataMobile?.length % 2 !== 0 && index === 0) {
+                            return
+                        }
+                        return <div
                             key={index}
                             className="w-full overflow-hidden relative"
                             onClick={() => handlePopup(index)}
@@ -148,11 +169,12 @@ const ComprehensiveSection = () => {
                                 alt=""
                             />
                             <div className="absolute text-white font-bold top-0 left-0 bottom-0 right-0 opacity-[0.2] bg-black" />
-                            <div className="z-10 absolute text-white font-bold flex justify-center items-center w-full h-full top-0 left-0 bottom-0 right-0" >
+                            <div className="z-10 absolute text-white text-center font-bold flex justify-center items-center w-full h-full top-0 left-0 bottom-0 right-0" >
                                 {card?.title || ""}
                             </div>
                         </div>
-                    ))}
+
+                    })}
                 </div>
             </div>
             <Modal

@@ -7,6 +7,7 @@ import {
     FaDollarSign,
     FaGraduationCap,
 } from 'react-icons/fa';
+import Divider from "../divider";
 
 // -------------------------------------------------------------------------------
 
@@ -62,10 +63,16 @@ const BrandBenefitsSection = () => {
 
     return (
         <div ref={sectionRef} className="w-full max-w-[1450px] flex flex-col items-center gap-8 md:gap-12 px-4 md:px-6">
-            <CommonHeading
-                title="Recruitment Process Outsourcing (RPO) for Your Talent-Pool"
-                desc="Recruitment delays cost businesses more than time. It holds back growth, revenue, and innovation. Through professional RPO Services, you can outsource talent hiring responsibility to expert recruiters like Protingent who act as an extension of your in-house HR team."
-            />
+            <div className={`text-primary flex flex-col items-center gap-4 w-full`} >
+                <p className='text-2xl md:text-[28px] lap:!text-3xl 3xl:!text-4xl text-center font-bold' >
+                    Recruitment Process Outsourcing (RPO) for Your Talent-Pool
+                </p>
+                <span className='text-center lg:text-center text-base md:text-[18px] lap:!text-xl max-w-[1060px] w-4/5 3xl:pb-8' >
+                    Recruitment increases costs for businesses and consumes more time. It holds back growth, revenue, and innovation. Through professional RPO Services, you can outsource talent hiring responsibility to expert recruiters like Protingent who act as an extension of your in-house HR team.
+                    We manage scouting, screening, and first-round interviews with pre-vetted candidates who are both culturally and skill fit for your organization. Speed up your hiring, cut costs, and build a strong, skillful workforce to meet your project’s deadlines with no stress.
+                </span>
+                <Divider />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 w-full mt-8">
                 {benefits.map((benefit, index) => {
