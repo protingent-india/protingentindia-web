@@ -143,7 +143,7 @@ export default function IndustriesSlider() {
                                 className='w-full flex xl:!hidden gap-8 px-8 md:gap-32 overflow-x-auto snap-x snap-mandatory scroll-smooth rm-scrollbar'
                             >
                                 {industriesSliderData?.map((el: any, index: number) => (
-                                    <div key={index} className='w-fit snap-center md:snap-center flex flex-col gap-12 min-w-[350px] md:min-w-[400px] lg:min-w-full' >
+                                    <div key={index} className='w-fit snap-center md:snap-center flex flex-col gap-12 min-w-[345px] md:min-w-[400px] lg:min-w-full' >
                                         <div className='w-full flex flex-col-reverse lg:flex-row gap-8 items-center justify-between' >
                                             <div className='text-primary w-full lg:w-2/4 flex flex-col gap-8' >
                                                 <p className='text-4xl lg:text-5xl lap:!text-6xl 3xl:text-[80px] font-extrabold text-center lg:text-start' >
