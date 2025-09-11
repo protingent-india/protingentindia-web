@@ -23,8 +23,10 @@ export default function MarketingSolutionsService() {
             <ResultsSection />
             <TeamSection />
             <MarketingIndustriesSection />
-            <CTASection />
-
+            <CTASection
+                title="Connect and Let Us Together Grow Your Business."
+                desc="Stop getting frustrated with marketing campaigns that do not deliver results. Protingent India will help design engaging and result-driven marketing strategies for scalability. "
+            />
             <div className="py-16 md:py-24 w-full flex justify-center">
                 <ContactUsComponent />
             </div>

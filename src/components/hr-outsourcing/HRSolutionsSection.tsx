@@ -1,5 +1,6 @@
 "use client"
 import { HRsolutions } from "@/staticData";
+import Link from "next/link";
 import { useState } from "react";
 import { FaArrowRight, FaMoneyBillWave } from "react-icons/fa";
 
@@ -66,10 +67,12 @@ const HRSolutionsSection = () => {
                                 </p>
                             </div>
 
-                            <div className="flex items-center gap-4 font-semibold text-lg" style={{ color: HRsolutions[0].color }}>
-                                <span>Explore Payroll Solutions</span>
-                                <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
-                            </div>
+                            <Link href={"/contact"} className="cursor-pointer" >
+                                <div className="flex items-center gap-4 font-semibold text-lg" style={{ color: HRsolutions[0].color }}>
+                                    <span>Explore Payroll Solutions</span>
+                                    <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
@@ -120,10 +123,12 @@ const HRSolutionsSection = () => {
                                         </p>
                                     </div>
 
-                                    <div className="flex items-center gap-2 font-semibold text-sm mt-4" style={{ color: solution.color }}>
-                                        <span>Learn More</span>
-                                        <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-                                    </div>
+                                    <Link href={"/contact"} className="cursor-pointer" >
+                                        <div className="flex items-center gap-2 font-semibold text-sm mt-4" style={{ color: solution.color }}>
+                                            <span>Learn More</span>
+                                            <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         );
@@ -176,10 +181,12 @@ const HRSolutionsSection = () => {
                                         </p>
                                     </div>
 
-                                    <div className="flex items-center gap-2 font-semibold text-xs mt-4" style={{ color: solution.color }}>
-                                        <span>Explore</span>
-                                        <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-                                    </div>
+                                    <Link href={"/contact"} className="cursor-pointer" >
+                                        <div className="flex items-center gap-2 font-semibold text-xs mt-4" style={{ color: solution.color }}>
+                                            <span>Explore</span>
+                                            <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         );
@@ -188,13 +195,15 @@ const HRSolutionsSection = () => {
 
                 {/* CTA Button */}
                 <div className="text-center mt-16">
-                    <button className="group relative overflow-hidden px-12 py-4 bg-[#34969E] text-white font-bold text-lg rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
-                        <span className="relative z-10 flex items-center gap-3">
-                            Explore All HR Solutions
-                            <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
-                        </span>
-                        <div className="absolute inset-0 bg-[#C2D92C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </button>
+                    <Link href={"/contact"} className="cursor-pointer" >
+                        <button className="group relative overflow-hidden px-12 py-4 bg-[#34969E] text-white font-bold text-lg rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
+                            <span className="relative z-10 flex items-center gap-3">
+                                Explore All HR Solutions
+                                <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
+                            </span>
+                            <div className="absolute inset-0 bg-[#C2D92C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

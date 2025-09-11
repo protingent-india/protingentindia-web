@@ -12,10 +12,10 @@ const ChallengeSection = () => {
             <div className="max-w-[1450px] mx-auto px-4 md:px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#113F64' }}>
-                        The Challenge We Solve
+                       Overcome Hiring Challenges with Private Talent Pool 
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Approx. 75% of marketing strategies fail to give results. Businesses that invest in digital marketing services lack campaign direction, scattered strategies, and uncertain ROI.
+                        Approx. 75% of marketing strategies fail to give results. Businesses that invest in digital marketing services lack campaign direction, scattered strategies, and uncertain ROI. There are many marketing aspects still ignored, but they matter a lot.
                     </p>
                 </div>
 

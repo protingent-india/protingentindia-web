@@ -41,7 +41,7 @@ const InteractiveTimeline = () => {
                         RPO Service Delivery Process
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Our streamlined 7-step process designed to deliver exceptional results
+                        Protingent follows the RPO process, designed to deliver the best talent pool hiring results quickly, flexibly, and aligned with objectives.
                     </p>
                 </div>
 

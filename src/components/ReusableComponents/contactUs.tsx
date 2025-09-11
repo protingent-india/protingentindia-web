@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image';
 import { Icon } from '@/components';
+import Link from 'next/link';
 
 // --------------------------------------------------------
 
@@ -44,17 +45,19 @@ const ContactUsComponent = () => {
                             />
                         </div>
                         <div className='flex justify-end w-full' >
-                            <div className='flex items-center justify-center gap-2 bg-bg-parrot-green w-[130px] rounded-full py-1 text-primary cursor-pointer' >
-                                <p className='text-xl capitalize' >
-                                    connect
-                                </p>
-                                <Icon
-                                    icon='solar:arrow-right-bold-duotone'
-                                    height={20}
-                                    width={20}
-                                    className=''
-                                />
-                            </div>
+                            <Link href={"/contact"} className="cursor-pointer" >
+                                <div className='flex items-center justify-center gap-2 bg-bg-parrot-green w-[130px] rounded-full py-1 text-primary cursor-pointer' >
+                                    <p className='text-xl capitalize' >
+                                        connect
+                                    </p>
+                                    <Icon
+                                        icon='solar:arrow-right-bold-duotone'
+                                        height={20}
+                                        width={20}
+                                        className=''
+                                    />
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

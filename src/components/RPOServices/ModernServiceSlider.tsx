@@ -5,6 +5,7 @@ import {
     useState
 } from "react";
 import { ModernServiceSliderData } from "@/staticData";
+import Link from "next/link";
 
 // ----------------------------------------------------------------
 
@@ -53,10 +54,10 @@ const ModernServiceSlider = () => {
             <div className="max-w-[1450px] mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
-                        Our Core RPO Services
+                        Our Core RPO Services Offering
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Comprehensive recruitment solutions tailored to your business needs
+                        We outsource the talent you need on time with our pre-vetted candidates. Reliable hiring experts offering tailored RPO services align with your business goals:
                     </p>
                 </div>
 
@@ -132,10 +133,12 @@ const ModernServiceSlider = () => {
                                     ))}
                                 </div>
 
-                                <button className="modern-btn group">
-                                    <span className="relative z-10">Learn More</span>
-                                    <div className="absolute inset-0 bg-gradient-to-r from-primary-green-color to-secondry opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                </button>
+                                <Link href={"/contact"} className="cursor-pointer" >
+                                    <button className="modern-btn group">
+                                        <span className="relative z-10">Learn More</span>
+                                        <div className="absolute inset-0 bg-gradient-to-r from-primary-green-color to-secondry opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

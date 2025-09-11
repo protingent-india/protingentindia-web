@@ -70,7 +70,7 @@ const ContractStaffingSolutions = () => {
                                             </p>
 
                                             {/* Modern CTA */}
-                                            <div className="flex items-center gap-3 text-base font-semibold transition-colors duration-300 group-hover:gap-4" style={{ color: solution.accentColor }}>
+                                            <div className="hidden items-center gap-3 text-base font-semibold transition-colors duration-300 group-hover:gap-4" style={{ color: solution.accentColor }}>
                                                 <span>Learn More</span>
                                                 <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
                                             </div>

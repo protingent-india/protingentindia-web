@@ -16,8 +16,7 @@ const ResultsSection = () => {
                         <span className="block text-[#34969E]">That Matter to You</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-                        Insightful and actionable marketing strategies that promise impeccable results and massive growth.
-                        We plan to make your business success measurable and sustainable.
+                        Insightful and actionable marketing strategies that promise impeccable results and massive growth. We plan to make your business a success.
                     </p>
                 </div>
 

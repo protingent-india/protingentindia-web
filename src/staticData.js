@@ -408,7 +408,7 @@ export const ModernServiceSliderData = [
         id: 1,
         number: "01",
         title: "Full-Cycle RPO",
-        description: "End-to-end recruitment management, from sourcing and screening to final offer and onboarding, is fully handled by our dedicated hiring specialists. Experience complete recruitment transformation with measurable ROI.",
+        description: "End-to-end recruitment management, from sourcing and screening to final offer and onboarding, is fully handled by our dedicated hiring specialists.",
         image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
         features: ["360° Recruitment", "Dedicated Specialists", "Complete Onboarding"],
         link: "#full-cycle"
@@ -417,7 +417,7 @@ export const ModernServiceSliderData = [
         id: 2,
         number: "02",
         title: "Project-Based RPO",
-        description: "Flexible RPO engagement for high-volume or urgent hiring needs, ideal for new project launches, seasonal spikes, or expansions. Scale your team rapidly without compromising quality.",
+        description: "Flexible RPO engagement for high-volume or urgent hiring needs, ideal for new project launches, seasonal spikes, or expansions.",
         image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
         features: ["Rapid Scaling", "Flexible Engagement", "Quality Assurance"],
         link: "#project-based"
@@ -426,7 +426,7 @@ export const ModernServiceSliderData = [
         id: 3,
         number: "03",
         title: "Onsite/Offsite Recruiters",
-        description: "Deploy skilled recruiters at your office or remotely, fully aligned with your internal processes, brand, and hiring targets. Seamless integration with your existing team.",
+        description: "Deploy skilled recruiters at your office or remotely, fully aligned with your internal processes, brand, and hiring targets.",
         image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
         features: ["Skilled Recruiters", "Brand Alignment", "Seamless Integration"],
         link: "#recruiters"
@@ -435,7 +435,7 @@ export const ModernServiceSliderData = [
         id: 4,
         number: "04",
         title: "Talent Sourcing & Screening",
-        description: "Access a rich talent pipeline with targeted sourcing, resume screening, and candidate shortlisting done with speed and precision. Quality candidates, delivered faster.",
+        description: "Access a rich talent pipeline with targeted sourcing, resume screening, and candidate shortlisting done with speed and precision.",
         image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
         features: ["Rich Talent Pipeline", "Precision Screening", "Speed & Quality"],
         link: "#sourcing"
@@ -444,7 +444,7 @@ export const ModernServiceSliderData = [
         id: 5,
         number: "05",
         title: "Employer Branding Support",
-        description: "Position your company as an employer of choice with branding strategies that attract high-quality candidates and reduce dropouts. Build your talent magnet.",
+        description: "Position your company as an employer of choice with branding strategies that attract high-quality candidates and reduce dropouts.",
         image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
         features: ["Employer Branding", "Candidate Attraction", "Dropout Reduction"],
         link: "#branding"
@@ -453,7 +453,7 @@ export const ModernServiceSliderData = [
         id: 6,
         number: "06",
         title: "Analytics & Hiring Insights",
-        description: "Use real-time dashboards and data-driven insights to optimize hiring workflows, track performance, and improve recruitment ROI. Make informed decisions.",
+        description: "Use real-time dashboards and data-driven insights to optimize hiring workflows, track performance, and improve recruitment ROI. ",
         image: "https://customer-assets.emergentagent.com/job_cohesive-expansion/artifacts/ugjl6qe9_Background.png",
         features: ["Real-time Analytics", "Performance Tracking", "ROI Optimization"],
         link: "#analytics"
@@ -473,21 +473,26 @@ export const rpoProcessData = [
     },
     {
         icon: FaUsersCog,
-        title: "Talent Sourcing & Employer Branding",
-        desc: "Talent sourcing with AI platforms, niche job boards, referrals, while enhancing brand presence to attract top talent from the market."
+        title: "Custom RPO Strategy ",
+        desc: "Tailored RPO model based on business needs - full-cycle or modular, caters to timelines, cost, and hiring scale."
     },
     {
         icon: FaClipboardCheck,
-        title: "Screening & Assessment",
-        desc: "We conduct screening, behavioural evaluations, and technical assessments to deliver a suitable and skilled profile."
+        title: "Talent Sourcing & Employer Branding",
+        desc: "Talent sourcing with AI platforms, niche job boards, referrals, while enhancing brand presence to attract top talent from the market. "
     },
     {
         icon: FaCalendarAlt,
+        title: "Screening & Assessment",
+        desc: "We conduct screening, behavioural evaluations, and technical assessments to deliver a suitable and skilled profile. "
+    },
+    {
+        icon: FaFileContract,
         title: "Interview Coordination & Candidate Experience",
         desc: "We manage interviews, feedback, and candidate engagement for smooth and timely processes for companies and applicants."
     },
     {
-        icon: FaFileContract,
+        icon: FaChartBar,
         title: "Offer Management & Onboarding",
         desc: "From offer negotiations to pre-joining touchpoints, we handle it all to reduce drop-offs and ensure successful onboarding."
     },
@@ -502,7 +507,7 @@ export const skillCards = [
     {
         icon: FaChartLine,
         title: "Faster Time-to-Hire",
-        description: "Streamline hiring with pre-vetted candidates to fill positions quickly with top-tier skills and domain expertise.",
+        description: "Streamline hiring with pre-vetted candidates to fill positions quickly with top-tier skills.",
         highlights: ["60% Faster Hiring", "Pre-Vetted Talent", "Quality Assurance"],
         ctaText: "Accelerate Hiring",
         accentColor: "#34969D",
@@ -511,7 +516,7 @@ export const skillCards = [
     {
         icon: FaUsersCog,
         title: "Access to Quality Talent",
-        description: "Leveraging organizations with skilled applicants and niche sourcing expertise to attract result-oriented professionals.",
+        description: "Leveraging organizations with skilled applicants and niche sourcing expertise to attract result-oriented performing professionals.",
         highlights: ["Global Talent Pool", "Niche Expertise", "Quality Screening"],
         ctaText: "Find Top Talent",
         accentColor: "#CBDC13",
@@ -520,7 +525,7 @@ export const skillCards = [
     {
         icon: FaDollarSign,
         title: "Cost Efficiency",
-        description: "Optimized workflows, reduced dependency on agencies, and minimized vacancy gaps for cost-efficient hiring.",
+        description: "Optimized workflows, reduced dependency on agencies, and minimized vacancy gaps to lead a cost-efficient hiring process. ",
         highlights: ["40% Cost Reduction", "Streamlined Process", "ROI Focused"],
         ctaText: "Reduce Costs",
         accentColor: "#34969D",
@@ -529,7 +534,7 @@ export const skillCards = [
     {
         icon: FaRocket,
         title: "Scalable Recruitment Support",
-        description: "Maximizing capable hirings based on dedicated project needs and current market standards.",
+        description: "Maximizing capable hirings based on dedicated project needs and market standards.",
         highlights: ["Flexible Scaling", "Project Based", "Market Aligned"],
         ctaText: "Scale Teams",
         accentColor: "#CBDC13",
@@ -538,7 +543,7 @@ export const skillCards = [
     {
         icon: FaLightbulb,
         title: "Improved Employer Branding",
-        description: "Build a strong brand image that attracts the right kind of talent consistently and improves retention.",
+        description: "Build a strong brand image that attracts the right kind of talent consistently.",
         highlights: ["Brand Enhancement", "Talent Magnet", "Higher Retention"],
         ctaText: "Build Brand",
         accentColor: "#34969D",
@@ -547,7 +552,16 @@ export const skillCards = [
     {
         icon: FaHandshake,
         title: "Enhanced Candidate Experience",
-        description: "Deliver professional, timely, and engaging recruitment journeys reducing drop-offs and improving acceptance rates.",
+        description: "Deliver professional, timely, and engaging recruitment journeys—reducing drop-offs and improving acceptance rates.",
+        highlights: ["Professional Journey", "Higher Acceptance", "Better Experience"],
+        ctaText: "Improve Experience",
+        accentColor: "#CBDC13",
+        bgColor: "#012D50"
+    },
+    {
+        icon: FaHandshake,
+        title: "Data-Driven Decisions",
+        description: "Make smarter hiring moves using performance analytics, market insights, and real-time dashboards.",
         highlights: ["Professional Journey", "Higher Acceptance", "Better Experience"],
         ctaText: "Improve Experience",
         accentColor: "#CBDC13",
@@ -597,7 +611,7 @@ export const serviceRPOFAQ = [
     },
     {
         q: "Can we book RPO Services for a few months or specific roles?",
-        a: "That's exactly where our scalable RPO model fits in. Whether it's short-term hiring sprints or niche technical roles, we plug in and deliver with zero long-term commitment."
+        a: "That’s exactly where our scalable RPO model fits in. Whether it’s short-term hiring sprints or niche technical roles, we plug in and deliver with zero long-term commitment."
     },
     {
         q: "Will outsourcing recruitment affect employer branding?",
@@ -1341,7 +1355,7 @@ export const DirectSourcingFAQData = [
         a: "Direct sourcing should complement—not replace—your tech stack. A good program integrates with MSP/VMS/ATS for candidate records, rate cards, and compliance workflows while using branded outreach to build exclusive talent pools. The goal: seamless data flow, single source of truth, and faster fill rates."
     },
     {
-        q: "What about the legal risk that worker classification and compliance?",
+        q: "What about the legal risks of worker classification and compliance?",
         a: "Misclassification risk is real and varies by country/state. A mature direct sourcing program embeds compliance checks, classification rules, and payroll/EOR options to keep you safe. Don't let cost optimism trump governance learning the rules and designing the program around them prevents costly mistakes."
     },
     {
@@ -1566,7 +1580,7 @@ export const HRfaqs = [
     },
     {
         q: "Can Protingent manage payroll for large organizations with complex structures?",
-        a: "Our payroll management system has been designed to manage all scenarios. Whether a startup or an enterprise with multiple locations and employee categories, we can automate time and processes accurately without error. As part of your payroll, if you need to make taxes, reimbursements, or statutory deductions, you can be assured that Protingent will complete everything accurately, and compliantly while still giving you real-time access to payroll reports. Our model will also grow with you."
+        a: "Our payroll management system has been designed to manage all scenarios. Whether a startup or an enterprise with multiple locations and employee categories, we can automate time and processes accurately without error. As part of your payroll, if you need to make taxes, reimbursements, or statutory deductions, you can be assured that Protingent will complete everything accurately, and Repetition of the word compliantly while still giving you real-time access to payroll reports. Our model will also grow with you."
     },
     {
         q: "How does outsourcing HR improve employee engagement and retention?",

@@ -19,8 +19,6 @@ const PremiumInteractiveSlider = () => {
     const slidesToShow = lg ? 3 : md ? 2 : 1
     const maxSlide = skillCards.length - slidesToShow;
 
-    // console.log("maxSlide", slidesToShow)
-
     const nextSlide = () => {
         setCurrentSlide(prev => (prev >= maxSlide ? 0 : prev + 1));
         setProgress(0);
@@ -54,8 +52,6 @@ const PremiumInteractiveSlider = () => {
         };
     }, [isAutoPlay, currentSlide]);
 
-    console.log("currentSlide * (100 / slidesToShow", currentSlide, slidesToShow)
-
     return (
         <section id='PremiumInteractiveSlider' className="relative py-20 overflow-hidden w-full" style={{ background: 'linear-gradient(170deg, #F8FAFB 0%, white 50%, #F8FAFB 100%)' }}>
             {/* Geometric pattern overlay */}
@@ -74,8 +70,7 @@ const PremiumInteractiveSlider = () => {
                         <span className="block" style={{ color: '#34969D' }}>Business Expansions</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        Right recruitment means matching the right talent with the team to work efficiently and deliver actionable results.
-                        RPO is taking forward more from reactive hiring to strategic talent-pool acquisition to build success.
+                        Right recruitment means matching the right talent with the team to work efficiently and deliver actionable results. RPO is taking forward more from reactive hiring to strategic talent-pool acquisition to build success.
                     </p>
 
                     {/* Progress bar */}

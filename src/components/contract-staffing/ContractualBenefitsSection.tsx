@@ -18,7 +18,7 @@ const ContractualBenefitsSection = () => {
         {
             icon: FaRocket,
             title: "Rapid Scalability",
-            description: "Maximise or minimise the team anytime required based on project needs",
+            description: "Organizations can maximize or minimize their teams as required, based on project needs",
             accentColor: "#34969D",
             image: "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
         },

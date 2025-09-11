@@ -19,8 +19,7 @@ const RPOEngagementModelsSection = () => {
                         RPO Engagement Models We Offer
                     </h2>
                     <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-                        Protingent offers flexible RPO models tailored to organizational growth stage,
-                        talent needs, and operational scalability.
+                        Protingent to offer flexible RPO models tailored to organizational growth stage, talent needs, and operational scalability.
                     </p>
                 </div>
 
@@ -38,8 +37,7 @@ const RPOEngagementModelsSection = () => {
                                     End-to-End RPO
                                 </h3>
                                 <p className="text-gray-600">
-                                    Recruiters to manage the full recruitment lifecycle from sourcing, screening,
-                                    interviewing, onboarding, to monitoring performance for business consistent growth.
+                                    Recruiters to manage the full recruitment lifecycle from sourcing, screening, interviewing, onboarding, to monitoring performance for business consistent growth.
                                 </p>
                             </div>
                         </div>
@@ -56,8 +54,7 @@ const RPOEngagementModelsSection = () => {
                                     Project-Based RPO
                                 </h3>
                                 <p className="text-gray-600">
-                                    We fulfill short-term project-based hiring needs with promising quick onboarding,
-                                    enabling your business to deliver data-driven results within defined deadlines.
+                                    We fulfill short-term project-based hiring needs with promising quick onboarding, enabling your business to deliver data-driven results within defined deadlines.
                                 </p>
                             </div>
                         </div>
@@ -74,8 +71,7 @@ const RPOEngagementModelsSection = () => {
                                     On-Demand RPO
                                 </h3>
                                 <p className="text-gray-600">
-                                    Need expert recruitment support during spikes or expansions?
-                                    Engage us only when required—no long-term commitment.
+                                    Need expert recruitment support during spikes or expansions? Engage us only when required—no long-term commitment.
                                 </p>
                             </div>
                         </div>
@@ -92,8 +88,7 @@ const RPOEngagementModelsSection = () => {
                                     Hybrid RPO
                                 </h3>
                                 <p className="text-gray-600">
-                                    Combine in-house recruitment with Protingent's support—ideal for
-                                    companies wanting to retain control but need added firepower.
+                                    Combine in-house recruitment with Protingent’s support—ideal for companies wanting to retain control but need added firepower.
                                 </p>
                             </div>
                         </div>

@@ -1,5 +1,6 @@
 "use client"
 import { HRprocesses } from "@/staticData";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
 // --------------------------------------------------------------
@@ -92,10 +93,12 @@ const ProcessApproachSection = () => {
                                                     {process.description}
                                                 </p>
 
-                                                <div className="flex items-center gap-3 text-[#34969E] font-semibold hover:gap-5 transition-all duration-300 cursor-pointer">
-                                                    <span>Learn More</span>
-                                                    <FaArrowRight />
-                                                </div>
+                                                <Link href={"/contact"} className="cursor-pointer" >
+                                                    <div className="flex items-center gap-3 text-[#34969E] font-semibold hover:gap-5 transition-all duration-300 cursor-pointer">
+                                                        <span>Learn More</span>
+                                                        <FaArrowRight />
+                                                    </div>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

@@ -1,6 +1,6 @@
 "use client"
-import { useState } from "react";
-import { useRouter } from 'next/navigation'
+import { useEffect, useState } from "react";
+import { useRouter, usePathname } from 'next/navigation'
 import {
     HeaderMenuList,
     Icon,
@@ -14,6 +14,7 @@ const Header = () => {
     const [open, setOpen] = useState<any>(false);
     const [openSubMenu, setOpenSubMenu] = useState<any>(false);
     const router = useRouter();
+    const pathname = usePathname();
 
     const handleNavigation = (menu: any) => {
         if (menu?.name === "services") {
@@ -23,6 +24,11 @@ const Header = () => {
             router.push(menu?.link)
         }
     }
+
+    useEffect(() => {
+        setOpen(false);
+        setOpenSubMenu(false);
+    }, [pathname])
 
     return (
         <div id="header" className="w-full flex justify-center py-7 sticky top-0 z-[1000] bg-white p-4 sm:px-8 capitalize">

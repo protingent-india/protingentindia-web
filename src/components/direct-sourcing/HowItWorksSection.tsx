@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { HowItWorksSectionData } from "@/staticData";
+import Link from "next/link";
 
 // --------------------------------------------------------------
 // 5. How It Works (SPD Tech Style) - Bento Grid Layout
@@ -83,14 +84,16 @@ const HowItWorksSection = () => {
                                             {step.description}
                                         </p>
 
-                                        {/* Expand indicator */}
-                                        <div className={`flex items-center gap-3 text-lg font-semibold transition-all duration-300 ${activeCard === index
-                                            ? 'opacity-100 gap-4'
-                                            : 'opacity-70'
-                                            }`} style={{ color: step.color }}>
-                                            <span>Explore Process</span>
-                                            <FaArrowRight />
-                                        </div>
+                                        <Link href={"/contact"} className="cursor-pointer" >
+                                            {/* Expand indicator */}
+                                            <div className={`flex items-center gap-3 text-lg font-semibold transition-all duration-300 ${activeCard === index
+                                                ? 'opacity-100 gap-4'
+                                                : 'opacity-70'
+                                                }`} style={{ color: step.color }}>
+                                                <span>Explore Process</span>
+                                                <FaArrowRight />
+                                            </div>
+                                        </Link>
                                     </div>
                                 </div>
 
@@ -162,14 +165,16 @@ const HowItWorksSection = () => {
                                             {step.description}
                                         </p>
 
-                                        {/* Expand indicator */}
-                                        <div className={`flex items-center gap-2 text-sm font-semibold transition-all duration-300 ${activeCard === actualIndex
-                                            ? 'opacity-100 gap-3'
-                                            : 'opacity-70'
-                                            }`} style={{ color: step.color }}>
-                                            <span>Learn More</span>
-                                            <FaArrowRight />
-                                        </div>
+                                        <Link href={"/contact"} className="cursor-pointer" >
+                                            {/* Expand indicator */}
+                                            <div className={`flex items-center gap-2 text-sm font-semibold transition-all duration-300 ${activeCard === actualIndex
+                                                ? 'opacity-100 gap-3'
+                                                : 'opacity-70'
+                                                }`} style={{ color: step.color }}>
+                                                <span>Learn More</span>
+                                                <FaArrowRight />
+                                            </div>
+                                        </Link>
                                     </div>
                                 </div>
 
