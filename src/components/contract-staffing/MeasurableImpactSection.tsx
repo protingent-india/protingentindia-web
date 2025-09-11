@@ -50,10 +50,10 @@ const MeasurableImpactSection = () => {
             <div className="container mx-auto px-4 max-w-[1450px]">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                        Measurable Impact
+                        Measurable Impact of Contract Staffing on Businesses
                     </h2>
                     <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
-                        Our contract staffing solutions deliver quantifiable results that drive business growth and operational efficiency.
+                        Our contract staffing solutions create measurable impact with agility, cost savings, compliance assurance, and access to top-tier professionals.
                     </p>
                 </div>
 
@@ -63,9 +63,9 @@ const MeasurableImpactSection = () => {
                         return (
                             <div
                                 key={index}
-                                className="text-center group cursor-pointer transform transition-all duration-300 hover:scale-105"
+                                className="text-center group cursor-pointer transform transition-all duration-300 hover:scale-105 "
                             >
-                                <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+                                <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 min-h-[380px]">
                                     <div
                                         className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transition-all duration-300 group-hover:scale-110"
                                         style={{ backgroundColor: item.accentColor }}

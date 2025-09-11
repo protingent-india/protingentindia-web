@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Modal } from "@mui/material";
 import { Icon } from "@/components";
 import { comprehensiveData, comprehensiveDataMobile } from "@/utils/constants";
+import Link from "next/link";
 
 // -----------------------------------------------------------------------
 
@@ -95,24 +96,23 @@ const ComprehensiveSection = () => {
                                                 <p className="text-[40px] font-bold" >
                                                     {el?.title}
                                                 </p>
-                                                <p className="text-2xl font-semibold" >
-                                                    Development & Digital Transformation
-                                                </p>
                                                 <p className="text-xl" >
-                                                    Accelerate your business with expert IT consulting, agile development, and transformative digital solutions tailored for scale and innovation.
+                                                    {el?.desc}
                                                 </p>
                                             </div>
                                             <div className="flex justify-start lg:justify-end" >
-                                                <div className='w-[258px] bg-bg-parrot-green flex justify-between items-center gap rounded-full pl-6 cursor-pointer' >
-                                                    <p className='text-2xl' >
-                                                        Explore Solution
-                                                    </p>
-                                                    <div className='rounded-full bg-secondry w-[50px] h-[50px] flex justify-center items-center' >
-                                                        <Icon
-                                                            icon='humbleicons:arrow-right'
-                                                        />
+                                                <Link href={el?.link || '/'} className="cursor-pointer" >
+                                                    <div className='w-[258px] bg-bg-parrot-green flex justify-between items-center gap rounded-full pl-6 cursor-pointer' >
+                                                        <p className='text-2xl' >
+                                                            Explore Solution
+                                                        </p>
+                                                        <div className='rounded-full bg-secondry w-[50px] h-[50px] flex justify-center items-center' >
+                                                            <Icon
+                                                                icon='humbleicons:arrow-right'
+                                                            />
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

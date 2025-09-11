@@ -3,6 +3,7 @@
 // Industries Section with Mandatory Unique Images per Card
 
 import { marketingIndustries } from "@/staticData";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
 // --------------------------------------------------------------
@@ -72,10 +73,12 @@ const IndustriesSection = () => {
                 </div>
 
                 <div className="text-center mt-12">
-                    <button className="modern-btn group relative overflow-hidden">
-                        <span className="relative z-10">Check More Marketing Solutions for Your Industry</span>
-                        <div className="absolute inset-0 bg-gradient-to-r from-[#C2D92C] to-[#34969E] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </button>
+                    <Link href={"/contact"}>
+                        <button className="modern-btn group relative overflow-hidden">
+                            <span className="relative z-10">Check More Marketing Solutions for Your Industry</span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#C2D92C] to-[#34969E] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

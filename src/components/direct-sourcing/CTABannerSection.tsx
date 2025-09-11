@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 // --------------------------------------------------------------
 // 3. CTA Banner (Studio Beyond Style)
 
@@ -34,13 +35,15 @@ const CTABannerSection = () => {
                     You manage your own contingent workforce, gain visibility into available skills, and engage talent faster without the heavy agency costs.
                 </p>
 
-                <button className="group relative overflow-hidden px-12 py-6 bg-[#C2D92C] text-[#113F64] font-bold text-xl rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
-                    <span className="relative z-10 flex items-center gap-4">
-                        Get Started Today
-                        <FaRocket className="group-hover:translate-x-2 group-hover:rotate-12 transition-all duration-300" />
-                    </span>
-                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                </button>
+                <Link href={"/contact"} className="cursor-pointer" >
+                    <button className="group relative overflow-hidden px-12 py-6 bg-[#C2D92C] text-[#113F64] font-bold text-xl rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
+                        <span className="relative z-10 flex items-center gap-4">
+                            Get Started Today
+                            <FaRocket className="group-hover:translate-x-2 group-hover:rotate-12 transition-all duration-300" />
+                        </span>
+                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    </button>
+                </Link>
 
                 {/* Trust indicators */}
                 <div className="flex justify-center items-center gap-12 mt-12 text-lg opacity-80">

@@ -24,7 +24,10 @@ export default function ContractStaffingService() {
             <MeasurableImpactSection />
             <ProtingentAdvantageSection />
             <ContractIndustriesSection />
-            <CTASection />
+            <CTASection
+                title="Ready to Build Your Agile Workforce For the Timespan You Need?"
+                desc="Partner with Protingent India to access flexible, compliant, and pre-vetted contract staffing solutions that empower your business to grow without limits."
+            />
 
             <div className="py-16 md:py-24 w-full flex justify-center">
                 <ContactUsComponent />

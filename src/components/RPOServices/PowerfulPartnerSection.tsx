@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import {
     FaHandshake,
     FaRocket,
@@ -104,15 +105,17 @@ const PowerfulPartnerSection = () => {
 
                 {/* CTA Button */}
                 <div className="text-center mt-12">
-                    <button
-                        className="font-bold text-lg px-10 py-4 rounded-full hover:scale-105 transform transition-all shadow-2xl"
-                        style={{
-                            background: 'linear-gradient(90deg, #CBDC13, #34969D)',
-                            color: '#012D50'
-                        }}
-                    >
-                        Start Building Your Dream Team
-                    </button>
+                    <Link href={"/contact"} className="cursor-pointer" >
+                        <button
+                            className="font-bold text-lg px-10 py-4 rounded-full hover:scale-105 transform transition-all shadow-2xl"
+                            style={{
+                                background: 'linear-gradient(90deg, #CBDC13, #34969D)',
+                                color: '#012D50'
+                            }}
+                        >
+                            Start Building Your Dream Team
+                        </button>
+                    </Link>
                 </div>
             </div>
         </section>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
     FaArrowRight,
 } from 'react-icons/fa';
@@ -43,17 +44,21 @@ const ContractStaffingHero = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <button className="modern-btn group relative overflow-hidden">
-                        <span className="relative z-10">Get Contract Staffing Support Today</span>
-                        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(135deg, #CBDC13, #34969D)' }}></div>
-                    </button>
+                    <Link href={"/contact"} className="cursor-pointer" >
+                        <button className="modern-btn group relative overflow-hidden">
+                            <span className="relative z-10">Get Contract Staffing Support Today</span>
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(135deg, #CBDC13, #34969D)' }}></div>
+                        </button>
+                    </Link>
 
-                    <button className="px-6 py-3 border-2 border-white/30 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
-                        <span className="flex items-center gap-2">
-                            <span>View Our Solutions</span>
-                            <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
-                        </span>
-                    </button>
+                    <Link href={"/contact"} className="cursor-pointer" >
+                        <button className="px-6 py-3 border-2 border-white/30 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
+                            <span className="flex items-center gap-2">
+                                <span>View Our Solutions</span>
+                                <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
+                            </span>
+                        </button>
+                    </Link>
                 </div>
 
                 {/* Scroll indicator */}

@@ -1,6 +1,7 @@
 "use client"
 import { FaArrowRight, FaNetworkWired, FaPlay, FaRocket, FaUsers } from "react-icons/fa";
 import { DirectSourcingData } from "@/staticData";
+import Link from "next/link";
 
 // --------------------------------------------------------------
 // 1. Hero Section (Tallium/FuseLab Style)
@@ -81,21 +82,25 @@ const DirectSourcingHeroSection = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-6 mb-8">
-                            <button className="group relative overflow-hidden px-8 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-xl hover:scale-105 transform transition-all shadow-2xl">
-                                <span className="relative z-10 flex items-center gap-3">
-                                    Build Your Talent-Pool
-                                    <FaUsers className="group-hover:rotate-12 transition-transform duration-300" />
-                                </span>
-                                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                            </button>
+                            <Link href={"/contact"} className="cursor-pointer" >
+                                <button className="group relative overflow-hidden px-8 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-xl hover:scale-105 transform transition-all shadow-2xl">
+                                    <span className="relative z-10 flex items-center gap-3">
+                                        Build Your Talent-Pool
+                                        <FaUsers className="group-hover:rotate-12 transition-transform duration-300" />
+                                    </span>
+                                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                                </button>
+                            </Link>
 
-                            <button className="px-8 py-4 border-2 border-white/40 rounded-xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white">
-                                <span className="flex items-center gap-3">
-                                    <FaPlay className="text-sm" />
-                                    <span>Watch Demo</span>
-                                    <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
-                                </span>
-                            </button>
+                            <Link href={"/contact"} className="cursor-pointer" >
+                                <button className="px-8 py-4 border-2 border-white/40 rounded-xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white">
+                                    <span className="flex items-center gap-3">
+                                        <FaPlay className="text-sm" />
+                                        <span>Watch Demo</span>
+                                        <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
+                                    </span>
+                                </button>
+                            </Link>
                         </div>
 
                         {/* Key Benefits Preview */}

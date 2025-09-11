@@ -46,7 +46,7 @@ const BgWithListComponent = ({
                 </div>
             </div>
             <div className="w-full sm:w-2/4 flex justify-center p-4 lap:!py-12" >
-                <div className="w-[80%] flex flex-col gap-10 items-center justify-between">
+                <div className="w-[80%] flex flex-col gap-4 items-center justify-between overflow-y-auto">
                     {listData?.map((el, index) => (
                         <ListComponent
                             key={index}

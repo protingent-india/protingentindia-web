@@ -5,6 +5,7 @@ import {
     useState
 } from "react";
 import { ModernServiceSliderData } from "@/staticData";
+import Link from "next/link";
 
 // ----------------------------------------------------------------
 
@@ -132,10 +133,12 @@ const ModernServiceSlider = () => {
                                     ))}
                                 </div>
 
-                                <button className="modern-btn group">
-                                    <span className="relative z-10">Learn More</span>
-                                    <div className="absolute inset-0 bg-gradient-to-r from-primary-green-color to-secondry opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                </button>
+                                <Link href={"/contact"} className="cursor-pointer" >
+                                    <button className="modern-btn group">
+                                        <span className="relative z-10">Learn More</span>
+                                        <div className="absolute inset-0 bg-gradient-to-r from-primary-green-color to-secondry opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 "use client"
 import { DirectSourcingindustries } from "@/staticData";
+import Link from "next/link";
 import { useState } from "react";
 import { FaArrowRight, FaEye } from "react-icons/fa";
 
@@ -184,13 +185,15 @@ const IndustriesSection = () => {
 
                 {/* Call to Action Button */}
                 <div className="text-center mt-16">
-                    <button className="group relative overflow-hidden px-12 py-4 bg-[#34969E] text-white font-bold text-lg rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
-                        <span className="relative z-10 flex items-center gap-3">
-                            Discover Industry Solutions
-                            <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
-                        </span>
-                        <div className="absolute inset-0 bg-[#C2D92C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </button>
+                    <Link href={"/contact"} className="cursor-pointer" >
+                        <button className="group relative overflow-hidden px-12 py-4 bg-[#34969E] text-white font-bold text-lg rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
+                            <span className="relative z-10 flex items-center gap-3">
+                                Discover Industry Solutions
+                                <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
+                            </span>
+                            <div className="absolute inset-0 bg-[#C2D92C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

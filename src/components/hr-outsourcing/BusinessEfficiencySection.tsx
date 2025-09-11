@@ -5,6 +5,7 @@
 
 import { FaArrowRight } from "react-icons/fa";
 import { HRbenefits } from "@/staticData";
+import Link from "next/link";
 
 // --------------------------------------------------------------
 const BusinessEfficiencySection = () => {
@@ -70,10 +71,12 @@ const BusinessEfficiencySection = () => {
                                         </p>
                                     </div>
 
-                                    <div className="flex items-center gap-4 font-semibold text-lg" style={{ color: benefit.color }}>
-                                        <span>Learn More</span>
-                                        <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
-                                    </div>
+                                    <Link href={"/contact"} className="cursor-pointer" >
+                                        <div className="flex items-center gap-4 font-semibold text-lg" style={{ color: benefit.color }}>
+                                            <span>Learn More</span>
+                                            <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         );
@@ -127,10 +130,12 @@ const BusinessEfficiencySection = () => {
                                         </p>
                                     </div>
 
-                                    <div className="flex items-center gap-2 font-semibold text-sm mt-4" style={{ color: benefit.color }}>
-                                        <span>Explore Benefits</span>
-                                        <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-                                    </div>
+                                    <Link href={"/contact"} className="cursor-pointer" >
+                                        <div className="flex items-center gap-2 font-semibold text-sm mt-4" style={{ color: benefit.color }}>
+                                            <span>Explore Benefits</span>
+                                            <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         );

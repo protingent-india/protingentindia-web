@@ -1,5 +1,6 @@
 "use client"
 import { HRFinalCTASection } from "@/staticData";
+import Link from "next/link";
 import { FaArrowRight, FaRocket } from "react-icons/fa";
 
 // --------------------------------------------------------------
@@ -47,21 +48,25 @@ const FinalCTASection = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-16">
-                    <button className="group relative overflow-hidden px-16 py-6 bg-[#C2D92C] text-[#113F64] font-bold text-2xl rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
-                        <span className="relative z-10 flex items-center gap-4">
-                            Transform Your HR Today
-                            <FaRocket className="group-hover:rotate-12 transition-transform duration-300" />
-                        </span>
-                        {/* Ripple effect */}
-                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                    </button>
+                    <Link href={"/contact"} className="cursor-pointer" >
+                        <button className="group relative overflow-hidden px-16 py-6 bg-[#C2D92C] text-[#113F64] font-bold text-2xl rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
+                            <span className="relative z-10 flex items-center gap-4">
+                                Transform Your HR Today
+                                <FaRocket className="group-hover:rotate-12 transition-transform duration-300" />
+                            </span>
+                            {/* Ripple effect */}
+                            <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                        </button>
+                    </Link>
 
-                    <button className="px-12 py-6 border-3 border-white/40 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white text-xl font-semibold">
-                        <span className="flex items-center gap-4">
-                            <span>Schedule Free Consultation</span>
-                            <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
-                        </span>
-                    </button>
+                    <Link href={"/contact"} className="cursor-pointer" >
+                        <button className="px-12 py-6 border-3 border-white/40 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white text-xl font-semibold">
+                            <span className="flex items-center gap-4">
+                                <span>Schedule Free Consultation</span>
+                                <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
+                            </span>
+                        </button>
+                    </Link>
                 </div>
 
                 {/* Final trust indicators */}

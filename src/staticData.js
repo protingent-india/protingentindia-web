@@ -1355,7 +1355,7 @@ export const DirectSourcingFAQData = [
         a: "Direct sourcing should complement—not replace—your tech stack. A good program integrates with MSP/VMS/ATS for candidate records, rate cards, and compliance workflows while using branded outreach to build exclusive talent pools. The goal: seamless data flow, single source of truth, and faster fill rates."
     },
     {
-        q: "What about the legal risk that worker classification and compliance?",
+        q: "What about the legal risks of worker classification and compliance?",
         a: "Misclassification risk is real and varies by country/state. A mature direct sourcing program embeds compliance checks, classification rules, and payroll/EOR options to keep you safe. Don't let cost optimism trump governance learning the rules and designing the program around them prevents costly mistakes."
     },
     {
@@ -1580,7 +1580,7 @@ export const HRfaqs = [
     },
     {
         q: "Can Protingent manage payroll for large organizations with complex structures?",
-        a: "Our payroll management system has been designed to manage all scenarios. Whether a startup or an enterprise with multiple locations and employee categories, we can automate time and processes accurately without error. As part of your payroll, if you need to make taxes, reimbursements, or statutory deductions, you can be assured that Protingent will complete everything accurately, and compliantly while still giving you real-time access to payroll reports. Our model will also grow with you."
+        a: "Our payroll management system has been designed to manage all scenarios. Whether a startup or an enterprise with multiple locations and employee categories, we can automate time and processes accurately without error. As part of your payroll, if you need to make taxes, reimbursements, or statutory deductions, you can be assured that Protingent will complete everything accurately, and Repetition of the word compliantly while still giving you real-time access to payroll reports. Our model will also grow with you."
     },
     {
         q: "How does outsourcing HR improve employee engagement and retention?",

@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link";
+
 // ------------------------------------------------------------------
 
 const RPOServiceBanner = () => {
@@ -40,17 +42,21 @@ const RPOServiceBanner = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <button className="modern-btn group relative overflow-hidden">
-                        <span className="relative z-10">Request for Free RPO Consultation</span>
-                        <div className="absolute inset-0 bg-gradient-to-r from-primary-green-color to-secondry opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </button>
+                    <Link href={"/contact"} className="cursor-pointer" >
+                        <button className="modern-btn group relative overflow-hidden">
+                            <span className="relative z-10">Request for Free RPO Consultation</span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-primary-green-color to-secondry opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </button>
+                    </Link>
 
-                    <button className="hidden px-6 py-3 border-2 border-white/30 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
-                        <span className="flex items-center gap-2">
-                            <span>Watch Demo</span>
-                            <div className="w-0 h-0 border-l-[6px] border-l-white border-y-[4px] border-y-transparent group-hover:translate-x-1 transition-transform duration-300"></div>
-                        </span>
-                    </button>
+                    <Link href={"/contact"} className="cursor-pointer" >
+                        <button className="px-6 py-3 border-2 border-white/30 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
+                            <span className="flex items-center gap-2">
+                                <span>Watch Demo</span>
+                                <div className="w-0 h-0 border-l-[6px] border-l-white border-y-[4px] border-y-transparent group-hover:translate-x-1 transition-transform duration-300"></div>
+                            </span>
+                        </button>
+                    </Link>
                 </div>
 
                 {/* Scroll indicator */}

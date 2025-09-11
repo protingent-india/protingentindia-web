@@ -16,8 +16,7 @@ const IndustriesSection = () => {
                         Industries We Serve
                     </h2>
                     <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        Our contract staffing expertise spans across diverse industries, providing specialized talent solutions
-                        tailored to sector-specific requirements and compliance standards.
+                        We are providing contract staffing solutions across diverse industries, delivering specialized talent aligned with unique workforce challenges.
                     </p>
                 </div>
 

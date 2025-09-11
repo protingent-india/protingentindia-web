@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import {
     FaPlay
 } from 'react-icons/fa';
@@ -43,12 +44,14 @@ const MarketingHeroSection = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <button className="modern-btn group relative overflow-hidden">
-                        <span className="relative z-10">Connect for Free Consultation</span>
-                        <div className="absolute inset-0 bg-gradient-to-r from-[#C2D92C] to-[#34969E] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </button>
+                    <Link href={"/contact"}>
+                        <button className="modern-btn group relative overflow-hidden">
+                            <span className="relative z-10">Connect for Free Consultation</span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#C2D92C] to-[#34969E] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </button>
+                    </Link>
 
-                    <button className="px-6 py-3 border-2 border-white/30 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
+                    <button className="px-6 py-3 hidden border-2 border-white/30 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
                         <span className="flex items-center gap-2">
                             <span>View Portfolio</span>
                             <FaPlay className="text-sm group-hover:translate-x-1 transition-transform duration-300" />

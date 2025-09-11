@@ -38,16 +38,16 @@ export const MenuList: Record<string, any>[] = [
             }
         ]
     },
-    {
-        name: "industries",
-        children: [],
-        link: "/industries"
-    },
-    {
-        name: "careers",
-        children: [],
-        link: "/careers"
-    },
+    // {
+    //     name: "industries",
+    //     children: [],
+    //     link: "/industries"
+    // },
+    // {
+    //     name: "careers",
+    //     children: [],
+    //     link: "/careers"
+    // },
     {
         name: "insights",
         children: [],
@@ -120,29 +120,13 @@ export const ServicesProcessData = [
         desc: "Fast-track orientation to ensure zero downtime from day one."
     },
     {
-        title: "Requirement Discovery",
-        desc: "Understand your project needs, timelines, and resourcing expectations."
+        title: "Workflow Integration",
+        desc: "FTEs embedded into your team for smooth collaboration and delivery."
     },
     {
-        title: "Talent Mapping",
-        desc: "Match expert professionals to roles with domain-specific alignment."
-    },
-    {
-        title: "Resource Onboarding",
-        desc: "Fast-track orientation to ensure zero downtime from day one."
-    },
-    {
-        title: "Requirement Discovery",
-        desc: "Understand your project needs, timelines, and resourcing expectations."
-    },
-    {
-        title: "Talent Mapping",
-        desc: "Match expert professionals to roles with domain-specific alignment."
-    },
-    {
-        title: "Resource Onboarding",
-        desc: "Fast-track orientation to ensure zero downtime from day one."
-    },
+        title: "Monitoring & Optimization",
+        desc: "Track KPIs, ensure compliance, and optimize performance consistently."
+    }
 ]
 
 export const businessBenefitsData = [
@@ -158,6 +142,18 @@ export const businessBenefitsData = [
         title: "Faster Time-to-Market",
         desc: "Skilled FTE professionals accelerate workflows and shorten delivery timelines."
     },
+    {
+        title: "Domain-Specific Expertise",
+        desc: "Access vetted professionals with industry-aligned technical and functional knowledge."
+    },
+    {
+        title: "Seamless Team Integration",
+        desc: "FTEs adapt to your tools, culture, and workflows like internal employees."
+    },
+    {
+        title: "Reduced HR and Admin Load",
+        desc: "No hassle of hiring, onboarding, compliance, or payroll management on your side."
+    },
 ]
 
 export const serviceFTEIndustryData = [
@@ -166,16 +162,44 @@ export const serviceFTEIndustryData = [
         img: "/img/serviceFTE/aeroSpace.png"
     },
     {
-        title: "Cloud Computing",
+        title: "eCommerce",
         img: "/img/serviceFTE/cloudComputing.png"
     },
     {
-        title: "Aerospace / Space",
+        title: "Networking",
         img: "/img/serviceFTE/aeroSpace.png"
     },
     {
         title: "Cloud Computing",
         img: "/img/serviceFTE/cloudComputing.png"
+    },
+    {
+        title: "Data",
+        img: "/img/serviceFTE/aeroSpace.png"
+    },
+    {
+        title: "Gaming",
+        img: "/img/serviceFTE/cloudComputing.png"
+    },
+    {
+        title: "Software / SaaS",
+        img: "/img/serviceFTE/aeroSpace.png"
+    },
+    {
+        title: "Semiconductor",
+        img: "/img/serviceFTE/cloudComputing.png"
+    },
+    {
+        title: "Consumer Goods / Virtual Reality",
+        img: "/img/serviceFTE/aeroSpace.png"
+    },
+    {
+        title: "Medical Device",
+        img: "/img/serviceFTE/cloudComputing.png"
+    },
+    {
+        title: "Government / DoD",
+        img: "/img/serviceFTE/aeroSpace.png"
     },
 ]
 
@@ -218,34 +242,35 @@ export const serviceFTEFAQ = [
         a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
     },
     {
-        q: "How does FTE service allow for more efficient growth of my business?",
-        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+        q: "Is hiring via FTE services cheaper than traditional hiring?",
+        a: "With FTE services, you pay only for the dedicated hours worked without the typical overhead of benefits, bonuses, and more, or in some cases, idle time. Traditional hiring comes with recruiting, onboarding, and administrative expenses. An FTE model alleviates this process and provides clients with the external resources they require with predictable pricing and much better control of budgeting, while increasing efficiency because it maximizes their access to great skills while limiting operational complexity."
     },
     {
-        q: "How does FTE service allow for more efficient growth of my business?",
-        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+        q: "Can I customize FTE services to suit my project?",
+        a: "FTE services are quite flexible. Whether hiring one resource, a team, a short-term or long-term engagement, everything about FTE services can be customized. We talk about skillset, start schedules, situation—so you can define what fits your particular workflow. This, in turn, helps ensure the talent fits into your workflow, gives a more tailored quality of service that fits your specific needs in terms of business objectives, deadlines, and delivery timelines."
     },
     {
-        q: "How does FTE service allow for more efficient growth of my business?",
-        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+        q: "What kind of professionals can I hire through FTE Services?",
+        a: "You can hire a wide variety of professionals, including developers, data analysts, designers, quality assurance testers, scientists, and more. We have FTE services available for all types of technical, creative, analytical, and research roles, no matter the industry - healthcare, IT, pharma, research, etc. With FTE Services, you have domain-specific experts who are ready to get to work for you on day one."
     },
     {
-        q: "How does FTE service allow for more efficient growth of my business?",
-        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+        q: "How quickly can Protingent deploy resources through FTE Services?",
+        a: "Protingent provides quick and easy onboarding of resources through FTE Services. We can generally deploy resources within 3 to 7 business days, depending on the role/skill set needed. We always maintain a strong bench of pre-vetted candidates for deployment and expand recruitment issues through our future talent network, reducing time for all clients. You get talented professionals ready to go quickly, ensuring no downtime and uninterrupted momentum in projects."
     },
     {
-        q: "How does FTE service allow for more efficient growth of my business?",
-        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+        q: "What if I want to scale my FTE team up or down in the middle of a project?",
+        a: "FTE Services are designed to be scalable. You can easily add or subtract team members based on workload, deadlines, or project changes. This scalability also helps ensure that you are not under-resourced on your project, nor paying for a team to sit idle. Our team can help you quickly adjust the size of your team while maintaining productivity and quality."
     },
     {
-        q: "How does FTE service allow for more efficient growth of my business?",
-        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+        q: "Will FTE professionals be managed by my team or Protingent?",
+        a: "That will be up to you. Most clients lean toward being responsible for the overall supervision due to alignment with their internal processes, but we can provide full management as necessary. Either way, the resource is dedicated to your project, assisting your stakeholders, and is a key, integrated member of your operations."
     },
     {
-        q: "How does FTE service allow for more efficient growth of my business?",
-        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
+        q: "How does Protingent ensure quality and accountability, and achieve FTE service for its Users?",
+        a: "Protingent employs a strong quality framework. All FTE Professionals are vetted to ensure technical, communication, and domain knowledge to ensure quality. In addition to regular performance check-ins, we encourage the use of reporting metrics and feedback loops to ensure accountability. Furthermore, our client success managers monitor all aspects of the engagement, so you can be assured that there is never a void of communication or satisfaction."
     },
 ]
+
 
 export const comprehensiveDataMobile = [
     {
@@ -299,46 +324,55 @@ export const comprehensiveData = [
     {
         img: "/img/RPOServiceSlide.png",
         title: "RPO Service",
+        link: "/rpo-service",
         desc: "AI-driven sourcing and automated screening tools shorten hiring cycles. With predictive analytics and advanced candidate matching, businesses gain access to the best-fit talent pools while reducing dependency on traditional recruitment overhead."
     },
     {
         img: "/img/biDataVisualizationSlide.png",
         title: "FTE Hiring",
+        link: "/fte-service",
         desc: "Cloud-enabled hiring workflows ensure scalability and compliance. By using structured talent databases and automation, we help enterprises build stable teams with lower attrition risks and faster onboarding."
     },
     {
         img: "/img/FTEHiringSlide.png",
         title: "Contract Staffing",
+        link: "/contract-staffing",
         desc: "On-demand staffing powered by digital talent pools and automated onboarding. Our tech-enabled processes help you deploy skilled professionals in record time while ensuring compliance and cost predictability."
     },
     {
         img: "/img/contractStaffingSlide.png",
         title: "Direct Sourcing",
+        link: "/direct-sourcing",
         desc: "Branded talent pipelines supported by AI-powered search and CRM tools. This ensures higher candidate engagement, reduced agency spend, and faster access to niche skill sets."
     },
     {
         img: "/img/directSourcingSlide.png",
         title: "HR Outsourcing",
+        link: "/hr-outsourcing",
         desc: "Digital HR platforms streamline payroll, benefits, and compliance reporting. Automated workflows reduce manual errors, while dashboards offer real-time visibility into workforce performance."
     },
     {
         img: "/img/HROutsourcingSlide.png",
         title: "Marketing Solutions",
+        link: "/marketing-solutions",
         desc: "Data-backed marketing powered by automation platforms, SEO intelligence, and performance analytics. Businesses get visibility into campaign ROI, customer acquisition costs, and engagement metrics."
     },
     {
         img: "/img/marketingSolutionSlide.png",
         title: "BI & Data Visualization",
+        link: "/",
         desc: "Interactive dashboards and real-time analytics powered by modern BI tools. We simplify complex data into actionable insights, enabling leaders to make faster, evidence-based decisions."
     },
     {
         img: "/img/biDataVisualizationSlide.png",
         title: "IT Consulting & Development",
+        link: "/",
         desc: "automated"
     },
     {
         img: "/img/directSourcingSlide.png",
         title: "Managed IT Services",
+        link: "/",
         desc: "Ensure business continuity with 24/7 infrastructure monitoring, automated patch management, and proactive threat detection. Our managed IT services provide real-time visibility, stronger cybersecurity, and reduced downtime, so enterprises can focus on innovation instead of maintenance."
     }
 ]
