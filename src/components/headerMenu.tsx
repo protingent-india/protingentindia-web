@@ -46,7 +46,7 @@ const HeaderMenuList = () => {
             {MenuList.map((menu, index) => (
                 <div
                     key={index}
-                    className={`relative ${menu?.name}`}
+                    className={`relative group ${menu?.name}`}
                     ref={menu?.name === "services" ? divRef : null}
                     onClick={() => handleNavigation(menu)}
                 >
@@ -55,20 +55,19 @@ const HeaderMenuList = () => {
                     >
                         {menu?.name || ""}
                     </p>
-                    {menu?.name === "services" && open && (
-                        <div
-                            className='flex flex-col gap-2 absolute bg-white p-4 w-fit rounded-2xl shadow-2xl'
-                        >
-                            {menu?.children?.length > 0 && menu?.children?.map((child: Record<string, any>, index: number) => (
-                                <span
-                                    key={index}
-                                    className='text-nowrap text-lg cursor-pointer'
-                                    onClick={() => router.push(child?.link)}
-                                >
-                                    {child?.name || ""}
-                                </span>
-                            ))}
-                        </div>)}
+                    <div
+                        className='group-hover:flex hidden wr flex-col gap-2 absolute bg-white p-4 w-fit rounded-2xl shadow-2xl'
+                    >
+                        {menu?.children?.length > 0 && menu?.children?.map((child: Record<string, any>, index: number) => (
+                            <span
+                                key={index}
+                                className='text-nowrap text-lg cursor-pointer'
+                                onClick={() => router.push(child?.link)}
+                            >
+                                {child?.name || ""}
+                            </span>
+                        ))}
+                    </div>
                 </div>
             ))}
         </div>
