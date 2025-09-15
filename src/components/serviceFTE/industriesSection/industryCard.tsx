@@ -17,9 +17,9 @@ const IndustryCard = ({
                 height={230}
                 width={230}
                 alt=''
-                className='!h-[230px] !w-[230px] lg:!h-[200px] lg:!w-[200px]'
+                className='!h-[230px] !w-[230px]'
             />
-            <p className='text-2xl 3xl:text-[28px] text-primary' >{title}</p>
+            <p className='text-[28px] text-primary' >{title}</p>
         </div>
     )
 }

@@ -1,6 +1,5 @@
-"use client"
 import React from 'react'
-import { CommonHeading, ProductivityCard } from '@/components';
+import { CommonHeading, Divider, ProductivityCard } from '@/components';
 import { ProductivityCardData } from '@/utils/constants';
 
 // --------------------------------------------------------------
@@ -13,7 +12,7 @@ const WorkForceProductivity = () => {
                 desc="Many businesses overspend, under-deliver, or lose project efficiency. Protingent India bridges this gap with scalable, cost-effective, and accountable FTE solutions that give you a competitive edge without the overhead."
             />
             <div className='w-full flex justify-center items-center' >
-                <div className='flex flex-wrap lg:grid grid-cols-2 gap-2 w-full' >
+                <div className='grid grid-cols-2 gap-2 w-full' >
                     {ProductivityCardData?.map((el, index) => (
                         <ProductivityCard
                             title={el.title}

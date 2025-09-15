@@ -26,9 +26,9 @@ const FAQSection = ({
                 style={{
                     background: "url(/img/FAQBG.png)"
                 }}
-                className='w-full sm:w-4/5 pt-32 p-4 bg-no-repeat bg-cover min-h-[824px] max-w-[1440px]'
+                className='w-4/5 pt-32 p-4 bg-no-repeat bg-cover min-h-[824px] max-w-[1440px]'
             >
-                <div className='flex flex-col lg:grid grid-cols-2 gap-x-4 gap-y-8 w-full' >
+                <div className='grid grid-cols-2 gap-x-4 gap-y-8 w-full' >
                     {FAQList && FAQList?.length > 0 && FAQList?.map((el: any, index: any) => (
                         <FAQComponent
                             key={index}

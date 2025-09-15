@@ -1,3 +1,146 @@
+// Mock blog data for Insights section
+export const mockBlogPosts = [
+    {
+        slug: "transforming-recruitment-with-ai-powered-solutions",
+        title: "Transforming Recruitment with AI-Powered Solutions",
+        excerpt: "Discover how artificial intelligence is revolutionizing the recruitment industry, from automated screening to predictive analytics that help identify the best candidates faster than ever before.",
+        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop",
+        category: "Technology",
+        date: "September 15, 2025",
+        readTime: 8,
+        author: {
+            name: "Sarah Johnson",
+            avatar: "https://images.unsplash.com/photo-1494790108755-2616b69c9903?q=80&w=150&auto=format&fit=crop",
+            role: "Head of AI Solutions"
+        },
+        featured: true
+    },
+    {
+        slug: "future-of-remote-work-staffing-strategies",
+        title: "The Future of Remote Work: New Staffing Strategies for 2025",
+        excerpt: "Explore the evolving landscape of remote work and how organizations are adapting their staffing strategies to build distributed teams that drive success.",
+        image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2070&auto=format&fit=crop",
+        category: "Remote Work",
+        date: "September 12, 2025",
+        readTime: 6,
+        author: {
+            name: "Michael Chen",
+            avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&auto=format&fit=crop",
+            role: "Remote Work Specialist"
+        }
+    },
+    {
+        slug: "data-driven-hiring-decisions",
+        title: "Making Data-Driven Hiring Decisions: A Complete Guide",
+        excerpt: "Learn how to leverage data analytics to make more informed hiring decisions, reduce bias, and improve the quality of your recruitment outcomes.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+        category: "Data Analytics",
+        date: "September 8, 2025",
+        readTime: 10,
+        author: {
+            name: "Dr. Emily Rodriguez",
+            avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop",
+            role: "Data Science Lead"
+        }
+    },
+    {
+        slug: "building-diverse-inclusive-teams",
+        title: "Building Diverse and Inclusive Teams: Best Practices",
+        excerpt: "Discover actionable strategies for creating more diverse and inclusive workplaces that foster innovation and drive business success.",
+        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
+        category: "Diversity & Inclusion",
+        date: "September 5, 2025",
+        readTime: 7,
+        author: {
+            name: "Jordan Williams",
+            avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop",
+            role: "D&I Consultant"
+        }
+    },
+    {
+        slug: "contract-staffing-vs-permanent-hiring",
+        title: "Contract Staffing vs. Permanent Hiring: Which Is Right for You?",
+        excerpt: "A comprehensive comparison of contract staffing and permanent hiring models to help you make the best decision for your organization's needs.",
+        image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2070&auto=format&fit=crop",
+        category: "Staffing Solutions",
+        date: "September 2, 2025",
+        readTime: 5,
+        author: {
+            name: "Alex Thompson",
+            avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop",
+            role: "Staffing Solutions Manager"
+        }
+    },
+    {
+        slug: "tech-talent-shortage-solutions",
+        title: "Addressing the Tech Talent Shortage: Innovative Solutions",
+        excerpt: "Explore creative approaches to overcome the global tech talent shortage and secure the skilled professionals your organization needs.",
+        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop",
+        category: "Technology",
+        date: "August 28, 2025",
+        readTime: 9,
+        author: {
+            name: "Priya Patel",
+            avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=150&auto=format&fit=crop",
+            role: "Tech Recruitment Lead"
+        }
+    },
+    {
+        slug: "rpo-implementation-best-practices",
+        title: "RPO Implementation: Best Practices for Success",
+        excerpt: "A step-by-step guide to successfully implementing Recruitment Process Outsourcing (RPO) in your organization for maximum efficiency and results.",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
+        category: "RPO",
+        date: "August 25, 2025",
+        readTime: 12,
+        author: {
+            name: "Robert Kumar",
+            avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop",
+            role: "RPO Solutions Director"
+        }
+    },
+    {
+        slug: "employee-retention-strategies-2025",
+        title: "Employee Retention Strategies That Actually Work in 2025",
+        excerpt: "Proven strategies to improve employee retention rates and create a workplace culture that keeps your best talent engaged and committed.",
+        image: "https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?q=80&w=2070&auto=format&fit=crop",
+        category: "HR Strategy",
+        date: "August 22, 2025",
+        readTime: 8,
+        author: {
+            name: "Lisa Anderson",
+            avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=150&auto=format&fit=crop",
+            role: "HR Strategy Consultant"
+        }
+    },
+    {
+        slug: "scaling-startup-teams-effectively",
+        title: "Scaling Startup Teams: From 10 to 100 Employees",
+        excerpt: "Essential insights for startup founders on how to scale their teams effectively while maintaining culture, quality, and operational efficiency.",
+        image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=2070&auto=format&fit=crop",
+        category: "Startup Growth",
+        date: "August 18, 2025",
+        readTime: 11,
+        author: {
+            name: "David Kim",
+            avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop",
+            role: "Startup Growth Advisor"
+        }
+    }
+];
+
+export const blogCategories = [
+    "All",
+    "Technology", 
+    "Remote Work",
+    "Data Analytics",
+    "Diversity & Inclusion",
+    "Staffing Solutions",
+    "RPO",
+    "HR Strategy",
+    "Startup Growth"
+];
+
 export const MenuList: Record<string, any>[] = [
     {
         name: "home",
@@ -35,19 +178,22 @@ export const MenuList: Record<string, any>[] = [
             {
                 name: "HR Outsourcing",
                 link: "/hr-outsourcing"
+            },
+            {
+                name: "BI Data Visualization",
+                link: "/bi-data-visualization"
+            },
+            {
+                name: "IT Consulting & Development",
+                link: "/it-consulting"
             }
         ]
     },
-    // {
-    //     name: "industries",
-    //     children: [],
-    //     link: "/industries"
-    // },
-    // {
-    //     name: "careers",
-    //     children: [],
-    //     link: "/careers"
-    // },
+    {
+        name: "industries",
+        children: [],
+        link: "/industries"
+    },
     {
         name: "insights",
         children: [],
@@ -56,7 +202,7 @@ export const MenuList: Record<string, any>[] = [
     {
         name: "contact",
         children: [],
-        link: "/contact"
+        link: "/contact-us"
     }
 ]
 
@@ -120,13 +266,29 @@ export const ServicesProcessData = [
         desc: "Fast-track orientation to ensure zero downtime from day one."
     },
     {
-        title: "Workflow Integration",
-        desc: "FTEs embedded into your team for smooth collaboration and delivery."
+        title: "Requirement Discovery",
+        desc: "Understand your project needs, timelines, and resourcing expectations."
     },
     {
-        title: "Monitoring & Optimization",
-        desc: "Track KPIs, ensure compliance, and optimize performance consistently."
-    }
+        title: "Talent Mapping",
+        desc: "Match expert professionals to roles with domain-specific alignment."
+    },
+    {
+        title: "Resource Onboarding",
+        desc: "Fast-track orientation to ensure zero downtime from day one."
+    },
+    {
+        title: "Requirement Discovery",
+        desc: "Understand your project needs, timelines, and resourcing expectations."
+    },
+    {
+        title: "Talent Mapping",
+        desc: "Match expert professionals to roles with domain-specific alignment."
+    },
+    {
+        title: "Resource Onboarding",
+        desc: "Fast-track orientation to ensure zero downtime from day one."
+    },
 ]
 
 export const businessBenefitsData = [
@@ -142,18 +304,6 @@ export const businessBenefitsData = [
         title: "Faster Time-to-Market",
         desc: "Skilled FTE professionals accelerate workflows and shorten delivery timelines."
     },
-    {
-        title: "Domain-Specific Expertise",
-        desc: "Access vetted professionals with industry-aligned technical and functional knowledge."
-    },
-    {
-        title: "Seamless Team Integration",
-        desc: "FTEs adapt to your tools, culture, and workflows like internal employees."
-    },
-    {
-        title: "Reduced HR and Admin Load",
-        desc: "No hassle of hiring, onboarding, compliance, or payroll management on your side."
-    },
 ]
 
 export const serviceFTEIndustryData = [
@@ -162,44 +312,16 @@ export const serviceFTEIndustryData = [
         img: "/img/serviceFTE/aeroSpace.png"
     },
     {
-        title: "eCommerce",
+        title: "Cloud Computing",
         img: "/img/serviceFTE/cloudComputing.png"
     },
     {
-        title: "Networking",
+        title: "Aerospace / Space",
         img: "/img/serviceFTE/aeroSpace.png"
     },
     {
         title: "Cloud Computing",
         img: "/img/serviceFTE/cloudComputing.png"
-    },
-    {
-        title: "Data",
-        img: "/img/serviceFTE/aeroSpace.png"
-    },
-    {
-        title: "Gaming",
-        img: "/img/serviceFTE/cloudComputing.png"
-    },
-    {
-        title: "Software / SaaS",
-        img: "/img/serviceFTE/aeroSpace.png"
-    },
-    {
-        title: "Semiconductor",
-        img: "/img/serviceFTE/cloudComputing.png"
-    },
-    {
-        title: "Consumer Goods / Virtual Reality",
-        img: "/img/serviceFTE/aeroSpace.png"
-    },
-    {
-        title: "Medical Device",
-        img: "/img/serviceFTE/cloudComputing.png"
-    },
-    {
-        title: "Government / DoD",
-        img: "/img/serviceFTE/aeroSpace.png"
     },
 ]
 
@@ -242,138 +364,364 @@ export const serviceFTEFAQ = [
         a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
     },
     {
-        q: "Is hiring via FTE services cheaper than traditional hiring?",
-        a: "With FTE services, you pay only for the dedicated hours worked without the typical overhead of benefits, bonuses, and more, or in some cases, idle time. Traditional hiring comes with recruiting, onboarding, and administrative expenses. An FTE model alleviates this process and provides clients with the external resources they require with predictable pricing and much better control of budgeting, while increasing efficiency because it maximizes their access to great skills while limiting operational complexity."
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
     },
     {
-        q: "Can I customize FTE services to suit my project?",
-        a: "FTE services are quite flexible. Whether hiring one resource, a team, a short-term or long-term engagement, everything about FTE services can be customized. We talk about skillset, start schedules, situation—so you can define what fits your particular workflow. This, in turn, helps ensure the talent fits into your workflow, gives a more tailored quality of service that fits your specific needs in terms of business objectives, deadlines, and delivery timelines."
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
     },
     {
-        q: "What kind of professionals can I hire through FTE Services?",
-        a: "You can hire a wide variety of professionals, including developers, data analysts, designers, quality assurance testers, scientists, and more. We have FTE services available for all types of technical, creative, analytical, and research roles, no matter the industry - healthcare, IT, pharma, research, etc. With FTE Services, you have domain-specific experts who are ready to get to work for you on day one."
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
     },
     {
-        q: "How quickly can Protingent deploy resources through FTE Services?",
-        a: "Protingent provides quick and easy onboarding of resources through FTE Services. We can generally deploy resources within 3 to 7 business days, depending on the role/skill set needed. We always maintain a strong bench of pre-vetted candidates for deployment and expand recruitment issues through our future talent network, reducing time for all clients. You get talented professionals ready to go quickly, ensuring no downtime and uninterrupted momentum in projects."
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
     },
     {
-        q: "What if I want to scale my FTE team up or down in the middle of a project?",
-        a: "FTE Services are designed to be scalable. You can easily add or subtract team members based on workload, deadlines, or project changes. This scalability also helps ensure that you are not under-resourced on your project, nor paying for a team to sit idle. Our team can help you quickly adjust the size of your team while maintaining productivity and quality."
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
     },
     {
-        q: "Will FTE professionals be managed by my team or Protingent?",
-        a: "That will be up to you. Most clients lean toward being responsible for the overall supervision due to alignment with their internal processes, but we can provide full management as necessary. Either way, the resource is dedicated to your project, assisting your stakeholders, and is a key, integrated member of your operations."
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
     },
     {
-        q: "How does Protingent ensure quality and accountability, and achieve FTE service for its Users?",
-        a: "Protingent employs a strong quality framework. All FTE Professionals are vetted to ensure technical, communication, and domain knowledge to ensure quality. In addition to regular performance check-ins, we encourage the use of reporting metrics and feedback loops to ensure accountability. Furthermore, our client success managers monitor all aspects of the engagement, so you can be assured that there is never a void of communication or satisfaction."
+        q: "How does FTE service allow for more efficient growth of my business?",
+        a: "FTE Services has dedicated experts who only work on your projects. As a result, there are no distractions, the turnaround will be faster, and responsibility is taken in full. FTE services allow for dedicated attention and seamless integration, and businesses will typically see increased productivity, which translates to big savings in costs, allowing them to grow faster and smarter without being forced to hire additional insourcing talent or stress existing teams."
     },
+]
+
+export const serviceRPOFAQ = [
+    {
+        q: "How to know when a business needs an RPO Partner?",
+        a: "If your team is spending too much time hiring, struggling with quality candidates, or scaling fast, an RPO partner like Protingent can unlock your bandwidth and results."
+    },
+    {
+        q: "Can we book RPO Services for a few months or specific roles?",
+        a: "That's exactly where our scalable RPO model fits in. Whether it's short-term hiring sprints or niche technical roles, we plug in and deliver with zero long-term commitment."
+    },
+    {
+        q: "Will outsourcing recruitment affect employer branding?",
+        a: "Not with Protingent. We act as an extension of your brand, ensuring every candidate interaction reflects your values, voice, and workplace culture."
+    },
+    {
+        q: "What kind of hiring outcomes can we expect in the first 30–60 days?",
+        a: "Speed. Precision. Pipeline. Most clients start seeing top-tier candidate submissions within the first 7–10 days, and are successfully onboarding by Day 30."
+    },
+    {
+        q: "How secure is our candidate and company data with you?",
+        a: "Your trust is our priority. We follow industry-grade compliance and data protection protocols to ensure full confidentiality across every interaction."
+    },
+    {
+        q: "How does a business need to be involved during the RPO process?",
+        a: "Minimal, unless you want to be hands-on. We handle everything from sourcing to screening. You just make the final calls and build your dream team."
+    },
+    {
+        q: "What industries or geographies does Protingent specialize in?",
+        a: "We're experts in IT, engineering, manufacturing, and high-tech roles. From India to the U.S., we've successfully delivered across global and local markets."
+    },
+    {
+        q: "What's the first step to getting started with Protingent RPO?",
+        a: "Just book a free consultation. We'll assess your current hiring challenges and suggest the right RPO model to match your growth goals."
+    }
+]
+
+export const rpoServicesData = [
+    {
+        title: "Full-Cycle RPO",
+        desc: "End-to-end recruitment management, from sourcing and screening to final offer and onboarding, is fully handled by our dedicated hiring specialists."
+    },
+    {
+        title: "Project-Based RPO",
+        desc: "Flexible RPO engagement for high-volume or urgent hiring needs, ideal for new project launches, seasonal spikes, or expansions."
+    },
+    {
+        title: "Onsite/Offsite Recruiters",
+        desc: "Deploy skilled recruiters at your office or remotely, fully aligned with your internal processes, brand, and hiring targets."
+    },
+    {
+        title: "Talent Sourcing & Screening",
+        desc: "Access a rich talent pipeline with targeted sourcing, resume screening, and candidate shortlisting done with speed and precision."
+    },
+    {
+        title: "Employer Branding Support",
+        desc: "Position your company as an employer of choice with branding strategies that attract high-quality candidates and reduce dropouts."
+    },
+    {
+        title: "Analytics & Hiring Insights",
+        desc: "Use real-time dashboards and data-driven insights to optimize hiring workflows, track performance, and improve recruitment ROI."
+    }
+]
+
+export const rpoBenefitsData = [
+    {
+        title: "Faster Time-to-Hire",
+        desc: "Streamline hiring with pre-vetted candidates to fill positions quickly with top-tier skills."
+    },
+    {
+        title: "Access to Quality Talent",
+        desc: "Leveraging organizations with skilled applicants and niche sourcing expertise to attract result-oriented performing professionals."
+    },
+    {
+        title: "Cost Efficiency",
+        desc: "Optimized workflows, reduced dependency on agencies, and minimized vacancy gaps to lead a cost-efficient hiring process."
+    },
+    {
+        title: "Scalable Recruitment Support",
+        desc: "Maximizing capable hirings based on dedicated project needs and market standards."
+    },
+    {
+        title: "Improved Employer Branding",
+        desc: "Build a strong brand image that attracts the right kind of talent consistently."
+    },
+    {
+        title: "Enhanced Candidate Experience",
+        desc: "Deliver professional, timely, and engaging recruitment journeys—reducing drop-offs and improving acceptance rates."
+    },
+    {
+        title: "Data-Driven Decisions",
+        desc: "Make smarter hiring moves using performance analytics, market insights, and real-time dashboards."
+    }
+]
+
+export const rpoProcessData = [
+    {
+        title: "Discovery & Requirement Mapping",
+        desc: "Recruiters analyze dedicated workforce needs, hiring gaps, and company culture to design a recruitment strategy tailored to the requirements."
+    },
+    {
+        title: "Custom RPO Strategy",
+        desc: "Tailored RPO model based on business needs - full-cycle or modular, caters to timelines, cost, and hiring scale."
+    },
+    {
+        title: "Talent Sourcing & Employer Branding",
+        desc: "Talent sourcing with AI platforms, niche job boards, referrals, while enhancing brand presence to attract top talent from the market."
+    },
+    {
+        title: "Screening & Assessment",
+        desc: "We conduct screening, behavioural evaluations, and technical assessments to deliver a suitable and skilled profile."
+    },
+    {
+        title: "Interview Coordination & Candidate Experience",
+        desc: "We manage interviews, feedback, and candidate engagement for smooth and timely processes for companies and applicants."
+    },
+    {
+        title: "Offer Management & Onboarding",
+        desc: "From offer negotiations to pre-joining touchpoints, we handle it all to reduce drop-offs and ensure successful onboarding."
+    },
+    {
+        title: "Performance Monitoring & Reporting",
+        desc: "Real-time dashboards, weekly reports, and KPI tracking keep you informed and in control."
+    }
+]
+
+export const rpoEngagementModelsData = [
+    {
+        title: "End-to-End RPO",
+        desc: "Recruiters to manage the full recruitment lifecycle from sourcing, screening, interviewing, onboarding, to monitoring performance for business consistent growth."
+    },
+    {
+        title: "Project-Based RPO",
+        desc: "We fulfill short-term project-based hiring needs with promising quick onboarding, enabling your business to deliver data-driven results within defined deadlines."
+    },
+    {
+        title: "On-Demand RPO",
+        desc: "Need expert recruitment support during spikes or expansions? Engage us only when required—no long-term commitment."
+    },
+    {
+        title: "Hybrid RPO",
+        desc: "Combine in-house recruitment with Protingent's support—ideal for companies wanting to retain control but need added firepower."
+    }
+]
+
+export const rpoIndustriesData = [
+    {
+        title: "Aerospace",
+        icon: "FaRocket",
+        alt: "RPO services for Aerospace industry"
+    },
+    {
+        title: "Healthcare",
+        icon: "FaHospital",
+        alt: "RPO services for Healthcare industry"
+    },
+    {
+        title: "Engineering",
+        icon: "FaCogs",
+        alt: "RPO services for Engineering industry"
+    },
+    {
+        title: "Construction",
+        icon: "FaBuilding",
+        alt: "RPO services for Construction industry"
+    },
+    {
+        title: "Energy",
+        icon: "FaBolt",
+        alt: "RPO services for Energy industry"
+    },
+    {
+        title: "Finance",
+        icon: "FaChartLine",
+        alt: "RPO services for Finance industry"
+    },
+    {
+        title: "Technology & Software",
+        icon: "FaLaptopCode",
+        alt: "RPO services for Technology & Software industry"
+    },
+    {
+        title: "Telecommunication",
+        icon: "FaWifi",
+        alt: "RPO services for Telecommunication industry"
+    },
+    {
+        title: "Manufacturing & Distribution",
+        icon: "FaIndustry",
+        alt: "RPO services for Manufacturing & Distribution industry"
+    },
+    {
+        title: "Life Sciences & Pharmaceutical",
+        icon: "FaFlask",
+        alt: "RPO services for Life Sciences & Pharmaceutical industry"
+    },
+    {
+        title: "Medical Devices",
+        icon: "FaHeartbeat",
+        alt: "RPO services for Medical Devices industry"
+    }
+]
+
+export const rpoPartnersData = [
+    {
+        title: "Deep Industry Experience",
+        desc: "With over 25 years of engineering and tech hiring experience, we know niche talent better than anyone else.",
+        img: "/img/servicePartner1.jpg"
+    },
+    {
+        title: "Speed & Precision",
+        desc: "We shorten time-to-hire without sacrificing quality by refining our sourcing frameworks and enabling our expert recruiters.",
+        img: "/img/servicePartner2.jpg"
+    },
+    {
+        title: "Flexible, Scalable Engagement",
+        desc: "Start small or big - our modular RPO models adapt and grow with your business needs.",
+        img: "/img/servicePartner3.jpg"
+    },
+    {
+        title: "Transparent Collaboration",
+        desc: "You will always have a say in your hiring process. Expect regular updates, an identified account manager, and full visibility in the hiring process.",
+        img: "/img/servicePartner4.jpg"
+    },
+    {
+        title: "Candidate-First Approach",
+        desc: "We treat every talent touchpoint with intent, creating better brand experiences and higher acceptance rates.",
+        img: "/img/servicePartner5.jpg"
+    }
 ]
 
 
 export const comprehensiveDataMobile = [
     {
-        img: "/img/comprehensive1.jpg",
-        title: "RPO Service",
-        desc: "AI-driven sourcing and automated screening tools shorten hiring cycles. With predictive analytics and advanced candidate matching, businesses gain access to the best-fit talent pools while reducing dependency on traditional recruitment overhead."
+        img: "/assets/images/homepage/services/RPO.jpg",
+        title: "RPO Service"
     },
     {
-        img: "/img/comprehensive2.jpg",
-        title: "FTE Hiring",
-        desc: "Cloud-enabled hiring workflows ensure scalability and compliance. By using structured talent databases and automation, we help enterprises build stable teams with lower attrition risks and faster onboarding."
+        img: "/assets/images/homepage/services/FTE.jpg",
+        title: "FTE Service"
     },
     {
-        img: "/img/comprehensive3.jpg",
-        title: "Contract Staffing",
-        desc: "On-demand staffing powered by digital talent pools and automated onboarding. Our tech-enabled processes help you deploy skilled professionals in record time while ensuring compliance and cost predictability."
+        img: "/assets/images/homepage/services/Contract_Staffing.jpg",
+        title: "Contract Staffing"
     },
     {
-        img: "/img/comprehensive4.jpg",
-        title: "Direct Sourcing",
-        desc: "Branded talent pipelines supported by AI-powered search and CRM tools. This ensures higher candidate engagement, reduced agency spend, and faster access to niche skill sets."
+        img: "/assets/images/homepage/services/Direct_Sourcing.jpg",
+        title: "Direct Sourcing"
     },
     {
-        img: "/img/comprehensive5.jpg",
-        title: "HR Outsourcing",
-        desc: "Digital HR platforms streamline payroll, benefits, and compliance reporting. Automated workflows reduce manual errors, while dashboards offer real-time visibility into workforce performance."
+        img: "/assets/images/homepage/services/HR_Outsourcing.jpg",
+        title: "HR Outsourcing"
     },
     {
-        img: "/img/comprehensive6.jpg",
-        title: "Marketing Solutions",
-        desc: "Data-backed marketing powered by automation platforms, SEO intelligence, and performance analytics. Businesses get visibility into campaign ROI, customer acquisition costs, and engagement metrics."
+        img: "/assets/images/homepage/services/Marketing_Solutions.jpg",
+        title: "Marketing Solutions"
     },
     {
-        img: "/img/comprehensive7.jpg",
-        title: "BI & Data Visualization",
-        desc: "Interactive dashboards and real-time analytics powered by modern BI tools. We simplify complex data into actionable insights, enabling leaders to make faster, evidence-based decisions."
+        img: "/assets/images/homepage/services/BI_Data_Visualization.jpg",
+        title: "BI & Data Visualization"
     },
     {
-        img: "/img/comprehensive1.jpg",
-        title: "IT Consulting & Development",
-        desc: "automated"
-    },
-    {
-        img: "/img/comprehensive2.jpg",
-        title: "Managed IT Services",
-        desc: "Ensure business continuity with 24/7 infrastructure monitoring, automated patch management, and proactive threat detection. Our managed IT services provide real-time visibility, stronger cybersecurity, and reduced downtime, so enterprises can focus on innovation instead of maintenance."
+        img: "/assets/images/homepage/services/IT_Consulting_Development.jpg",
+        title: "IT Consulting & Development"
     }
 ]
 
 export const comprehensiveData = [
     {
-        img: "/img/RPOServiceSlide.png",
+        img: "/assets/images/homepage/services/RPO.jpg",
         title: "RPO Service",
+        subtitle: "Recruitment Process Outsourcing",
+        description: "Transform your hiring with our comprehensive RPO solutions powered by AI-driven candidate matching, automated screening processes, and real-time analytics. Scale your talent acquisition strategy while reducing time-to-hire by 50% through our cloud-based recruitment platform and data-driven insights.",
         link: "/rpo-service",
-        desc: "AI-driven sourcing and automated screening tools shorten hiring cycles. With predictive analytics and advanced candidate matching, businesses gain access to the best-fit talent pools while reducing dependency on traditional recruitment overhead."
+        features: ["AI-Powered Matching", "Automated Workflows", "Real-time Analytics", "Scalable Infrastructure"]
     },
     {
-        img: "/img/biDataVisualizationSlide.png",
-        title: "FTE Hiring",
+        img: "/assets/images/homepage/services/FTE.jpg",
+        title: "FTE Service", 
+        subtitle: "Full-Time Equivalent Solutions",
+        description: "Deploy dedicated full-time professionals seamlessly integrated with your team through our smart resource allocation system. Leverage automation tools for performance monitoring, KPI tracking, and budget optimization to maximize ROI on your human capital investments.",
         link: "/fte-service",
-        desc: "Cloud-enabled hiring workflows ensure scalability and compliance. By using structured talent databases and automation, we help enterprises build stable teams with lower attrition risks and faster onboarding."
+        features: ["Smart Resource Allocation", "Performance Automation", "KPI Dashboards", "Cost Optimization"]
     },
     {
-        img: "/img/FTEHiringSlide.png",
+        img: "/assets/images/homepage/services/Contract_Staffing.jpg",
         title: "Contract Staffing",
+        subtitle: "Flexible Workforce Solutions",
+        description: "Access on-demand talent through our intelligent staffing platform featuring predictive analytics, automated contractor matching, and cloud-based project management. Optimize workforce flexibility while maintaining quality through AI-driven performance assessments and real-time collaboration tools.",
         link: "/contract-staffing",
-        desc: "On-demand staffing powered by digital talent pools and automated onboarding. Our tech-enabled processes help you deploy skilled professionals in record time while ensuring compliance and cost predictability."
+        features: ["Predictive Analytics", "Automated Matching", "Cloud Project Management", "AI Performance Assessment"]
     },
     {
-        img: "/img/contractStaffingSlide.png",
+        img: "/assets/images/homepage/services/Direct_Sourcing.jpg",
         title: "Direct Sourcing",
-        link: "/direct-sourcing",
-        desc: "Branded talent pipelines supported by AI-powered search and CRM tools. This ensures higher candidate engagement, reduced agency spend, and faster access to niche skill sets."
+        subtitle: "Strategic Talent Acquisition",
+        description: "Build your private talent community using advanced data analytics, automated employer branding, and machine learning algorithms. Reduce recruiting costs by 40% through our self-service talent pools, intelligent candidate curation, and predictive hiring analytics.",
+        link: "/direct-sourcing", 
+        features: ["Data Analytics", "ML Algorithms", "Self-Service Pools", "Predictive Hiring"]
     },
     {
-        img: "/img/directSourcingSlide.png",
-        title: "HR Outsourcing",
+        img: "/assets/images/homepage/services/HR_Outsourcing.jpg",
+        title: "HR Outsourcing", 
+        subtitle: "Complete HR Technology Solutions",
+        description: "Modernize your HR operations with our integrated cloud platform featuring automated payroll processing, AI-powered compliance monitoring, and advanced workforce analytics. Streamline HR processes while ensuring regulatory compliance through intelligent automation and real-time reporting.",
         link: "/hr-outsourcing",
-        desc: "Digital HR platforms streamline payroll, benefits, and compliance reporting. Automated workflows reduce manual errors, while dashboards offer real-time visibility into workforce performance."
+        features: ["Cloud HR Platform", "AI Compliance", "Automated Payroll", "Workforce Analytics"]
     },
     {
-        img: "/img/HROutsourcingSlide.png",
+        img: "/assets/images/homepage/services/Marketing_Solutions.jpg",
         title: "Marketing Solutions",
+        subtitle: "Data-Driven Digital Marketing",
+        description: "Accelerate growth through our AI-powered marketing automation platform with predictive customer analytics, automated campaign optimization, and real-time ROI tracking. Transform your marketing effectiveness using machine learning insights and cloud-based collaboration tools.",
         link: "/marketing-solutions",
-        desc: "Data-backed marketing powered by automation platforms, SEO intelligence, and performance analytics. Businesses get visibility into campaign ROI, customer acquisition costs, and engagement metrics."
+        features: ["AI Marketing Automation", "Predictive Analytics", "ROI Tracking", "ML Insights"]
     },
     {
-        img: "/img/marketingSolutionSlide.png",
-        title: "BI & Data Visualization",
-        link: "/",
-        desc: "Interactive dashboards and real-time analytics powered by modern BI tools. We simplify complex data into actionable insights, enabling leaders to make faster, evidence-based decisions."
+        img: "/assets/images/homepage/services/BI_Data_Visualization.jpg",
+        title: "BI & Data Visualization", 
+        subtitle: "Advanced Business Intelligence",
+        description: "Unlock actionable insights with our comprehensive BI platform featuring AI-driven data analysis, automated reporting, and interactive dashboards. Transform raw data into strategic decisions through machine learning models, predictive analytics, and cloud-based visualization tools.",
+        link: "/bi-data-visualization",
+        features: ["AI Data Analysis", "Automated Reporting", "ML Models", "Interactive Dashboards"]
     },
     {
-        img: "/img/biDataVisualizationSlide.png",
+        img: "/assets/images/homepage/services/IT_Consulting_Development.jpg",
         title: "IT Consulting & Development",
-        link: "/",
-        desc: "automated"
-    },
-    {
-        img: "/img/directSourcingSlide.png",
-        title: "Managed IT Services",
-        link: "/",
-        desc: "Ensure business continuity with 24/7 infrastructure monitoring, automated patch management, and proactive threat detection. Our managed IT services provide real-time visibility, stronger cybersecurity, and reduced downtime, so enterprises can focus on innovation instead of maintenance."
+        subtitle: "Digital Transformation Excellence", 
+        description: "Drive digital innovation through our comprehensive IT consulting services powered by cloud architecture, automated DevOps pipelines, and AI-enhanced development workflows. Accelerate your digital transformation with cutting-edge technologies and data-driven strategic planning.",
+        link: "/it-consulting",
+        features: ["Cloud Architecture", "DevOps Automation", "AI Development", "Strategic Planning"]
     }
 ]
 
@@ -381,47 +729,48 @@ export const industriesSliderData = [
     {
         title: "Construction",
         desc: "Digitally enabled project staffing, IT consulting, and data-driven insights ensure faster project execution, cost control, safety compliance, and smarter workforce allocation.",
-        img: "/img/healthCareInd.png"
+        img: "/assets/images/homepage/industries/Construction.jpg"
     },
     {
         title: "Manufacturing",
         desc: "Automation, predictive analytics, and skilled workforce integration streamline production cycles, reduce downtime, and improve quality control for next-gen manufacturing efficiency.",
-        img: "/img/healthCareInd.png"
+        img: "/assets/images/homepage/industries/Manufacturing_Distribution.jpg"
     },
     {
         title: "Energy",
         desc: "Smart workforce solutions and digital transformation accelerate sustainable energy operations, improve asset management, and ensure compliance for evolving energy ecosystems.",
-        img: "/img/healthCareInd.png"
+        img: "/assets/images/homepage/industries/Energy.jpeg"
     },
     {
         title: "Finance",
         desc: "Secure staffing, analytics, and IT consulting enable digital banking, regulatory compliance, fraud prevention, and customer-centric innovations for resilient financial services.",
-        img: "/img/healthCareInd.png"
+        img: "/assets/images/homepage/industries/Finance.png"
     },
     {
         title: "Engineering",
-        desc: "Specialized talent and advanced IT consulting drive innovation, ensure precision, and improve project delivery timelines for engineering firms across sectors."
+        desc: "Specialized talent and advanced IT consulting drive innovation, ensure precision, and improve project delivery timelines for engineering firms across sectors.",
+        img: "/assets/images/homepage/industries/Engineering.png"
     },
     {
         title: "Technology",
         desc: "Agile staffing and digital consulting support product innovation, cloud adoption, and rapid scalability in the fast-paced technology ecosystem.",
-        img: "/img/healthCareInd.png"
+        img: "/assets/images/homepage/industries/Technology_Software.jpg"
     },
     {
         title: "Telecommunication",
         desc: "End-to-end workforce solutions and IT expertise strengthen infrastructure deployment, accelerate 5G rollouts, and ensure seamless customer connectivity.",
-        img: "/img/healthCareInd.png"
+        img: "/assets/images/homepage/industries/Telecommunication.png"
     },
     {
         title: "Healthcare",
         desc: "AI-powered staffing and IT services optimize care delivery, improve workforce efficiency, reduce operational costs, and enhance patient outcomes.",
-        img: "/img/healthCareInd.png"
+        img: "/assets/images/homepage/industries/Healthcare.png"
     },
     {
         title: "Aerospace",
         desc: "Specialized talent, compliance-driven processes, and advanced analytics power innovation, safety, and operational excellence in aerospace engineering and manufacturing.",
-        img: "/img/healthCareInd.png"
-    },
+        img: "/assets/images/homepage/industries/Aerospace.jpg"
+    }
 ]
 
 export const talkToExpertData = [

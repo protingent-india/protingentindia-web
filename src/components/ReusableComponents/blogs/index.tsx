@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import Icon from '@/components/icon';
+import { Icon } from '@/components';
 import { blogsQuery, getLoadMoreData } from '@/utils';
 import TruncateText from '@/components/RHFComponent/truncateText';
 import Link from 'next/link';

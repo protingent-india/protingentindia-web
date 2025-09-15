@@ -9,13 +9,17 @@ const Logo = ({
     className?: string
 }) => {
     return (
-        <Image
-            src={"/img/protingentLogo.png"}
-            width={330}
-            height={0}
-            alt='Protingent Logo'
-            className={`${className}`}
-        />
+        <div className={`${className} flex items-center`}>
+            <Image
+                src={"/img/protingentLogo.png"}
+                width={330}
+                height={44}
+                alt='Protingent Logo'
+                className="object-contain w-auto"
+                priority
+                style={{ height: 'inherit', maxHeight: '100%' }}
+            />
+        </div>
     )
 }
 

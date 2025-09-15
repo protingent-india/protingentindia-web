@@ -42,7 +42,7 @@ const HeaderMenuList = () => {
     }, [pathname])
 
     return (
-        <div className='hidden lg:flex gap-6 items-center text-primary  capitalize font-medium'>
+        <div className='hidden lg:!flex gap-6 items-center text-primary  capitalize font-medium'>
             {MenuList.map((menu, index) => (
                 <div
                     key={index}
