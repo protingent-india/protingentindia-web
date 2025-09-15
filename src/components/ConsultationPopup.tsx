@@ -1,12 +1,12 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
-import { 
-    FaTimes, 
-    FaUser, 
-    FaEnvelope, 
-    FaPhone, 
-    FaBuilding, 
-    FaCogs, 
+import {
+    FaTimes,
+    FaUser,
+    FaEnvelope,
+    FaPhone,
+    FaBuilding,
+    FaCogs,
     FaComment,
     FaDownload,
     FaPaperPlane,
@@ -30,9 +30,9 @@ interface ConsultationPopupProps {
     description?: string;
 }
 
-const ConsultationPopup: React.FC<ConsultationPopupProps> = ({ 
-    isOpen, 
-    onClose, 
+const ConsultationPopup: React.FC<ConsultationPopupProps> = ({
+    isOpen,
+    onClose,
     title = "Get Free Consultation",
     description = "Tell us about your requirements and our experts will get in touch with you within 24 hours."
 }) => {
@@ -69,7 +69,7 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
-            
+
             // Focus on first input when modal opens
             setTimeout(() => {
                 firstInputRef.current?.focus();
@@ -121,7 +121,7 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({
             ...prev,
             [name]: value
         }));
-        
+
         // Clear error when user starts typing
         if (errors[name as keyof FormData]) {
             setErrors(prev => ({
@@ -170,7 +170,7 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({
     // Handle form submission
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        
+
         if (!validateForm()) {
             return;
         }
@@ -198,10 +198,10 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({
     const downloadJSON = () => {
         const allData = JSON.parse(localStorage.getItem('consultationRequests') || '[]');
         const dataStr = JSON.stringify(allData, null, 2);
-        const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-        
+        const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
+
         const exportFileDefaultName = `consultation-requests-${new Date().toISOString().split('T')[0]}.json`;
-        
+
         const linkElement = document.createElement('a');
         linkElement.setAttribute('href', dataUri);
         linkElement.setAttribute('download', exportFileDefaultName);
@@ -262,16 +262,15 @@ ${formData.fullName}
     if (!isOpen) return null;
 
     return (
-        <div 
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#113F64]/30 backdrop-blur-md"
+        <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#113F64]/30 backdrop-blur-md max-w-screen"
             onClick={handleBackgroundClick}
         >
-            <div 
+            <div
                 ref={modalRef}
-                className={`relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl transform transition-all duration-500 max-h-[90vh] overflow-y-auto scrollbar-hide overscroll-contain ${
-                    isOpen ? 'scale-100 opacity-100 translate-x-0' : 'scale-95 opacity-0 -translate-x-8'
-                }`}
-                style={{ 
+                className={`relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl transform transition-all duration-500 max-h-[90vh] overflow-y-auto scrollbar-hide overscroll-contain ${isOpen ? 'scale-100 opacity-100 translate-x-0' : 'scale-95 opacity-0 -translate-x-8'
+                    }`}
+                style={{
                     fontFamily: 'Raleway, sans-serif',
                     WebkitOverflowScrolling: 'touch', /* Smooth scrolling on iOS */
                 }}
@@ -301,11 +300,11 @@ ${formData.fullName}
                         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                             <FaCheckCircle className="w-10 h-10 text-green-600" />
                         </div>
-                        
+
                         <h3 className="text-2xl font-bold mb-4" style={{ color: '#113F64', fontFamily: 'Lato, sans-serif' }}>
                             Thank You!
                         </h3>
-                        
+
                         <p className="text-gray-600 text-lg mb-8">
                             Your details have been saved successfully. Our team will reach out to you within 24 hours to discuss your requirements.
                         </p>
@@ -318,7 +317,7 @@ ${formData.fullName}
                                 <FaDownload className="w-5 h-5" />
                                 Download Data
                             </button>
-                            
+
                             <button
                                 onClick={sendViaEmail}
                                 className="flex items-center justify-center gap-3 px-6 py-3 bg-gradient-to-r from-[#34969E] to-[#113F64] hover:from-[#2d7a85] hover:to-[#0d2f4a] text-white rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg min-h-[44px]"
@@ -353,9 +352,8 @@ ${formData.fullName}
                                         name="fullName"
                                         value={formData.fullName}
                                         onChange={handleInputChange}
-                                        className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 ${
-                                            errors.fullName ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
-                                        }`}
+                                        className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 ${errors.fullName ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
+                                            }`}
                                         placeholder="Enter your full name"
                                     />
                                 </div>
@@ -377,9 +375,8 @@ ${formData.fullName}
                                         name="email"
                                         value={formData.email}
                                         onChange={handleInputChange}
-                                        className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 ${
-                                            errors.email ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
-                                        }`}
+                                        className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 ${errors.email ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
+                                            }`}
                                         placeholder="your.email@company.com"
                                     />
                                 </div>
@@ -401,9 +398,8 @@ ${formData.fullName}
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleInputChange}
-                                        className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 ${
-                                            errors.phone ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
-                                        }`}
+                                        className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 ${errors.phone ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
+                                            }`}
                                         placeholder="+1 (555) 123-4567"
                                     />
                                 </div>
@@ -425,9 +421,8 @@ ${formData.fullName}
                                         name="companyName"
                                         value={formData.companyName}
                                         onChange={handleInputChange}
-                                        className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 ${
-                                            errors.companyName ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
-                                        }`}
+                                        className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 ${errors.companyName ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
+                                            }`}
                                         placeholder="Your Company Name"
                                     />
                                 </div>
@@ -449,9 +444,8 @@ ${formData.fullName}
                                     name="serviceInterested"
                                     value={formData.serviceInterested}
                                     onChange={handleInputChange}
-                                    className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 appearance-none bg-white ${
-                                        errors.serviceInterested ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
-                                    }`}
+                                    className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 appearance-none bg-white ${errors.serviceInterested ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
+                                        }`}
                                 >
                                     <option value="">Select a service...</option>
                                     {services.map((service, index) => (
@@ -479,9 +473,8 @@ ${formData.fullName}
                                     value={formData.message}
                                     onChange={handleInputChange}
                                     rows={4}
-                                    className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 resize-y ${
-                                        errors.message ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
-                                    }`}
+                                    className={`w-full pl-12 pr-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#34969E]/20 transition-colors duration-300 resize-y ${errors.message ? 'border-red-500' : 'border-gray-200 focus:border-[#34969E]'
+                                        }`}
                                     placeholder="Tell us about your specific requirements, timeline, team size, or any questions you have..."
                                 />
                             </div>
@@ -510,7 +503,7 @@ ${formData.fullName}
                                     </>
                                 )}
                             </button>
-                            
+
                             <button
                                 type="button"
                                 onClick={handleClose}

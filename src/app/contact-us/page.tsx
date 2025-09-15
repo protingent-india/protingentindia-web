@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import {
     GeometricBackground
 } from "@/components";
-import { 
-    FaPhone, 
-    FaEnvelope, 
+import {
+    FaPhone,
+    FaEnvelope,
     FaMapMarkerAlt,
     FaFax,
     FaDirections,
@@ -21,12 +21,12 @@ import {
 // Hero Section
 const ContactHeroSection = () => {
     return (
-        <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden">
+        <div className="relative w-full h-fit flex items-center justify-center overflow-hidden py-8">
             {/* Background with abstract map pattern */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#113F64] via-[#34969E] to-[#C2D92C]"></div>
-            
+
             {/* Abstract map pattern overlay */}
-            <div 
+            <div
                 className="absolute inset-0 opacity-10"
                 style={{
                     backgroundImage: `radial-gradient(circle at 25% 25%, #C2D92C 2px, transparent 2px), 
@@ -35,39 +35,39 @@ const ContactHeroSection = () => {
                     backgroundSize: '80px 80px, 120px 120px, 60px 60px'
                 }}
             ></div>
-            
+
             {/* Animated geometric elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 left-10 w-32 h-32 border-2 border-[#C2D92C]/30 rounded-full animate-pulse"></div>
-                <div className="absolute bottom-20 right-16 w-24 h-24 border-2 border-white/40 rotate-45 animate-pulse" style={{animationDelay: '1s'}}></div>
-                <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-[#C2D92C]/20 rounded-lg animate-pulse" style={{animationDelay: '2s'}}></div>
+                <div className="absolute bottom-20 right-16 w-24 h-24 border-2 border-white/40 rotate-45 animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-[#C2D92C]/20 rounded-lg animate-pulse" style={{ animationDelay: '2s' }}></div>
             </div>
-            
+
             <div className="relative z-10 text-center text-white max-w-5xl px-4 md:px-6">
                 <div className="mb-6">
                     <div className="inline-block px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
                         <span className="text-[#C2D92C] font-semibold text-lg">🌍 Connect Globally</span>
                     </div>
                 </div>
-                
+
                 <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight" style={{ fontFamily: 'Lato' }}>
                     Let's Build Your
                     <span className="block text-[#C2D92C]">Success Story</span>
                 </h1>
-                
+
                 <p className="text-xl md:text-2xl font-light mb-8 max-w-4xl mx-auto leading-relaxed opacity-90" style={{ fontFamily: 'Raleway' }}>
-                    Ready to transform your business with world-class talent solutions? Our global team is here to help you navigate 
+                    Ready to transform your business with world-class talent solutions? Our global team is here to help you navigate
                     your workforce challenges and unlock new opportunities for growth.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-10">
                     <button className="px-10 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-full hover:scale-105 transform transition-all shadow-2xl" style={{ fontFamily: 'Lato' }}>
                         <span className="flex items-center gap-3">
-                            <FaPhone />
+                            <FaPhone className="rotate-90" />
                             Call Us Now
                         </span>
                     </button>
-                    
+
                     <button className="px-8 py-4 border-2 border-white/40 rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white">
                         <span className="flex items-center gap-3">
                             <span>Schedule Meeting</span>
@@ -75,7 +75,7 @@ const ContactHeroSection = () => {
                         </span>
                     </button>
                 </div>
-                
+
                 {/* Trust indicators */}
                 <div className="flex justify-center items-center gap-12 mt-12 text-sm opacity-80">
                     <div className="text-center">
@@ -106,7 +106,7 @@ const IndiaHQSection = () => {
                         Our India Headquarters
                     </h2>
                     <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed" style={{ fontFamily: 'Raleway' }}>
-                        Located in the heart of Jaipur, our India headquarters serves as the primary hub for all our operations, 
+                        Located in the heart of Jaipur, our India headquarters serves as the primary hub for all our operations,
                         connecting talent across the globe with opportunities that matter.
                     </p>
                 </div>
@@ -117,14 +117,14 @@ const IndiaHQSection = () => {
                     <div className="group relative">
                         <div className="relative overflow-hidden rounded-3xl p-8 lg:p-12 bg-gradient-to-br from-[#113F64] via-[#34969E] to-[#113F64] text-white shadow-2xl hover:shadow-3xl transition-all duration-500">
                             {/* Abstract pattern overlay */}
-                            <div 
+                            <div
                                 className="absolute inset-0 opacity-10"
                                 style={{
                                     backgroundImage: `linear-gradient(45deg, #C2D92C 1px, transparent 1px), linear-gradient(-45deg, #C2D92C 1px, transparent 1px)`,
                                     backgroundSize: '20px 20px'
                                 }}
                             ></div>
-                            
+
                             <div className="relative z-10">
                                 <div className="flex items-center gap-4 mb-8">
                                     <div className="w-16 h-16 bg-[#C2D92C] rounded-2xl flex items-center justify-center">
@@ -135,21 +135,21 @@ const IndiaHQSection = () => {
                                         <div className="text-[#C2D92C] font-semibold">India Headquarters</div>
                                     </div>
                                 </div>
-                                
+
                                 {/* Address */}
                                 <div className="mb-8">
                                     <div className="flex items-start gap-4 mb-4">
                                         <FaMapMarkerAlt className="text-[#C2D92C] text-xl mt-1 flex-shrink-0" />
                                         <div>
                                             <p className="text-lg leading-relaxed" style={{ fontFamily: 'Raleway' }}>
-                                                4th floor, Jaipur Centre, 420, Tonk Rd, 
-                                                <br />Choti Chopard, Chandrakala Colony, 
+                                                4th floor, Jaipur Centre, 420, Tonk Rd,
+                                                <br />Choti Chopard, Chandrakala Colony,
                                                 <br />Durgapura, Jaipur, Rajasthan 302018
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 {/* Contact Details */}
                                 <div className="space-y-4">
                                     <div className="flex items-center gap-4">
@@ -158,7 +158,7 @@ const IndiaHQSection = () => {
                                             connect@protingentindia.com
                                         </a>
                                     </div>
-                                    
+
                                     <div className="flex items-center gap-4">
                                         <FaPhone className="text-[#C2D92C] text-xl" />
                                         <div className="space-y-1">
@@ -171,7 +171,7 @@ const IndiaHQSection = () => {
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 {/* CTA Button */}
                                 <div className="mt-8 pt-8 border-t border-white/20">
                                     <button className="flex items-center gap-3 px-6 py-3 bg-[#C2D92C] text-[#113F64] font-bold rounded-lg hover:bg-white transition-colors duration-300" style={{ fontFamily: 'Lato' }}>
@@ -182,7 +182,7 @@ const IndiaHQSection = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                     {/* Interactive Map */}
                     <div className="relative">
                         <div className="relative overflow-hidden rounded-3xl shadow-2xl bg-gray-100 h-[500px]">
@@ -197,7 +197,7 @@ const IndiaHQSection = () => {
                                 referrerPolicy="no-referrer-when-downgrade"
                                 className="rounded-3xl"
                             ></iframe>
-                            
+
                             {/* Map overlay with office info */}
                             <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-2xl p-4 border border-gray-200">
                                 <div className="flex items-center gap-3">
@@ -241,13 +241,13 @@ const ContactFormSection = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        
+
         // Simulate form submission
         await new Promise(resolve => setTimeout(resolve, 2000));
-        
+
         setIsSubmitting(false);
         setIsSubmitted(true);
-        
+
         // Reset form after 3 seconds
         setTimeout(() => {
             setIsSubmitted(false);
@@ -324,7 +324,7 @@ const ContactFormSection = () => {
                                     style={{ fontFamily: 'Raleway' }}
                                 />
                             </div>
-                            
+
                             <div className="relative">
                                 <label className="block text-sm font-bold text-[#113F64] mb-3" style={{ fontFamily: 'Lato' }}>
                                     <FaEnvelope className="inline mr-2" />
@@ -360,7 +360,7 @@ const ContactFormSection = () => {
                                     style={{ fontFamily: 'Raleway' }}
                                 />
                             </div>
-                            
+
                             <div className="relative">
                                 <label className="block text-sm font-bold text-[#113F64] mb-3" style={{ fontFamily: 'Lato' }}>
                                     <FaBuilding className="inline mr-2" />
@@ -427,11 +427,10 @@ const ContactFormSection = () => {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className={`px-12 py-4 bg-gradient-to-r from-[#34969E] to-[#C2D92C] text-white font-bold text-lg rounded-full transform transition-all duration-300 shadow-2xl ${
-                                    isSubmitting 
-                                        ? 'scale-95 opacity-70 cursor-not-allowed' 
-                                        : 'hover:scale-105 hover:shadow-3xl'
-                                }`}
+                                className={`px-12 py-4 bg-gradient-to-r from-[#34969E] to-[#C2D92C] text-white font-bold text-lg rounded-full transform transition-all duration-300 shadow-2xl ${isSubmitting
+                                    ? 'scale-95 opacity-70 cursor-not-allowed'
+                                    : 'hover:scale-105 hover:shadow-3xl'
+                                    }`}
                                 style={{ fontFamily: 'Lato' }}
                             >
                                 <span className="flex items-center gap-3">
@@ -508,16 +507,16 @@ const USOfficesSection = () => {
                         >
                             {/* Background gradient */}
                             <div className={`absolute inset-0 bg-gradient-to-br ${office.gradient} opacity-90 group-hover:opacity-100 transition-opacity duration-300`}></div>
-                            
+
                             {/* Subtle pattern overlay */}
-                            <div 
+                            <div
                                 className="absolute inset-0 opacity-10"
                                 style={{
                                     backgroundImage: `radial-gradient(circle at 30% 30%, #fff 2px, transparent 2px)`,
                                     backgroundSize: '40px 40px'
                                 }}
                             ></div>
-                            
+
                             <div className="relative z-10 p-8 h-full text-white min-h-[400px] flex flex-col justify-between">
                                 {/* Header */}
                                 <div>
@@ -531,7 +530,7 @@ const USOfficesSection = () => {
                                             </h3>
                                         </div>
                                     </div>
-                                    
+
                                     {/* Address */}
                                     <div className="mb-6">
                                         <div className="flex items-start gap-3 mb-4">
@@ -547,7 +546,7 @@ const USOfficesSection = () => {
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 {/* Contact Information */}
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-3">
@@ -556,24 +555,24 @@ const USOfficesSection = () => {
                                             {office.phone}
                                         </a>
                                     </div>
-                                    
+
                                     <div className="flex items-center gap-3">
                                         <FaGlobe className="text-white/80 text-sm" />
                                         <a href={`tel:${office.tollFree.replace(/\./g, '')}`} className="text-sm hover:text-white/80 transition-colors duration-300" style={{ fontFamily: 'Raleway' }}>
                                             Toll-Free: {office.tollFree}
                                         </a>
                                     </div>
-                                    
+
                                     <div className="flex items-center gap-3">
                                         <FaFax className="text-white/80 text-sm" />
                                         <span className="text-sm" style={{ fontFamily: 'Raleway' }}>
                                             Fax: {office.fax}
                                         </span>
                                     </div>
-                                    
+
                                     {/* Directions Link */}
                                     <div className="pt-4 border-t border-white/20">
-                                        <a 
+                                        <a
                                             href={office.directionsLink}
                                             className="inline-flex items-center gap-2 text-sm font-semibold hover:gap-3 transition-all duration-300"
                                             style={{ fontFamily: 'Lato' }}

@@ -710,7 +710,7 @@ export default function MarketingSolutionsService() {
     const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
     
     return (
-        <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20">
+        <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20 max-w-screen overflow-x-hidden">
             <MarketingHeroSection openPopup={openPopup} />
             <ChallengeSection />
             <SolutionsSection />

@@ -3,7 +3,7 @@ import React from "react";
 import {
     GeometricBackground
 } from "@/components";
-import { 
+import {
     FaBullseye,
     FaEye,
     FaMedal,
@@ -23,17 +23,17 @@ import {
 // Section 1: Hero - Company Introduction
 const AboutHeroSection = () => {
     return (
-        <section className="relative w-full min-h-[60vh] lg:min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <section className="relative w-full min-h-[60vh] lg:min-h-[80vh] flex items-center justify-center overflow-hidden py-8">
             {/* Gradient Background */}
             <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-[#113F64] via-[#34969E] to-[#C2D92C]"></div>
-            
+
             {/* Floating geometric elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 left-10 w-24 h-24 border-2 border-white/30 rotate-45 animate-pulse"></div>
-                <div className="absolute bottom-32 right-16 w-20 h-20 border-2 border-[#C2D92C]/40 rounded-full animate-bounce" style={{animationDelay: '-2s'}}></div>
-                <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-pulse" style={{animationDelay: '-1s'}}></div>
+                <div className="absolute bottom-32 right-16 w-20 h-20 border-2 border-[#C2D92C]/40 rounded-full animate-bounce" style={{ animationDelay: '-2s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-pulse" style={{ animationDelay: '-1s' }}></div>
             </div>
-            
+
             <div className="relative z-10 max-w-7xl container-responsive text-center text-white">
                 <h1 className="heading-xl mb-6 bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent" style={{ fontFamily: 'Lato, sans-serif' }}>
                     Empowering Businesses with
@@ -41,13 +41,13 @@ const AboutHeroSection = () => {
                         Talent & Technology
                     </span>
                 </h1>
-                
+
                 <p className="body-lg leading-relaxed mb-12 max-w-5xl mx-auto opacity-90" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                    Protingent India LLP delivers staffing and technology solutions designed for businesses that want scale, reliability, and control over modern operations. 
-                    Services include talent acquisition, payroll outsourcing, IT consulting, staff augmentation, BI data visualization, managed IT, and marketing services. 
+                    Protingent India LLP delivers staffing and technology solutions designed for businesses that want scale, reliability, and control over modern operations.
+                    Services include talent acquisition, payroll outsourcing, IT consulting, staff augmentation, BI data visualization, managed IT, and marketing services.
                     Founded in 2021, Protingent India operates as a specialized workforce and technology partner, combining disciplined hiring practices with advanced IT services.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                     <button className="px-12 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-full hover:scale-105 transform transition-all shadow-2xl min-h-[44px]">
                         <span className="flex items-center gap-3">
@@ -55,7 +55,7 @@ const AboutHeroSection = () => {
                             Discover Our Story
                         </span>
                     </button>
-                    
+
                     <button className="px-8 py-4 border-2 border-white/40 rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white min-h-[44px]">
                         <span className="flex items-center gap-3">
                             <FaUsers className="w-5 h-5" />
@@ -73,7 +73,7 @@ const CompanyOverviewSection = () => {
     return (
         <div className="relative w-full bg-white section-padding overflow-hidden">
             <GeometricBackground variant="primary" intensity="light" />
-            
+
             <div className="max-w-7xl container-responsive relative z-10">
                 <div className="grid-responsive-2 items-center gap-16">
                     {/* Text Content - Left */}
@@ -82,23 +82,23 @@ const CompanyOverviewSection = () => {
                             Your Partner in Growth
                             <span className="block text-[#34969E]">Since 2021</span>
                         </h2>
-                        
+
                         <div className="space-y-6" style={{ fontFamily: 'Raleway, sans-serif' }}>
                             <p className="body-lg text-gray-600 leading-relaxed">
-                                Protingent India combines disciplined hiring practices with advanced IT services to provide clients with the people and systems they need to perform at their best. 
+                                Protingent India combines disciplined hiring practices with advanced IT services to provide clients with the people and systems they need to perform at their best.
                                 Our approach emphasizes transparent communication, governance, and long-term partnerships.
                             </p>
-                            
+
                             <p className="body-lg text-gray-600 leading-relaxed">
-                                Each engagement is guided by transparent communication, governance, and a dedication to long-term partnerships. 
+                                Each engagement is guided by transparent communication, governance, and a dedication to long-term partnerships.
                                 The firm embraces innovation to keep businesses future-ready, using tools and talent to accelerate transformation.
                             </p>
-                            
+
                             <p className="body-lg text-gray-600 leading-relaxed">
                                 We focus on sustainable growth where technology and people evolve together, creating lasting value for our clients and their stakeholders.
                             </p>
                         </div>
-                        
+
                         {/* Key Stats */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
                             {[
@@ -158,7 +158,7 @@ const MissionVisionSection = () => {
     return (
         <div className="relative w-full bg-gradient-to-b from-gray-50 to-white section-padding overflow-hidden">
             <GeometricBackground variant="secondary" intensity="light" />
-            
+
             <div className="max-w-7xl container-responsive relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="heading-xl mb-6" style={{ color: '#113F64', fontFamily: 'Lato, sans-serif' }}>
@@ -240,7 +240,7 @@ const ValuesSection = () => {
     return (
         <div className="relative w-full bg-white section-padding overflow-hidden">
             <GeometricBackground variant="tertiary" intensity="light" />
-            
+
             <div className="max-w-7xl container-responsive relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="heading-xl mb-6" style={{ color: '#113F64', fontFamily: 'Lato, sans-serif' }}>
@@ -248,7 +248,7 @@ const ValuesSection = () => {
                         <span className="block text-[#34969E]">Business Growth</span>
                     </h2>
                     <p className="body-lg text-gray-600 max-w-4xl mx-auto" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                        Our core values shape every interaction, decision, and solution we deliver, 
+                        Our core values shape every interaction, decision, and solution we deliver,
                         ensuring exceptional outcomes for our clients and partners.
                     </p>
                 </div>
@@ -261,7 +261,7 @@ const ValuesSection = () => {
                                 key={index}
                                 className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100"
                             >
-                                <div 
+                                <div
                                     className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg"
                                     style={{ backgroundColor: value.color }}
                                 >
@@ -302,7 +302,7 @@ const TeamSection = () => {
         },
         {
             name: "Mohd. Ajaz",
-            role: "Head of Technical Product and Architecture", 
+            role: "Head of Technical Product and Architecture",
             bio: "Mohd. Ajaz leads technology innovation with over a decade of experience in product management, digital transformation, and blockchain integration. He spearheads the development of a centralized platform that unifies hiring, payroll, and HRMS. A certified blockchain professional from IIT Kanpur, Ajaz bridges traditional business strategies with decentralized solutions that deliver transparency, security, and scalability.",
             image: "/assets/images/team/mohamad-ajaz.jpeg",
             isImageLeft: true
@@ -340,7 +340,7 @@ const TeamSection = () => {
     return (
         <div className="relative w-full bg-white section-padding overflow-hidden">
             <GeometricBackground variant="secondary" intensity="light" />
-            
+
             <div className="max-w-7xl container-responsive relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-20">
@@ -348,7 +348,7 @@ const TeamSection = () => {
                         Team Behind Your Success
                     </h2>
                     <p className="body-lg text-gray-600 max-w-4xl mx-auto" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                        Meet the experts driving innovation and excellence at Protingent India, 
+                        Meet the experts driving innovation and excellence at Protingent India,
                         each bringing unique expertise and passion to deliver exceptional results.
                     </p>
                 </div>
@@ -356,9 +356,8 @@ const TeamSection = () => {
                 {/* Team Member Profiles */}
                 <div className="space-y-24">
                     {teamMembers.map((member, index) => (
-                        <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${
-                            !member.isImageLeft ? 'lg:grid-flow-col-dense' : ''
-                        }`}>
+                        <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${!member.isImageLeft ? 'lg:grid-flow-col-dense' : ''
+                            }`}>
                             {/* Image Section */}
                             <div className={`relative ${!member.isImageLeft ? 'lg:col-start-2' : ''}`}>
                                 <div className="relative inline-block">
@@ -371,7 +370,7 @@ const TeamSection = () => {
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-br from-[#34969E]/20 to-[#113F64]/20 group-hover:opacity-0 transition-opacity duration-500"></div>
                                     </div>
-                                    
+
                                     {/* Floating accent elements */}
                                     <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#C2D92C] rounded-full opacity-70"></div>
                                     <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-[#34969E] rounded-full opacity-60"></div>
@@ -388,15 +387,15 @@ const TeamSection = () => {
                                         {member.role}
                                     </p>
                                 </div>
-                                
+
                                 <p className="body-lg text-gray-600 leading-relaxed" style={{ fontFamily: 'Raleway, sans-serif' }}>
                                     {member.bio}
                                 </p>
-                                
+
                                 {/* LinkedIn Icon */}
                                 <div className={`flex ${!member.isImageLeft ? 'lg:justify-end' : 'justify-start'}`}>
-                                    <a 
-                                        href="#" 
+                                    <a
+                                        href="#"
                                         className="inline-flex items-center gap-2 px-4 py-2 bg-[#0077B5] text-white rounded-full hover:bg-[#005885] transition-colors duration-300 group"
                                     >
                                         <FaLinkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
@@ -423,22 +422,22 @@ const CTASection = () => {
                 }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#113F64]/95 via-[#34969E]/90 to-[#C2D92C]/85"></div>
-            
+
             <div className="relative z-10 max-w-6xl container-responsive text-center text-white">
                 <h2 className="heading-xl mb-6" style={{ fontFamily: 'Lato, sans-serif' }}>
                     Ready to Transform Your
                     <span className="block text-[#C2D92C]">Business with Us?</span>
                 </h2>
                 <p className="body-lg leading-relaxed mb-12 max-w-4xl mx-auto opacity-90" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                    Join hundreds of businesses that trust Protingent India for their staffing and technology needs. 
+                    Join hundreds of businesses that trust Protingent India for their staffing and technology needs.
                     Let's discuss how we can help you achieve sustainable growth and operational excellence.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                     <button className="px-12 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-full hover:scale-105 transform transition-all shadow-2xl min-h-[44px]">
                         Start Your Journey with Us
                     </button>
-                    
+
                     <button className="px-8 py-4 border-2 border-white/40 rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white min-h-[44px]">
                         <span className="flex items-center gap-3">
                             <span>Schedule a Consultation</span>

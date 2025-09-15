@@ -49,7 +49,7 @@ const ITConsultingPage = () => {
     };
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-white max-w-screen overflow-x-hidden">
             {/* Hero Section - 20% height reduction */}
             <section className="relative bg-gradient-to-br from-navy-600 via-teal-500 to-lime-400 overflow-hidden">
                 {/* Floating geometric elements */}

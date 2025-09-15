@@ -13,7 +13,7 @@ const DedicatedFTEExpertsSection = ({ openPopup }: { openPopup: (config?: { titl
         <section className="relative w-full py-20 overflow-hidden">
             {/* Background Gradient Mesh */}
             <div className="absolute inset-0 bg-gradient-to-br from-lime-50 via-teal-50 to-navy-50 opacity-60"></div>
-            
+
             {/* Floating Geometric Shapes */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 left-10 w-32 h-32 bg-lime-300/20 rounded-full animate-float"></div>
@@ -29,7 +29,7 @@ const DedicatedFTEExpertsSection = ({ openPopup }: { openPopup: (config?: { titl
                             Dedicated Full-Time Equivalent (FTE) Experts for Growth
                         </h2>
                         <div className="w-20 h-1 bg-gradient-to-r from-lime-400 to-teal-500 rounded-full"></div>
-                        
+
                         <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                             <p>
                                 Full-Time Equivalent (FTE) Services provide businesses structural and skilled talent pool exclusively for your projects without the need to hire in-house.
@@ -41,10 +41,10 @@ const DedicatedFTEExpertsSection = ({ openPopup }: { openPopup: (config?: { titl
 
                         {/* CTA Button */}
                         <div className="mt-8">
-                            <button 
-                                onClick={() => openPopup({ 
-                                    title: "Consult Our Expert Recruiters", 
-                                    description: "Ready to build your dedicated FTE team? Let our expert recruiters help you find the perfect talent for your project needs." 
+                            <button
+                                onClick={() => openPopup({
+                                    title: "Consult Our Expert Recruiters",
+                                    description: "Ready to build your dedicated FTE team? Let our expert recruiters help you find the perfect talent for your project needs."
                                 })}
                                 className="px-8 py-4 bg-gradient-to-r from-[#34969E] to-[#C2D92C] text-white font-bold rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-3"
                             >
@@ -57,7 +57,7 @@ const DedicatedFTEExpertsSection = ({ openPopup }: { openPopup: (config?: { titl
                     {/* Right Image with Stats Overlay */}
                     <div className="relative" data-aos="fade-left">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                            <Image 
+                            <Image
                                 src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NTc0MjAxMjN8MA&ixlib=rb-4.1.0&q=85"
                                 alt="Professional team collaboration"
                                 width={600}
@@ -66,7 +66,7 @@ const DedicatedFTEExpertsSection = ({ openPopup }: { openPopup: (config?: { titl
                             />
                             <div className="absolute inset-0 bg-gradient-to-tr from-navy-600/70 via-transparent to-lime-400/30"></div>
                         </div>
-                        
+
                         {/* Stats Card Overlay */}
                         <div className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-2xl p-6 border-l-4 border-lime-400" data-aos="zoom-in" data-aos-delay="300">
                             <div className="flex items-center space-x-4">
@@ -126,7 +126,7 @@ const WorkforceChallengesSection = () => {
                             img: "/img/serviceFTE/productivityCard4.png"
                         }
                     ].map((challenge, index) => (
-                        <div 
+                        <div
                             key={index}
                             className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden"
                             data-aos="fade-up"
@@ -134,10 +134,10 @@ const WorkforceChallengesSection = () => {
                         >
                             {/* Background Geometric Pattern */}
                             <div className="absolute inset-0 bg-gradient-to-br from-lime-50 to-teal-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                            
+
                             {/* Icon Background */}
                             <div className="relative w-16 h-16 bg-gradient-to-br from-lime-400 to-teal-500 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                <Image 
+                                <Image
                                     src={challenge.img}
                                     alt={challenge.title}
                                     width={32}
@@ -204,12 +204,12 @@ const ServiceOfferingsBentoSection = () => {
                 {/* Improved Bento Grid Layout */}
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 h-auto lg:h-[600px]">
                     {/* Large Featured Card - Hybrid Resource Flexibility */}
-                    <div 
+                    <div
                         className="lg:col-span-2 lg:row-span-2 group relative bg-gradient-to-br from-navy-600 to-teal-600 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500"
                         data-aos="fade-right"
                     >
                         <div className="absolute inset-0">
-                            <Image 
+                            <Image
                                 src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NTc0MjAxMjN8MA&ixlib=rb-4.1.0&q=85"
                                 alt="Team collaboration"
                                 fill
@@ -217,7 +217,7 @@ const ServiceOfferingsBentoSection = () => {
                             />
                             <div className="absolute inset-0 bg-gradient-to-br from-navy-800/80 via-teal-600/60 to-lime-400/40 group-hover:from-navy-900/90 transition-colors duration-500"></div>
                         </div>
-                        
+
                         <div className="relative z-10 p-12 h-full flex flex-col justify-between">
                             <div>
                                 <div className="w-16 h-16 bg-lime-400 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
@@ -230,7 +230,7 @@ const ServiceOfferingsBentoSection = () => {
                                     {serviceOfferings[0].desc}
                                 </p>
                             </div>
-                            
+
                             <div className="flex items-center text-lime-400 group-hover:text-lime-300 transition-colors duration-300">
                                 <span className="text-lg font-semibold mr-2">Learn More</span>
                                 <FaArrowRight className="transform group-hover:translate-x-2 transition-transform duration-300" />
@@ -239,13 +239,13 @@ const ServiceOfferingsBentoSection = () => {
                     </div>
 
                     {/* Top Right Card - Seamless Project Oversight */}
-                    <div 
+                    <div
                         className="lg:col-span-2 group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
                         <div className="absolute inset-0">
-                            <Image 
+                            <Image
                                 src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85"
                                 alt="Project oversight"
                                 fill
@@ -253,7 +253,7 @@ const ServiceOfferingsBentoSection = () => {
                             />
                             <div className="absolute inset-0 bg-gradient-to-br from-navy-600/80 to-teal-400/60 group-hover:from-navy-700/90 group-hover:to-teal-500/70 transition-colors duration-500"></div>
                         </div>
-                        
+
                         <div className="relative z-10 p-8 h-full flex flex-col justify-center">
                             <div className="w-12 h-12 bg-lime-400 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <FaCogs className="text-navy-800 text-lg" />
@@ -268,13 +268,13 @@ const ServiceOfferingsBentoSection = () => {
                     </div>
 
                     {/* Bottom Left Card - Quick Access to Niche Talent */}
-                    <div 
+                    <div
                         className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
                         <div className="absolute inset-0">
-                            <Image 
+                            <Image
                                 src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85"
                                 alt="Niche talent"
                                 fill
@@ -282,7 +282,7 @@ const ServiceOfferingsBentoSection = () => {
                             />
                             <div className="absolute inset-0 bg-gradient-to-br from-navy-600/80 to-teal-400/60 group-hover:from-navy-700/90 group-hover:to-teal-500/70 transition-colors duration-500"></div>
                         </div>
-                        
+
                         <div className="relative z-10 p-8 h-full flex flex-col justify-center">
                             <div className="w-12 h-12 bg-lime-400 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <FaRocket className="text-navy-800 text-lg" />
@@ -297,13 +297,13 @@ const ServiceOfferingsBentoSection = () => {
                     </div>
 
                     {/* Bottom Right Card - Quality & Compliance Assurance */}
-                    <div 
+                    <div
                         className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                         data-aos="fade-up"
                         data-aos-delay="300"
                     >
                         <div className="absolute inset-0">
-                            <Image 
+                            <Image
                                 src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85"
                                 alt="Quality assurance"
                                 fill
@@ -311,7 +311,7 @@ const ServiceOfferingsBentoSection = () => {
                             />
                             <div className="absolute inset-0 bg-gradient-to-br from-navy-600/80 to-teal-400/60 group-hover:from-navy-700/90 group-hover:to-teal-500/70 transition-colors duration-500"></div>
                         </div>
-                        
+
                         <div className="relative z-10 p-8 h-full flex flex-col justify-center">
                             <div className="w-12 h-12 bg-lime-400 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <FaCheckCircle className="text-navy-800 text-lg" />
@@ -372,7 +372,7 @@ const ProcessTimelineSection = () => {
                 {/* Timeline Steps */}
                 <div className="space-y-20">
                     {processSteps.map((step, index) => (
-                        <div 
+                        <div
                             key={index}
                             className={`flex flex-col lg:flex-row items-center gap-12 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
                             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
@@ -382,7 +382,7 @@ const ProcessTimelineSection = () => {
                                 <div className="w-24 h-24 bg-gradient-to-br from-lime-400 to-teal-500 rounded-full flex items-center justify-center shadow-2xl animate-pulse">
                                     <span className="text-2xl font-black text-white">{index + 1}</span>
                                 </div>
-                                
+
                                 {/* Connecting Line */}
                                 {index < processSteps.length - 1 && (
                                     <div className="absolute top-24 left-1/2 transform -translate-x-1/2 w-1 h-20 bg-gradient-to-b from-lime-400 to-teal-500 hidden lg:block"></div>
@@ -402,7 +402,7 @@ const ProcessTimelineSection = () => {
                             {/* Image */}
                             <div className="flex-1 lg:max-w-md">
                                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                                    <Image 
+                                    <Image
                                         src={`https://images.unsplash.com/photo-${[
                                             '1600880292089-90a7e086ee0c',
                                             '1557426272-fc759fdf7a8d',
@@ -498,7 +498,7 @@ const BenefitsStatsSection = () => {
                 {/* Benefits Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {businessBenefits.map((benefit, index) => (
-                        <div 
+                        <div
                             key={index}
                             className="group relative bg-gradient-to-br from-teal-600 to-navy-700 rounded-3xl p-8 overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                             data-aos="fade-up"
@@ -506,7 +506,7 @@ const BenefitsStatsSection = () => {
                         >
                             {/* Background Image */}
                             <div className="absolute inset-0 opacity-20">
-                                <Image 
+                                <Image
                                     src={`https://images.unsplash.com/photo-${[
                                         '1606857521015-7f9fcf423740',
                                         '1497366754035-f200968a6e72',
@@ -523,7 +523,7 @@ const BenefitsStatsSection = () => {
 
                             {/* Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-navy-800/80 to-teal-600/60 group-hover:from-navy-900/90 group-hover:to-teal-700/70 transition-colors duration-500"></div>
-                            
+
                             <div className="relative z-10">
                                 {/* Animated Counter for first 3 items */}
                                 {index < 3 && (
@@ -531,7 +531,7 @@ const BenefitsStatsSection = () => {
                                         {counters[index]}%+
                                     </div>
                                 )}
-                                
+
                                 <h3 className="text-xl font-bold text-white mb-4">
                                     {benefit.title}
                                 </h3>
@@ -550,7 +550,7 @@ const BenefitsStatsSection = () => {
 // Industries Section
 const IndustriesSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    
+
     const industries = [
         { name: "Aerospace / Space", icon: FaSpaceShuttle },
         { name: "eCommerce", icon: FaShoppingCart },
@@ -615,7 +615,7 @@ const IndustriesSection = () => {
                                         {getCurrentItems().map((industry, index) => {
                                             const IconComponent = industry.icon;
                                             return (
-                                                <div 
+                                                <div
                                                     key={index}
                                                     className="group flex flex-col items-center text-center space-y-4 p-6 rounded-2xl hover:bg-gradient-to-br hover:from-lime-50 hover:to-teal-50 transition-all duration-300 transform hover:-translate-y-2"
                                                     data-aos="zoom-in"
@@ -629,12 +629,12 @@ const IndustriesSection = () => {
                                                         {/* Glow effect */}
                                                         <div className="absolute inset-0 bg-gradient-to-br from-lime-400 to-teal-500 rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
                                                     </div>
-                                                    
+
                                                     {/* Industry Name */}
                                                     <h3 className="text-lg font-bold text-navy-800 group-hover:text-teal-600 transition-colors duration-300">
                                                         {industry.name}
                                                     </h3>
-                                                    
+
                                                     {/* Hover Line */}
                                                     <div className="w-0 h-0.5 bg-gradient-to-r from-lime-400 to-teal-500 group-hover:w-full transition-all duration-300"></div>
                                                 </div>
@@ -647,7 +647,7 @@ const IndustriesSection = () => {
                     </div>
 
                     {/* Navigation Arrows */}
-                    <button 
+                    <button
                         onClick={prevSlide}
                         className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl flex items-center justify-center text-navy-800 hover:text-teal-600 transition-all duration-300 hover:scale-110 border border-gray-200"
                         aria-label="Previous slide"
@@ -656,8 +656,8 @@ const IndustriesSection = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                         </svg>
                     </button>
-                    
-                    <button 
+
+                    <button
                         onClick={nextSlide}
                         className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl flex items-center justify-center text-navy-800 hover:text-teal-600 transition-all duration-300 hover:scale-110 border border-gray-200"
                         aria-label="Next slide"
@@ -673,11 +673,10 @@ const IndustriesSection = () => {
                             <button
                                 key={index}
                                 onClick={() => setCurrentSlide(index)}
-                                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                                    currentSlide === index 
-                                        ? 'bg-gradient-to-r from-lime-400 to-teal-500 shadow-lg scale-125' 
-                                        : 'bg-gray-300 hover:bg-gray-400'
-                                }`}
+                                className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
+                                    ? 'bg-gradient-to-r from-lime-400 to-teal-500 shadow-lg scale-125'
+                                    : 'bg-gray-300 hover:bg-gray-400'
+                                    }`}
                                 aria-label={`Go to slide ${index + 1}`}
                             />
                         ))}
@@ -749,7 +748,7 @@ const WhyProtingentSection = () => {
                 {/* Partners Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {partnersData.map((partner, index) => (
-                        <div 
+                        <div
                             key={index}
                             className="group relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100"
                             data-aos="fade-up"
@@ -757,7 +756,7 @@ const WhyProtingentSection = () => {
                         >
                             {/* Background Gradient on Hover */}
                             <div className="absolute inset-0 bg-gradient-to-br from-lime-50 to-teal-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
-                            
+
                             <div className="relative z-10">
                                 {/* Icon */}
                                 <div className="w-16 h-16 bg-gradient-to-br from-lime-400 to-teal-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
@@ -783,7 +782,7 @@ const WhyProtingentSection = () => {
 
 export default function Home() {
     const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
-    
+
     useEffect(() => {
         // Initialize AOS
         if (typeof window !== 'undefined') {
@@ -798,10 +797,10 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="bg-white w-full flex flex-col items-center">
+        <div className="bg-white w-full flex flex-col items-center max-w-screen overflow-x-hidden">
             {/* Hero Section - Keep unchanged */}
             <ServiceFTEBanner />
-            
+
             {/* Updated Sections */}
             <DedicatedFTEExpertsSection openPopup={openPopup} />
             <WorkforceChallengesSection />
@@ -810,7 +809,7 @@ export default function Home() {
             <BenefitsStatsSection />
             <IndustriesSection />
             <WhyProtingentSection />
-            
+
             {/* Enhanced FAQ Section */}
             <div className="w-full py-20">
                 <EnhancedFAQSection
@@ -854,7 +853,7 @@ export default function Home() {
             </div>
 
             {/* Consultation Popup */}
-            <ConsultationPopup 
+            <ConsultationPopup
                 isOpen={isOpen}
                 onClose={closePopup}
                 title={config.title}
