@@ -7,11 +7,11 @@ import {
     ConsultationPopup
 } from "@/components";
 import { useConsultationPopup } from '@/hooks/useConsultationPopup';
-import { 
-    FaUsers, 
-    FaChartLine, 
-    FaHandshake, 
-    FaCogs, 
+import {
+    FaUsers,
+    FaChartLine,
+    FaHandshake,
+    FaCogs,
     FaRocket,
     FaUserTie,
     FaFileAlt,
@@ -49,18 +49,18 @@ import {
 // --------------------------------------------------------------
 const HROutsourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title?: string; description?: string }) => void }) => {
     return (
-        <section className="relative w-full min-h-[60vh] lg:min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <section className="relative w-full min-h-[60vh] lg:min-h-[80vh] flex items-center justify-center overflow-hidden py-8">
             {/* Animated gradient mesh background */}
             <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-[#C2D92C] via-[#34969E] to-[#113F64] animate-gradient-shift"></div>
-            
+
             {/* Floating geometric elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 left-10 w-24 h-24 border-2 border-white/30 rounded-full float-animation"></div>
-                <div className="absolute bottom-32 right-16 w-20 h-20 border-2 border-[#C2D92C]/40 rotate-45 float-animation" style={{animationDelay: '-2s'}}></div>
-                <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full float-animation" style={{animationDelay: '-4s'}}></div>
-                <div className="absolute bottom-1/4 right-1/3 w-12 h-12 border border-white/40 rotate-12 float-animation" style={{animationDelay: '-6s'}}></div>
+                <div className="absolute bottom-32 right-16 w-20 h-20 border-2 border-[#C2D92C]/40 rotate-45 float-animation" style={{ animationDelay: '-2s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full float-animation" style={{ animationDelay: '-4s' }}></div>
+                <div className="absolute bottom-1/4 right-1/3 w-12 h-12 border border-white/40 rotate-12 float-animation" style={{ animationDelay: '-6s' }}></div>
             </div>
-            
+
             <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6">
                 {/* Split-screen layout */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -70,14 +70,14 @@ const HROutsourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title?
                             End-to-End HR Outsourcing
                             <span className="block text-[#C2D92C] mt-2">That Scales With You</span>
                         </h1>
-                        
+
                         <p className="text-xl lg:text-2xl font-light mb-8 leading-relaxed opacity-90" style={{ fontFamily: 'Raleway' }}>
-                            Protingent India takes over all HR complexities like payroll, compliance, recruitment, and employee support, 
+                            Protingent India takes over all HR complexities like payroll, compliance, recruitment, and employee support,
                             where entrepreneurs take innovations, growth, and efficiency towards next-gen technologies without administrative burdens.
                         </p>
-                        
+
                         <div className="flex flex-col sm:flex-row gap-6 mb-8">
-                            <button 
+                            <button
                                 onClick={() => openPopup({
                                     title: "Transform Your HR Today",
                                     description: "Ready to streamline your HR operations? Let's discuss how our comprehensive HR outsourcing solutions can transform your business efficiency."
@@ -91,7 +91,7 @@ const HROutsourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title?
                                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                             </button>
                         </div>
-                        
+
                         {/* Quick Stats */}
                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
                             {[
@@ -117,7 +117,7 @@ const HROutsourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title?
                                 className="w-full h-[500px] lg:h-[600px] object-cover"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#113F64]/60 via-transparent to-[#C2D92C]/20"></div>
-                            
+
                             {/* Floating HR Cards */}
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <div className="grid grid-cols-2 gap-4 opacity-90">
@@ -129,27 +129,27 @@ const HROutsourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title?
                                             <div className="text-[#113F64] text-xs">Automated</div>
                                         </div>
                                     </div>
-                                    
+
                                     {/* Compliance Card */}
-                                    <div className="bg-[#34969E] rounded-2xl p-4 shadow-xl animate-pulse flex items-center gap-3" style={{animationDelay: '0.5s'}}>
+                                    <div className="bg-[#34969E] rounded-2xl p-4 shadow-xl animate-pulse flex items-center gap-3" style={{ animationDelay: '0.5s' }}>
                                         <FaShieldAlt className="text-white text-2xl" />
                                         <div>
                                             <div className="text-white font-bold text-sm">Compliance</div>
                                             <div className="text-white text-xs">100% Assured</div>
                                         </div>
                                     </div>
-                                    
+
                                     {/* Recruitment Card */}
-                                    <div className="bg-white rounded-2xl p-4 shadow-xl animate-pulse flex items-center gap-3" style={{animationDelay: '1s'}}>
+                                    <div className="bg-white rounded-2xl p-4 shadow-xl animate-pulse flex items-center gap-3" style={{ animationDelay: '1s' }}>
                                         <FaUsers className="text-[#113F64] text-2xl" />
                                         <div>
                                             <div className="text-[#113F64] font-bold text-sm">Recruitment</div>
                                             <div className="text-[#113F64] text-xs">RPO Services</div>
                                         </div>
                                     </div>
-                                    
+
                                     {/* Analytics Card */}
-                                    <div className="bg-[#113F64] rounded-2xl p-4 shadow-xl animate-pulse flex items-center gap-3" style={{animationDelay: '1.5s'}}>
+                                    <div className="bg-[#113F64] rounded-2xl p-4 shadow-xl animate-pulse flex items-center gap-3" style={{ animationDelay: '1.5s' }}>
                                         <FaChartBar className="text-[#C2D92C] text-2xl" />
                                         <div>
                                             <div className="text-white font-bold text-sm">Analytics</div>
@@ -229,17 +229,17 @@ const StrategicAdvantageSection = () => {
         <div ref={sectionRef} className="relative w-full py-16 md:py-24 bg-white overflow-hidden">
             {/* Enhanced geometric background */}
             <GeometricBackground variant="primary" intensity="medium" />
-            
+
             {/* Subtle geometric pattern background */}
             <div className="absolute inset-0 opacity-5">
-                <div 
+                <div
                     className="w-full h-full"
                     style={{
                         backgroundImage: `repeating-linear-gradient(45deg, #C2D92C40 0px, #C2D92C40 2px, transparent 2px, transparent 40px), repeating-linear-gradient(-45deg, #34969E40 0px, #34969E40 2px, transparent 2px, transparent 40px)`,
                     }}
                 ></div>
             </div>
-            
+
             <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" style={{ color: '#113F64', fontFamily: 'Lato' }}>
@@ -247,7 +247,7 @@ const StrategicAdvantageSection = () => {
                         <span className="block text-[#34969E]">Strategic Advantage</span>
                     </h2>
                     <p className="text-xl lg:text-2xl text-gray-600 max-w-5xl mx-auto leading-relaxed" style={{ fontFamily: 'Raleway' }}>
-                        HR Outsourcing is your organizational growth enabler. By partnering with experts like Protingent, 
+                        HR Outsourcing is your organizational growth enabler. By partnering with experts like Protingent,
                         businesses reduce risks, save resources, and gain measurable improvements in efficiency and compliance.
                     </p>
                 </div>
@@ -270,18 +270,18 @@ const StrategicAdvantageSection = () => {
                                     }}
                                 ></div>
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/90 via-[#34969E]/80 to-[#113F64]/95"></div>
-                                
+
                                 <div className="relative z-10 p-8 h-full text-white min-h-[300px] flex flex-col justify-between">
                                     {/* Icon */}
                                     <div className="mb-6">
-                                        <div 
+                                        <div
                                             className="w-20 h-20 rounded-2xl flex items-center justify-center text-3xl mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-xl"
                                             style={{ backgroundColor: '#C2D92C' }}
                                         >
                                             <IconComponent className="text-[#113F64]" />
                                         </div>
                                     </div>
-                                    
+
                                     {/* Animated Counter */}
                                     <div className="text-center">
                                         <div className="text-5xl font-bold mb-2 text-[#C2D92C]" style={{ fontFamily: 'Lato' }}>
@@ -399,7 +399,7 @@ const HRSolutionsSection = () => {
                         <span className="block text-[#34969E]">Solutions</span>
                     </h2>
                     <p className="text-xl lg:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed" style={{ fontFamily: 'Raleway' }}>
-                        Protingent India offers end-to-end HR outsourcing services, combining compliance expertise, digital tools, 
+                        Protingent India offers end-to-end HR outsourcing services, combining compliance expertise, digital tools,
                         and experienced professionals to streamline workforce management and empower organizations to focus on strategic growth.
                     </p>
                 </div>
@@ -424,7 +424,7 @@ const HRSolutionsSection = () => {
                                 ></div>
                                 <div className={`absolute inset-0 bg-gradient-to-br from-[#113F64]/85 via-[${solution.color}]/75 to-[#113F64]/90`}>
                                     <div className="absolute inset-0 opacity-15">
-                                        <div 
+                                        <div
                                             className="w-full h-full"
                                             style={{
                                                 backgroundImage: `radial-gradient(circle at 30% 30%, ${solution.color}30 2px, transparent 2px), radial-gradient(circle at 70% 70%, #113F6430 3px, transparent 3px)`,
@@ -433,16 +433,16 @@ const HRSolutionsSection = () => {
                                         ></div>
                                     </div>
                                 </div>
-                                
+
                                 <div className="relative z-10 p-6 lg:p-8 h-full text-white flex flex-col justify-between">
                                     <div>
-                                        <div 
+                                        <div
                                             className="w-20 h-20 rounded-2xl flex items-center justify-center text-2xl lg:text-3xl mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-xl"
                                             style={{ backgroundColor: solution.color }}
                                         >
                                             <IconComponent className="text-[#113F64]" />
                                         </div>
-                                        
+
                                         <h3 className="text-xl lg:text-2xl font-bold mb-4 leading-tight" style={{ fontFamily: 'Lato' }}>
                                             {solution.title}
                                         </h3>
@@ -517,7 +517,7 @@ const ProcessApproachSection = () => {
                         <span className="block text-[#34969E]">Approach</span>
                     </h2>
                     <p className="text-xl lg:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed" style={{ fontFamily: 'Raleway' }}>
-                        We follow a structured, technology-enabled approach to HR outsourcing, ensuring accuracy, compliance, 
+                        We follow a structured, technology-enabled approach to HR outsourcing, ensuring accuracy, compliance,
                         and transparency at every step—so businesses gain efficiency without losing control.
                     </p>
                 </div>
@@ -531,13 +531,12 @@ const ProcessApproachSection = () => {
                         {processes.map((process, index) => {
                             const IconComponent = process.icon;
                             const isEven = index % 2 === 0;
-                            
+
                             return (
                                 <div
                                     key={index}
-                                    className={`flex flex-col lg:flex-row items-center gap-12 ${
-                                        isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                                    }`}
+                                    className={`flex flex-col lg:flex-row items-center gap-12 ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                                        }`}
                                     style={{ animationDelay: `${index * 0.2}s` }}
                                 >
                                     {/* Image Side */}
@@ -549,14 +548,14 @@ const ProcessApproachSection = () => {
                                                 className="w-full h-[400px] lg:h-[500px] object-cover transition-transform duration-500 group-hover:scale-110"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/70 via-transparent to-[#34969E]/60"></div>
-                                            
+
                                             {/* Step Number */}
                                             <div className="absolute top-8 left-8">
                                                 <div className="w-16 h-16 bg-[#C2D92C] rounded-2xl flex items-center justify-center shadow-xl">
                                                     <span className="text-[#113F64] font-bold text-xl" style={{ fontFamily: 'Lato' }}>{index + 1}</span>
                                                 </div>
                                             </div>
-                                            
+
                                             {/* Icon */}
                                             <div className="absolute bottom-8 right-8">
                                                 <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center border border-white/30">
@@ -570,13 +569,13 @@ const ProcessApproachSection = () => {
                                     <div className="lg:w-1/2">
                                         <div className="relative">
                                             {/* Timeline Node (Desktop only) */}
-                                            <div className="hidden lg:block absolute top-8 -left-6 w-12 h-12 bg-[#C2D92C] rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                                            <div className="hidden lg:block absolute top-8 -left-6 w-12 h-12 bg-[#C2D92C] rounded-full border-4 border-white shadow-lg items-center justify-center">
                                                 <IconComponent className="text-[#113F64] text-xl" />
                                             </div>
-                                            
+
                                             <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                                                 <div className="flex items-center gap-4 mb-6">
-                                                    <div 
+                                                    <div
                                                         className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg lg:hidden"
                                                         style={{ backgroundColor: index % 2 === 0 ? '#34969E' : '#C2D92C' }}
                                                     >
@@ -586,7 +585,7 @@ const ProcessApproachSection = () => {
                                                         Step {index + 1}
                                                     </div>
                                                 </div>
-                                                
+
                                                 <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-[#113F64] leading-tight" style={{ fontFamily: 'Lato' }}>
                                                     {process.title}
                                                 </h3>
@@ -662,7 +661,7 @@ const BusinessEfficiencySection = () => {
                         <span className="block text-[#34969E]">Business Efficiency</span>
                     </h2>
                     <p className="text-xl lg:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed" style={{ fontFamily: 'Raleway' }}>
-                        By outsourcing HR functions to Protingent, organizations gain freedom from administrative complexities, 
+                        By outsourcing HR functions to Protingent, organizations gain freedom from administrative complexities,
                         enabling them to focus on scaling operations, driving innovation, and building stronger, future-ready teams.
                     </p>
                 </div>
@@ -685,11 +684,11 @@ const BusinessEfficiencySection = () => {
                                         backgroundImage: `url('${benefit.image}')`,
                                     }}
                                 ></div>
-                                
+
                                 {/* Abstract Geometric Overlay */}
                                 <div className={`absolute inset-0 bg-gradient-to-br from-[#113F64]/85 via-[${benefit.color}]/75 to-[#113F64]/90`}>
                                     <div className="absolute inset-0 opacity-20">
-                                        <div 
+                                        <div
                                             className="w-full h-full"
                                             style={{
                                                 backgroundImage: `repeating-linear-gradient(45deg, ${benefit.color}40 0px, ${benefit.color}40 2px, transparent 2px, transparent 40px)`,
@@ -697,16 +696,16 @@ const BusinessEfficiencySection = () => {
                                         ></div>
                                     </div>
                                 </div>
-                                
+
                                 <div className="relative z-10 p-8 lg:p-12 h-full text-white flex flex-col justify-between">
                                     <div>
-                                        <div 
+                                        <div
                                             className="w-24 h-24 rounded-2xl flex items-center justify-center text-4xl mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-xl"
                                             style={{ backgroundColor: benefit.color }}
                                         >
                                             <IconComponent className="text-[#113F64]" />
                                         </div>
-                                        
+
                                         <h3 className="text-3xl lg:text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: 'Lato' }}>
                                             {benefit.title}
                                         </h3>
@@ -714,7 +713,7 @@ const BusinessEfficiencySection = () => {
                                             {benefit.description}
                                         </p>
                                     </div>
-                                    
+
                                     <div className="flex items-center gap-4 font-semibold text-lg" style={{ color: benefit.color }}>
                                         <span>Learn More</span>
                                         <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
@@ -741,11 +740,11 @@ const BusinessEfficiencySection = () => {
                                         backgroundImage: `url('${benefit.image}')`,
                                     }}
                                 ></div>
-                                
+
                                 {/* Abstract Geometric Overlay */}
                                 <div className={`absolute inset-0 bg-gradient-to-br from-[#113F64]/85 via-[${benefit.color}]/75 to-[#113F64]/90`}>
                                     <div className="absolute inset-0 opacity-15">
-                                        <div 
+                                        <div
                                             className="w-full h-full"
                                             style={{
                                                 backgroundImage: `radial-gradient(circle at 30% 30%, ${benefit.color}30 2px, transparent 2px), radial-gradient(circle at 70% 70%, #113F6430 3px, transparent 3px)`,
@@ -754,16 +753,16 @@ const BusinessEfficiencySection = () => {
                                         ></div>
                                     </div>
                                 </div>
-                                
+
                                 <div className="relative z-10 p-6 h-full text-white flex flex-col justify-between">
                                     <div>
-                                        <div 
+                                        <div
                                             className="w-18 h-18 rounded-2xl flex items-center justify-center text-2xl mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-xl"
                                             style={{ backgroundColor: benefit.color }}
                                         >
                                             <IconComponent className="text-[#113F64]" />
                                         </div>
-                                        
+
                                         <h3 className="text-xl lg:text-2xl font-bold mb-4 leading-tight" style={{ fontFamily: 'Lato' }}>
                                             {benefit.title}
                                         </h3>
@@ -771,7 +770,7 @@ const BusinessEfficiencySection = () => {
                                             {benefit.description}
                                         </p>
                                     </div>
-                                    
+
                                     <div className="flex items-center gap-2 font-semibold text-sm mt-4" style={{ color: benefit.color }}>
                                         <span>Explore Benefits</span>
                                         <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
@@ -838,7 +837,7 @@ const WhyChooseProtingentSection = () => {
                         <span className="block text-[#34969E]">for HR Outsourcing?</span>
                     </h2>
                     <p className="text-xl lg:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed" style={{ fontFamily: 'Raleway' }}>
-                        With Protingent India, HR outsourcing becomes more than administration—it's a growth accelerator that ensures compliance, 
+                        With Protingent India, HR outsourcing becomes more than administration—it's a growth accelerator that ensures compliance,
                         reduces costs, and strengthens your workforce for long-term success.
                     </p>
                 </div>
@@ -851,14 +850,14 @@ const WhyChooseProtingentSection = () => {
                             <div
                                 key={index}
                                 className="group relative overflow-hidden rounded-3xl transition-all duration-500 cursor-pointer bg-white shadow-lg hover:shadow-2xl hover:-translate-y-3 border-l-4"
-                                style={{ 
+                                style={{
                                     borderLeftColor: feature.color,
                                     animationDelay: `${index * 0.1}s`
                                 }}
                             >
                                 {/* Abstract background visual */}
                                 <div className="absolute inset-0 opacity-5">
-                                    <div 
+                                    <div
                                         className="w-full h-full"
                                         style={{
                                             backgroundImage: `radial-gradient(circle at 80% 20%, ${feature.color}30 2px, transparent 2px)`,
@@ -866,18 +865,18 @@ const WhyChooseProtingentSection = () => {
                                         }}
                                     ></div>
                                 </div>
-                                
+
                                 <div className="relative z-10 p-8 h-full min-h-[280px] flex flex-col justify-between">
                                     {/* Icon */}
                                     <div className="mb-6">
-                                        <div 
+                                        <div
                                             className="w-20 h-20 rounded-2xl flex items-center justify-center text-3xl shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
                                             style={{ backgroundColor: feature.color }}
                                         >
                                             <IconComponent className="text-[#113F64]" />
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-[#113F64] group-hover:text-[#34969E] transition-colors duration-300" style={{ fontFamily: 'Lato' }}>
                                             {feature.title}
@@ -887,9 +886,9 @@ const WhyChooseProtingentSection = () => {
                                         </p>
                                     </div>
                                 </div>
-                                
+
                                 {/* Hover accent */}
-                                <div 
+                                <div
                                     className="absolute top-0 right-0 w-1 h-full transition-all duration-500 group-hover:w-2"
                                     style={{ backgroundColor: feature.color }}
                                 ></div>
@@ -965,34 +964,34 @@ const FinalCTASection = ({ openPopup }: { openPopup: (config?: { title?: string;
             ></div>
             {/* Full-width gradient background with geometric overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#C2D92C]/90 via-[#34969E]/85 to-[#113F64]/90"></div>
-            
+
             {/* Geometric overlay pattern */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
-                <div 
+                <div
                     className="w-full h-full"
                     style={{
                         backgroundImage: `repeating-linear-gradient(45deg, #C2D92C40 0px, #C2D92C40 3px, transparent 3px, transparent 60px), repeating-linear-gradient(-45deg, #34969E40 0px, #34969E40 3px, transparent 3px, transparent 60px)`,
                     }}
                 ></div>
             </div>
-            
+
             {/* Animated floating elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 left-20 w-40 h-40 border-2 border-white/20 rounded-full animate-pulse"></div>
-                <div className="absolute bottom-32 right-32 w-32 h-32 border-2 border-[#C2D92C]/40 rotate-45 animate-pulse" style={{animationDelay: '1s'}}></div>
-                <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-white/10 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+                <div className="absolute bottom-32 right-32 w-32 h-32 border-2 border-[#C2D92C]/40 rotate-45 animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-white/10 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
             </div>
-            
+
             <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 text-center text-white">
                 <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 leading-tight" style={{ fontFamily: 'Lato' }}>
                     Ready to Transform
                     <span className="block text-[#C2D92C]">Your HR Operations?</span>
                 </h2>
                 <p className="text-2xl lg:text-3xl leading-relaxed mb-16 max-w-6xl mx-auto opacity-90 font-light" style={{ fontFamily: 'Raleway' }}>
-                    Partner with Protingent India and experience the difference that professional HR outsourcing makes. 
+                    Partner with Protingent India and experience the difference that professional HR outsourcing makes.
                     Reduce costs, ensure compliance, and focus on what you do best – growing your business.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-16">
                     <button className="group relative overflow-hidden px-16 py-6 bg-[#C2D92C] text-[#113F64] font-bold text-2xl rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
                         <span className="relative z-10 flex items-center gap-4">
@@ -1002,8 +1001,8 @@ const FinalCTASection = ({ openPopup }: { openPopup: (config?: { title?: string;
                         {/* Ripple effect */}
                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                     </button>
-                    
-                    <button 
+
+                    <button
                         onClick={() => openPopup({
                             title: "Schedule Free Consultation",
                             description: "Book a free consultation with our HR outsourcing experts. Let's discuss how we can streamline your HR operations and reduce costs."
@@ -1016,7 +1015,7 @@ const FinalCTASection = ({ openPopup }: { openPopup: (config?: { title?: string;
                         </span>
                     </button>
                 </div>
-                
+
                 {/* Final trust indicators */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
                     {[
@@ -1045,9 +1044,9 @@ const FinalCTASection = ({ openPopup }: { openPopup: (config?: { title?: string;
 // --------------------------------------------------------------
 export default function HROutsourcingService() {
     const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
-    
+
     return (
-        <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20">
+        <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20 max-w-screen overflow-x-hidden">
             <HROutsourcingHeroSection openPopup={openPopup} />
             <StrategicAdvantageSection />
             <HRSolutionsSection />
@@ -1055,11 +1054,11 @@ export default function HROutsourcingService() {
             <BusinessEfficiencySection />
             <WhyChooseProtingentSection />
             <FinalCTASection openPopup={openPopup} />
-            
+
             <HROutsourcingFAQSection />
-            
+
             {/* Consultation Popup */}
-            <ConsultationPopup 
+            <ConsultationPopup
                 isOpen={isOpen}
                 onClose={closePopup}
                 title={config.title}

@@ -6,10 +6,10 @@ import {
     ConsultationPopup
 } from "@/components";
 import { useConsultationPopup } from '@/hooks/useConsultationPopup';
-import { 
-    FaUsers, 
-    FaClock, 
-    FaMoneyBillWave, 
+import {
+    FaUsers,
+    FaClock,
+    FaMoneyBillWave,
     FaCheckCircle,
     FaRocket,
     FaHandshake,
@@ -40,7 +40,7 @@ import {
 // Hero Section - 20% height reduction from full screen
 const ContractStaffingHeroSection = ({ openPopup }: { openPopup: (config?: { title?: string; description?: string }) => void }) => {
     return (
-        <section className="relative w-full min-h-[60vh] lg:min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <section className="relative w-full min-h-[60vh] lg:min-h-[80vh] flex items-center justify-center overflow-hidden py-8">
             {/* Background Image */}
             <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center object-cover"
@@ -49,14 +49,14 @@ const ContractStaffingHeroSection = ({ openPopup }: { openPopup: (config?: { tit
                 }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/95 via-[#34969E]/90 to-[#C2D92C]/85"></div>
-            
+
             {/* Floating geometric elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 left-10 w-24 h-24 border-2 border-white/30 rotate-45 animate-pulse"></div>
-                <div className="absolute bottom-32 right-16 w-20 h-20 border-2 border-[#C2D92C]/40 rounded-full animate-bounce" style={{animationDelay: '-2s'}}></div>
-                <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-pulse" style={{animationDelay: '-1s'}}></div>
+                <div className="absolute bottom-32 right-16 w-20 h-20 border-2 border-[#C2D92C]/40 rounded-full animate-bounce" style={{ animationDelay: '-2s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-pulse" style={{ animationDelay: '-1s' }}></div>
             </div>
-            
+
             <div className="relative z-10 max-w-7xl container-responsive">
                 <div className="grid-responsive-2 items-center">
                     {/* Content Side */}
@@ -65,14 +65,14 @@ const ContractStaffingHeroSection = ({ openPopup }: { openPopup: (config?: { tit
                             Smart Contract Staffing
                             <span className="block text-[#C2D92C]">For Growing Teams</span>
                         </h1>
-                        
+
                         <p className="body-lg mb-8 opacity-90" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                            Protingent India provides flexible contract staffing solutions that help businesses scale quickly, 
+                            Protingent India provides flexible contract staffing solutions that help businesses scale quickly,
                             access specialized skills on-demand, and maintain operational agility in rapidly changing markets.
                         </p>
-                        
+
                         <div className="flex flex-col sm:flex-row gap-6 mb-8">
-                            <button 
+                            <button
                                 onClick={() => openPopup({
                                     title: "Scale Your Team Today",
                                     description: "Tell us about your contract staffing needs and we'll help you scale your team with the right talent."
@@ -84,8 +84,8 @@ const ContractStaffingHeroSection = ({ openPopup }: { openPopup: (config?: { tit
                                     <FaUsers className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                                 </span>
                             </button>
-                            
-                            <button 
+
+                            <button
                                 onClick={() => openPopup({
                                     title: "Schedule Consultation",
                                     description: "Book a free consultation with our contract staffing experts to discuss your specific requirements."
@@ -98,7 +98,7 @@ const ContractStaffingHeroSection = ({ openPopup }: { openPopup: (config?: { tit
                                 </span>
                             </button>
                         </div>
-                        
+
                         {/* Key Stats */}
                         <div className="grid-responsive-4 text-center">
                             {[
@@ -186,14 +186,14 @@ const ContractStaffingSolutionsSection = () => {
     return (
         <div className="relative w-full bg-gradient-to-b from-white to-gray-50 section-padding overflow-hidden">
             <GeometricBackground variant="secondary" intensity="light" />
-            
+
             <div className="max-w-7xl container-responsive relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="heading-xl mb-6" style={{ color: '#113F64', fontFamily: 'Lato, sans-serif' }}>
                         Our Contract Staffing Solutions
                     </h2>
                     <p className="body-lg text-gray-600 max-w-4xl mx-auto" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                        Comprehensive staffing solutions designed to meet diverse business needs with flexibility, 
+                        Comprehensive staffing solutions designed to meet diverse business needs with flexibility,
                         expertise, and seamless integration into your existing workflows.
                     </p>
                 </div>
@@ -213,16 +213,16 @@ const ContractStaffingSolutionsSection = () => {
                                     }}
                                 ></div>
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/90 via-[#34969E]/80 to-[#113F64]/90"></div>
-                                
+
                                 <div className="relative z-10 p-8 h-full text-white flex flex-col justify-between">
                                     <div>
-                                        <div 
+                                        <div
                                             className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-lg"
                                             style={{ backgroundColor: solution.color }}
                                         >
                                             <IconComponent className="text-[#113F64] w-6 h-6" />
                                         </div>
-                                        
+
                                         <h3 className="heading-md mb-4" style={{ fontFamily: 'Lato, sans-serif' }}>
                                             {solution.title}
                                         </h3>
@@ -284,14 +284,14 @@ const StreamlinedApproachSection = () => {
     return (
         <div className="relative w-full bg-white section-padding overflow-hidden">
             <GeometricBackground variant="tertiary" intensity="light" />
-            
+
             <div className="max-w-7xl container-responsive relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="heading-xl mb-6" style={{ color: '#113F64', fontFamily: 'Lato, sans-serif' }}>
                         Our Streamlined Approach
                     </h2>
                     <p className="body-lg text-gray-600 max-w-4xl mx-auto" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                        A systematic 6-step process that ensures efficient talent acquisition, seamless integration, 
+                        A systematic 6-step process that ensures efficient talent acquisition, seamless integration,
                         and ongoing success for your contract staffing needs.
                     </p>
                 </div>
@@ -306,7 +306,7 @@ const StreamlinedApproachSection = () => {
                             <div className="absolute top-4 right-4 text-8xl font-black text-gray-100 opacity-50 leading-none pointer-events-none">
                                 {step.number}
                             </div>
-                            
+
                             {/* Image */}
                             <div className="relative mb-6 rounded-2xl overflow-hidden shadow-lg">
                                 <img
@@ -324,7 +324,7 @@ const StreamlinedApproachSection = () => {
                                         {step.number}
                                     </div>
                                 </div>
-                                
+
                                 <h3 className="heading-md mb-4 group-hover:text-[#34969E] transition-colors duration-300" style={{ fontFamily: 'Lato, sans-serif' }}>
                                     {step.title}
                                 </h3>
@@ -371,14 +371,14 @@ const MeasurableImpactSection = () => {
                 <div className="absolute top-20 left-20 w-64 h-64 bg-[#34969E]/10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-20 right-20 w-48 h-48 bg-[#C2D92C]/10 rounded-full blur-2xl"></div>
             </div>
-            
+
             <div className="max-w-7xl container-responsive relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="heading-xl mb-6 text-white" style={{ fontFamily: 'Lato, sans-serif' }}>
                         Measurable Impact
                     </h2>
                     <p className="body-lg text-gray-300 max-w-4xl mx-auto" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                        Data-driven results that demonstrate the tangible benefits of our contract staffing solutions 
+                        Data-driven results that demonstrate the tangible benefits of our contract staffing solutions
                         for businesses across industries.
                     </p>
                 </div>
@@ -446,14 +446,14 @@ const ProtingentAdvantageSection = () => {
     return (
         <div className="relative w-full bg-gradient-to-b from-gray-50 to-white section-padding overflow-hidden">
             <GeometricBackground variant="primary" intensity="light" />
-            
+
             <div className="max-w-7xl container-responsive relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="heading-xl mb-6" style={{ color: '#113F64', fontFamily: 'Lato, sans-serif' }}>
                         The Protingent Advantage
                     </h2>
                     <p className="body-lg text-gray-600 max-w-4xl mx-auto" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                        What sets us apart in the contract staffing landscape - innovation, expertise, 
+                        What sets us apart in the contract staffing landscape - innovation, expertise,
                         and unwavering commitment to your success.
                     </p>
                 </div>
@@ -529,14 +529,14 @@ const IndustriesSection = () => {
     return (
         <div className="relative w-full bg-white section-padding overflow-hidden">
             <GeometricBackground variant="secondary" intensity="light" />
-            
+
             <div className="max-w-7xl container-responsive relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="heading-xl mb-6" style={{ color: '#113F64', fontFamily: 'Lato, sans-serif' }}>
                         Industries We Serve
                     </h2>
                     <p className="body-lg text-gray-600 max-w-4xl mx-auto" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                        Specialized contract staffing solutions across diverse industries, 
+                        Specialized contract staffing solutions across diverse industries,
                         each with unique requirements and compliance standards.
                     </p>
                 </div>
@@ -556,13 +556,13 @@ const IndustriesSection = () => {
                                     }}
                                 ></div>
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/85 via-[#34969E]/75 to-[#113F64]/85"></div>
-                                
+
                                 <div className="relative z-10 p-8 h-full text-white flex flex-col justify-between min-h-[300px]">
                                     <div>
                                         <div className="w-16 h-16 bg-gradient-to-r from-[#34969E] to-[#C2D92C] rounded-2xl flex items-center justify-center text-2xl mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-lg">
                                             <IconComponent className="text-white w-6 h-6" />
                                         </div>
-                                        
+
                                         <h3 className="heading-md mb-4" style={{ fontFamily: 'Lato, sans-serif' }}>
                                             {industry.title}
                                         </h3>
@@ -591,19 +591,19 @@ const CTASection = ({ openPopup }: { openPopup: (config?: { title?: string; desc
                 }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#113F64]/95 via-[#34969E]/90 to-[#C2D92C]/85"></div>
-            
+
             <div className="relative z-10 max-w-6xl container-responsive text-center text-white">
                 <h2 className="heading-xl mb-6" style={{ fontFamily: 'Lato, sans-serif' }}>
                     Ready to Build Your
                     <span className="block text-[#C2D92C]">Flexible Workforce?</span>
                 </h2>
                 <p className="body-lg leading-relaxed mb-12 max-w-4xl mx-auto opacity-90" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                    Connect with our contract staffing experts to discuss your specific needs and discover 
+                    Connect with our contract staffing experts to discuss your specific needs and discover
                     how we can help you build a more agile and cost-effective workforce.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <button 
+                    <button
                         onClick={() => openPopup({
                             title: "Start Your Contract Staffing Journey",
                             description: "Ready to build a flexible workforce? Tell us about your staffing needs and let's start your contract staffing journey together."
@@ -612,8 +612,8 @@ const CTASection = ({ openPopup }: { openPopup: (config?: { title?: string; desc
                     >
                         Start Your Contract Staffing Journey
                     </button>
-                    
-                    <button 
+
+                    <button
                         onClick={() => openPopup({
                             title: "Schedule Consultation",
                             description: "Book a free consultation with our contract staffing experts to discuss your specific requirements and workforce strategy."
@@ -684,7 +684,7 @@ export default function ContractStaffingService() {
     const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
 
     return (
-        <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20">
+        <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20 max-w-screen overflow-x-hidden">
             <ContractStaffingHeroSection openPopup={openPopup} />
             <ContractStaffingSolutionsSection />
             <StreamlinedApproachSection />
@@ -693,9 +693,9 @@ export default function ContractStaffingService() {
             <IndustriesSection />
             <CTASection openPopup={openPopup} />
             <ContractStaffingFAQSection />
-            
+
             {/* Consultation Popup */}
-            <ConsultationPopup 
+            <ConsultationPopup
                 isOpen={isOpen}
                 onClose={closePopup}
                 title={config.title}

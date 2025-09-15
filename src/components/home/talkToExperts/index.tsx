@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
-import { 
-    FaUserTie, 
-    FaUsers, 
+import {
+    FaUserTie,
+    FaUsers,
     FaChartLine,
     FaCheck,
     FaArrowRight,
@@ -91,7 +91,7 @@ const TalkToExpert = () => {
     ];
 
     return (
-        <div className='w-full bg-gradient-to-br from-gray-50 to-white py-16 md:py-24 overflow-hidden'>
+        <div className='w-full bg-gradient-to-br from-gray-50 to-white py-16 md:py-24 max-w-screen overflow-x-hidden'>
             {/* Main Content Container */}
             <div className='max-w-7xl mx-auto px-4 md:px-6'>
                 {/* Header Section */}
@@ -101,12 +101,12 @@ const TalkToExpert = () => {
                             Choose Your Success Path
                         </span>
                     </div>
-                    
+
                     <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold mb-6 leading-tight' style={{ color: '#113F64', fontFamily: 'Lato' }}>
                         Ready to Transform Your Business?
                         <span className='block text-[#34969E]'>We Have 3 Ways to Help</span>
                     </h2>
-                    
+
                     <p className='text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed' style={{ fontFamily: 'Raleway' }}>
                         From expert guidance to dedicated teams, choose the path that accelerates your growth and drives measurable results.
                     </p>
@@ -131,9 +131,9 @@ const TalkToExpert = () => {
 
                                 {/* Enhanced Gradient Overlay for Better Contrast */}
                                 <div className={`absolute inset-0 bg-gradient-to-br ${pathway.gradient} transition-opacity duration-300`}></div>
-                                
+
                                 {/* Subtle Geometric Pattern Overlay */}
-                                <div 
+                                <div
                                     className="absolute inset-0 opacity-10"
                                     style={{
                                         backgroundImage: `radial-gradient(circle at 25% 25%, ${pathway.accentColor} 2px, transparent 2px), 
@@ -141,19 +141,19 @@ const TalkToExpert = () => {
                                         backgroundSize: '60px 60px, 80px 80px'
                                     }}
                                 ></div>
-                                
+
                                 {/* Card Content */}
                                 <div className='relative z-10 p-8 lg:p-10 h-full text-white min-h-[500px] flex flex-col justify-between'>
                                     {/* Header */}
                                     <div>
                                         <div className='mb-6'>
-                                            <div 
+                                            <div
                                                 className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-3xl mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-xl border border-white/30"
                                             >
                                                 <IconComponent className="text-white" />
                                             </div>
                                         </div>
-                                        
+
                                         <div className='mb-2'>
                                             <h3 className='text-2xl lg:text-3xl font-bold mb-2' style={{ fontFamily: 'Lato' }}>
                                                 {pathway.title}
@@ -162,11 +162,11 @@ const TalkToExpert = () => {
                                                 {pathway.subtitle}
                                             </div>
                                         </div>
-                                        
+
                                         <p className='text-white/95 leading-relaxed mb-6 text-lg font-medium' style={{ fontFamily: 'Raleway' }}>
                                             {pathway.description}
                                         </p>
-                                        
+
                                         {/* Benefits List */}
                                         <div className='space-y-3 mb-8'>
                                             {pathway.benefits.map((benefit, idx) => (
@@ -181,10 +181,10 @@ const TalkToExpert = () => {
                                             ))}
                                         </div>
                                     </div>
-                                    
+
                                     {/* CTA Button */}
                                     <div>
-                                        <button 
+                                        <button
                                             onClick={() => openPopup(pathway.popup)}
                                             className="w-full px-6 py-3 bg-gradient-to-r from-[#34969E] to-[#113F64] hover:from-[#2d7a85] hover:to-[#0d2f4a] text-white border-none rounded-full font-bold text-lg transition-all duration-300 transform group-hover:scale-105 shadow-lg hover:shadow-xl"
                                             style={{ fontFamily: 'Lato' }}
@@ -208,7 +208,7 @@ const TalkToExpert = () => {
                             Trusted by businesses worldwide
                         </p>
                     </div>
-                    
+
                     <div className='flex flex-wrap justify-center items-center gap-8 md:gap-16'>
                         {trustSignals.map((signal, index) => {
                             const IconComponent = signal.icon;
@@ -235,7 +235,7 @@ const TalkToExpert = () => {
 
                 {/* Additional CTA Banner */}
                 <div className='mt-16 text-center'>
-                    <a 
+                    <a
                         href="tel:+91 141 299 0687"
                         className='inline-block px-8 py-4 bg-gradient-to-r from-[#113F64] to-[#34969E] rounded-full text-white shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 cursor-pointer'
                     >
@@ -248,7 +248,7 @@ const TalkToExpert = () => {
             </div>
 
             {/* Consultation Popup */}
-            <ConsultationPopup 
+            <ConsultationPopup
                 isOpen={isOpen}
                 onClose={closePopup}
                 title={config.title}

@@ -17,11 +17,11 @@ import {
     rpoServicesData,
     serviceRPOFAQ
 } from "@/utils/constants";
-import { 
-    FaUsersCog, 
-    FaChartLine, 
-    FaHandshake, 
-    FaCogs, 
+import {
+    FaUsersCog,
+    FaChartLine,
+    FaHandshake,
+    FaCogs,
     FaRocket,
     FaUsers,
     FaLightbulb,
@@ -65,31 +65,31 @@ const RPOServiceBanner = ({ openPopup }: { openPopup: (config?: { title?: string
                 <source src="/rpo-hero-background.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
-            
+
             {/* Floating geometric elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 left-10 w-20 h-20 border border-primary-green-color/30 rotate-45 float-animation"></div>
-                <div className="absolute bottom-32 right-16 w-16 h-16 border border-secondry/40 rounded-full float-animation" style={{animationDelay: '-2s'}}></div>
-                <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-primary-green-color/20 rotate-12 float-animation" style={{animationDelay: '-4s'}}></div>
+                <div className="absolute bottom-32 right-16 w-16 h-16 border border-secondry/40 rounded-full float-animation" style={{ animationDelay: '-2s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-primary-green-color/20 rotate-12 float-animation" style={{ animationDelay: '-4s' }}></div>
             </div>
-            
+
             <div className="relative z-10 text-center text-white max-w-4xl px-4 md:px-6">
                 <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent leading-tight">
                     RPO That Builds Your Team
                     <span className="block text-primary-green-color">Lightning Fast</span>
                 </h1>
-                
+
                 <p className="text-base md:text-lg lg:text-xl font-light mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
-                    Streamlined recruitment solutions designed for growth-oriented businesses. 
-                    Our Recruitment Process Outsourcing (RPO) model helps you hire 
+                    Streamlined recruitment solutions designed for growth-oriented businesses.
+                    Our Recruitment Process Outsourcing (RPO) model helps you hire
                     smarter and faster, while reducing costs by up to 40%.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <button 
-                        onClick={() => openPopup({ 
-                            title: "Request Free RPO Consultation", 
-                            description: "Ready to transform your hiring process? Let's discuss how our RPO solutions can help you hire faster and smarter." 
+                    <button
+                        onClick={() => openPopup({
+                            title: "Request Free RPO Consultation",
+                            description: "Ready to transform your hiring process? Let's discuss how our RPO solutions can help you hire faster and smarter."
                         })}
                         className="modern-btn group relative overflow-hidden"
                     >
@@ -97,7 +97,7 @@ const RPOServiceBanner = ({ openPopup }: { openPopup: (config?: { title?: string
                         <div className="absolute inset-0 bg-gradient-to-r from-primary-green-color to-secondry opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </button>
                 </div>
-                
+
                 {/* Scroll indicator */}
                 <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
                     <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
@@ -124,7 +124,7 @@ const BrandBenefitsSection = () => {
         },
         {
             icon: FaRocket,
-            title: "Faster hires", 
+            title: "Faster hires",
             description: "Reduce time-to-hire by 60% with our streamlined processes",
             accentColor: "#CBDC13"
         },
@@ -163,22 +163,21 @@ const BrandBenefitsSection = () => {
         <div ref={sectionRef} className="relative w-full max-w-[1450px] flex flex-col items-center gap-8 md:gap-12 px-4 md:px-6">
             {/* Geometric Background */}
             <GeometricBackground variant="primary" intensity="light" />
-            
+
             <CommonHeading
                 title="Recruitment Process Outsourcing (RPO) for Your Talent-Pool"
                 desc="Recruitment delays cost businesses more than time. It holds back growth, revenue, and innovation. Through professional RPO Services, you can outsource talent hiring responsibility to expert recruiters like Protingent who act as an extension of your in-house HR team."
             />
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 w-full mt-8">
                 {benefits.map((benefit, index) => {
                     const IconComponent = benefit.icon;
                     return (
                         <div
                             key={index}
-                            className={`group relative overflow-hidden rounded-2xl transition-all duration-500 cursor-pointer bg-white border-2 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-105 ${
-                                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                            }`}
-                            style={{ 
+                            className={`group relative overflow-hidden rounded-2xl transition-all duration-500 cursor-pointer bg-white border-2 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-105 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                                }`}
+                            style={{
                                 animationDelay: `${index * 0.1}s`,
                                 borderColor: benefit.accentColor,
                                 transitionDelay: `${index * 0.1}s`
@@ -190,9 +189,9 @@ const BrandBenefitsSection = () => {
                             <div className="p-6 md:p-8 h-full relative z-10">
                                 {/* Solid Icon with brand colors */}
                                 <div className="relative mb-6">
-                                    <div 
+                                    <div
                                         className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
-                                        style={{ 
+                                        style={{
                                             backgroundColor: benefit.accentColor,
                                             boxShadow: hoveredCard === index ? `0 10px 30px ${benefit.accentColor}40` : 'none'
                                         }}
@@ -200,17 +199,17 @@ const BrandBenefitsSection = () => {
                                         <IconComponent className="text-white" />
                                     </div>
                                 </div>
-                                
+
                                 {/* Content */}
-                                <h3 className="text-xl md:text-2xl font-bold mb-3 transition-colors duration-300" style={{color: '#012D50'}}>
+                                <h3 className="text-xl md:text-2xl font-bold mb-3 transition-colors duration-300" style={{ color: '#012D50' }}>
                                     {benefit.title}
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                                     {benefit.description}
                                 </p>
-                                
+
                                 {/* Accent line */}
-                                <div 
+                                <div
                                     className="absolute bottom-0 left-0 h-1 w-full transition-all duration-500 group-hover:h-2"
                                     style={{ backgroundColor: benefit.accentColor }}
                                 ></div>
@@ -244,7 +243,7 @@ const ModernServiceSlider = () => {
         },
         {
             id: 2,
-            number: "02", 
+            number: "02",
             title: "Project-Based RPO",
             description: "Flexible RPO engagement for high-volume or urgent hiring needs, ideal for new project launches, seasonal spikes, or expansions. Scale your team rapidly without compromising quality.",
             image: "/assets/images/rpo-services/project-based-rpo.jpg",
@@ -357,7 +356,7 @@ const ModernServiceSlider = () => {
                     </p>
                 </div>
 
-                <div 
+                <div
                     className="relative bg-white rounded-3xl shadow-2xl overflow-hidden"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
@@ -369,16 +368,15 @@ const ModernServiceSlider = () => {
                             {/* Full Frame Container - No padding, full coverage */}
                             <div className="relative w-full h-full min-h-[400px] lg:min-h-[500px] overflow-hidden">
                                 <div
-                                    className={`absolute inset-0 transition-all duration-500 ease-in-out ${
-                                        isTransitioning ? 'opacity-0 scale-105' : 'opacity-100 scale-100'
-                                    }`}
+                                    className={`absolute inset-0 transition-all duration-500 ease-in-out ${isTransitioning ? 'opacity-0 scale-105' : 'opacity-100 scale-100'
+                                        }`}
                                 >
                                     <img
                                         src={services[currentSlide].image}
                                         alt={services[currentSlide].alt}
                                         className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                                         loading="lazy"
-                                        style={{ 
+                                        style={{
                                             objectPosition: 'center center',
                                             objectFit: 'cover'
                                         }}
@@ -386,18 +384,17 @@ const ModernServiceSlider = () => {
                                     {/* Enhanced Navy Gradient Overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-[#012D50]/45 via-[#34969E]/35 to-[#012D50]/40 transition-opacity duration-500"></div>
                                 </div>
-                                
+
                                 {/* Floating service number - Fixed position */}
                                 <div className="absolute top-6 left-6 md:top-8 md:left-8 z-20">
-                                    <div 
-                                        className={`w-12 h-12 md:w-16 md:h-16 border-2 border-white/30 rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-500 hover:scale-110 ${
-                                            isTransitioning ? 'opacity-0 rotate-180' : 'opacity-100 rotate-0'
-                                        }`}
+                                    <div
+                                        className={`w-12 h-12 md:w-16 md:h-16 border-2 border-white/30 rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-500 hover:scale-110 ${isTransitioning ? 'opacity-0 rotate-180' : 'opacity-100 rotate-0'
+                                            }`}
                                     >
                                         <span className="text-white font-bold text-lg md:text-xl">{services[currentSlide].number}</span>
                                     </div>
                                 </div>
-                                
+
                                 {/* Enhanced Navigation arrows with smooth hover effects */}
                                 <button
                                     onClick={prevSlide}
@@ -422,42 +419,38 @@ const ModernServiceSlider = () => {
                         <div className="lg:w-2/5 p-6 md:p-8 lg:p-12 flex flex-col justify-center order-2 lg:order-2">
                             <div className="mb-6">
                                 <div className="flex items-center gap-4 mb-4">
-                                    <span 
-                                        className={`text-4xl md:text-6xl font-bold text-primary/20 transition-all duration-500 ${
-                                            isTransitioning ? 'opacity-0 scale-75' : 'opacity-100 scale-100'
-                                        }`}
+                                    <span
+                                        className={`text-4xl md:text-6xl font-bold text-primary/20 transition-all duration-500 ${isTransitioning ? 'opacity-0 scale-75' : 'opacity-100 scale-100'
+                                            }`}
                                     >
                                         {services[currentSlide].number}
                                     </span>
                                     <div className="h-1 flex-1 bg-gradient-to-r from-primary to-secondry rounded-full relative">
-                                        <div 
+                                        <div
                                             className="h-full bg-primary-green-color rounded-full transition-all duration-300"
                                             style={{ width: `${progress}%` }}
                                         ></div>
                                     </div>
                                 </div>
-                                
-                                <h3 
-                                    className={`text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-4 leading-tight transition-all duration-500 ${
-                                        isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
-                                    }`}
+
+                                <h3
+                                    className={`text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-4 leading-tight transition-all duration-500 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+                                        }`}
                                 >
                                     {services[currentSlide].title}
                                 </h3>
-                                
-                                <p 
-                                    className={`text-gray-600 leading-relaxed mb-6 text-base md:text-lg transition-all duration-500 delay-100 ${
-                                        isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
-                                    }`}
+
+                                <p
+                                    className={`text-gray-600 leading-relaxed mb-6 text-base md:text-lg transition-all duration-500 delay-100 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+                                        }`}
                                 >
                                     {services[currentSlide].description}
                                 </p>
-                                
+
                                 {/* Features with staggered animation */}
-                                <div 
-                                    className={`flex flex-wrap gap-2 md:gap-3 mb-6 md:mb-8 transition-all duration-500 delay-200 ${
-                                        isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
-                                    }`}
+                                <div
+                                    className={`flex flex-wrap gap-2 md:gap-3 mb-6 md:mb-8 transition-all duration-500 delay-200 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+                                        }`}
                                 >
                                     {services[currentSlide].features.map((feature, index) => (
                                         <span
@@ -468,11 +461,10 @@ const ModernServiceSlider = () => {
                                         </span>
                                     ))}
                                 </div>
-                                
-                                <button 
-                                    className={`modern-btn group transition-all duration-500 delay-300 ${
-                                        isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
-                                    }`}
+
+                                <button
+                                    className={`modern-btn group transition-all duration-500 delay-300 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+                                        }`}
                                 >
                                     <span className="relative z-10">Learn More</span>
                                     <div className="absolute inset-0 bg-gradient-to-r from-primary-green-color to-secondry opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -592,17 +584,15 @@ const InteractiveTimeline = () => {
                                     className={`timeline-step relative ${visibleSteps[index] ? 'animate-in' : ''}`}
                                     style={{ animationDelay: `${index * 0.2}s` }}
                                 >
-                                    <div className={`flex flex-col md:flex-row items-start md:items-center gap-8 ${
-                                        isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                                    }`}>
-                                        
+                                    <div className={`flex flex-col md:flex-row items-start md:items-center gap-8 ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'
+                                        }`}>
+
                                         {/* Step Number and Icon - Fixed positioning */}
                                         <div className="relative z-20 flex-shrink-0 flex flex-col items-center">
                                             {/* Step number */}
-                                            <div 
-                                                className={`w-20 h-20 rounded-full shadow-2xl flex items-center justify-center font-bold text-white cursor-pointer transition-all duration-300 mb-4 ${
-                                                    activeStep === index ? 'scale-110' : 'hover:scale-105'
-                                                }`}
+                                            <div
+                                                className={`w-20 h-20 rounded-full shadow-2xl flex items-center justify-center font-bold text-white cursor-pointer transition-all duration-300 mb-4 ${activeStep === index ? 'scale-110' : 'hover:scale-105'
+                                                    }`}
                                                 style={{
                                                     background: `linear-gradient(135deg, ${isEven ? '#34969D' : '#CBDC13'}, ${isEven ? '#34969DE6' : '#CBDC13E6'})`,
                                                     boxShadow: visibleSteps[index] ? `0 12px 30px ${isEven ? '#34969D' : '#CBDC13'}40` : '0 8px 20px rgba(0,0,0,0.1)'
@@ -611,11 +601,11 @@ const InteractiveTimeline = () => {
                                             >
                                                 <span className="text-2xl font-black">{String(index + 1).padStart(2, '0')}</span>
                                             </div>
-                                            
+
                                             {/* Icon */}
-                                            <div 
+                                            <div
                                                 className="w-16 h-16 rounded-2xl flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:rotate-6 shadow-lg"
-                                                style={{ 
+                                                style={{
                                                     backgroundColor: '#012D50'
                                                 }}
                                             >
@@ -625,9 +615,9 @@ const InteractiveTimeline = () => {
 
                                         {/* Step content - More space and better positioning */}
                                         <div className={`flex-1 ${isEven ? 'md:pl-8' : 'md:pr-8'}`}>
-                                            <div 
+                                            <div
                                                 className="glass-card p-8 md:p-10 rounded-3xl cursor-pointer hover-lift group shadow-xl border-l-4 transition-all duration-300 hover:shadow-2xl"
-                                                style={{ 
+                                                style={{
                                                     borderLeftColor: isEven ? '#34969D' : '#CBDC13',
                                                     transform: visibleSteps[index] ? 'translateY(0)' : 'translateY(20px)',
                                                     opacity: visibleSteps[index] ? 1 : 0.8
@@ -640,31 +630,30 @@ const InteractiveTimeline = () => {
                                                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                                                     {step.desc}
                                                 </p>
-                                            
-                                            {/* Expandable details */}
-                                            <div className={`overflow-hidden transition-all duration-500 ${
-                                                activeStep === index ? 'max-h-96 mt-6' : 'max-h-0'
-                                            }`}>
-                                                <div className="border-t border-gray-200 pt-4">
-                                                    <h4 className="font-semibold text-primary mb-2">Key Benefits:</h4>
-                                                    <ul className="text-gray-600 space-y-1">
-                                                        <li>• Streamlined process for maximum efficiency</li>
-                                                        <li>• Real-time progress tracking and updates</li>
-                                                        <li>• Quality assurance at every step</li>
-                                                    </ul>
+
+                                                {/* Expandable details */}
+                                                <div className={`overflow-hidden transition-all duration-500 ${activeStep === index ? 'max-h-96 mt-6' : 'max-h-0'
+                                                    }`}>
+                                                    <div className="border-t border-gray-200 pt-4">
+                                                        <h4 className="font-semibold text-primary mb-2">Key Benefits:</h4>
+                                                        <ul className="text-gray-600 space-y-1">
+                                                            <li>• Streamlined process for maximum efficiency</li>
+                                                            <li>• Real-time progress tracking and updates</li>
+                                                            <li>• Quality assurance at every step</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                                
+
                                                 {/* Visual accent line */}
-                                                <div 
+                                                <div
                                                     className="mt-6 h-1 w-20 rounded-full transition-all duration-300 group-hover:w-32"
                                                     style={{ backgroundColor: isEven ? '#34969D' : '#CBDC13' }}
                                                 ></div>
                                             </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        );
+                            );
                         })}
                     </div>
                 </div>
@@ -774,7 +763,7 @@ const PremiumInteractiveSlider = () => {
     }, [isAutoPlay, currentSlide]);
 
     return (
-        <section className="relative py-20 overflow-hidden" style={{ background: 'linear-gradient(170deg, #F8FAFB 0%, white 50%, #F8FAFB 100%)' }}>
+        <section className="w-full relative py-20 overflow-hidden" style={{ background: 'linear-gradient(170deg, #F8FAFB 0%, white 50%, #F8FAFB 100%)' }}>
             {/* Geometric pattern overlay */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute inset-0" style={{
@@ -791,15 +780,15 @@ const PremiumInteractiveSlider = () => {
                         <span className="block" style={{ color: '#34969D' }}>Business Expansions</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        Right recruitment means matching the right talent with the team to work efficiently and deliver actionable results. 
+                        Right recruitment means matching the right talent with the team to work efficiently and deliver actionable results.
                         RPO is taking forward more from reactive hiring to strategic talent-pool acquisition to build success.
                     </p>
 
                     {/* Progress bar */}
                     <div className="w-32 h-2 mx-auto mt-8 rounded-full overflow-hidden" style={{ backgroundColor: '#e5e7eb' }}>
-                        <div 
+                        <div
                             className="h-full rounded-full transition-all duration-100"
-                            style={{ 
+                            style={{
                                 width: `${progress}%`,
                                 backgroundColor: '#CBDC13'
                             }}
@@ -808,7 +797,7 @@ const PremiumInteractiveSlider = () => {
                 </div>
 
                 {/* Slider Container */}
-                <div 
+                <div
                     className="relative"
                     onMouseEnter={() => setIsAutoPlay(false)}
                     onMouseLeave={() => setIsAutoPlay(true)}
@@ -817,7 +806,7 @@ const PremiumInteractiveSlider = () => {
                     <button
                         onClick={prevSlide}
                         className="absolute left-0 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-                        style={{ 
+                        style={{
                             backgroundColor: '#34969D',
                             boxShadow: '0 10px 30px rgba(52, 150, 157, 0.3)'
                         }}
@@ -828,7 +817,7 @@ const PremiumInteractiveSlider = () => {
                     <button
                         onClick={nextSlide}
                         className="absolute right-0 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-                        style={{ 
+                        style={{
                             backgroundColor: '#34969D',
                             boxShadow: '0 10px 30px rgba(52, 150, 157, 0.3)'
                         }}
@@ -838,7 +827,7 @@ const PremiumInteractiveSlider = () => {
 
                     {/* Cards Container */}
                     <div className="overflow-hidden mx-16">
-                        <div 
+                        <div
                             className="flex transition-transform duration-500 ease-out"
                             style={{
                                 transform: `translateX(-${currentSlide * (100 / slidesToShow)}%)`
@@ -869,7 +858,7 @@ const PremiumInteractiveSlider = () => {
                                             }}
                                         >
                                             {/* Accent decoration */}
-                                            <div 
+                                            <div
                                                 className="absolute top-0 right-0 w-20 h-20 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300"
                                                 style={{
                                                     background: `linear-gradient(135deg, ${card.accentColor}, #CBDC13)`,
@@ -878,7 +867,7 @@ const PremiumInteractiveSlider = () => {
                                             ></div>
 
                                             {/* Icon */}
-                                            <div 
+                                            <div
                                                 className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
                                                 style={{ backgroundColor: card.accentColor }}
                                             >
@@ -898,7 +887,7 @@ const PremiumInteractiveSlider = () => {
                                             <div className="space-y-2 mb-6">
                                                 {card.highlights.map((highlight, idx) => (
                                                     <div key={idx} className="flex items-center text-sm">
-                                                        <div 
+                                                        <div
                                                             className="w-2 h-2 rounded-full mr-3"
                                                             style={{ backgroundColor: card.accentColor }}
                                                         ></div>
@@ -910,7 +899,7 @@ const PremiumInteractiveSlider = () => {
                                             </div>
 
                                             {/* CTA Button */}
-                                            <button 
+                                            <button
                                                 className="w-full py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
                                                 style={{
                                                     background: `linear-gradient(135deg, ${card.accentColor}, #CBDC13)`,
@@ -932,11 +921,10 @@ const PremiumInteractiveSlider = () => {
                             <button
                                 key={index}
                                 onClick={() => goToSlide(index)}
-                                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                                    index === currentSlide 
-                                        ? 'w-8 scale-110' 
+                                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
+                                        ? 'w-8 scale-110'
                                         : 'hover:scale-110'
-                                }`}
+                                    }`}
                                 style={{
                                     backgroundColor: index === currentSlide ? '#CBDC13' : '#34969D'
                                 }}
@@ -954,7 +942,7 @@ const PowerfulPartnerSection = () => {
     return (
         <section className="relative py-20 overflow-hidden" style={{ background: 'linear-gradient(135deg, #012D50 0%, #34969D 50%, #012D50 100%)' }}>
             <div className="container mx-auto px-4 relative z-10 max-w-[1450px]">
-                
+
                 {/* Main Headline */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight">
@@ -965,19 +953,19 @@ const PowerfulPartnerSection = () => {
                             Talent Growth Partner
                         </span>
                     </h2>
-                    
+
                     {/* Subheading */}
                     <p className="text-xl text-white/90 max-w-4xl mx-auto mt-8 leading-relaxed">
-                        We work for excellence with the top-tier talent pool. Our pre-vetted and new 
-                        candidates are highly skilled to evolve and expand your organization with precision. 
-                        Our recruiters blend agility, domain expertise, and a tech-enabled approach to 
+                        We work for excellence with the top-tier talent pool. Our pre-vetted and new
+                        candidates are highly skilled to evolve and expand your organization with precision.
+                        Our recruiters blend agility, domain expertise, and a tech-enabled approach to
                         build talent pipelines that work efficiently.
                     </p>
                 </div>
 
                 {/* Five Key Differentiators */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                    
+
                     {/* 1. Deep Industry Experience */}
                     <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-2">
                         <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6" style={{ backgroundColor: '#CBDC13' }}>
@@ -987,7 +975,7 @@ const PowerfulPartnerSection = () => {
                             Deep Industry Experience
                         </h3>
                         <p className="text-white/80 leading-relaxed">
-                            With over 25 years of engineering and tech hiring experience, 
+                            With over 25 years of engineering and tech hiring experience,
                             we know niche talent better than anyone else.
                         </p>
                     </div>
@@ -1001,7 +989,7 @@ const PowerfulPartnerSection = () => {
                             Speed + Precision
                         </h3>
                         <p className="text-white/80 leading-relaxed">
-                            We shorten time-to-hire without sacrificing quality by refining 
+                            We shorten time-to-hire without sacrificing quality by refining
                             our sourcing frameworks and enabling our expert recruiters.
                         </p>
                     </div>
@@ -1015,7 +1003,7 @@ const PowerfulPartnerSection = () => {
                             Flexible, Scalable Engagement
                         </h3>
                         <p className="text-white/80 leading-relaxed">
-                            Start small or big - our modular RPO models adapt and grow 
+                            Start small or big - our modular RPO models adapt and grow
                             with your business needs.
                         </p>
                     </div>
@@ -1029,7 +1017,7 @@ const PowerfulPartnerSection = () => {
                             Transparent Collaboration
                         </h3>
                         <p className="text-white/80 leading-relaxed">
-                            You will always have a say in your hiring process. Expect regular updates, 
+                            You will always have a say in your hiring process. Expect regular updates,
                             an identified account manager, and full visibility in the hiring process.
                         </p>
                     </div>
@@ -1043,7 +1031,7 @@ const PowerfulPartnerSection = () => {
                             Candidate-First Approach
                         </h3>
                         <p className="text-white/80 leading-relaxed">
-                            We treat every talent touchpoint with intent, creating better 
+                            We treat every talent touchpoint with intent, creating better
                             brand experiences and higher acceptance rates.
                         </p>
                     </div>
@@ -1051,7 +1039,7 @@ const PowerfulPartnerSection = () => {
 
                 {/* CTA Button */}
                 <div className="text-center mt-12">
-                    <button 
+                    <button
                         className="font-bold text-lg px-10 py-4 rounded-full hover:scale-105 transform transition-all shadow-2xl"
                         style={{
                             background: 'linear-gradient(90deg, #CBDC13, #34969D)',
@@ -1077,14 +1065,14 @@ const RPOEngagementModelsSection = () => {
                         RPO Engagement Models We Offer
                     </h2>
                     <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-                        Protingent offers flexible RPO models tailored to organizational growth stage, 
+                        Protingent offers flexible RPO models tailored to organizational growth stage,
                         talent needs, and operational scalability.
                     </p>
                 </div>
 
                 {/* Engagement Models Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                    
+
                     {/* Model 1: End-to-End RPO */}
                     <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 hover:shadow-xl transition-all duration-300 hover:-translate-y-2" style={{ borderLeftColor: '#34969D' }}>
                         <div className="flex items-start gap-4">
@@ -1096,7 +1084,7 @@ const RPOEngagementModelsSection = () => {
                                     End-to-End RPO
                                 </h3>
                                 <p className="text-gray-600">
-                                    Recruiters to manage the full recruitment lifecycle from sourcing, screening, 
+                                    Recruiters to manage the full recruitment lifecycle from sourcing, screening,
                                     interviewing, onboarding, to monitoring performance for business consistent growth.
                                 </p>
                             </div>
@@ -1114,7 +1102,7 @@ const RPOEngagementModelsSection = () => {
                                     Project-Based RPO
                                 </h3>
                                 <p className="text-gray-600">
-                                    We fulfill short-term project-based hiring needs with promising quick onboarding, 
+                                    We fulfill short-term project-based hiring needs with promising quick onboarding,
                                     enabling your business to deliver data-driven results within defined deadlines.
                                 </p>
                             </div>
@@ -1132,7 +1120,7 @@ const RPOEngagementModelsSection = () => {
                                     On-Demand RPO
                                 </h3>
                                 <p className="text-gray-600">
-                                    Need expert recruitment support during spikes or expansions? 
+                                    Need expert recruitment support during spikes or expansions?
                                     Engage us only when required—no long-term commitment.
                                 </p>
                             </div>
@@ -1150,7 +1138,7 @@ const RPOEngagementModelsSection = () => {
                                     Hybrid RPO
                                 </h3>
                                 <p className="text-gray-600">
-                                    Combine in-house recruitment with Protingent's support—ideal for 
+                                    Combine in-house recruitment with Protingent's support—ideal for
                                     companies wanting to retain control but need added firepower.
                                 </p>
                             </div>
@@ -1164,14 +1152,14 @@ const RPOEngagementModelsSection = () => {
 
 export default function RPOService() {
     const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
-    
+
     return (
-        <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20">
+        <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20 max-w-screen overflow-x-hidden">
             <RPOServiceBanner openPopup={openPopup} />
             <div className="py-16 md:py-24">
                 <BrandBenefitsSection />
             </div>
-            
+
             <ModernServiceSlider />
             <InteractiveTimeline />
 
@@ -1200,7 +1188,7 @@ export default function RPOService() {
             />
 
             {/* Consultation Popup */}
-            <ConsultationPopup 
+            <ConsultationPopup
                 isOpen={isOpen}
                 onClose={closePopup}
                 title={config.title}

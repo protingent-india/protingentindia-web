@@ -4,12 +4,12 @@ import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Logo, ConsultationPopup } from "@/components";
 import { useConsultationPopup } from '@/hooks/useConsultationPopup';
-import { 
-    FaUserTie, 
-    FaHandshake, 
-    FaUsers, 
-    FaChartLine, 
-    FaHeadset, 
+import {
+    FaUserTie,
+    FaHandshake,
+    FaUsers,
+    FaChartLine,
+    FaHeadset,
     FaDatabase,
     FaBullhorn,
     FaLaptopCode,
@@ -43,7 +43,7 @@ const fadeInUpKeyframes = `
 
 .nav-underline {
   position: relative;
-  overflow: hidden;
+//   overflow: hidden;
 }
 .nav-underline::after {
   content: '';
@@ -82,7 +82,7 @@ const fadeInUpKeyframes = `
 .glassmorphism {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+//   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .mega-menu {
@@ -174,7 +174,6 @@ const servicesData: ServiceCategory[] = [
 const navigationItems = [
     { name: "Home", link: "/", hasDropdown: false },
     { name: "Services", link: "#", hasDropdown: true },
-    { name: "Industries", link: "/industries", hasDropdown: false },
     { name: "About", link: "/about", hasDropdown: false },
     { name: "Insights", link: "/insights", hasDropdown: false },
     { name: "Contact", link: "/contact-us", hasDropdown: false }
@@ -249,14 +248,13 @@ const Header = () => {
 
     return (
         <>
-            <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-                isScrolled ? 'glassmorphism shadow-lg' : 'bg-white'
-            }`}>
+            <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glassmorphism shadow-lg' : 'bg-white'
+                }`}>
                 <div className="max-w-7xl mx-auto px-6 md:px-12">
                     <div className="flex items-center justify-between h-16 md:h-20">
                         {/* Logo - Left Aligned */}
                         <Link href="/" className="relative logo-pulse group flex-shrink-0">
-                            <Logo className="h-8 md:h-10 w-auto transition-transform duration-300 group-hover:scale-105" />
+                            <Logo className="w-2xs sm:w-3xs transition-transform duration-300 group-hover:scale-105" />
                         </Link>
 
                         {/* Desktop Navigation - Center Aligned */}
@@ -270,21 +268,18 @@ const Header = () => {
                                         onMouseLeave={item.hasDropdown ? handleMouseLeave : undefined}
                                     >
                                         {item.hasDropdown ? (
-                                            <button className={`flex items-center space-x-1 nav-underline font-medium text-[#113F64] hover:text-[#34969E] transition-colors duration-300 ${
-                                                isActiveRoute(item.link) ? 'text-[#34969E] active' : ''
-                                            }`}>
+                                            <button className={`flex items-center space-x-1 nav-underline font-medium text-[#113F64] hover:text-[#34969E] transition-colors duration-300 ${isActiveRoute(item.link) ? 'text-[#34969E] active' : ''
+                                                }`}>
                                                 <span>{item.name}</span>
-                                                <FaChevronDown className={`w-3 h-3 transition-transform duration-300 ${
-                                                    isServicesDropdownOpen ? 'rotate-180' : ''
-                                                }`} />
+                                                <FaChevronDown className={`w-3 h-3 transition-transform duration-300 ${isServicesDropdownOpen ? 'rotate-180' : ''
+                                                    }`} />
                                             </button>
                                         ) : (
                                             <Link
                                                 href={item.link}
-                                                className={`nav-underline font-medium text-[#113F64] hover:text-[#34969E] transition-colors duration-300 ${
-                                                    isActiveRoute(item.link) ? 'text-[#34969E] active' : ''
-                                                }`}
-                                                >
+                                                className={`nav-underline font-medium text-[#113F64] hover:text-[#34969E] transition-colors duration-300 ${isActiveRoute(item.link) ? 'text-[#34969E] active' : ''
+                                                    }`}
+                                            >
                                                 {item.name}
                                             </Link>
                                         )}
@@ -293,7 +288,7 @@ const Header = () => {
                                         {item.hasDropdown && (
                                             <div
                                                 ref={dropdownRef}
-                                                className={`mega-menu ${isServicesDropdownOpen ? 'active' : ''} absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[600px] bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden z-50`}
+                                                className={`mega-menu ${isServicesDropdownOpen ? 'active' : ''} absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[600px] bg-white rounded-2xl shadow-2xl border border-gray-100 z-50`}
                                             >
                                                 <div className="p-8">
                                                     <div className="grid grid-cols-2 gap-8">
@@ -339,9 +334,9 @@ const Header = () => {
 
                         {/* CTA Button - Right Aligned */}
                         <div className="hidden lg:block flex-shrink-0">
-                            <button 
+                            <button
                                 onClick={() => openPopup()}
-                                className="px-6 py-2 bg-gradient-to-r from-[#34969E] to-[#113F64] text-white font-bold rounded-full hover:from-[#2d7a85] hover:to-[#0d2f4a] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl" 
+                                className="px-6 py-2 bg-gradient-to-r from-[#34969E] to-[#113F64] text-white font-bold rounded-full hover:from-[#2d7a85] hover:to-[#0d2f4a] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                                 style={{ fontFamily: 'Lato, sans-serif' }}
                             >
                                 <span className="flex items-center space-x-2">
@@ -368,14 +363,12 @@ const Header = () => {
             </header>
 
             {/* Mobile Menu Overlay */}
-            <div className={`fixed inset-0 z-40 lg:hidden transition-all duration-500 ${
-                isMobileMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'
-            }`}>
-                <div className="absolute inset-0 bg-[#113F64] bg-opacity-95 backdrop-blur-sm" onClick={() => setIsMobileMenuOpen(false)} />
-                
-                <div className={`absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#113F64] via-[#34969E] to-[#C2D92C] transform transition-transform duration-500 ${
-                    isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+            <div className={`fixed inset-0 z-40 lg:hidden transition-all duration-500 ${isMobileMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'
                 }`}>
+                <div className="absolute inset-0 bg-[#113F64] bg-opacity-95 backdrop-blur-sm" onClick={() => setIsMobileMenuOpen(false)} />
+
+                <div className={`absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#113F64] via-[#34969E] to-[#C2D92C] transform transition-transform duration-500 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+                    }`}>
                     <div className="pt-24 px-8 h-full overflow-y-auto overscroll-contain">
                         <nav className="space-y-6 pb-20" style={{ fontFamily: 'Lato, sans-serif' }}>
                             {navigationItems.map((item, index) => (
@@ -387,9 +380,8 @@ const Header = () => {
                                                 onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                                             >
                                                 <span>{item.name}</span>
-                                                <FaChevronDown className={`w-5 h-5 transition-transform duration-300 ${
-                                                    isMobileServicesOpen ? 'rotate-180' : ''
-                                                }`} />
+                                                <FaChevronDown className={`w-5 h-5 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''
+                                                    }`} />
                                             </button>
                                             {isMobileServicesOpen && (
                                                 <div className="mt-4 ml-4 space-y-4">
@@ -421,24 +413,23 @@ const Header = () => {
                                     ) : (
                                         <Link
                                             href={item.link}
-                                            className={`block text-white text-2xl font-medium py-2 hover:text-[#C2D92C] transition-colors duration-300 ${
-                                                isActiveRoute(item.link) ? 'text-[#C2D92C]' : ''
-                                            }`}
+                                            className={`block text-white text-2xl font-medium py-2 hover:text-[#C2D92C] transition-colors duration-300 ${isActiveRoute(item.link) ? 'text-[#C2D92C]' : ''
+                                                }`}
                                         >
                                             {item.name}
                                         </Link>
                                     )}
                                 </div>
                             ))}
-                            
+
                             {/* Mobile CTA Button inside dropdown */}
                             <div className="animate-fadeInUp stagger-6 opacity-0 pt-8">
-                                <button 
+                                <button
                                     onClick={() => {
                                         openPopup();
                                         setIsMobileMenuOpen(false);
                                     }}
-                                    className="w-full px-6 py-4 bg-gradient-to-r from-[#34969E] to-[#113F64] text-white font-bold rounded-full hover:from-[#2d7a85] hover:to-[#0d2f4a] transition-all duration-300 transform hover:scale-105 shadow-lg" 
+                                    className="w-full px-6 py-4 bg-gradient-to-r from-[#34969E] to-[#113F64] text-white font-bold rounded-full hover:from-[#2d7a85] hover:to-[#0d2f4a] transition-all duration-300 transform hover:scale-105 shadow-lg"
                                     style={{ fontFamily: 'Lato, sans-serif' }}
                                 >
                                     <span className="flex items-center justify-center space-x-2">
@@ -453,11 +444,11 @@ const Header = () => {
             </div>
 
             {/* Spacer for fixed header */}
-            <div className="h-20"></div>
+            <div className="h-16 md:h-20"></div>
 
             {/* Consultation Popup */}
-            <ConsultationPopup 
-                isOpen={isOpen} 
+            <ConsultationPopup
+                isOpen={isOpen}
                 onClose={closePopup}
                 title={config.title}
                 description={config.description}

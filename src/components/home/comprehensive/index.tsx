@@ -11,7 +11,7 @@ import Link from "next/link";
 const ComprehensiveSection = () => {
     const [open, setOpen] = useState(0);
     const [openPopup, setopenPopup] = useState<any>({ status: false, data: {} });
-    const [isImageLoaded, setIsImageLoaded] = useState<{[key: number]: boolean}>({});
+    const [isImageLoaded, setIsImageLoaded] = useState<{ [key: number]: boolean }>({});
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const scrollNext = () => {
@@ -64,7 +64,7 @@ const ComprehensiveSection = () => {
         >
             {/* Header Section with Enhanced Background */}
             <div
-                style={{ 
+                style={{
                     background: "linear-gradient(135deg, rgba(17,63,100,0.95) 0%, rgba(52,150,158,0.95) 50%, rgba(194,217,44,0.95) 100%), url(/img/comprehensiveBg.png)",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
@@ -78,7 +78,7 @@ const ComprehensiveSection = () => {
                     <div className="absolute bottom-20 right-10 w-12 h-12 bg-teal-400/20 rotate-12 animate-bounce"></div>
                     <div className="absolute top-40 right-20 w-8 h-8 border border-white/40 rounded-full animate-ping"></div>
                 </div>
-                
+
                 <div className="text-center max-w-6xl z-10" data-aos="fade-up">
                     <h2 className='text-3xl lg:text-5xl font-bold text-white font-lato mb-4 tracking-tight' >
                         COMPREHENSIVE SOLUTIONS & EXPERTISE
@@ -87,12 +87,12 @@ const ComprehensiveSection = () => {
                         Delivering End-to-End Solutions for Your Business Success
                     </p>
                     <p className='text-base lg:text-xl text-center max-w-[1090px] text-white/90 font-raleway leading-relaxed' >
-                        Empower your business through cutting-edge automation, intelligent analytics, cloud-first architecture, and AI-driven solutions. 
+                        Empower your business through cutting-edge automation, intelligent analytics, cloud-first architecture, and AI-driven solutions.
                         Our expertise transforms challenges into opportunities, delivering measurable results through innovative technology and strategic insights.
                     </p>
                 </div>
             </div>
-            
+
             {/* Desktop Carousel */}
             <div className="w-full bg-white hidden lap:!flex items-center justify-start max-w-full overflow-hidden shadow-2xl" >
                 <div className="flex flex-col lap:!flex-row justify-start items-center w-full gap-2" >
@@ -128,7 +128,7 @@ const ComprehensiveSection = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     {/* Content Section with Enhanced Typography */}
                                     <div className="w-full lg:w-2/4 h-full flex justify-center items-center p-6" >
                                         <div className="text-navy-600 lap:!h-[70%] flex flex-col gap-6 justify-between" >
@@ -144,7 +144,7 @@ const ComprehensiveSection = () => {
                                                 <p className="text-base lg:text-lg font-raleway leading-relaxed text-gray-700" >
                                                     {el?.description}
                                                 </p>
-                                                
+
                                                 {/* Feature highlights */}
                                                 <div className="grid grid-cols-2 gap-2 mt-4">
                                                     {el.features?.map((feature: string, i: number) => (
@@ -155,7 +155,7 @@ const ComprehensiveSection = () => {
                                                     ))}
                                                 </div>
                                             </div>
-                                            
+
                                             {/* CTA Button with Enhanced Styling */}
                                             <div className="flex justify-start lg:justify-end" data-aos="fade-up" data-aos-delay="200">
                                                 <Link href={el.link || '#'}>
@@ -180,7 +180,7 @@ const ComprehensiveSection = () => {
                                 className="w-full lap:!w-[136px] lap:!h-[720px] cursor-pointer flex items-end justify-center bg-no-repeat bg-cover py-4 lap:!pb-8 relative group hover:lap:!w-[160px] transition-all duration-500 ease-in-out transform hover:scale-[1.02]"
                                 key={index}
                                 onClick={() => setOpen(index)}
-                                style={{ 
+                                style={{
                                     backgroundImage: `linear-gradient(to bottom, rgba(17,63,100,0.3), rgba(17,63,100,0.8)), url(${el?.img || ''})`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center'
@@ -190,14 +190,14 @@ const ComprehensiveSection = () => {
                                     {el?.title}
                                 </p>
                                 <div className="w-full h-full absolute top-0 left-0 bg-navy-600/40 group-hover:bg-navy-600/20 transition-all duration-300"></div>
-                                
+
                                 {/* Hover indicator */}
                                 <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-lime-400 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
                             </div>
                     ))}
                 </div>
             </div>
-            
+
             {/* Mobile Grid */}
             <div className="w-full min-h-[650px] flex justify-center lap:!hidden">
                 <div className="w-full grid grid-cols-2 gap-2 p-4" >
@@ -217,7 +217,7 @@ const ComprehensiveSection = () => {
                             <div className="z-10 absolute text-white font-bold flex flex-col justify-end p-4 w-full h-full" >
                                 <h4 className="text-sm font-lato font-bold text-center leading-tight">{card?.title || ""}</h4>
                             </div>
-                            
+
                             {/* Hover overlay */}
                             <div className="absolute inset-0 bg-lime-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <Icon icon="humbleicons:arrow-right" className="text-white text-2xl" />
@@ -226,7 +226,7 @@ const ComprehensiveSection = () => {
                     ))}
                 </div>
             </div>
-            
+
             {/* Enhanced Modal */}
             <Modal
                 open={openPopup?.status}
@@ -235,12 +235,12 @@ const ComprehensiveSection = () => {
                 aria-describedby="modal-modal-description"
                 className="w-full overflow-hidden flex justify-center items-center p-4"
             >
-                <div className="w-full max-w-6xl outline-0 overflow-hidden relative bg-white rounded-3xl shadow-2xl">
-                    <button 
-                        onClick={() => setopenPopup(false)} 
-                        className="z-50 absolute top-4 right-4 w-10 h-10 bg-navy-600 text-white rounded-full flex items-center justify-center hover:bg-navy-700 transition-colors duration-200" 
-                    > 
-                        ✕ 
+                <div className="w-full max-h-[600px] overflow-y-auto max-w-6xl outline-0 overflow-x-hidden relative bg-white rounded-3xl shadow-2xl">
+                    <button
+                        onClick={() => setopenPopup(false)}
+                        className="z-50 absolute top-4 right-4 w-10 h-10 bg-navy-600 text-white rounded-full flex items-center justify-center hover:bg-navy-700 transition-colors duration-200"
+                    >
+                        ✕
                     </button>
                     <button
                         onClick={scrollPrev}
@@ -254,7 +254,7 @@ const ComprehensiveSection = () => {
                     >
                         <Icon icon="humbleicons:arrow-right" className="text-navy-600 text-xl" />
                     </button>
-                    {openPopup?.status && 
+                    {openPopup?.status &&
                         <div className="py-8 bg-gradient-to-br from-white via-gray-50 to-blue-50 rounded-3xl w-full" >
                             <div ref={scrollRef} className="flex no-scrollbar flex-row justify-start items-center w-full overflow-x-auto min-h-fit gap-8 overflow-auto snap-x snap-mandatory scroll-smooth px-8" >
                                 {comprehensiveData?.map((el: any, index: number): any => (
@@ -286,13 +286,13 @@ const ComprehensiveSection = () => {
                                                         <p className="text-base font-raleway text-justify leading-relaxed text-gray-700" >
                                                             {el?.description}
                                                         </p>
-                                                        
+
                                                         {/* Feature highlights in modal */}
                                                         <div className="grid grid-cols-2 gap-2 mt-4">
                                                             {el.features?.map((feature: string, i: number) => (
                                                                 <div key={i} className="flex items-center gap-2">
                                                                     <div className="w-2 h-2 bg-lime-400 rounded-full"></div>
-                                                                    <span className="text-sm font-medium text-gray-600">{feature}</span>
+                                                                    <span className="text-sm text-start font-medium text-gray-600">{feature}</span>
                                                                 </div>
                                                             ))}
                                                         </div>

@@ -8,11 +8,11 @@ import {
     EnhancedFAQSection
 } from "@/components";
 import { useConsultationPopup } from '@/hooks/useConsultationPopup';
-import { 
-    FaUsers, 
-    FaClock, 
-    FaDollarSign, 
-    FaExpand, 
+import {
+    FaUsers,
+    FaClock,
+    FaDollarSign,
+    FaExpand,
     FaCheckCircle,
     FaRocket,
     FaSearch,
@@ -48,7 +48,7 @@ import {
 // --------------------------------------------------------------
 const DirectSourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title?: string; description?: string }) => void }) => {
     return (
-        <section className="relative w-full min-h-[60vh] lg:min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <section className="relative w-full min-h-[60vh] lg:min-h-[80vh] flex items-center justify-center overflow-hidden py-8">
             {/* Background */}
             <div className="absolute inset-0 w-full h-full">
                 <div
@@ -59,15 +59,15 @@ const DirectSourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title
                 ></div>
                 <div className="absolute inset-0 bg-gradient-to-br from-[#C2D92C]/70 via-[#34969E]/80 to-[#113F64]/90 animate-gradient-shift"></div>
             </div>
-            
+
             {/* Floating network elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 left-10 w-24 h-24 border-2 border-[#C2D92C]/40 rounded-full float-animation"></div>
-                <div className="absolute bottom-32 right-16 w-20 h-20 border-2 border-white/30 rotate-45 float-animation" style={{animationDelay: '-2s'}}></div>
-                <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-[#C2D92C]/20 rounded-full float-animation" style={{animationDelay: '-4s'}}></div>
-                <div className="absolute bottom-1/4 right-1/3 w-12 h-12 border border-[#34969E]/50 rotate-12 float-animation" style={{animationDelay: '-6s'}}></div>
+                <div className="absolute bottom-32 right-16 w-20 h-20 border-2 border-white/30 rotate-45 float-animation" style={{ animationDelay: '-2s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-[#C2D92C]/20 rounded-full float-animation" style={{ animationDelay: '-4s' }}></div>
+                <div className="absolute bottom-1/4 right-1/3 w-12 h-12 border border-[#34969E]/50 rotate-12 float-animation" style={{ animationDelay: '-6s' }}></div>
             </div>
-            
+
             <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6">
                 {/* Side-by-side layout (40% image / 60% content) */}
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
@@ -80,7 +80,7 @@ const DirectSourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title
                                 className="w-full h-[400px] lg:h-[500px] object-cover"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#113F64]/80 via-transparent to-[#C2D92C]/20"></div>
-                            
+
                             {/* Stats overlay */}
                             <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
                                 <div className="grid grid-cols-2 gap-4 text-center">
@@ -96,20 +96,20 @@ const DirectSourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title
                             </div>
                         </div>
                     </div>
-                    
+
                     {/* 60% - Content */}
                     <div className="lg:col-span-3 text-white">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent leading-tight">
                             Direct Sourcing Services for IT and Engineering Talent
                         </h1>
-                        
+
                         <p className="text-xl lg:text-2xl font-light mb-8 leading-relaxed opacity-90">
-                            Protingent India enables businesses to design a private talent pool of pre-vetted IT, engineering, and analytics professionals. 
+                            Protingent India enables businesses to design a private talent pool of pre-vetted IT, engineering, and analytics professionals.
                             The direct sourcing service model provides faster access to skilled talent, reduces overheads, and fosters a strong culture to scale the workforce on demand.
                         </p>
-                        
+
                         <div className="flex flex-col sm:flex-row gap-6 mb-8">
-                            <button 
+                            <button
                                 onClick={() => openPopup({
                                     title: "Build Your Talent Pool",
                                     description: "Ready to build your private talent pool? Let's discuss how our direct sourcing solutions can help you access pre-vetted professionals faster and more efficiently."
@@ -123,7 +123,7 @@ const DirectSourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title
                                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                             </button>
                         </div>
-                        
+
                         {/* Key Benefits Preview */}
                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
                             {[
@@ -147,7 +147,7 @@ const DirectSourcingHeroSection = ({ openPopup }: { openPopup: (config?: { title
                     </div>
                 </div>
             </div>
-            
+
             {/* Custom CSS for animations */}
             <style jsx>{`
                 @keyframes gradient-shift {
@@ -205,14 +205,14 @@ const ChallengeSection = () => {
     return (
         <div className="relative w-full bg-gradient-to-b from-white to-gray-50 section-padding overflow-hidden">
             <GeometricBackground variant="tertiary" intensity="light" />
-            
+
             <div className="max-w-[1450px] mx-auto px-4 md:px-6 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-[#113F64] mb-6">
                         Overcome Hiring Challenges with Private Talent Pool
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Stop struggling with unpredictable hiring cycles, high recruitment costs, and talent mismatches. 
+                        Stop struggling with unpredictable hiring cycles, high recruitment costs, and talent mismatches.
                         Build a sustainable direct sourcing strategy that puts you in control.
                     </p>
                 </div>
@@ -232,16 +232,16 @@ const ChallengeSection = () => {
                                     }}
                                 ></div>
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/90 via-[#34969E]/80 to-[#113F64]/90"></div>
-                                
+
                                 <div className="relative z-10 p-8 h-full text-white min-h-[300px] flex flex-col justify-between">
                                     <div>
-                                        <div 
+                                        <div
                                             className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-lg"
                                             style={{ backgroundColor: '#C2D92C' }}
                                         >
                                             <IconComponent className="text-[#113F64]" />
                                         </div>
-                                        
+
                                         <h3 className="text-xl md:text-2xl font-bold mb-4">
                                             {challenge.title}
                                         </h3>
@@ -272,25 +272,25 @@ const CTABannerSection = ({ openPopup }: { openPopup: (config?: { title?: string
                 }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#113F64]/95 via-[#34969E]/90 to-[#113F64]/95"></div>
-            
+
             {/* Animated particles */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 left-10 w-4 h-4 bg-[#C2D92C]/60 rounded-full float-animation"></div>
-                <div className="absolute bottom-32 right-16 w-6 h-6 bg-white/40 rounded-full float-animation" style={{animationDelay: '-2s'}}></div>
-                <div className="absolute top-1/2 left-1/4 w-3 h-3 bg-[#C2D92C]/80 rounded-full float-animation" style={{animationDelay: '-4s'}}></div>
+                <div className="absolute bottom-32 right-16 w-6 h-6 bg-white/40 rounded-full float-animation" style={{ animationDelay: '-2s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-3 h-3 bg-[#C2D92C]/80 rounded-full float-animation" style={{ animationDelay: '-4s' }}></div>
             </div>
-            
+
             <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 text-center text-white">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
                     A Flexible Hiring Solution That Puts You in Control
                 </h2>
                 <p className="text-xl leading-relaxed mb-12 max-w-4xl mx-auto opacity-90">
-                    Stop waiting for the right candidates to apply. Build your private talent community and hire on-demand 
+                    Stop waiting for the right candidates to apply. Build your private talent community and hire on-demand
                     from a pool of pre-vetted professionals who already understand your business needs.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-                    <button 
+                    <button
                         onClick={() => openPopup({
                             title: "Get Started Today",
                             description: "Ready to build your private talent pool? Let's discuss how our direct sourcing platform can transform your hiring process and reduce costs."
@@ -304,7 +304,7 @@ const CTABannerSection = ({ openPopup }: { openPopup: (config?: { title?: string
                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                     </button>
                 </div>
-                
+
                 <div className="flex justify-center items-center gap-12 text-sm opacity-80">
                     <div className="text-center">
                         <FaShieldAlt className="text-2xl text-[#C2D92C] mb-2 mx-auto" />
@@ -337,7 +337,7 @@ const ProcessSection = () => {
             icon: FaAward
         },
         {
-            step: "02", 
+            step: "02",
             title: "Building a Private Talent Pool",
             description: "Through targeted sourcing campaigns and community building, we curate a diverse pool of pre-qualified candidates aligned with your specific technical and cultural requirements.",
             image: "https://images.unsplash.com/photo-1586991602729-49c1e818ad46",
@@ -347,7 +347,7 @@ const ProcessSection = () => {
             step: "03",
             title: "Curation & Qualification",
             description: "Every candidate undergoes rigorous technical assessments, behavioral evaluations, and background checks to ensure they meet your quality standards before entering your talent pipeline.",
-            image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df", 
+            image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df",
             icon: FaCheckCircle
         },
         {
@@ -370,12 +370,12 @@ const ProcessSection = () => {
                         Our systematic approach ensures you build a sustainable talent pipeline that delivers quality professionals exactly when you need them.
                     </p>
                 </div>
-                
+
                 <div className="space-y-20">
                     {processSteps.map((step, index) => {
                         const IconComponent = step.icon;
                         const isEven = index % 2 === 0;
-                        
+
                         return (
                             <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
                                 {/* Image Side */}
@@ -387,14 +387,14 @@ const ProcessSection = () => {
                                             className="w-full h-[400px] object-cover transition-transform duration-500 hover:scale-105"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#113F64]/60 via-transparent to-transparent"></div>
-                                        
+
                                         {/* Step number overlay */}
                                         <div className="absolute top-6 left-6 w-16 h-16 bg-[#C2D92C] rounded-2xl flex items-center justify-center shadow-xl">
                                             <span className="text-2xl font-bold text-[#113F64]">{step.step}</span>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 {/* Content Side */}
                                 <div className={`${!isEven ? 'lg:order-1' : ''}`}>
                                     <div className="mb-6">
@@ -402,7 +402,7 @@ const ProcessSection = () => {
                                             <IconComponent className="text-3xl text-white" />
                                         </div>
                                     </div>
-                                    
+
                                     <h3 className="text-3xl font-bold text-[#113F64] mb-6">{step.title}</h3>
                                     <p className="text-xl text-gray-600 leading-relaxed">{step.description}</p>
                                 </div>
@@ -427,7 +427,7 @@ const HowItWorksSection = () => {
             color: "#34969E"
         },
         {
-            title: "Talent Pool Curation", 
+            title: "Talent Pool Curation",
             description: "Each candidate undergoes comprehensive screening including technical assessments, cultural fit evaluation, and background verification.",
             icon: FaUsers,
             color: "#C2D92C"
@@ -460,7 +460,7 @@ const HowItWorksSection = () => {
                         How Protingent's Direct Talent Sourcing Works?
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Our proven methodology combines strategic talent acquisition with relationship management to create 
+                        Our proven methodology combines strategic talent acquisition with relationship management to create
                         sustainable talent pipelines that scale with your business.
                     </p>
                 </div>
@@ -471,27 +471,26 @@ const HowItWorksSection = () => {
                         return (
                             <div
                                 key={index}
-                                className={`group relative p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 ${
-                                    index === 0 ? 'lg:col-span-2' : ''
-                                } ${index === 3 ? 'lg:col-span-2' : ''}`}
+                                className={`group relative p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 ${index === 0 ? 'lg:col-span-2' : ''
+                                    } ${index === 3 ? 'lg:col-span-2' : ''}`}
                                 style={{ borderLeftColor: step.color }}
                             >
                                 <div className="mb-6">
-                                    <div 
+                                    <div
                                         className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-lg"
                                         style={{ backgroundColor: step.color }}
                                     >
                                         <IconComponent className="text-white" />
                                     </div>
                                 </div>
-                                
+
                                 <h3 className="text-2xl font-bold mb-4 group-hover:text-[#34969E] transition-colors duration-300" style={{ color: '#113F64' }}>
                                     {step.title}
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">
                                     {step.description}
                                 </p>
-                                
+
                                 {/* Hover indicator */}
                                 <div className="flex items-center gap-2 mt-6 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300" style={{ color: step.color }}>
                                     <span>Learn More</span>
@@ -518,7 +517,7 @@ const BenefitsSection = () => {
             icon: FaMoneyBillWave
         },
         {
-            title: "Faster Access to Talent", 
+            title: "Faster Access to Talent",
             description: "Deploy pre-vetted professionals within days instead of months. Your talent pool is always ready when opportunities arise.",
             image: "https://images.unsplash.com/photo-1586991602729-49c1e818ad46",
             icon: FaTachometerAlt
@@ -552,14 +551,14 @@ const BenefitsSection = () => {
                 }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/95 via-[#34969E]/90 to-[#113F64]/95"></div>
-            
+
             <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6">
                 <div className="text-center mb-16 text-white">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
                         Why Businesses Rely on the Direct Sourcing Model?
                     </h2>
                     <p className="text-xl leading-relaxed max-w-3xl mx-auto opacity-90">
-                        Transform your talent acquisition strategy with a model that prioritizes quality, speed, and cost-effectiveness 
+                        Transform your talent acquisition strategy with a model that prioritizes quality, speed, and cost-effectiveness
                         while giving you complete control over your hiring process.
                     </p>
                 </div>
@@ -570,9 +569,8 @@ const BenefitsSection = () => {
                         return (
                             <div
                                 key={index}
-                                className={`group relative overflow-hidden rounded-2xl transition-all duration-500 cursor-pointer shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-105 ${
-                                    index === 0 ? 'lg:col-span-2' : ''
-                                }`}
+                                className={`group relative overflow-hidden rounded-2xl transition-all duration-500 cursor-pointer shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-105 ${index === 0 ? 'lg:col-span-2' : ''
+                                    }`}
                             >
                                 <div
                                     className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -581,15 +579,15 @@ const BenefitsSection = () => {
                                     }}
                                 ></div>
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/90 via-[#34969E]/80 to-[#113F64]/90 group-hover:from-[#C2D92C]/90 group-hover:via-[#34969E]/80 group-hover:to-[#113F64]/90 transition-all duration-500"></div>
-                                
+
                                 <div className="relative z-10 p-8 h-full text-white min-h-[320px] flex flex-col justify-between">
                                     <div>
-                                        <div 
+                                        <div
                                             className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-lg bg-white/20 backdrop-blur-sm"
                                         >
                                             <IconComponent className="text-[#C2D92C]" />
                                         </div>
-                                        
+
                                         <h3 className="text-2xl font-bold mb-4">
                                             {benefit.title}
                                         </h3>
@@ -597,7 +595,7 @@ const BenefitsSection = () => {
                                             {benefit.description}
                                         </p>
                                     </div>
-                                    
+
                                     <div className="flex items-center gap-2 mt-6 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 text-[#C2D92C]">
                                         <span>Discover Benefits</span>
                                         <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
@@ -630,7 +628,7 @@ const IndustriesSection = () => {
             icon: FaChartBar
         },
         {
-            title: "Engineering & Product Development", 
+            title: "Engineering & Product Development",
             description: "Mechanical, electrical, and product engineers for manufacturing, automotive, aerospace, and industrial development projects.",
             image: "https://images.unsplash.com/photo-1586991602729-49c1e818ad46",
             icon: FaCogs
@@ -657,7 +655,7 @@ const IndustriesSection = () => {
                         Specialized Workforce Solutions for Every Industry We Power
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Our direct sourcing expertise spans across technology, engineering, and analytics domains, 
+                        Our direct sourcing expertise spans across technology, engineering, and analytics domains,
                         delivering specialized talent that drives innovation and growth.
                     </p>
                 </div>
@@ -668,9 +666,8 @@ const IndustriesSection = () => {
                         return (
                             <div
                                 key={index}
-                                className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer hover:-translate-y-2 ${
-                                    index === 0 ? 'lg:col-span-2' : ''
-                                } ${index === 3 ? 'lg:col-span-2' : ''}`}
+                                className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer hover:-translate-y-2 ${index === 0 ? 'lg:col-span-2' : ''
+                                    } ${index === 3 ? 'lg:col-span-2' : ''}`}
                             >
                                 <div
                                     className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -679,16 +676,16 @@ const IndustriesSection = () => {
                                     }}
                                 ></div>
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/90 via-[#34969E]/80 to-[#113F64]/90"></div>
-                                
+
                                 <div className="relative z-10 p-8 h-full text-white min-h-[300px] flex flex-col justify-between">
                                     <div>
-                                        <div 
+                                        <div
                                             className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-lg"
                                             style={{ backgroundColor: '#C2D92C' }}
                                         >
                                             <IconComponent className="text-[#113F64]" />
                                         </div>
-                                        
+
                                         <h3 className="text-2xl font-bold mb-4">
                                             {industry.title}
                                         </h3>
@@ -696,7 +693,7 @@ const IndustriesSection = () => {
                                             {industry.description}
                                         </p>
                                     </div>
-                                    
+
                                     <div className="flex items-center gap-2 mt-6 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 text-[#C2D92C]">
                                         <span>Explore Opportunities</span>
                                         <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
@@ -751,7 +748,7 @@ const WhyChooseSection = () => {
                         Why Companies Choose Protingent for Workforce Sourcing?
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        We don't just find talent—we build sustainable workforce solutions that grow with your business 
+                        We don't just find talent—we build sustainable workforce solutions that grow with your business
                         and deliver consistent results year after year.
                     </p>
                 </div>
@@ -769,14 +766,14 @@ const WhyChooseSection = () => {
                                         <IconComponent className="text-white" />
                                     </div>
                                 </div>
-                                
+
                                 <h3 className="text-2xl font-bold mb-4 group-hover:text-[#34969E] transition-colors duration-300" style={{ color: '#113F64' }}>
                                     {point.title}
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">
                                     {point.description}
                                 </p>
-                                
+
                                 {/* Hover border accent */}
                                 <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-[#C2D92C] to-[#34969E] group-hover:w-full transition-all duration-500"></div>
                             </div>
@@ -795,25 +792,25 @@ const FinalCTASection = ({ openPopup }: { openPopup: (config?: { title?: string;
     return (
         <section className="relative w-full py-20 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-[#113F64] via-[#34969E] to-[#C2D92C]"></div>
-            
+
             {/* Animated elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-10 left-10 w-20 h-20 border border-white/20 rounded-full float-animation"></div>
-                <div className="absolute bottom-20 right-16 w-16 h-16 border border-[#C2D92C]/40 rotate-45 float-animation" style={{animationDelay: '-2s'}}></div>
-                <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-white/10 rounded-full float-animation" style={{animationDelay: '-4s'}}></div>
+                <div className="absolute bottom-20 right-16 w-16 h-16 border border-[#C2D92C]/40 rotate-45 float-animation" style={{ animationDelay: '-2s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-white/10 rounded-full float-animation" style={{ animationDelay: '-4s' }}></div>
             </div>
-            
+
             <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 text-center text-white">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
                     Save Time and Cost While Hiring Skilled Professionals?
                 </h2>
                 <p className="text-xl leading-relaxed mb-12 max-w-4xl mx-auto opacity-90">
-                    Stop struggling with traditional recruitment challenges. Build your private talent pool today and access 
+                    Stop struggling with traditional recruitment challenges. Build your private talent pool today and access
                     pre-vetted professionals whenever you need them.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-                    <button 
+                    <button
                         onClick={() => openPopup({
                             title: "Start Building Your Talent Pool",
                             description: "Ready to revolutionize your hiring process? Let's discuss how direct sourcing can help you build a sustainable talent pipeline and reduce recruitment costs."
@@ -826,8 +823,8 @@ const FinalCTASection = ({ openPopup }: { openPopup: (config?: { title?: string;
                         </span>
                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                     </button>
-                    
-                    <button 
+
+                    <button
                         onClick={() => openPopup({
                             title: "Schedule Consultation",
                             description: "Get expert advice on building your direct sourcing strategy. Schedule a free consultation to learn how we can transform your talent acquisition process."
@@ -840,7 +837,7 @@ const FinalCTASection = ({ openPopup }: { openPopup: (config?: { title?: string;
                         </span>
                     </button>
                 </div>
-                
+
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                     {[
                         { label: "Enterprise Clients", value: "500+" },
@@ -866,9 +863,9 @@ const FinalCTASection = ({ openPopup }: { openPopup: (config?: { title?: string;
 // --------------------------------------------------------------
 export default function DirectSourcingService() {
     const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
-    
+
     return (
-        <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20">
+        <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20 max-w-screen overflow-x-hidden">
             <DirectSourcingHeroSection openPopup={openPopup} />
             <ChallengeSection />
             <CTABannerSection openPopup={openPopup} />
@@ -878,7 +875,7 @@ export default function DirectSourcingService() {
             <IndustriesSection />
             <WhyChooseSection />
             <FinalCTASection openPopup={openPopup} />
-            
+
             <EnhancedFAQSection
                 title="Frequently Asked Questions"
                 description="Get answers to common questions about direct sourcing and how it can transform your talent acquisition strategy."
@@ -905,9 +902,9 @@ export default function DirectSourcingService() {
                     }
                 ]}
             />
-            
+
             {/* Consultation Popup */}
-            <ConsultationPopup 
+            <ConsultationPopup
                 isOpen={isOpen}
                 onClose={closePopup}
                 title={config.title}

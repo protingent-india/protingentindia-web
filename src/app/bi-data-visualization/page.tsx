@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { EnhancedFAQSection, GeometricBackground, ConsultationPopup } from "@/components";
 import { useConsultationPopup } from '@/hooks/useConsultationPopup';
 import Image from 'next/image';
-import { 
-    FaChartBar, FaDatabase, FaBell, FaUsers, FaBrain, FaPalette, 
+import {
+    FaChartBar, FaDatabase, FaBell, FaUsers, FaBrain, FaPalette,
     FaSync, FaCog, FaPlug, FaLifeRing, FaArrowRight, FaPlay,
     FaMicrosoft, FaGoogle, FaClock, FaSitemap, FaCube, FaGlobe,
     FaRocket, FaShieldAlt, FaMobile, FaCloud, FaCheck, FaStar
@@ -32,7 +32,7 @@ const HeroSection = ({ openPopup }: { openPopup: (config?: { title?: string; des
         <section className="relative w-full min-h-[45vh] lg:min-h-[55vh] py-8 overflow-hidden">
             {/* Background Gradient Mesh */}
             <div className="absolute inset-0 bg-gradient-to-br from-navy-800 via-teal-600 to-lime-400 opacity-90"></div>
-            
+
             {/* Animated Chart Lines/Dots */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-20 w-64 h-64 opacity-20">
@@ -57,15 +57,15 @@ const HeroSection = ({ openPopup }: { openPopup: (config?: { title?: string; des
                     {/* Left Content */}
                     <div className="space-y-8" data-aos="fade-right">
                         <h1 className="text-5xl lg:text-7xl font-black text-white leading-tight">
-                            Result-Driven Decisions with 
+                            Result-Driven Decisions with
                             <span className="bg-gradient-to-r from-lime-400 to-teal-300 bg-clip-text text-transparent"> BI Data Visualization</span> Services
                         </h1>
-                        
+
                         <p className="text-xl lg:text-2xl text-gray-200 leading-relaxed max-w-2xl">
                             Bring all scattered data together into simplified dashboards with Data Visualization Services. Protingent India delivers end-to-end business intelligence consulting, including Power BI, Tableau, and other BI tools expertise to take data-driven insights and fast decision-making for businesses to meet performance goals and efficiency.
                         </p>
 
-                        <button 
+                        <button
                             onClick={() => openPopup({
                                 title: "Check Our Demo Dashboard",
                                 description: "Experience the power of our BI data visualization platform. See how we can transform your data into actionable insights and stunning visual dashboards."
@@ -84,7 +84,7 @@ const HeroSection = ({ openPopup }: { openPopup: (config?: { title?: string; des
                     {/* Right Dashboard Preview */}
                     <div className="relative" data-aos="fade-left">
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white p-8">
-                            <Image 
+                            <Image
                                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85"
                                 alt="BI Dashboard Preview"
                                 width={600}
@@ -151,7 +151,7 @@ const ROIStatsSection = () => {
     return (
         <section className="w-full py-20 bg-white relative">
             <GeometricBackground variant="primary" intensity="light" />
-            
+
             <div className="relative z-10 max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16" data-aos="fade-up">
@@ -167,7 +167,7 @@ const ROIStatsSection = () => {
                 {/* Stats Grid */}
                 <div className="grid md:grid-cols-3 gap-8">
                     {stats.map((stat, index) => (
-                        <div 
+                        <div
                             key={index}
                             className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                             data-aos="fade-up"
@@ -175,7 +175,7 @@ const ROIStatsSection = () => {
                         >
                             {/* Background Image */}
                             <div className="relative h-48">
-                                <Image 
+                                <Image
                                     src={stat.image}
                                     alt={stat.title}
                                     fill
@@ -288,7 +288,7 @@ const CoreCapabilitiesSection = () => {
                             <p className="text-xl text-gray-700 leading-relaxed" style={{ fontFamily: 'Raleway' }}>
                                 A complete suite of BI services that unify data, design interactive dashboards, and deliver real-time insights—helping businesses simplify decision-making, improve efficiency, and stay ahead with data-driven strategies.
                             </p>
-                            
+
                             {/* Decorative Stats Card */}
                             <div className="relative mt-12">
                                 <div className="absolute -top-4 -left-4 w-16 h-16 bg-lime-400/20 rounded-full animate-pulse"></div>
@@ -314,7 +314,7 @@ const CoreCapabilitiesSection = () => {
                             {capabilities.map((capability, index) => {
                                 const IconComponent = capability.icon;
                                 return (
-                                    <div 
+                                    <div
                                         key={index}
                                         className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-transparent hover:border-lime-400/20 overflow-hidden"
                                         data-aos="fade-up"
@@ -325,7 +325,7 @@ const CoreCapabilitiesSection = () => {
                                     >
                                         {/* Background Gradient Overlay */}
                                         <div className="absolute inset-0 bg-gradient-to-br from-lime-50/50 via-transparent to-teal-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                        
+
                                         {/* Number Badge */}
                                         <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-lime-400 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                                             {capability.number}
@@ -351,7 +351,7 @@ const CoreCapabilitiesSection = () => {
                                             {/* Feature Tags */}
                                             <div className="flex flex-wrap gap-3">
                                                 {capability.tags.map((tag, tagIndex) => (
-                                                    <span 
+                                                    <span
                                                         key={tagIndex}
                                                         className="px-4 py-2 bg-gradient-to-r from-lime-100 to-teal-100 text-navy-700 text-sm font-semibold rounded-full border border-lime-400/30 hover:shadow-md transition-shadow duration-300"
                                                     >
@@ -408,7 +408,7 @@ const CustomDashboardSection = () => {
     return (
         <section className="w-full py-20 bg-white relative">
             <GeometricBackground variant="secondary" intensity="light" />
-            
+
             <div className="relative z-10 max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16" data-aos="fade-up">
@@ -424,7 +424,7 @@ const CustomDashboardSection = () => {
                 {/* Dashboard Grid */}
                 <div className="grid md:grid-cols-2 gap-8">
                     {dashboards.map((dashboard, index) => (
-                        <div 
+                        <div
                             key={index}
                             className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                             data-aos="fade-up"
@@ -432,14 +432,14 @@ const CustomDashboardSection = () => {
                         >
                             {/* Preview Image */}
                             <div className="relative h-64">
-                                <Image 
+                                <Image
                                     src={dashboard.image}
                                     alt={dashboard.title}
                                     fill
                                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-br from-navy-600/70 to-teal-500/50 group-hover:from-navy-700/80 group-hover:to-teal-600/60 transition-colors duration-500"></div>
-                                
+
                                 {/* Hover Overlay */}
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                     <button className="px-6 py-3 bg-white text-navy-800 font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
@@ -460,7 +460,7 @@ const CustomDashboardSection = () => {
                                 {/* Key Metrics Tags */}
                                 <div className="flex flex-wrap gap-2">
                                     {dashboard.metrics.map((metric, metricIndex) => (
-                                        <span 
+                                        <span
                                             key={metricIndex}
                                             className="px-3 py-1 bg-gradient-to-r from-lime-400/20 to-teal-500/20 text-navy-700 text-sm font-semibold rounded-full border border-lime-400/30"
                                         >
@@ -525,19 +525,19 @@ const BIPlatformsSection = () => {
                     {platforms.map((platform, index) => {
                         const IconComponent = platform.icon;
                         return (
-                            <div 
+                            <div
                                 key={index}
                                 className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-transparent hover:border-lime-400/20"
                                 data-aos="fade-up"
                                 data-aos-delay={index * 100}
                             >
                                 {/* Platform Icon/Logo */}
-                                <div 
+                                <div
                                     className="w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg"
                                     style={{ backgroundColor: `${platform.color}20` }}
                                 >
-                                    <IconComponent 
-                                        className="text-4xl" 
+                                    <IconComponent
+                                        className="text-4xl"
                                         style={{ color: platform.color }}
                                     />
                                 </div>
@@ -607,7 +607,7 @@ const ProcessTimelineSection = () => {
     return (
         <section className="w-full py-20 bg-white relative">
             <GeometricBackground variant="tertiary" intensity="light" />
-            
+
             <div className="relative z-10 max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16" data-aos="fade-up">
@@ -625,11 +625,10 @@ const ProcessTimelineSection = () => {
                     {processSteps.map((step, index) => {
                         const isEven = index % 2 === 0;
                         return (
-                            <div 
+                            <div
                                 key={index}
-                                className={`flex flex-col md:flex-row items-center gap-8 ${
-                                    isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                                }`}
+                                className={`flex flex-col md:flex-row items-center gap-8 ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'
+                                    }`}
                                 data-aos={isEven ? "fade-right" : "fade-left"}
                             >
                                 {/* Step Number */}
@@ -654,7 +653,7 @@ const ProcessTimelineSection = () => {
                                 {/* Image */}
                                 <div className="flex-1 lg:max-w-md">
                                     <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                                        <Image 
+                                        <Image
                                             src={step.image}
                                             alt={step.title}
                                             width={400}
@@ -683,7 +682,7 @@ const VisualizationApproachesSection = () => {
             example: "Timeline Graph"
         },
         {
-            title: "Hierarchical Data Visualization", 
+            title: "Hierarchical Data Visualization",
             description: "Break down complex data into tree-like structures for clarity. Hierarchical visuals simplify relationships, making it easier to drill down into levels and understand data flow.",
             icon: FaSitemap,
             example: "Tree Diagram"
@@ -721,7 +720,7 @@ const VisualizationApproachesSection = () => {
                     {approaches.map((approach, index) => {
                         const IconComponent = approach.icon;
                         return (
-                            <div 
+                            <div
                                 key={index}
                                 className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                                 data-aos="fade-up"
@@ -808,7 +807,7 @@ const WhyChooseUsSection = () => {
                     {reasons.map((reason, index) => {
                         const IconComponent = reason.icon;
                         return (
-                            <div 
+                            <div
                                 key={index}
                                 className="group relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100"
                                 data-aos="fade-up"
@@ -840,7 +839,7 @@ const WhyChooseUsSection = () => {
 // Main Page Component
 export default function BIDataVisualizationPage() {
     const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
-    
+
     useEffect(() => {
         // Initialize AOS
         if (typeof window !== 'undefined') {
@@ -855,31 +854,31 @@ export default function BIDataVisualizationPage() {
     }, []);
 
     return (
-        <div className="bg-white w-full flex flex-col items-center">
+        <div className="bg-white w-full flex flex-col items-center max-w-screen overflow-x-hidden">
             {/* Hero Section */}
             <HeroSection openPopup={openPopup} />
-            
+
             {/* ROI Stats Section */}
             <ROIStatsSection />
-            
+
             {/* Core BI Capabilities */}
             <CoreCapabilitiesSection />
-            
+
             {/* Custom Dashboard Solutions */}
             <CustomDashboardSection />
-            
+
             {/* BI Platforms */}
             <BIPlatformsSection />
-            
+
             {/* Process Timeline */}
             <ProcessTimelineSection />
-            
+
             {/* Visualization Approaches */}
             <VisualizationApproachesSection />
-            
+
             {/* Why Choose Us */}
             <WhyChooseUsSection />
-            
+
             {/* Enhanced FAQ Section */}
             <div className="w-full py-20">
                 <EnhancedFAQSection
@@ -915,7 +914,7 @@ export default function BIDataVisualizationPage() {
             </div>
 
             {/* Consultation Popup */}
-            <ConsultationPopup 
+            <ConsultationPopup
                 isOpen={isOpen}
                 onClose={closePopup}
                 title={config.title}
