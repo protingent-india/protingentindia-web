@@ -14,7 +14,7 @@ const ListComponent = ({
     firstIndex?: boolean
 }) => {
     return (
-        <div className={`flex items-center gap-4 3xl:min-w-[710px] ${!firstIndex ? "border-t border-white pt-6" : ""}`}>
+        <div className={`flex items-center gap-4 ${!firstIndex ? "border-t border-white pt-8" : ""}`}>
             <div className='h-[70px] min-w-[70px]'>
                 <Image
                     src={"/settings.svg"}
@@ -23,7 +23,7 @@ const ListComponent = ({
                     alt=''
                 />
             </div>
-            <div className='text-base lap:!text-xl 3xl:text-2xl'>
+            <div className='text-2xl'>
                 <p className='text-bg-parrot-green font-extrabold'>
                     {title}
                 </p>
