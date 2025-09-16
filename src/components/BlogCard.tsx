@@ -67,7 +67,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, variant = 'default' }) => {
                             </span>
                         </div>
 
-                        <h2 className="text-2xl lg:text-3xl font-bold text-[#113F64] mb-4 group-hover:text-[#34969E] transition-colors duration-300 font-lato">
+                        <h2 className="text-2xl line-clamp-2 lg:text-3xl font-bold text-[#113F64] mb-4 group-hover:text-[#34969E] transition-colors duration-300 font-lato">
                             {post?.title}
                         </h2>
 
@@ -108,7 +108,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, variant = 'default' }) => {
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
-                    <div className="absolute top-4 left-4">
+                    <div className="absolute hidden top-4 left-4">
                         <span className="bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[#113F64] shadow-sm">
                             {post?.category}
                         </span>
@@ -129,13 +129,13 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, variant = 'default' }) => {
                         </span>
                     </div>
 
-                    <h3 className="text-xl font-bold text-[#113F64] mb-3 group-hover:text-[#34969E] transition-colors duration-300 font-lato leading-tight">
+                    <h3 className="text-xl line-clamp-2 font-bold text-[#113F64] mb-3 group-hover:text-[#34969E] transition-colors duration-300 font-lato leading-tight">
                         {post?.title}
                     </h3>
 
                     <div
                         dangerouslySetInnerHTML={{ __html: post?.content }}
-                        className="text-gray-600 mb-4 line-clamp-2 flex-1 font-raleway leading-relaxed"
+                        className="text-gray-600 !font-normal mb-4 line-clamp-2 flex-1 font-raleway leading-relaxed"
                     />
 
                     <div className="flex items-center justify-between pt-4 border-t border-gray-100">

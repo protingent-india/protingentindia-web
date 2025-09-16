@@ -49,6 +49,7 @@ import {
     FaFlask,
     FaHeartbeat
 } from 'react-icons/fa';
+import { useBreakpoint } from "@/hook";
 
 // --------------------------------------------------------------
 
@@ -668,6 +669,7 @@ const PremiumInteractiveSlider = () => {
     const [isAutoPlay, setIsAutoPlay] = useState(true);
     const [progress, setProgress] = useState(0);
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
+    const { sm, md, lg } = useBreakpoint();
 
     const skillCards = [
         {
@@ -726,7 +728,7 @@ const PremiumInteractiveSlider = () => {
         }
     ];
 
-    const slidesToShow = typeof window !== 'undefined' && window.innerWidth < 768 ? 1 : 3;
+    const slidesToShow = lg ? 3 : md ? 2 : 1;
     const maxSlide = skillCards.length - slidesToShow;
 
     const nextSlide = () => {
@@ -798,7 +800,7 @@ const PremiumInteractiveSlider = () => {
 
                 {/* Slider Container */}
                 <div
-                    className="relative"
+                    className="relative flex flex-col items-center"
                     onMouseEnter={() => setIsAutoPlay(false)}
                     onMouseLeave={() => setIsAutoPlay(true)}
                 >
@@ -826,7 +828,7 @@ const PremiumInteractiveSlider = () => {
                     </button>
 
                     {/* Cards Container */}
-                    <div className="overflow-hidden mx-16">
+                    <div className="overflow-hidden w-full max-w-[1200px] py-8 md:pt-16">
                         <div
                             className="flex transition-transform duration-500 ease-out"
                             style={{
@@ -838,11 +840,11 @@ const PremiumInteractiveSlider = () => {
                                 return (
                                     <div
                                         key={index}
-                                        className="flex-shrink-0 px-4"
+                                        className="flex-shrink-0 w-full px-4"
                                         style={{ width: `${100 / slidesToShow}%` }}
                                     >
                                         <div
-                                            className="service-card group relative overflow-hidden rounded-3xl p-8 md:p-10 transition-all duration-500 hover:-translate-y-3 hover:scale-105 cursor-pointer"
+                                            className="h-full service-card group relative overflow-hidden rounded-3xl p-8 md:p-10 transition-all duration-500 hover:-translate-y-3 hover:scale-105 cursor-pointer"
                                             style={{
                                                 backgroundColor: card.bgColor,
                                                 border: `2px solid ${card.accentColor}`,
@@ -875,17 +877,17 @@ const PremiumInteractiveSlider = () => {
                                             </div>
 
                                             {/* Content */}
-                                            <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-opacity-90 transition-all duration-300">
-                                                {card.title}
+                                            <h3 className="text-2xl font-bold h-[64px] text-white mb-4 group-hover:text-opacity-90 transition-all duration-300">
+                                                {card?.title}
                                             </h3>
 
                                             <p className="text-gray-300 leading-relaxed mb-6 group-hover:text-white transition-colors duration-300">
-                                                {card.description}
+                                                {card?.description}
                                             </p>
 
                                             {/* Highlights */}
                                             <div className="space-y-2 mb-6">
-                                                {card.highlights.map((highlight, idx) => (
+                                                {card?.highlights?.map((highlight, idx) => (
                                                     <div key={idx} className="flex items-center text-sm">
                                                         <div
                                                             className="w-2 h-2 rounded-full mr-3"
@@ -922,8 +924,8 @@ const PremiumInteractiveSlider = () => {
                                 key={index}
                                 onClick={() => goToSlide(index)}
                                 className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
-                                        ? 'w-8 scale-110'
-                                        : 'hover:scale-110'
+                                    ? 'w-8 scale-110'
+                                    : 'hover:scale-110'
                                     }`}
                                 style={{
                                     backgroundColor: index === currentSlide ? '#CBDC13' : '#34969D'

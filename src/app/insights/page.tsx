@@ -278,8 +278,9 @@ const InsightsPage = () => {
                         <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                             <input
                                 type="email"
+                                name="email"
                                 placeholder="Enter your email"
-                                className="flex-1 px-6 py-3 rounded-full border-0 focus:outline-none focus:ring-4 focus:ring-white/20"
+                                className="flex-1 px-6 py-3 rounded-full border-0 focus:outline-none text-white ring-4 ring-white/20"
                             />
                             <button className="px-8 py-3 bg-[#C2D92C] text-[#113F64] rounded-full font-bold hover:bg-[#B5C426] transition-colors duration-300">
                                 Subscribe
