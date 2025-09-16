@@ -6,11 +6,11 @@ import {
     ConsultationPopup
 } from "@/components";
 import { useConsultationPopup } from '@/hooks/useConsultationPopup';
-import { 
-    FaChartLine, 
-    FaBullseye, 
-    FaUsers, 
-    FaCogs, 
+import {
+    FaChartLine,
+    FaBullseye,
+    FaUsers,
+    FaCogs,
     FaRocket,
     FaHandshake,
     FaArrowRight,
@@ -46,25 +46,25 @@ const MarketingHeroSection = ({ openPopup }: { openPopup: (config?: { title?: st
                 }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#C2D92C]/60 via-[#34969E]/70 to-[#113F64]/80"></div>
-            
+
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 left-10 w-20 h-20 border border-[#C2D92C]/40 rotate-45 animate-pulse"></div>
                 <div className="absolute bottom-32 right-16 w-16 h-16 border border-[#34969E]/50 rounded-full animate-pulse"></div>
             </div>
-            
+
             <div className="relative z-10 text-center text-white max-w-4xl container-responsive">
                 <h1 className="heading-xl mb-4 md:mb-6 bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent leading-tight">
                     Digital Marketing Services
                     <span className="block text-[#C2D92C]">To Grow Your Business</span>
                 </h1>
-                
+
                 <p className="body-lg mb-6 md:mb-8 max-w-3xl mx-auto opacity-90">
-                    Protingent India delivers ROI-driven marketing services to businesses that generate heavy traffic and higher conversion possibilities. 
+                    Protingent India delivers ROI-driven marketing services to businesses that generate heavy traffic and higher conversion possibilities.
                     We have a team of skilled Martech professionals who execute strategic and insightful SEO, performance marketing, social media, and content strategy that enable growth.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <button 
+                    <button
                         onClick={() => openPopup({
                             title: "Connect for Free Consultation",
                             description: "Ready to grow your business with data-driven marketing? Let's discuss how our digital marketing solutions can help you scale faster and smarter."
@@ -74,7 +74,7 @@ const MarketingHeroSection = ({ openPopup }: { openPopup: (config?: { title?: st
                         Connect for Free Consultation
                     </button>
                 </div>
-                
+
                 <div className="flex justify-center items-center gap-8 mt-8 text-sm opacity-80">
                     <div className="text-center">
                         <div className="font-bold text-xl">500+</div>
@@ -132,7 +132,7 @@ const ChallengeSection = () => {
     return (
         <div className="relative w-full bg-gradient-to-b from-white to-gray-50 section-padding overflow-hidden">
             <GeometricBackground variant="tertiary" intensity="light" />
-            
+
             <div className="max-w-[1450px] container-responsive relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="heading-xl mb-6" style={{ color: '#113F64' }}>
@@ -158,17 +158,17 @@ const ChallengeSection = () => {
                                     }}
                                 ></div>
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/90 via-[#34969E]/80 to-[#113F64]/90"></div>
-                                
+
                                 <div className="relative z-10 p-8 h-full text-white min-h-[280px]">
                                     <div className="mb-6">
-                                        <div 
+                                        <div
                                             className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-lg"
                                             style={{ backgroundColor: '#C2D92C' }}
                                         >
                                             <IconComponent className="text-[#113F64]" />
                                         </div>
                                     </div>
-                                    
+
                                     <h3 className="text-xl md:text-2xl font-bold mb-4">
                                         {challenge.title}
                                     </h3>
@@ -234,7 +234,7 @@ const SolutionsSection = () => {
                         <span className="block text-[#34969E]">That Help You Scale</span>
                     </h2>
                     <p className="body-lg text-gray-600 max-w-4xl mx-auto">
-                        Tap into insightful marketing services designed on strategies, creative, and BI analytics basis to make every campaign work on a measurable scale. 
+                        Tap into insightful marketing services designed on strategies, creative, and BI analytics basis to make every campaign work on a measurable scale.
                         Protingent India curates impactful solutions that fit and align with business goals.
                     </p>
                 </div>
@@ -245,9 +245,8 @@ const SolutionsSection = () => {
                         return (
                             <div
                                 key={index}
-                                className={`group relative overflow-hidden rounded-3xl transition-all duration-500 cursor-pointer shadow-lg hover:shadow-2xl hover:-translate-y-2 ${
-                                    index === 0 ? 'lg:col-span-2' : ''
-                                }`}
+                                className={`group relative overflow-hidden rounded-3xl transition-all duration-500 cursor-pointer shadow-lg hover:shadow-2xl hover:-translate-y-2 ${index === 0 ? 'lg:col-span-2' : ''
+                                    }`}
                             >
                                 <div
                                     className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -256,18 +255,18 @@ const SolutionsSection = () => {
                                     }}
                                 ></div>
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/95 via-[#34969E]/85 to-[#113F64]/95"></div>
-                                
+
                                 <div className="relative z-10 p-8 lg:p-12 h-full text-white min-h-[300px] flex flex-col justify-between">
                                     <div>
                                         <div className="mb-6">
-                                            <div 
+                                            <div
                                                 className="w-20 h-20 rounded-2xl flex items-center justify-center text-3xl mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-xl"
                                                 style={{ backgroundColor: '#C2D92C' }}
                                             >
                                                 <IconComponent className="text-[#113F64]" />
                                             </div>
                                         </div>
-                                        
+
                                         <h3 className="heading-md mb-4">
                                             {solution.title}
                                         </h3>
@@ -275,7 +274,7 @@ const SolutionsSection = () => {
                                             {solution.description}
                                         </p>
                                     </div>
-                                    
+
                                     <div>
                                         <div className="flex flex-wrap gap-2 mb-6">
                                             {solution.features.map((feature, idx) => (
@@ -305,31 +304,41 @@ const ActionableResultsSection = () => {
             title: "ROI Clarity",
             description: "Every rupee spent is tracked, so you see exactly how marketing drives revenue.",
             icon: FaChartLine,
-            color: "#C2D92C"
+            color: "#C2D92C",
+            accentColor: "#34969D",
+            bgColor: "#012D50"
         },
         {
             title: "Faster Growth",
             description: "Data-driven campaigns help you scale faster without burning money on guesswork.",
             icon: FaRocket,
-            color: "#34969E"
+            color: "#34969E",
+            accentColor: "#34969D",
+            bgColor: "#012D50"
         },
         {
             title: "Stronger Brand Presence",
             description: "Content and social engagement that make your brand memorable and trusted.",
             icon: FaAward,
-            color: "#C2D92C"
+            color: "#C2D92C",
+            accentColor: "#34969D",
+            bgColor: "#012D50"
         },
         {
             title: "Smarter Decisions",
             description: "Real-time analytics dashboards keep you in control of your strategy.",
             icon: FaBullseye,
-            color: "#34969E"
+            color: "#34969E",
+            accentColor: "#34969D",
+            bgColor: "#012D50"
         },
         {
             title: "Flexibility to Scale",
             description: "On-demand teams and services that grow with your business needs.",
             icon: FaUsers,
-            color: "#C2D92C"
+            color: "#C2D92C",
+            accentColor: "#34969D",
+            bgColor: "#012D50"
         }
     ];
 
@@ -342,7 +351,7 @@ const ActionableResultsSection = () => {
                 }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-br from-[#113F64]/95 via-[#34969E]/90 to-[#113F64]/95"></div>
-            
+
             <div className="relative z-10 max-w-[1450px] container-responsive text-white">
                 <div className="text-center mb-16">
                     <h2 className="heading-xl mb-6">
@@ -350,34 +359,58 @@ const ActionableResultsSection = () => {
                         <span className="block text-[#C2D92C]">That Matter to You</span>
                     </h2>
                     <p className="body-lg leading-relaxed max-w-4xl mx-auto opacity-90">
-                        Insightful and actionable marketing strategies that promise impeccable results and massive growth. 
+                        Insightful and actionable marketing strategies that promise impeccable results and massive growth.
                         We plan to make your business success measurable and sustainable.
                     </p>
                 </div>
 
                 <div className="grid-responsive-3">
-                    {results.map((result, index) => {
-                        const IconComponent = result.icon;
+                    {results.map((card, index) => {
+                        const IconComponent = card.icon;
                         return (
                             <div
                                 key={index}
-                                className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 transition-all duration-500 hover:bg-white/20 hover:-translate-y-2 hover:shadow-2xl border border-white/20"
+                                className="flex-shrink-0"
                             >
-                                <div className="mb-6">
-                                    <div 
-                                        className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-lg"
-                                        style={{ backgroundColor: result.color }}
+                                <div
+                                    className="service-card group relative hover:border-2 border-2 border-transparent hover:border-white overflow-hidden rounded-3xl p-8 md:p-10 transition-all duration-500 hover:-translate-y-3 hover:scale-105 cursor-pointer"
+                                    style={{
+                                        backgroundColor: card.bgColor,
+                                        boxShadow: '0 10px 30px rgba(1, 45, 80, 0.1)'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(1, 45, 80, 0.3)';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.boxShadow = '0 10px 30px rgba(1, 45, 80, 0.1)';
+                                    }}
+                                >
+                                    {/* Accent decoration */}
+                                    <div
+                                        className="absolute top-0 right-0 w-20 h-20 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300"
+                                        style={{
+                                            background: `linear-gradient(135deg, ${card.accentColor}, #CBDC13)`,
+                                            transform: 'translate(50%, -50%)'
+                                        }}
+                                    ></div>
+
+                                    {/* Icon */}
+                                    <div
+                                        className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
+                                        style={{ backgroundColor: card.color }}
                                     >
-                                        <IconComponent className="text-[#113F64]" />
+                                        <IconComponent className="text-white text-2xl" />
                                     </div>
+
+                                    {/* Content */}
+                                    <h3 style={{ color: card?.color }} className={"text-2xl font-bold mb-4 group-hover:text-opacity-90 transition-all duration-300"}>
+                                        {card.title}
+                                    </h3>
+
+                                    <p className="text-gray-300 leading-relaxed mb-6 group-hover:text-white transition-colors duration-300">
+                                        {card.description}
+                                    </p>
                                 </div>
-                                
-                                <h3 className="heading-sm mb-4" style={{ color: result.color }}>
-                                    {result.title}
-                                </h3>
-                                <p className="text-white/90 leading-relaxed body-md">
-                                    {result.description}
-                                </p>
                             </div>
                         );
                     })}
@@ -431,12 +464,12 @@ const TeamStorySection = () => {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#113F64]/20 to-transparent"></div>
                         </div>
-                        
+
                         {/* Floating elements */}
                         <div className="absolute -top-6 -right-6 w-24 h-24 bg-[#C2D92C] rounded-2xl rotate-12 opacity-20"></div>
                         <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-[#34969E] rounded-full opacity-20"></div>
                     </div>
-                    
+
                     {/* Content Side */}
                     <div>
                         <h2 className="heading-xl mb-6" style={{ color: '#113F64' }}>
@@ -444,16 +477,16 @@ const TeamStorySection = () => {
                             <span className="block text-[#34969E]">Your Growth Story</span>
                         </h2>
                         <p className="body-lg text-gray-600 mb-12 leading-relaxed">
-                            Protingent India is a top marketing agency that combines strategy, technology, and people to turn those promises into growth. 
+                            Protingent India is a top marketing agency that combines strategy, technology, and people to turn those promises into growth.
                             We don't just run campaigns, but build systems that keep delivering, month after month.
                         </p>
-                        
+
                         <div className="space-y-8">
                             {teamPillars.map((pillar, index) => {
                                 const IconComponent = pillar.icon;
                                 return (
                                     <div key={index} className="flex items-start gap-4 group">
-                                        <div 
+                                        <div
                                             className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110"
                                             style={{ backgroundColor: index % 2 === 0 ? '#34969E' : '#C2D92C' }}
                                         >
@@ -546,7 +579,7 @@ const IndustriesSection = () => {
                         <span className="block text-[#34969E]">Across Industries</span>
                     </h2>
                     <p className="body-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        Every industry has its own challenges. What works for healthcare won't work for F&B, and what drives IT leads won't resonate in real estate. 
+                        Every industry has its own challenges. What works for healthcare won't work for F&B, and what drives IT leads won't resonate in real estate.
                         Protingent India brings industry-specific expertise to ensure your campaigns connect with the right audience and deliver measurable results.
                     </p>
                 </div>
@@ -560,21 +593,21 @@ const IndustriesSection = () => {
                                 className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-gray-100 hover:border-[#34969E]/30"
                             >
                                 <div className="mb-6">
-                                    <div 
+                                    <div
                                         className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-lg"
                                         style={{ backgroundColor: industry.color }}
                                     >
                                         <IconComponent className="text-white" />
                                     </div>
                                 </div>
-                                
+
                                 <h3 className="text-xl font-bold mb-4 group-hover:text-[#34969E] transition-colors duration-300" style={{ color: '#113F64' }}>
                                     {industry.title}
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">
                                     {industry.description}
                                 </p>
-                                
+
                                 {/* Hover indicator */}
                                 <div className="flex items-center gap-2 mt-6 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300" style={{ color: industry.color }}>
                                     <span>Learn More</span>
@@ -584,7 +617,7 @@ const IndustriesSection = () => {
                         );
                     })}
                 </div>
-                
+
                 <div className="text-center mt-16">
                     <button className="px-8 py-4 bg-[#34969E] text-white font-bold rounded-full hover:bg-[#113F64] transition-all duration-300 hover:scale-105 shadow-lg">
                         Check More Marketing Solutions for Your Industry
@@ -606,19 +639,19 @@ const CTASection = ({ openPopup }: { openPopup: (config?: { title?: string; desc
                 }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#113F64]/95 via-[#34969E]/90 to-[#C2D92C]/85"></div>
-            
+
             <div className="relative z-10 max-w-[1450px] container-responsive text-center text-white">
                 <h2 className="heading-xl mb-6">
                     Connect and Let Us Together
                     <span className="block text-[#C2D92C]">Grow Your Business</span>
                 </h2>
                 <p className="body-lg leading-relaxed mb-12 max-w-4xl mx-auto opacity-90">
-                    Stop getting frustrated from marketing campaigns that do not deliver results. 
+                    Stop getting frustrated from marketing campaigns that do not deliver results.
                     Protingent India will help design engaging and result-driven marketing strategies for scalability.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <button 
+                    <button
                         onClick={() => openPopup({
                             title: "Start Your Growth Journey",
                             description: "Ready to transform your marketing and accelerate growth? Let's create a customized marketing strategy that delivers measurable results for your business."
@@ -627,8 +660,8 @@ const CTASection = ({ openPopup }: { openPopup: (config?: { title?: string; desc
                     >
                         Start Your Growth Journey
                     </button>
-                    
-                    <button 
+
+                    <button
                         onClick={() => openPopup({
                             title: "Schedule Free Consultation",
                             description: "Get expert marketing advice tailored to your business. Schedule a free consultation to discover how we can help you achieve your growth goals."
@@ -641,7 +674,7 @@ const CTASection = ({ openPopup }: { openPopup: (config?: { title?: string; desc
                         </span>
                     </button>
                 </div>
-                
+
                 <div className="flex justify-center items-center gap-12 mt-12 text-sm opacity-80">
                     <div className="text-center">
                         <FaCheckCircle className="text-2xl text-[#C2D92C] mb-2 mx-auto" />
@@ -708,7 +741,7 @@ const MarketingFAQSection = () => {
 // Main Marketing Solutions Page Component
 export default function MarketingSolutionsService() {
     const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
-    
+
     return (
         <div className="bg-white w-full flex flex-col items-center gap-0 pb-12 md:pb-20 max-w-screen overflow-x-hidden">
             <MarketingHeroSection openPopup={openPopup} />
@@ -719,9 +752,9 @@ export default function MarketingSolutionsService() {
             <IndustriesSection />
             <CTASection openPopup={openPopup} />
             <MarketingFAQSection />
-            
+
             {/* Consultation Popup */}
-            <ConsultationPopup 
+            <ConsultationPopup
                 isOpen={isOpen}
                 onClose={closePopup}
                 title={config.title}
