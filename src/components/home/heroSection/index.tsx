@@ -19,7 +19,7 @@ const HeroSection = () => {
                     loop
                     muted
                     playsInline
-                    className="w-full object-cover"
+                    className="w-full object-cover md:h-[calc(100vh-80px)]"
                 >
                     <source src="/HomeHero.mp4" type="video/mp4" />
                 </video>

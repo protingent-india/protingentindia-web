@@ -268,7 +268,7 @@ const Header = () => {
                                         onMouseLeave={item.hasDropdown ? handleMouseLeave : undefined}
                                     >
                                         {item.hasDropdown ? (
-                                            <button className={`flex items-center space-x-1 nav-underline font-medium text-[#113F64] hover:text-[#34969E] transition-colors duration-300 ${isActiveRoute(item.link) ? 'text-[#34969E] active' : ''
+                                            <button className={`flex cursor-pointer items-center space-x-1 nav-underline font-medium text-[#113F64] hover:text-[#34969E] transition-colors duration-300 ${isActiveRoute(item.link) ? 'text-[#34969E] active' : ''
                                                 }`}>
                                                 <span>{item.name}</span>
                                                 <FaChevronDown className={`w-3 h-3 transition-transform duration-300 ${isServicesDropdownOpen ? 'rotate-180' : ''
@@ -304,7 +304,7 @@ const Header = () => {
                                                                             <button
                                                                                 key={serviceIndex}
                                                                                 onClick={() => handleServiceClick(service.link)}
-                                                                                className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-all duration-300 group w-full text-left"
+                                                                                className="cursor-pointer flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-all duration-300 group w-full text-left"
                                                                             >
                                                                                 <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-[#34969E] to-[#C2D92C] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                                                                     <IconComponent className="w-5 h-5 text-white" />
@@ -336,7 +336,7 @@ const Header = () => {
                         <div className="hidden lg:block flex-shrink-0">
                             <button
                                 onClick={() => openPopup()}
-                                className="px-6 py-2 bg-gradient-to-r from-[#34969E] to-[#113F64] text-white font-bold rounded-full hover:from-[#2d7a85] hover:to-[#0d2f4a] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                className="cursor-pointer px-6 py-2 bg-gradient-to-r from-[#34969E] to-[#113F64] text-white font-bold rounded-full hover:from-[#2d7a85] hover:to-[#0d2f4a] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                                 style={{ fontFamily: 'Lato, sans-serif' }}
                             >
                                 <span className="flex items-center space-x-2">

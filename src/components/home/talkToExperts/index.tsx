@@ -119,7 +119,7 @@ const TalkToExpert = () => {
                         return (
                             <div
                                 key={pathway.id}
-                                className={`group relative overflow-hidden rounded-3xl transition-all duration-500 cursor-pointer shadow-lg hover:shadow-2xl hover:-translate-y-3`}
+                                className={`group relative overflow-hidden rounded-3xl transition-all duration-500 shadow-lg hover:shadow-2xl hover:-translate-y-3`}
                             >
                                 {/* Professional Background Image */}
                                 <div
@@ -241,7 +241,7 @@ const TalkToExpert = () => {
                     >
                         <span className='text-lg font-semibold flex items-center space-x-3' style={{ fontFamily: 'Lato' }}>
                             <FaRocket className="w-5 h-5" />
-                            <span>Not sure which path is right for you? Let's talk!</span>
+                            <span className='text-base sm:text-lg' >Not sure which path is right for you? Let's talk!</span>
                         </span>
                     </a>
                 </div>

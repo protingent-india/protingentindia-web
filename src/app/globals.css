@@ -14,6 +14,10 @@
   /* Chrome, Safari and Opera */
 }
 
+button {
+  cursor: pointer;
+}
+
 .scrollbar-thin {
   scrollbar-width: thin;
   scrollbar-color: rgba(52, 150, 157, 0.3) transparent;
