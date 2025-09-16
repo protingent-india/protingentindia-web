@@ -19,6 +19,7 @@ import {
     FaArrowRight
 } from 'react-icons/fa';
 import { useConsultationPopup } from "@/hooks/useConsultationPopup";
+import Link from "next/link";
 
 // Hero Section
 const ContactHeroSection = () => {
@@ -64,12 +65,12 @@ const ContactHeroSection = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-10">
-                    <button className="px-10 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-full hover:scale-105 transform transition-all shadow-2xl" style={{ fontFamily: 'Lato' }}>
+                    <Link href={"tel:9119102197"} className="px-10 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-full hover:scale-105 transform transition-all shadow-2xl" style={{ fontFamily: 'Lato' }}>
                         <span className="flex items-center gap-3">
                             <FaPhone className="rotate-90" />
                             Call Us Now
                         </span>
-                    </button>
+                    </Link>
 
                     <button onClick={() => openPopup()} className="px-8 py-4 border-2 border-white/40 rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white">
                         <span className="flex items-center gap-3">
