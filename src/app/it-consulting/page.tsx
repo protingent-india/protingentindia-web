@@ -49,7 +49,7 @@ const ITConsultingPage = () => {
     };
 
     return (
-        <div className="min-h-screen bg-white max-w-screen overflow-x-hidden">
+        <div className="min-h-screen bg-white max-w-screen overflow-hidden">
             {/* Hero Section - 20% height reduction */}
             <section className="relative bg-gradient-to-br from-navy-600 via-teal-500 to-lime-400 overflow-hidden">
                 {/* Floating geometric elements */}
@@ -68,7 +68,7 @@ const ITConsultingPage = () => {
                             <p className="text-lg lg:text-xl font-raleway mb-8 leading-relaxed text-white/90">
                                 Protingent India delivers end-to-end IT consulting services covering IT strategy consulting, application modernization, cloud consulting, data and AI consulting, and cybersecurity solutions to help enterprises reduce costs, enhance agility, and scale with confidence.
                             </p>
-                            <button 
+                            <button
                                 onClick={() => openPopup({
                                     title: "Get a Free Consultation",
                                     description: "Ready to transform your IT infrastructure? Let our experts help you develop a strategic roadmap for digital transformation and technology optimization."
@@ -77,7 +77,7 @@ const ITConsultingPage = () => {
                             >
                                 <span className="flex items-center gap-3">
                                     Get a Free Consultation
-                                    <Icon 
+                                    <Icon
                                         icon="ph:arrow-right-fill"
                                         className="group-hover:translate-x-1 transition-transform duration-300"
                                     />
@@ -122,7 +122,7 @@ const ITConsultingPage = () => {
                             },
                             {
                                 icon: "ph:gear-fill",
-                                title: "Operational Efficiency", 
+                                title: "Operational Efficiency",
                                 desc: "IT infrastructure consulting and ITSM consulting streamline processes, reduce downtime, and enhance productivity."
                             },
                             {
@@ -141,7 +141,7 @@ const ITConsultingPage = () => {
                                 desc: "Cybersecurity consulting services strengthen compliance, protect assets, and ensure business continuity."
                             }
                         ].map((item, index) => (
-                            <div 
+                            <div
                                 key={index}
                                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 group"
                                 data-aos="fade-up"
@@ -182,7 +182,7 @@ const ITConsultingPage = () => {
                         {/* Large card - IT Strategy */}
                         <div className="lg:col-span-2 lg:row-span-2 relative rounded-3xl p-8 text-white hover:scale-105 transition-all duration-300 group cursor-pointer overflow-hidden">
                             {/* Tech Background Image */}
-                            <div 
+                            <div
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                                 style={{
                                     backgroundImage: `url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2070')`,
@@ -190,7 +190,7 @@ const ITConsultingPage = () => {
                             ></div>
                             {/* Enhanced Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-navy-600/95 via-teal-500/90 to-navy-600/95"></div>
-                            
+
                             <div className="relative z-10">
                                 <Icon icon="ph:strategy-fill" className="text-4xl mb-6 text-lime-400" />
                                 <h3 className="text-2xl font-bold font-lato mb-4">IT Strategy & Enterprise Architecture Consulting</h3>
@@ -203,7 +203,7 @@ const ITConsultingPage = () => {
                         {/* Medium card - Application Modernization */}
                         <div className="lg:col-span-2 relative rounded-3xl p-6 text-navy-600 hover:scale-105 transition-all duration-300 group cursor-pointer overflow-hidden">
                             {/* Tech Background Image */}
-                            <div 
+                            <div
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                                 style={{
                                     backgroundImage: `url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070')`,
@@ -211,7 +211,7 @@ const ITConsultingPage = () => {
                             ></div>
                             {/* Enhanced Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-teal-500/90 via-lime-400/85 to-teal-500/90"></div>
-                            
+
                             <div className="relative z-10">
                                 <Icon icon="ph:device-mobile-fill" className="text-3xl mb-4 text-navy-600" />
                                 <h3 className="text-xl font-bold font-lato mb-3">Application Modernization Consulting</h3>
@@ -224,7 +224,7 @@ const ITConsultingPage = () => {
                         {/* Small card - Cloud Consulting */}
                         <div className="relative rounded-3xl p-6 text-navy-600 hover:scale-105 transition-all duration-300 group cursor-pointer overflow-hidden">
                             {/* Tech Background Image */}
-                            <div 
+                            <div
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                                 style={{
                                     backgroundImage: `url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072')`,
@@ -232,7 +232,7 @@ const ITConsultingPage = () => {
                             ></div>
                             {/* Enhanced Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-lime-400/90 via-teal-500/85 to-lime-400/90"></div>
-                            
+
                             <div className="relative z-10">
                                 <Icon icon="ph:cloud-fill" className="text-3xl mb-4 text-navy-600" />
                                 <h3 className="text-lg font-bold font-lato mb-3">Cloud Consulting & Migration</h3>
@@ -245,7 +245,7 @@ const ITConsultingPage = () => {
                         {/* Small card - AI & Data Analytics */}
                         <div className="relative rounded-3xl p-6 text-white hover:scale-105 transition-all duration-300 group cursor-pointer overflow-hidden">
                             {/* Tech Background Image - AI/Neural Networks */}
-                            <div 
+                            <div
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                                 style={{
                                     backgroundImage: `url('https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070')`,
@@ -253,7 +253,7 @@ const ITConsultingPage = () => {
                             ></div>
                             {/* Enhanced Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-navy-600/95 via-lime-400/85 to-navy-600/95"></div>
-                            
+
                             <div className="relative z-10">
                                 <Icon icon="ph:brain-fill" className="text-3xl mb-4 text-lime-400" />
                                 <h3 className="text-lg font-bold font-lato mb-3">Data, Analytics & AI Consulting</h3>
@@ -266,7 +266,7 @@ const ITConsultingPage = () => {
                         {/* Medium card - Cybersecurity */}
                         <div className="lg:col-span-2 relative rounded-3xl p-6 text-white hover:scale-105 transition-all duration-300 group cursor-pointer overflow-hidden">
                             {/* Tech Background Image - Cybersecurity/Digital Security */}
-                            <div 
+                            <div
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                                 style={{
                                     backgroundImage: `url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070')`,
@@ -274,7 +274,7 @@ const ITConsultingPage = () => {
                             ></div>
                             {/* Enhanced Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-navy-600/90 to-gray-900/95"></div>
-                            
+
                             <div className="relative z-10">
                                 <Icon icon="ph:shield-check-fill" className="text-3xl mb-4 text-lime-400" />
                                 <h3 className="text-xl font-bold font-lato mb-3">Cybersecurity & Compliance Consulting</h3>
@@ -287,7 +287,7 @@ const ITConsultingPage = () => {
                         {/* Small card - ITSM Operations */}
                         <div className="relative rounded-3xl p-6 text-white hover:scale-105 transition-all duration-300 group cursor-pointer overflow-hidden">
                             {/* Tech Background Image - Server/Operations */}
-                            <div 
+                            <div
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                                 style={{
                                     backgroundImage: `url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034')`,
@@ -295,7 +295,7 @@ const ITConsultingPage = () => {
                             ></div>
                             {/* Enhanced Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-teal-500/95 via-navy-600/90 to-teal-500/95"></div>
-                            
+
                             <div className="relative z-10">
                                 <Icon icon="ph:gear-six-fill" className="text-3xl mb-4 text-lime-400" />
                                 <h3 className="text-lg font-bold font-lato mb-3">ITSM & Operations Consulting</h3>
@@ -308,7 +308,7 @@ const ITConsultingPage = () => {
                         {/* Small card - Enterprise Platform */}
                         <div className="relative rounded-3xl p-6 text-white hover:scale-105 transition-all duration-300 group cursor-pointer overflow-hidden">
                             {/* Tech Background Image - Database/Platform */}
-                            <div 
+                            <div
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                                 style={{
                                     backgroundImage: `url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070')`,
@@ -316,7 +316,7 @@ const ITConsultingPage = () => {
                             ></div>
                             {/* Enhanced Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-lime-400/90 via-navy-600/95 to-lime-400/85"></div>
-                            
+
                             <div className="relative z-10">
                                 <Icon icon="ph:database-fill" className="text-3xl mb-4 text-lime-400" />
                                 <h3 className="text-lg font-bold font-lato mb-3">Enterprise Platform Consulting</h3>
@@ -351,7 +351,7 @@ const ITConsultingPage = () => {
                                 position: "left"
                             },
                             {
-                                title: "Design", 
+                                title: "Design",
                                 description: "Our consultants build detailed roadmaps, enterprise architectures, and solution frameworks. IT strategy consulting ensures each design aligns with business priorities and prepares for application modernization, cloud migration, and compliance.",
                                 image: "https://images.unsplash.com/photo-1573164713988-8665fc963095",
                                 icon: "ph:blueprint-fill",
@@ -372,8 +372,8 @@ const ITConsultingPage = () => {
                                 position: "right"
                             }
                         ].map((step, index) => (
-                            <div 
-                                key={index} 
+                            <div
+                                key={index}
                                 className={`flex flex-col lg:flex-row items-center gap-12 ${step.position === 'right' ? 'lg:flex-row-reverse' : ''}`}
                                 data-aos={step.position === 'left' ? 'fade-right' : 'fade-left'}
                             >
@@ -435,7 +435,7 @@ const ITConsultingPage = () => {
                                 alt: "Healthcare IT Consulting Solutions - Medical technology and healthcare systems"
                             },
                             {
-                                title: "Retail & eCommerce", 
+                                title: "Retail & eCommerce",
                                 description: "Boost scalability with cloud consulting services, enhance personalization through data and AI consulting, and streamline supply chains for faster delivery.",
                                 icon: "ph:shopping-cart-fill",
                                 image: "/assets/images/it-consulting-industries/retail-ecommerce.jpg",
@@ -463,7 +463,7 @@ const ITConsultingPage = () => {
                                 alt: "Public Sector & Government IT Consulting Solutions - Secure government technology and compliance systems"
                             }
                         ].map((industry, index) => (
-                            <div 
+                            <div
                                 key={index}
                                 className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer"
                                 data-aos="fade-up"
@@ -517,7 +517,7 @@ const ITConsultingPage = () => {
                                 features: ["Quick Assessment", "Roadmap Creation", "Strategic Planning", "Fast Implementation"]
                             },
                             {
-                                title: "Project-Based Consulting", 
+                                title: "Project-Based Consulting",
                                 description: "Ideal for specific initiatives like cloud migration consulting, application modernization consulting, or cybersecurity consulting services, with defined scope and timelines.",
                                 icon: "ph:target-fill",
                                 features: ["Defined Scope", "Fixed Timeline", "Specific Deliverables", "Budget Control"]
@@ -535,7 +535,7 @@ const ITConsultingPage = () => {
                                 features: ["Dedicated Team", "Deep Integration", "Ongoing Support", "Flexible Scaling"]
                             }
                         ].map((model, index) => (
-                            <div 
+                            <div
                                 key={index}
                                 className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 hover:bg-white/20 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group"
                             >
@@ -637,7 +637,7 @@ const ITConsultingPage = () => {
                         <p className="text-lg lg:text-xl font-raleway text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
                             Accelerate growth, reduce costs, and secure your business with Protingent India's IT consulting services. Whether you need IT strategy consulting, cloud migration consulting, or cybersecurity consulting services, our experts are ready to guide you.
                         </p>
-                        <button 
+                        <button
                             onClick={() => openPopup({
                                 title: "Request a Custom Roadmap",
                                 description: "Get a personalized IT strategy roadmap tailored to your business needs. Our experts will analyze your current infrastructure and provide a clear path forward."
@@ -646,7 +646,7 @@ const ITConsultingPage = () => {
                         >
                             <span className="flex items-center gap-3">
                                 Request a Custom Roadmap
-                                <Icon 
+                                <Icon
                                     icon="ph:arrow-right-fill"
                                     className="group-hover:translate-x-1 transition-transform duration-300"
                                 />
@@ -674,7 +674,7 @@ const ITConsultingPage = () => {
                         <p className="text-lg font-raleway text-gray-700 mb-8">
                             Get answers to common questions about our IT consulting services
                         </p>
-                        
+
                         {/* Search bar */}
                         <div className="max-w-md mx-auto relative">
                             <Icon icon="ph:magnifying-glass-bold" className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
@@ -690,11 +690,10 @@ const ITConsultingPage = () => {
 
                     <div className="space-y-4" data-aos="fade-up" data-aos-delay="200">
                         {filteredFAQs.map((faq, index) => (
-                            <div 
+                            <div
                                 key={index}
-                                className={`bg-white rounded-2xl border border-gray-200 overflow-hidden transition-all duration-300 ${
-                                    openFAQ === index ? 'shadow-lg border-teal-500' : 'hover:shadow-md'
-                                }`}
+                                className={`bg-white rounded-2xl border border-gray-200 overflow-hidden transition-all duration-300 ${openFAQ === index ? 'shadow-lg border-teal-500' : 'hover:shadow-md'
+                                    }`}
                             >
                                 <button
                                     onClick={() => toggleFAQ(index)}
@@ -703,11 +702,10 @@ const ITConsultingPage = () => {
                                     <h3 className="text-lg font-bold font-lato text-navy-600 pr-8">
                                         {faq.question}
                                     </h3>
-                                    <div className={`w-6 h-6 flex items-center justify-center transition-transform duration-300 ${
-                                        openFAQ === index ? 'transform rotate-180' : ''
-                                    }`}>
-                                        <Icon 
-                                            icon={openFAQ === index ? "ph:minus-bold" : "ph:plus-bold"} 
+                                    <div className={`w-6 h-6 flex items-center justify-center transition-transform duration-300 ${openFAQ === index ? 'transform rotate-180' : ''
+                                        }`}>
+                                        <Icon
+                                            icon={openFAQ === index ? "ph:minus-bold" : "ph:plus-bold"}
                                             className={`text-lg ${openFAQ === index ? 'text-teal-500' : 'text-gray-400'}`}
                                         />
                                     </div>
@@ -734,9 +732,9 @@ const ITConsultingPage = () => {
                     )}
                 </div>
             </section>
-            
+
             {/* Consultation Popup */}
-            <ConsultationPopup 
+            <ConsultationPopup
                 isOpen={isOpen}
                 onClose={closePopup}
                 title={config.title}

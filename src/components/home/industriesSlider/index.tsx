@@ -54,7 +54,7 @@ const IndustriesSlider = () => {
     return (
         <div
             id="industries-slider"
-            className='flex flex-col xl:flex-row justify-center items-center xl:items-end gap-6 w-full p-4 bg-gradient-to-br from-gray-50 via-white to-blue-50'
+            className='flex flex-col xl:flex-row justify-center items-center xl:items-end gap-6 w-full p-4 bg-gradient-to-br from-gray-50 via-white to-blue-50 pt-16 lg:pt-32 '
         >
             {/* Desktop Navigation */}
             <div
@@ -100,8 +100,8 @@ const IndustriesSlider = () => {
                     <div className='w-full flex flex-col gap-8 lg:gap-12' >
                         {/* Main Content Display - Reduced Size */}
                         <div className='flex flex-col-reverse lg:flex-row gap-6 items-center justify-between' data-aos="zoom-in">
-                            <div className='text-navy-600 w-full lg:w-2/4 flex flex-col gap-6 slide-content' 
-                                 key={selectedIndustrie.index} // Force re-render for animation
+                            <div className='text-navy-600 w-full lg:w-2/4 flex flex-col gap-6 slide-content'
+                                key={selectedIndustrie.index} // Force re-render for animation
                             >
                                 <h3 className='text-3xl lg:text-4xl lap:!text-5xl font-extrabold font-lato' >
                                     {selectedIndustrie?.data?.title || ""}
@@ -112,7 +112,7 @@ const IndustriesSlider = () => {
                                 {/* Progress indicator for auto-rotation */}
                                 {!isPaused && (
                                     <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
-                                        <div 
+                                        <div
                                             className="h-full bg-[#34969E] rounded-full auto-progress-bar"
                                             style={{
                                                 animation: 'progress 3s linear infinite'
@@ -161,10 +161,10 @@ const IndustriesSlider = () => {
                                                     key={index}
                                                     onClick={() => handleIndustryClick(index, el)}
                                                     className={`slide-card flex flex-col items-start gap-2 border-t-4 py-4 lap:min-w-[200px] 3xl:min-w-[240px] max-w-[240px] cursor-pointer transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg rounded-lg p-3
-                                                ${selectedIndustrie?.index === index 
-                                                    ? "border-lime-400 text-navy-600 bg-gradient-to-br from-lime-50 to-teal-50 shadow-md" 
-                                                    : "text-teal-600 border-teal-500 hover:border-lime-400 hover:text-navy-600 bg-white hover:bg-gradient-to-br hover:from-lime-50 hover:to-teal-50"
-                                                }
+                                                ${selectedIndustrie?.index === index
+                                                            ? "border-lime-400 text-navy-600 bg-gradient-to-br from-lime-50 to-teal-50 shadow-md"
+                                                            : "text-teal-600 border-teal-500 hover:border-lime-400 hover:text-navy-600 bg-white hover:bg-gradient-to-br hover:from-lime-50 hover:to-teal-50"
+                                                        }
                                             `}
                                                 >
                                                     <h4 className='text-lg lg:text-xl font-bold font-lato'>
@@ -174,7 +174,7 @@ const IndustriesSlider = () => {
                                                         text={el?.desc || ""}
                                                         className='text-sm font-raleway leading-relaxed'
                                                     />
-                                                    
+
                                                     {/* Active indicator */}
                                                     {selectedIndustrie?.index === index && (
                                                         <div className="mt-1 flex items-center gap-2">

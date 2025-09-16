@@ -697,6 +697,8 @@ const IndustriesSection = () => {
 
 // Why Protingent Section
 const WhyProtingentSection = () => {
+    const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
+
     const partnersData = [
         {
             title: "Domain-Ready Talent Pool",

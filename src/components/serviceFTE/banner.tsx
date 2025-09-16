@@ -1,12 +1,14 @@
 "use client"
 import Image from 'next/image';
-import { Icon } from '@/components';
+import { ConsultationPopup, Icon } from '@/components';
 import { useBreakpoint } from '@/hook';
 import Link from 'next/link';
+import { useConsultationPopup } from '@/hooks/useConsultationPopup';
 
 // --------------------------------------------------------------
 
 const BannerSection = () => {
+    const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
     const { lg } = useBreakpoint();
 
     return (
@@ -19,18 +21,16 @@ const BannerSection = () => {
                     <p className='text-base md:text-xl lg:text-base xl:text-xl text-justify font-normal text-primary' >
                         Full-Time Equivalent (FTE) Services are designed to help businesses build dedicated teams, reduce overheads, and stay focused on business growth. It enables organizations to gain a consistent, cost-effective, and project-aligned talent pool to meet deadlines.
                     </p>
-                    <Link href={"/contact-us"} >
-                        <div className='w-full sm:w-[424px] lg:!w-[324px] 3xl:!min-w-[424px] bg-bg-parrot-green flex justify-between items-center gap rounded-full pl-6' >
-                            <p className='text-lg 3xl:!text-2xl' >
-                                Consult Our Expert Recruiters
-                            </p>
-                            <div className='rounded-full bg-secondry w-[50px] h-[50px] flex justify-center items-center' >
-                                <Icon
-                                    icon='humbleicons:arrow-right'
-                                />
-                            </div>
+                    <div onClick={() => openPopup()} className='cursor-pointer w-full sm:w-[424px] lg:!w-[324px] 3xl:!min-w-[424px] bg-bg-parrot-green flex justify-between items-center gap rounded-full pl-6' >
+                        <p className='text-lg 3xl:!text-2xl' >
+                            Consult Our Expert Recruiters
+                        </p>
+                        <div className='rounded-full bg-secondry w-[50px] h-[50px] flex justify-center items-center' >
+                            <Icon
+                                icon='humbleicons:arrow-right'
+                            />
                         </div>
-                    </Link>
+                    </div>
                 </div>
             </div>
             <div
@@ -46,6 +46,12 @@ const BannerSection = () => {
                     className='w-full'
                 />
             </div>
+            <ConsultationPopup
+                isOpen={isOpen}
+                onClose={closePopup}
+                title={config.title}
+                description={config.description}
+            />
         </section >
     )
 }

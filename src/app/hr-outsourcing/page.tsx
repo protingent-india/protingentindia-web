@@ -338,6 +338,7 @@ const AnimatedCounter = ({ target, suffix }: { target: number; suffix: string })
 // --------------------------------------------------------------
 const HRSolutionsSection = () => {
     const [hoveredSolution, setHoveredSolution] = useState<number | null>(null);
+    const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
 
     const solutions = [
         {
@@ -458,7 +459,8 @@ const HRSolutionsSection = () => {
 
                 {/* CTA Button */}
                 <div className="text-center mt-16">
-                    <button className="group relative overflow-hidden px-12 py-4 bg-[#34969E] text-white font-bold text-lg rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
+                    <button onClick={() => openPopup()}
+                        className="group relative overflow-hidden px-12 py-4 bg-[#34969E] text-white font-bold text-lg rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
                         <span className="relative z-10 flex items-center gap-3">
                             Explore All HR Solutions
                             <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
@@ -467,6 +469,12 @@ const HRSolutionsSection = () => {
                     </button>
                 </div>
             </div>
+            <ConsultationPopup
+                isOpen={isOpen}
+                onClose={closePopup}
+                title={config.title}
+                description={config.description}
+            />
         </div>
     );
 };
@@ -953,6 +961,7 @@ const HROutsourcingFAQSection = () => {
 // 8. Final CTA Section
 // --------------------------------------------------------------
 const FinalCTASection = ({ openPopup }: { openPopup: (config?: { title?: string; description?: string }) => void }) => {
+
     return (
         <div className="relative w-full py-20 md:py-32 overflow-hidden">
             {/* Professional team image background */}
@@ -993,7 +1002,8 @@ const FinalCTASection = ({ openPopup }: { openPopup: (config?: { title?: string;
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-16">
-                    <button className="group relative overflow-hidden px-16 py-6 bg-[#C2D92C] text-[#113F64] font-bold text-2xl rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
+                    <button onClick={() => openPopup()}
+                        className="group relative overflow-hidden px-16 py-6 bg-[#C2D92C] text-[#113F64] font-bold text-2xl rounded-2xl hover:scale-105 transform transition-all shadow-2xl">
                         <span className="relative z-10 flex items-center gap-4">
                             Transform Your HR Today
                             <FaRocket className="group-hover:rotate-12 transition-transform duration-300" />

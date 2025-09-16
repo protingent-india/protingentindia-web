@@ -16,7 +16,7 @@ const HomeIntro = () => {
 
             <div className="w-full flex justify-center p-6 lg:py-20 relative z-10" >
                 <div className="w-full lg:w-[90%] max-w-[1400px] flex flex-col items-center gap-16 lg:gap-20" >
-                    
+
                     {/* Hero Header */}
                     <div className="text-center max-w-5xl" data-aos="fade-up">
                         <div className="flex flex-col items-center gap-4 lg:gap-6">
@@ -36,7 +36,7 @@ const HomeIntro = () => {
 
                     {/* Main Content Section */}
                     <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-16" >
-                        
+
                         {/* Left Column - Text Content */}
                         <div className="w-full lg:w-1/2 flex flex-col gap-8" data-aos="fade-right">
                             <div className="space-y-6">
@@ -56,17 +56,24 @@ const HomeIntro = () => {
 
                             {/* CTA Button */}
                             <div className="flex justify-start" data-aos="fade-up" data-aos-delay="200">
-                                <button 
+                                <button
                                     onClick={() => {
                                         const solutionsSection = document.getElementById('comprehensive');
                                         if (solutionsSection) {
-                                            solutionsSection.scrollIntoView({ behavior: 'smooth' });
+                                            const headerOffset = 80; // height of your sticky header
+                                            const elementPosition = solutionsSection.getBoundingClientRect().top + window.scrollY;
+                                            const offsetPosition = elementPosition - headerOffset;
+
+                                            window.scrollTo({
+                                                top: offsetPosition,
+                                                behavior: 'smooth',
+                                            });
                                         }
                                     }}
-                                    className="px-8 py-4 bg-gradient-to-r from-lime-400 to-teal-500 hover:from-teal-500 hover:to-lime-400 text-navy-600 font-semibold text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl group flex items-center gap-3"
+                                    className="cursor-pointer px-8 py-4 bg-gradient-to-r from-lime-400 to-teal-500 hover:from-teal-500 hover:to-lime-400 text-navy-600 font-semibold text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl group flex items-center gap-3"
                                 >
                                     <span>Discover Our Solutions</span>
-                                    <Icon 
+                                    <Icon
                                         icon="ph:arrow-right-fill"
                                         className="group-hover:translate-x-1 transition-transform duration-300"
                                     />
@@ -76,7 +83,7 @@ const HomeIntro = () => {
 
                         {/* Right Column - Visual Content & KPI Badges */}
                         <div className="w-full lg:w-1/2 flex flex-col gap-8 items-center" data-aos="fade-left">
-                            
+
                             {/* Hero Image */}
                             <div className="relative w-full max-w-[600px] group">
                                 {/* Image container with modern styling */}
@@ -91,7 +98,7 @@ const HomeIntro = () => {
                                     />
                                     {/* Gradient overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-navy-600/30 via-transparent to-transparent"></div>
-                                    
+
                                     {/* Floating geometric shapes overlay */}
                                     <div className="absolute top-4 right-4 w-8 h-8 bg-lime-400/80 rounded-full animate-pulse"></div>
                                     <div className="absolute bottom-6 left-6 w-6 h-6 bg-teal-500/80 rotate-45 animate-bounce"></div>
@@ -100,16 +107,16 @@ const HomeIntro = () => {
 
                             {/* KPI Badges Grid */}
                             <div className="w-full max-w-[600px] grid grid-cols-2 gap-4 lg:gap-6">
-                                
+
                                 {/* KPI Badge 1 */}
-                                <div 
+                                <div
                                     className="bg-gradient-to-br from-lime-400 to-teal-500 p-6 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center group cursor-pointer"
-                                    data-aos="fade-up" 
+                                    data-aos="fade-up"
                                     data-aos-delay="300"
                                 >
                                     <div className="flex flex-col items-center gap-3">
-                                        <Icon 
-                                            icon="ph:trend-up-fill" 
+                                        <Icon
+                                            icon="ph:trend-up-fill"
                                             className="text-3xl text-navy-600 group-hover:scale-110 transition-transform duration-300"
                                         />
                                         <div className="text-navy-600">
@@ -120,14 +127,14 @@ const HomeIntro = () => {
                                 </div>
 
                                 {/* KPI Badge 2 */}
-                                <div 
+                                <div
                                     className="bg-gradient-to-br from-teal-500 to-navy-600 p-6 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center group cursor-pointer"
-                                    data-aos="fade-up" 
+                                    data-aos="fade-up"
                                     data-aos-delay="400"
                                 >
                                     <div className="flex flex-col items-center gap-3">
-                                        <Icon 
-                                            icon="ph:clock-fill" 
+                                        <Icon
+                                            icon="ph:clock-fill"
                                             className="text-3xl text-white group-hover:scale-110 transition-transform duration-300"
                                         />
                                         <div className="text-white">
@@ -138,14 +145,14 @@ const HomeIntro = () => {
                                 </div>
 
                                 {/* KPI Badge 3 */}
-                                <div 
+                                <div
                                     className="bg-gradient-to-br from-navy-600 to-teal-500 p-6 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center group cursor-pointer"
-                                    data-aos="fade-up" 
+                                    data-aos="fade-up"
                                     data-aos-delay="500"
                                 >
                                     <div className="flex flex-col items-center gap-3">
-                                        <Icon 
-                                            icon="ph:globe-fill" 
+                                        <Icon
+                                            icon="ph:globe-fill"
                                             className="text-3xl text-white group-hover:scale-110 transition-transform duration-300"
                                         />
                                         <div className="text-white">
@@ -156,14 +163,14 @@ const HomeIntro = () => {
                                 </div>
 
                                 {/* KPI Badge 4 */}
-                                <div 
+                                <div
                                     className="bg-gradient-to-br from-lime-400 to-navy-600 p-6 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center group cursor-pointer"
-                                    data-aos="fade-up" 
+                                    data-aos="fade-up"
                                     data-aos-delay="600"
                                 >
                                     <div className="flex flex-col items-center gap-3">
-                                        <Icon 
-                                            icon="ph:buildings-fill" 
+                                        <Icon
+                                            icon="ph:buildings-fill"
                                             className="text-3xl text-white group-hover:scale-110 transition-transform duration-300"
                                         />
                                         <div className="text-white">

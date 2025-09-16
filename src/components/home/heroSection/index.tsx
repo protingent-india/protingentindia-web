@@ -19,31 +19,32 @@ const HeroSection = () => {
                     loop
                     muted
                     playsInline
-                    className="w-full object-cover"
+                    className="w-full object-cover md:h-[calc(100vh-80px)]"
                 >
                     <source src="/HomeHero.mp4" type="video/mp4" />
                 </video>
             </div>
-            <div className='absolute top-0 left-0 bg-transparent w-full h-fit snap-start flex flex-col items-center gap-' >
+            <div className='absolute top-0 left-0 bg-transparent w-full h-fit snap-start flex flex-col items-center ' >
                 <p className={`
                     bg-white 
-                    w-full min-h-[130px] lg:min-h-[180px]  lap:!min-h-[316px] 
-                    py-4 xl:py-20 
-                    text-4xl sm:text-[55px] lg:text-[80px] xl:text-[100px] lap:!text-[110px] 3xl:!text-[128px] 
+                    w-full min-h-[120px] sm:min-h-[130px] lg:min-h-[180px] 
+                    py-4 sm:pb-10 xl:py-20 lap:!pt-8
+                    text-5xl sm:text-[65px] md:text-[80px] lg:text-[100px] lap:!text-[128px] 
                     text-center font-black uppercase 
-                    mix-blend-screen 
+                    mix-blend-screen flex items-center justify-center relative
                     ${montserrat.className}`}
                 >
-                    PROTINGENT INDIA
+                    QUANTUM
                 </p>
                 <p className='
-                    text-base lg:text-2xl xl:text-4xl lap:!text-[40px]
+                    text-base sm:text-lg lg:text-2xl lap:!text-3xl 3xl:!text-3xl
                     text-primary 
                     bg-white
-                    absolute bottom-1 sm:bottom-8 sm:left-8 md:left-24 lg:bottom-12 xl:left-28 lap:!left-36 3xl:!left-72 
+                    text-center
+                    absolute bottom-2 lap:!bottom-6
                     font-medium'
                 >
-                    Empowering Businesses, Connecting the World
+                    Beyond Evolution. Pure Revolution.
                 </p>
             </div>
         </div >

@@ -29,7 +29,7 @@ const Footer = () => {
                     <div className="space-y-6">
                         <div>
                             <h3 className="text-2xl lg:text-3xl font-bold font-lato mb-4">
-                                <span className="text-[#C2D92C]">PRO</span>TINGENT INDIA LLP
+                                PROTINGENT INDIA LLP
                             </h3>
                         </div>
 
