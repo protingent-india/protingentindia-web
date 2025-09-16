@@ -941,6 +941,7 @@ const PremiumInteractiveSlider = () => {
 
 // Trusted Partner Section - Updated with Exact Content
 const PowerfulPartnerSection = () => {
+    const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
     return (
         <section className="relative py-20 overflow-hidden" style={{ background: 'linear-gradient(135deg, #012D50 0%, #34969D 50%, #012D50 100%)' }}>
             <div className="container mx-auto px-4 relative z-10 max-w-[1450px]">
@@ -1042,6 +1043,7 @@ const PowerfulPartnerSection = () => {
                 {/* CTA Button */}
                 <div className="text-center mt-12">
                     <button
+                        onClick={() => openPopup()}
                         className="font-bold text-lg px-10 py-4 rounded-full hover:scale-105 transform transition-all shadow-2xl"
                         style={{
                             background: 'linear-gradient(90deg, #CBDC13, #34969D)',
@@ -1052,6 +1054,13 @@ const PowerfulPartnerSection = () => {
                     </button>
                 </div>
             </div>
+            {/* Consultation Popup */}
+            <ConsultationPopup
+                isOpen={isOpen}
+                onClose={closePopup}
+                title={config.title}
+                description={config.description}
+            />
         </section>
     );
 };

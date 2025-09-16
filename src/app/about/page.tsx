@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import {
+    ConsultationPopup,
     GeometricBackground
 } from "@/components";
 import {
@@ -19,9 +20,12 @@ import {
     FaChartLine,
     FaLinkedin
 } from 'react-icons/fa';
+import { useConsultationPopup } from "@/hooks/useConsultationPopup";
 
 // Section 1: Hero - Company Introduction
 const AboutHeroSection = () => {
+    const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
+
     return (
         <section className="relative w-full min-h-[60vh] lg:min-h-[80vh] flex items-center justify-center overflow-hidden py-8">
             {/* Gradient Background */}
@@ -49,14 +53,14 @@ const AboutHeroSection = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <button className="px-12 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-full hover:scale-105 transform transition-all shadow-2xl min-h-[44px]">
+                    <button onClick={() => openPopup()} className="px-12 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-full hover:scale-105 transform transition-all shadow-2xl min-h-[44px]">
                         <span className="flex items-center gap-3">
                             <FaRocket className="w-5 h-5" />
                             Discover Our Story
                         </span>
                     </button>
 
-                    <button className="px-8 py-4 border-2 border-white/40 rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white min-h-[44px]">
+                    <button onClick={() => openPopup()} className="px-8 py-4 border-2 border-white/40 rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white min-h-[44px]">
                         <span className="flex items-center gap-3">
                             <FaUsers className="w-5 h-5" />
                             Meet Our Team
@@ -64,6 +68,12 @@ const AboutHeroSection = () => {
                     </button>
                 </div>
             </div>
+            <ConsultationPopup
+                isOpen={isOpen}
+                onClose={closePopup}
+                title={config.title}
+                description={config.description}
+            />
         </section>
     );
 };
@@ -291,49 +301,56 @@ const TeamSection = () => {
             role: "Designated Partner",
             bio: "Harry Saxena is a visionary strategist and growth leader with expertise in data strategy, operations, and market expansion. He has been instrumental in establishing Protingent India's presence and scaling its recruitment and client delivery models. His leadership blends innovation, operational discipline, and client-focused outcomes, positioning Protingent India as a trusted partner for global businesses.",
             image: "https://customer-assets.emergentagent.com/job_repair-website-1/artifacts/cqjashvu_Harry.jpg",
-            isImageLeft: true
+            isImageLeft: true,
+            link: "http://linkedin.com/in/harry-saxena-pmp-%C2%AE-6b4955178"
         },
         {
             name: "Sachin Kumar",
             role: "Head of Operations",
             bio: "Sachin Kumar is a seasoned leader in operations, HR, client services, and account management. With expertise in building frameworks that align talent acquisition and business strategy, he has scaled recruitment functions, enhanced client delivery, and strengthened operational efficiency. He holds an MBA in HR and Finance and is committed to fostering a high-performance culture that drives sustainable growth.",
             image: "/assets/images/team/sachin-kumar.png",
-            isImageLeft: false
+            isImageLeft: false,
+            link: "http://linkedin.com/in/sachin-kumar27"
         },
         {
             name: "Mohd. Ajaz",
             role: "Head of Technical Product and Architecture",
             bio: "Mohd. Ajaz leads technology innovation with over a decade of experience in product management, digital transformation, and blockchain integration. He spearheads the development of a centralized platform that unifies hiring, payroll, and HRMS. A certified blockchain professional from IIT Kanpur, Ajaz bridges traditional business strategies with decentralized solutions that deliver transparency, security, and scalability.",
             image: "/assets/images/team/mohamad-ajaz.jpeg",
-            isImageLeft: true
+            isImageLeft: true,
+            link: "http://linkedin.com/in/mohdajazdmgd"
         },
         {
             name: "Leena Kanwar",
             role: "Finance Lead",
             bio: "Leena Kanwar leads Finance and Payroll operations at Protingent India, driving financial strategy, compliance, and operational excellence. With nearly four years of diverse experience across recruitment, training, and finance functions, she brings a unique blend of expertise that bridges people, processes, and financial management. Her strategic approach to developing training frameworks, supporting major client accounts, and implementing robust financial practices ensures accuracy, efficiency, and transparency across operations. With a B.Com in Accounting and Finance and an executive certification from IIM Bangalore, Leena's adaptability and results-driven leadership continue to strengthen Protingent India's financial foundation for sustainable growth.",
             image: "/assets/images/team/leena-kanwar.png",
-            isImageLeft: false
+            isImageLeft: false,
+            link: "http://linkedin.com/in/lavina-kanwar-abbb67133"
         },
         {
             name: "Sakshi Saxena",
             role: "Human Resource Specialist",
             bio: "Sakshi Saxena is an HR specialist with expertise in compliance, labor law, payroll, and employee relations. UGC-NET qualified and a certified POSH trainer, she aligns HR operations with business objectives while creating a positive and growth-oriented workplace culture. Her compliance mastery and people-first leadership ensure Protingent India's workforce remains empowered, engaged, and future-ready.",
             image: "/assets/images/team/sakshi-saxena.png",
-            isImageLeft: true
+            isImageLeft: true,
+            link: "https://www.linkedin.com/in/sakshi-saxena-70304916a"
         },
         {
             name: "Martin Vimal Kumar",
             role: "Manager, Talent Sourcing",
             bio: "Martin Vimal Kumar brings over a decade of experience in recruitment, team management, and process optimization. He is known for building high-performing sourcing teams and improving candidate experiences. Martin's ability to evolve recruitment strategies with market demands ensures clients always access top talent aligned with their goals.",
             image: "/assets/images/team/martin-vimal-kumar.png",
-            isImageLeft: false
+            isImageLeft: false,
+            link: "http://linkedin.com/in/martinbuzzlenetworks"
         },
         {
             name: "Brian Deb",
             role: "Recruitment Manager",
             bio: "Brian Deb specializes in global talent sourcing and structured recruitment processes. He connects businesses with the right candidates through innovative sourcing strategies. His collaborative approach, market insight, and commitment to client success make him a key driver of Protingent India's reputation for reliable staffing outcomes.",
             image: "https://customer-assets.emergentagent.com/job_repair-website-1/artifacts/l832v4j1_Brian%20Deb.png",
-            isImageLeft: true
+            isImageLeft: true,
+            link: "http://linkedin.com/in/briansemiconductor"
         }
     ];
 
@@ -395,7 +412,8 @@ const TeamSection = () => {
                                 {/* LinkedIn Icon */}
                                 <div className={`flex ${!member.isImageLeft ? 'lg:justify-end' : 'justify-start'}`}>
                                     <a
-                                        href="#"
+                                        href={member?.link || "#"}
+                                        target="_blank"
                                         className="inline-flex items-center gap-2 px-4 py-2 bg-[#0077B5] text-white rounded-full hover:bg-[#005885] transition-colors duration-300 group"
                                     >
                                         <FaLinkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
@@ -413,6 +431,7 @@ const TeamSection = () => {
 
 // CTA Section
 const CTASection = () => {
+    const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
     return (
         <div className="relative w-full section-padding overflow-hidden">
             <div
@@ -434,17 +453,23 @@ const CTASection = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <button className="px-12 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-full hover:scale-105 transform transition-all shadow-2xl min-h-[44px]">
+                    <button onClick={() => openPopup()} className="px-12 py-4 bg-[#C2D92C] text-[#113F64] font-bold text-lg rounded-full hover:scale-105 transform transition-all shadow-2xl min-h-[44px]">
                         Start Your Journey with Us
                     </button>
 
-                    <button className="px-8 py-4 border-2 border-white/40 rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white min-h-[44px]">
+                    <button onClick={() => openPopup()} className="px-8 py-4 border-2 border-white/40 rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white min-h-[44px]">
                         <span className="flex items-center gap-3">
                             <span>Schedule a Consultation</span>
                         </span>
                     </button>
                 </div>
             </div>
+            <ConsultationPopup
+                isOpen={isOpen}
+                onClose={closePopup}
+                title={config.title}
+                description={config.description}
+            />
         </div>
     );
 };

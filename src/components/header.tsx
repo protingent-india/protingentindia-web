@@ -288,7 +288,7 @@ const Header = () => {
                                         {item.hasDropdown && (
                                             <div
                                                 ref={dropdownRef}
-                                                className={`mega-menu ${isServicesDropdownOpen ? 'active' : ''} absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[600px] bg-white rounded-2xl shadow-2xl border border-gray-100 z-50`}
+                                                className={`mega-menu ${isServicesDropdownOpen ? 'active' : 'hidden'} absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[600px] bg-white rounded-2xl shadow-2xl border border-gray-100 z-50`}
                                             >
                                                 <div className="p-8">
                                                     <div className="grid grid-cols-2 gap-8">

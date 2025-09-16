@@ -235,15 +235,15 @@ const TalkToExpert = () => {
 
                 {/* Additional CTA Banner */}
                 <div className='mt-16 text-center'>
-                    <a
-                        href="tel:+91 141 299 0687"
+                    <div
+                        onClick={() => openPopup()}
                         className='inline-block px-8 py-4 bg-gradient-to-r from-[#113F64] to-[#34969E] rounded-full text-white shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 cursor-pointer'
                     >
                         <span className='text-lg font-semibold flex items-center space-x-3' style={{ fontFamily: 'Lato' }}>
                             <FaRocket className="w-5 h-5" />
                             <span className='text-base sm:text-lg' >Not sure which path is right for you? Let's talk!</span>
                         </span>
-                    </a>
+                    </div>
                 </div>
             </div>
 

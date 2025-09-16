@@ -513,6 +513,8 @@ const TeamStorySection = () => {
 
 // Industries We Market Section
 const IndustriesSection = () => {
+    const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
+
     const industries = [
         {
             title: "Healthcare & Life Sciences",
@@ -619,11 +621,17 @@ const IndustriesSection = () => {
                 </div>
 
                 <div className="text-center mt-16">
-                    <button className="px-8 py-4 bg-[#34969E] text-white font-bold rounded-full hover:bg-[#113F64] transition-all duration-300 hover:scale-105 shadow-lg">
+                    <button onClick={() => openPopup()} className="px-8 py-4 bg-[#34969E] text-white font-bold rounded-full hover:bg-[#113F64] transition-all duration-300 hover:scale-105 shadow-lg">
                         Check More Marketing Solutions for Your Industry
                     </button>
                 </div>
             </div>
+            <ConsultationPopup
+                isOpen={isOpen}
+                onClose={closePopup}
+                title={config.title}
+                description={config.description}
+            />
         </div>
     );
 };

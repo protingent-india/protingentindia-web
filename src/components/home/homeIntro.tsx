@@ -60,7 +60,14 @@ const HomeIntro = () => {
                                     onClick={() => {
                                         const solutionsSection = document.getElementById('comprehensive');
                                         if (solutionsSection) {
-                                            solutionsSection.scrollIntoView({ behavior: 'smooth' });
+                                            const headerOffset = 80; // height of your sticky header
+                                            const elementPosition = solutionsSection.getBoundingClientRect().top + window.scrollY;
+                                            const offsetPosition = elementPosition - headerOffset;
+
+                                            window.scrollTo({
+                                                top: offsetPosition,
+                                                behavior: 'smooth',
+                                            });
                                         }
                                     }}
                                     className="cursor-pointer px-8 py-4 bg-gradient-to-r from-lime-400 to-teal-500 hover:from-teal-500 hover:to-lime-400 text-navy-600 font-semibold text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl group flex items-center gap-3"

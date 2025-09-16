@@ -277,9 +277,9 @@ const CoreCapabilitiesSection = () => {
         <section className="w-full py-20 bg-gradient-to-b from-gray-50 to-white">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Split Layout Container */}
-                <div className="flex flex-col lg:flex-row gap-12">
+                <div className="flex flex-col lg:flex-row gap-12 relative">
                     {/* Left Panel - Fixed/Sticky (40% width) */}
-                    <div className="lg:w-2/5 lg:sticky lg:top-20 lg:self-start lg:h-screen" data-aos="fade-right">
+                    <div className="lg:w-2/5 lg:sticky lg:top-20 lg:self-start lg:h-fit" data-aos="fade-right">
                         <div className="space-y-8 lg:pr-8">
                             <h2 className="text-4xl lg:text-5xl font-black text-navy-800 leading-tight" style={{ fontFamily: 'Lato' }}>
                                 Our Core BI & Data Visualization Capabilities
@@ -441,7 +441,7 @@ const CustomDashboardSection = () => {
                                 <div className="absolute inset-0 bg-gradient-to-br from-navy-600/70 to-teal-500/50 group-hover:from-navy-700/80 group-hover:to-teal-600/60 transition-colors duration-500"></div>
 
                                 {/* Hover Overlay */}
-                                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <div className="hidden absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                     <button className="px-6 py-3 bg-white text-navy-800 font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
                                         View Dashboard
                                     </button>
@@ -854,7 +854,7 @@ export default function BIDataVisualizationPage() {
     }, []);
 
     return (
-        <div className="bg-white w-full flex flex-col items-center max-w-screen overflow-x-hidden">
+        <div className="bg-white w-full flex flex-col items-center max-w-screen">
             {/* Hero Section */}
             <HeroSection openPopup={openPopup} />
 

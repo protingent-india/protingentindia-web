@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import {
+    ConsultationPopup,
     GeometricBackground
 } from "@/components";
 import {
@@ -17,9 +18,11 @@ import {
     FaGlobe,
     FaArrowRight
 } from 'react-icons/fa';
+import { useConsultationPopup } from "@/hooks/useConsultationPopup";
 
 // Hero Section
 const ContactHeroSection = () => {
+    const { isOpen, config, openPopup, closePopup } = useConsultationPopup();
     return (
         <div className="relative w-full h-fit flex items-center justify-center overflow-hidden py-8">
             {/* Background with abstract map pattern */}
@@ -68,7 +71,7 @@ const ContactHeroSection = () => {
                         </span>
                     </button>
 
-                    <button className="px-8 py-4 border-2 border-white/40 rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white">
+                    <button onClick={() => openPopup()} className="px-8 py-4 border-2 border-white/40 rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group text-white">
                         <span className="flex items-center gap-3">
                             <span>Schedule Meeting</span>
                             <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
@@ -92,6 +95,12 @@ const ContactHeroSection = () => {
                     </div>
                 </div>
             </div>
+            <ConsultationPopup
+                isOpen={isOpen}
+                onClose={closePopup}
+                title={config.title}
+                description={config.description}
+            />
         </div>
     );
 };
