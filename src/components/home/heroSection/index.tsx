@@ -27,24 +27,24 @@ const HeroSection = () => {
             <div className='absolute top-0 left-0 bg-transparent w-full h-fit snap-start flex flex-col items-center ' >
                 <p className={`
                     bg-white 
-                    w-full min-h-[120px] sm:min-h-[130px] lg:min-h-[180px] 
-                    py-4 sm:pb-10 xl:py-20 lap:!pt-8
-                    text-5xl sm:text-[65px] md:text-[80px] lg:text-[100px] lap:!text-[128px] 
+                    w-full min-h-[130px] sm:min-h-[140px] lg:min-h-[180px] 
+                    pt-4 pb-8 sm:pb-10 md:pb-14 xl:py-20 lap:!pt-8
+                    text-4xl sm:text-[65px] md:text-[80px] lap:!text-[100px] 3xl:!text-[128px] 
                     text-center font-black uppercase 
                     mix-blend-screen flex items-center justify-center relative
                     ${montserrat.className}`}
                 >
-                    QUANTUM
+                    PROTINGENT INDIA
                 </p>
                 <p className='
                     text-base sm:text-lg lg:text-2xl lap:!text-3xl 3xl:!text-3xl
                     text-primary 
                     bg-white
                     text-center
-                    absolute bottom-2 lap:!bottom-6
+                    absolute bottom-2 md:bottom-6 lap:!bottom-6
                     font-medium'
                 >
-                    Beyond Evolution. Pure Revolution.
+                    Empowering Businesses, Connecting the World
                 </p>
             </div>
         </div >
