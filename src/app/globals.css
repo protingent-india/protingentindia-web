@@ -23,6 +23,16 @@ button {
   scrollbar-color: rgba(52, 150, 157, 0.3) transparent;
 }
 
+/* Target ONLY Safari / iOS browsers */
+@supports (-webkit-touch-callout: none) {
+  .ios-fallback {
+    mix-blend-mode: normal !important;
+    -webkit-text-fill-color: var(--color-primary) !important;
+    color: var(--color-primary) !important;
+  }
+}
+
+
 .scrollbar-thin::-webkit-scrollbar {
   width: 4px;
 }

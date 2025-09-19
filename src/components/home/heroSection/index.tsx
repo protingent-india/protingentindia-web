@@ -26,7 +26,7 @@ const HeroSection = () => {
             </div>
             <div className='absolute top-0 left-0 bg-transparent w-full h-fit snap-start flex flex-col items-center ' >
                 <p className={`
-                    bg-white 
+                    bg-white ios-fallback
                     w-full min-h-[130px] sm:min-h-[140px] lg:min-h-[180px] 
                     pt-4 pb-8 sm:pb-10 md:pb-14 xl:py-20 lap:!pt-8
                     text-4xl sm:text-[65px] md:text-[80px] lap:!text-[100px] 3xl:!text-[128px] 
