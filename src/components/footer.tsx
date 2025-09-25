@@ -219,13 +219,13 @@ const Footer = () => {
                         {/* Social Media Links */}
                         <div className="flex items-center gap-4">
                             <Link
-                                href="#"
+                                href="https://www.facebook.com/profile.php?id=61565965593272"
                                 className="w-10 h-10 bg-white/10 hover:bg-[#34969E] rounded-full flex items-center justify-center transition-colors duration-300 hover:scale-110"
                             >
                                 <FaFacebookF className="text-white" size={16} />
                             </Link>
                             <Link
-                                href="#"
+                                href="https://x.com/protingent_rpo"
                                 className="w-10 h-10 bg-white/10 hover:bg-[#34969E] rounded-full flex items-center justify-center transition-colors duration-300 hover:scale-110"
                             >
                                 <FaTwitter className="text-white" size={16} />
@@ -238,7 +238,7 @@ const Footer = () => {
                                 <FaLinkedinIn className="text-white" size={16} />
                             </Link>
                             <Link
-                                href="#"
+                                href="www.youtube.com/@ProtingentIndiaLLP"
                                 className="w-10 h-10 bg-white/10 hover:bg-[#34969E] rounded-full flex items-center justify-center transition-colors duration-300 hover:scale-110"
                             >
                                 <FaYoutube className="text-white" size={16} />
